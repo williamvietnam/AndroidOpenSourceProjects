@@ -1,0 +1,72 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.williamnb.android_basic_with_kotlin"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:5:5-20:19
+12        android:allowBackup="true"
+12-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\2211b2af80c2040823aefb9bbce90544\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:extractNativeLibs="false"
+16        android:icon="@mipmap/ic_launcher"
+16-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:7:9-43
+17        android:label="@string/app_name"
+17-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:8:9-41
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:9:9-54
+19        android:supportsRtl="true"
+19-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:10:9-35
+20        android:theme="@style/Theme.Androidbasicwithkotlin" >
+20-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:11:9-60
+21        <activity
+21-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:13:9-19:20
+22            android:name="com.williamnb.android_basic_with_kotlin.features.MainActivity"
+22-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:13:19-56
+23            android:exported="true" >
+23-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:14:13-36
+24            <intent-filter>
+24-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:15:13-18:29
+25                <category android:name="android.intent.category.LAUNCHER" />
+25-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:16:17-76
+25-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:16:27-74
+26
+27                <action android:name="android.intent.action.MAIN" />
+27-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:17:17-68
+27-->D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:17:25-66
+28            </intent-filter>
+29        </activity>
+30
+31        <provider
+31-->[androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+32            android:name="androidx.startup.InitializationProvider"
+32-->[androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+33            android:authorities="com.williamnb.android_basic_with_kotlin.androidx-startup"
+33-->[androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+34            android:exported="false" >
+34-->[androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+35            <meta-data
+35-->[androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+36                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+36-->[androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+37                android:value="androidx.startup" />
+37-->[androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+38            <meta-data
+38-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+39                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+39-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+40                android:value="androidx.startup" />
+40-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+41        </provider>
+42    </application>
+43
+44</manifest>

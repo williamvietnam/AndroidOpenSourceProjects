@@ -1,0 +1,232 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
+MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\0f73fa5520115d482d9a83d23ee226c1\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\5f01c6cda62cd65eaa5e3bd17c1d9b0b\transformed\jetified-core-ktx-1.7.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\d1748c91b657671b82a29674387f4cb6\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\54cf1bbbc744d36f6a61fe2bf74d8af9\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\450710a86d7bc2f56724d3dfc3c72980\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\ee78384b261c1ba6c35de943166cfbe1\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\f057e52317849762879ca9e9026c1839\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\21f933d3c7f1a1c035702d8d8d93ffad\transformed\jetified-activity-1.2.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\adc3c292b7893eb19fa5c4fe85061e1e\transformed\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\980e2b5d711e841ae3aeaaeb4aa50eb7\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\2c62169d477226dbd2dda920778c03b2\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\6012d555714cea2b3ddf0330110ff849\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\bf8a3092ab5349460a7859fc5c64fbb0\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\31968797da250af940de2163df42a5e4\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\b4d1712a9ac46ff4a60165376feeeb3f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\d694eb449220cc7088c20d04002a656a\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\d3bc0bfab1515300c07ac711190d6ebf\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\85094b0bb73b08ba80cc45c57b5f98ea\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\06f3cebc39de6e05c931a8d4d69b74a5\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\9739c4bb8843e2cd8cb0a9118c86e6a7\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\ecf0b1133d1cf4348b658c6a11f657d5\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.7.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\2211b2af80c2040823aefb9bbce90544\transformed\core-1.7.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\c6be2cabdf52a83ce2924234c161287b\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\aec1445bbde8beb45b0d53cb10c26e15\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\0a0f44a855e92772104bb9cd2e82cea3\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\a12ba23d030a86423b5a02d3b09ef538\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\5c09fdc1db155735c85d7510cc820088\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\34157d7633dd11581fba81240d02bb3e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\6af1c8f93ea9fe7b3daf1ac5bcae35b9\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\8969454a4f3b208d3066100a19fd5513\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\f34cf464a443a1eb685954f28103d624\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\53d508748b2e67c86e72b820e5be322c\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\13d64010f72680b5fd55b31ee5edaae1\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\0e9c575bcb439d311f480bdc52c77662\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\1bd6d86b0a79e715eb8d2dab1ed12a5b\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\a727a4f0b6c454a4a3bdee1799b8dbc5\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\9321eaaffdb7aa88deed35fe871e8d62\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\2ca046f32616d9c4e5bc84d68b507a88\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\304f0c1a230cbfe5370dd9e5ae8b5b32\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
+	package
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:3:5-54
+		INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
+		INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:2:1-22:12
+		INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:5:5-20:19
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\d1748c91b657671b82a29674387f4cb6\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\d1748c91b657671b82a29674387f4cb6\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\54cf1bbbc744d36f6a61fe2bf74d8af9\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\54cf1bbbc744d36f6a61fe2bf74d8af9\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.core:core:1.7.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\2211b2af80c2040823aefb9bbce90544\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\2211b2af80c2040823aefb9bbce90544\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\34157d7633dd11581fba81240d02bb3e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\34157d7633dd11581fba81240d02bb3e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\6af1c8f93ea9fe7b3daf1ac5bcae35b9\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\6af1c8f93ea9fe7b3daf1ac5bcae35b9\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.7.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\2211b2af80c2040823aefb9bbce90544\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:11:9-60
+activity#com.williamnb.android_basic_with_kotlin.features.MainActivity
+ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:13:9-19:20
+	android:exported
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:13:19-56
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:15:13-18:29
+category#android.intent.category.LAUNCHER
+ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:16:17-76
+	android:name
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:16:27-74
+action#android.intent.action.MAIN
+ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:17:17-68
+	android:name
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml:17:25-66
+uses-sdk
+INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\0f73fa5520115d482d9a83d23ee226c1\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\0f73fa5520115d482d9a83d23ee226c1\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\5f01c6cda62cd65eaa5e3bd17c1d9b0b\transformed\jetified-core-ktx-1.7.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\5f01c6cda62cd65eaa5e3bd17c1d9b0b\transformed\jetified-core-ktx-1.7.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\d1748c91b657671b82a29674387f4cb6\transformed\material-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\d1748c91b657671b82a29674387f4cb6\transformed\material-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\54cf1bbbc744d36f6a61fe2bf74d8af9\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\54cf1bbbc744d36f6a61fe2bf74d8af9\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\450710a86d7bc2f56724d3dfc3c72980\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\450710a86d7bc2f56724d3dfc3c72980\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\ee78384b261c1ba6c35de943166cfbe1\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\ee78384b261c1ba6c35de943166cfbe1\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\f057e52317849762879ca9e9026c1839\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\f057e52317849762879ca9e9026c1839\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\21f933d3c7f1a1c035702d8d8d93ffad\transformed\jetified-activity-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\21f933d3c7f1a1c035702d8d8d93ffad\transformed\jetified-activity-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\adc3c292b7893eb19fa5c4fe85061e1e\transformed\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\adc3c292b7893eb19fa5c4fe85061e1e\transformed\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\980e2b5d711e841ae3aeaaeb4aa50eb7\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\980e2b5d711e841ae3aeaaeb4aa50eb7\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\2c62169d477226dbd2dda920778c03b2\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\2c62169d477226dbd2dda920778c03b2\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\6012d555714cea2b3ddf0330110ff849\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\6012d555714cea2b3ddf0330110ff849\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\bf8a3092ab5349460a7859fc5c64fbb0\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\bf8a3092ab5349460a7859fc5c64fbb0\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\31968797da250af940de2163df42a5e4\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\31968797da250af940de2163df42a5e4\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\b4d1712a9ac46ff4a60165376feeeb3f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\b4d1712a9ac46ff4a60165376feeeb3f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\d694eb449220cc7088c20d04002a656a\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\d694eb449220cc7088c20d04002a656a\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\d3bc0bfab1515300c07ac711190d6ebf\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\d3bc0bfab1515300c07ac711190d6ebf\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\85094b0bb73b08ba80cc45c57b5f98ea\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\85094b0bb73b08ba80cc45c57b5f98ea\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\06f3cebc39de6e05c931a8d4d69b74a5\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\06f3cebc39de6e05c931a8d4d69b74a5\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\9739c4bb8843e2cd8cb0a9118c86e6a7\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\9739c4bb8843e2cd8cb0a9118c86e6a7\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\ecf0b1133d1cf4348b658c6a11f657d5\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\ecf0b1133d1cf4348b658c6a11f657d5\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\2211b2af80c2040823aefb9bbce90544\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\2211b2af80c2040823aefb9bbce90544\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\c6be2cabdf52a83ce2924234c161287b\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\c6be2cabdf52a83ce2924234c161287b\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\aec1445bbde8beb45b0d53cb10c26e15\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\aec1445bbde8beb45b0d53cb10c26e15\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\0a0f44a855e92772104bb9cd2e82cea3\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\0a0f44a855e92772104bb9cd2e82cea3\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\a12ba23d030a86423b5a02d3b09ef538\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\a12ba23d030a86423b5a02d3b09ef538\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\5c09fdc1db155735c85d7510cc820088\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\5c09fdc1db155735c85d7510cc820088\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\34157d7633dd11581fba81240d02bb3e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\34157d7633dd11581fba81240d02bb3e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\6af1c8f93ea9fe7b3daf1ac5bcae35b9\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\6af1c8f93ea9fe7b3daf1ac5bcae35b9\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\8969454a4f3b208d3066100a19fd5513\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\8969454a4f3b208d3066100a19fd5513\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\f34cf464a443a1eb685954f28103d624\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\f34cf464a443a1eb685954f28103d624\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\53d508748b2e67c86e72b820e5be322c\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\53d508748b2e67c86e72b820e5be322c\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\13d64010f72680b5fd55b31ee5edaae1\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\13d64010f72680b5fd55b31ee5edaae1\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\0e9c575bcb439d311f480bdc52c77662\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\0e9c575bcb439d311f480bdc52c77662\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\1bd6d86b0a79e715eb8d2dab1ed12a5b\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\1bd6d86b0a79e715eb8d2dab1ed12a5b\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\a727a4f0b6c454a4a3bdee1799b8dbc5\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\a727a4f0b6c454a4a3bdee1799b8dbc5\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\9321eaaffdb7aa88deed35fe871e8d62\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\9321eaaffdb7aa88deed35fe871e8d62\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\2ca046f32616d9c4e5bc84d68b507a88\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\2ca046f32616d9c4e5bc84d68b507a88\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\304f0c1a230cbfe5370dd9e5ae8b5b32\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\304f0c1a230cbfe5370dd9e5ae8b5b32\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+		ADDED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Projects\AndroidKotlinProjects\AndroidKotlin-learning2022\android-basic-with-kotlin\app\src\main\AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\6af1c8f93ea9fe7b3daf1ac5bcae35b9\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\6af1c8f93ea9fe7b3daf1ac5bcae35b9\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\giang\.jdks\corretto-11.0.10\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
