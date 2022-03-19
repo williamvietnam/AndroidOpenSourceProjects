@@ -13,7 +13,8 @@ fun initFunction() {
 //    demoReadCharFromKeyboard()
 //    initStringOnMostLine()
 //    demoWhenInKtVersion2(2)
-    demoForInKtCloseRangeType(5)
+//    demoForInKtCloseRangeType(5)
+    demoForInKtItemCollection()
 }
 
 /*
@@ -103,43 +104,70 @@ fun demoWhenInKtVersion2(age: Int) {
 
 
 /*
-* Vòng lặp for kiểu Closed Range cho chúng ta duyệt trong đoạn [a;b]
+* Vòng lặp for kiểu Closed Range
+* cho chúng ta duyệt trong đoạn [a;b]
 * */
 fun demoForInKtCloseRangeType(n: Int){
-    println("demoForInKotlinCloseRange: ")
+    println("Log: demoForInKotlinCloseRange: ")
     for(i in 1..n){
       println(i)
     }
 }
 
 /*
-*  Vòng lặp for kiểu half open range cho chúng ta duyệt trong nửa đoạn [a;b)
+*  Vòng lặp for kiểu half open range
+*  cho chúng ta duyệt trong nửa đoạn [a;b)
 * */
 fun demoForInKtHalfOpenRangeType(n: Int){
-    println("demoForInKotlinHalfOpenRange: ")
+    println("Log: demoForInKotlinHalfOpenRange: ")
     for(i in 1 until n  ){
         println(i)
     }
 }
 
 /*
-* Vòng lặp for kiểu step <--> vònglặp for(i=0;i<n;i++)in java/c++
+* Vòng lặp for kiểu step <-->
+vònglặp for(i=0;i<n;i++)in java/c++
 * */
 fun demoForInKtStepType(n: Int, x: Int){
-    println("demoForInKotlinStepType: ")
+    println("Log: demoForInKotlinStepType: ")
     for (i in 1..n step x){
         println(i)
     }
 }
 
 /*
-* Vòng lặp for kiểu downTo <--> vòng lặp for(i=n;i>0;i--)in java/c++
+* Vòng lặp for kiểu downTo <-->
+vòng lặp for(i=n;i>0;i--)in java/c++
 * */
 fun demoForInKtDownToType(n: Int){
-    println("demoForInKtDownToType: ")
+    println("Log: demoForInKtDownToType: ")
     for (i in n downTo 1){
         println(i)
     }
 }
 
+/*
+* Vòng lặp for duyệt một tập các đối tượng
+* */
+fun demoForInKtItemCollection(){
+    println("Log: demoForInKtItemCollection")
+    var tech = arrayOf("C++", "Java", "Kotlin", "Python")
+    for(i in tech){
+        println(i)
+    }
+}
+
+fun  demoTryCatch(){
+    try {
+        //some code
+        //trong này chứa 1 đoạn code mà mình nghi ngờ có thể lúc nào đó nó sẽ bị lỗi
+    }catch (e:Exception){
+        //handler
+       println( e.message)
+    }finally {
+        //option finally block
+        println("Đây là finally, 100% chạy cho dù có lỗi hay không")
+    }
+}
 
