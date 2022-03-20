@@ -1,0 +1,11 @@
+Kotlin basic:
+-
+- Kiểu dữ liệu, ép kiểu dữ liệu và khai báo biến
+- Nhập dữ liệu từ bàn phím, xuất dữ liệu ra màn hình
+- Toán tử trong Kotlin và cấu trúc If-else và When
+- Vòng lặp for:closedRange,half-openRange,downTo,iterator
+- Vòng lặp while, do-while; lệnh: break, continue
+- Try..catch & Throw; Tool debug 
+- Thư viện: xử lý dữ liệu số, ngày tháng, toán học, chuỗi
+- Constructor, kế thừa từ class/interface, 
+- DataClass, NestedClass, InnerClass, EnumClass
