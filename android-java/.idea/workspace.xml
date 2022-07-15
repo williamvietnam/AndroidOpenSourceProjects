@@ -13,99 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="699ae4a1-3305-4159-a11b-168ccf2e318d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/androidTest/java/com/android/recyclerview/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/ItemListAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/SubItem1ListAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/SubItem2ListAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/SubItem3ListAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/clicked/OnSubItem1Clicked.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/clicked/OnSubItem2Clicked.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/clicked/OnSubItem3Clicked.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/old_way_recyclerview_adapter/ItemAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/old_way_recyclerview_adapter/SubItemOneAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/old_way_recyclerview_adapter/SubItemThreeAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/old_way_recyclerview_adapter/SubItemTwoAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/container/ContainerActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/data/mock/MainRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/models/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/models/SubItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/views/concat/ConcatFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/views/new_way/NewWayFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/views/old_way/OldWayFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/views/tab_game/GameFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/adapters/ItemRecyclerViewAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/models/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/models/ItemFavourite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/models/ItemHome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/models/ItemHomePreview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/models/ItemHomeTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/models/ItemSong.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/models/Song.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/bg_music_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/bg_music_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/bg_music_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/ic_album_songs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/ic_back.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/ic_game.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/ic_music2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/ic_music3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/ic_music_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/ic_music_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/ic_new_way.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/ic_next.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/drawable/ic_old_way.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/activity_container.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/fragment_concat.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/fragment_game.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/fragment_new_way.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/fragment_old_way.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/item_parent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/recyclerview_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/sub_item_one.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/sub_item_three.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/sub_item_two.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/widget_sub_item_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/widget_sub_item_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/widget_sub_item_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/layout/widget_sub_item_title.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/menu/menu_bottom_nav.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android_recyclerview/src/test/java/com/android/recyclerview/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,10 +31,27 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Knowledges" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="main" />
+        <entry key="$PROJECT_DIR$/.." value="android-java" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -334,11 +264,24 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="android-java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="android-java" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="34873d9d-4b45-4d4c-a49f-978f13d6568c" name="Changes" comment="" />
+      <changelist id="699ae4a1-3305-4159-a11b-168ccf2e318d" name="Changes" comment="" />
       <created>1657890963695</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
