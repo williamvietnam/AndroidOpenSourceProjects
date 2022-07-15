@@ -7,6 +7,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Knowledges.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Knowledges.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Knowledges.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Knowledges.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Knowledges.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Knowledges.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coroutine/Knowledges.coroutine.iml" filepath="$PROJECT_DIR$/.idea/modules/coroutine/Knowledges.coroutine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coroutine/Knowledges.coroutine.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/coroutine/Knowledges.coroutine.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coroutine/Knowledges.coroutine.main.iml" filepath="$PROJECT_DIR$/.idea/modules/coroutine/Knowledges.coroutine.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coroutine/Knowledges.coroutine.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/coroutine/Knowledges.coroutine.unitTest.iml" />
     </modules>
   </component>
 </project>
