@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.android.life_cycles.android-life-cycles-mergeDebugResources-26:/layout/fragment_mvvm_result.xml",
+        "source": "com.android.life_cycles.android-life-cycles-main-29:/layout/fragment_mvvm_result.xml"
+    },
+    {
+        "merged": "com.android.life_cycles.android-life-cycles-mergeDebugResources-26:/layout/fragment_top.xml",
+        "source": "com.android.life_cycles.android-life-cycles-main-29:/layout/fragment_top.xml"
+    },
+    {
+        "merged": "com.android.life_cycles.android-life-cycles-mergeDebugResources-26:/layout/fragment_result.xml",
+        "source": "com.android.life_cycles.android-life-cycles-main-29:/layout/fragment_result.xml"
+    },
+    {
+        "merged": "com.android.life_cycles.android-life-cycles-mergeDebugResources-26:/layout/fragment_main.xml",
+        "source": "com.android.life_cycles.android-life-cycles-main-29:/layout/fragment_main.xml"
+    },
+    {
+        "merged": "com.android.life_cycles.android-life-cycles-mergeDebugResources-26:/layout/fragment_bottom.xml",
+        "source": "com.android.life_cycles.android-life-cycles-main-29:/layout/fragment_bottom.xml"
+    },
+    {
+        "merged": "com.android.life_cycles.android-life-cycles-mergeDebugResources-26:/layout/activity_mvvm.xml",
+        "source": "com.android.life_cycles.android-life-cycles-main-29:/layout/activity_mvvm.xml"
+    },
+    {
+        "merged": "com.android.life_cycles.android-life-cycles-mergeDebugResources-26:/layout/fragment_container.xml",
+        "source": "com.android.life_cycles.android-life-cycles-main-29:/layout/fragment_container.xml"
+    },
+    {
+        "merged": "com.android.life_cycles.android-life-cycles-mergeDebugResources-26:/layout/fragment_start.xml",
+        "source": "com.android.life_cycles.android-life-cycles-main-29:/layout/fragment_start.xml"
+    },
+    {
+        "merged": "com.android.life_cycles.android-life-cycles-mergeDebugResources-26:/layout/activity_main.xml",
+        "source": "com.android.life_cycles.android-life-cycles-main-29:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.android.life_cycles.android-life-cycles-mergeDebugResources-26:/layout/activity_databinding.xml",
+        "source": "com.android.life_cycles.android-life-cycles-main-29:/layout/activity_databinding.xml"
+    },
+    {
+        "merged": "com.android.life_cycles.android-life-cycles-mergeDebugResources-26:/layout/activity_container.xml",
+        "source": "com.android.life_cycles.android-life-cycles-main-29:/layout/activity_container.xml"
+    }
+]
