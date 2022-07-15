@@ -9,9 +9,9 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.rikkeisoft.project_training.databinding.SubItemThreeBinding;
-import com.rikkeisoft.project_training.old.adapters.new_way_list_adapter.clicked.OnSubItem3Clicked;
-import com.rikkeisoft.project_training.old.models.SubItem;
+import com.android.recyclerview.databinding.SubItemThreeBinding;
+import com.android.recyclerview.old.adapters.new_way_list_adapter.clicked.OnSubItem3Clicked;
+import com.android.recyclerview.old.models.SubItem;
 
 import java.util.ArrayList;
 import java.util.List;

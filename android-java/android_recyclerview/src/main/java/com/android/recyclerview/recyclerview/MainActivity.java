@@ -7,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.recyclerview.databinding.ActivityMainBinding;
 import com.android.recyclerview.old.data.mock.MainRepository;
-import com.android.recyclerview.old.models.Item;
 import com.android.recyclerview.recyclerview.adapters.ItemRecyclerViewAdapter;
+import com.android.recyclerview.recyclerview.models.Item;
 
 import java.util.ArrayList;
 import java.util.List;

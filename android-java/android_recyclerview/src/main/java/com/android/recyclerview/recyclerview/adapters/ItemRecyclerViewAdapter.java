@@ -14,8 +14,8 @@ import com.android.recyclerview.old.adapters.old_way_recyclerview_adapter.SubIte
 import com.android.recyclerview.old.adapters.old_way_recyclerview_adapter.SubItemThreeAdapter;
 import com.android.recyclerview.old.adapters.old_way_recyclerview_adapter.SubItemTwoAdapter;
 import com.android.recyclerview.old.data.mock.MainRepository;
-import com.android.recyclerview.old.models.Item;
 import com.android.recyclerview.old.models.SubItem;
+import com.android.recyclerview.recyclerview.models.Item;
 
 import java.util.ArrayList;
 import java.util.List;

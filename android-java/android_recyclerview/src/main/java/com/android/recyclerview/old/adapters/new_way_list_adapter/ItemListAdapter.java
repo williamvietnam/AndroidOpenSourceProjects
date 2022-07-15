@@ -12,12 +12,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.rikkeisoft.project_training.databinding.ItemParentBinding;
-import com.rikkeisoft.project_training.old.adapters.new_way_list_adapter.clicked.OnSubItem1Clicked;
-import com.rikkeisoft.project_training.old.adapters.new_way_list_adapter.clicked.OnSubItem2Clicked;
-import com.rikkeisoft.project_training.old.adapters.new_way_list_adapter.clicked.OnSubItem3Clicked;
-import com.rikkeisoft.project_training.old.models.Item;
-import com.rikkeisoft.project_training.old.models.SubItem;
+import com.android.recyclerview.databinding.ItemParentBinding;
+import com.android.recyclerview.old.adapters.new_way_list_adapter.clicked.OnSubItem1Clicked;
+import com.android.recyclerview.old.adapters.new_way_list_adapter.clicked.OnSubItem2Clicked;
+import com.android.recyclerview.old.adapters.new_way_list_adapter.clicked.OnSubItem3Clicked;
+import com.android.recyclerview.old.models.Item;
+import com.android.recyclerview.old.models.SubItem;
 
 public class ItemListAdapter extends ListAdapter<Item, ItemListAdapter.MyViewHolder>
         implements OnSubItem1Clicked, OnSubItem2Clicked, OnSubItem3Clicked {
