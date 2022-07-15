@@ -6,8 +6,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.rikkeisoft.project_training.databinding.SubItemOneBinding;
-import com.rikkeisoft.project_training.old.models.SubItem;
+import com.android.recyclerview.databinding.SubItemOneBinding;
+import com.android.recyclerview.old.models.SubItem;
 
 import java.util.List;
 

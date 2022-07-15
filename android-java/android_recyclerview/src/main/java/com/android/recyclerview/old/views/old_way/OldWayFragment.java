@@ -10,11 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.rikkeisoft.project_training.databinding.FragmentOldWayBinding;
-import com.rikkeisoft.project_training.old.adapters.old_way_recyclerview_adapter.ItemAdapter;
-import com.rikkeisoft.project_training.old.data.mock.MainRepository;
-import com.rikkeisoft.project_training.old.models.Item;
-import com.rikkeisoft.project_training.old.models.SubItem;
+import com.android.recyclerview.databinding.FragmentOldWayBinding;
+import com.android.recyclerview.old.adapters.old_way_recyclerview_adapter.ItemAdapter;
+import com.android.recyclerview.old.data.mock.MainRepository;
+import com.android.recyclerview.old.models.Item;
+import com.android.recyclerview.old.models.SubItem;
 
 import java.util.ArrayList;
 import java.util.List;

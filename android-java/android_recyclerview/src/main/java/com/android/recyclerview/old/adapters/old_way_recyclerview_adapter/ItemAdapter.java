@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.rikkeisoft.project_training.databinding.ItemParentBinding;
-import com.rikkeisoft.project_training.old.models.Item;
+import com.android.recyclerview.databinding.ItemParentBinding;
+import com.android.recyclerview.old.models.Item;
 
 import java.util.ArrayList;
 

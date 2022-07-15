@@ -9,16 +9,16 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.rikkeisoft.project_training.databinding.SubItemOneBinding;
-import com.rikkeisoft.project_training.old.adapters.new_way_list_adapter.clicked.OnSubItem1Clicked;
-import com.rikkeisoft.project_training.old.models.SubItem;
+import com.android.recyclerview.databinding.SubItemOneBinding;
+import com.android.recyclerview.old.adapters.new_way_list_adapter.clicked.OnSubItem1Clicked;
+import com.android.recyclerview.old.models.SubItem;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SubItem1ListAdapter extends ListAdapter<SubItem, SubItem1ListAdapter.SubItem1ViewHolder> {
 
-    private  final OnSubItem1Clicked onSubItem1Clicked;
+    private final OnSubItem1Clicked onSubItem1Clicked;
 
     public SubItem1ListAdapter(@NonNull DiffUtil.ItemCallback<SubItem> diffCallback, OnSubItem1Clicked onSubItem1Clicked) {
         super(diffCallback);

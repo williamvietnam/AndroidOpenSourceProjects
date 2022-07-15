@@ -8,13 +8,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.android.recyclerview.R;
+import com.android.recyclerview.databinding.ActivityContainerBinding;
+import com.android.recyclerview.old.views.concat.ConcatFragment;
+import com.android.recyclerview.old.views.new_way.NewWayFragment;
+import com.android.recyclerview.old.views.old_way.OldWayFragment;
+import com.android.recyclerview.old.views.tab_game.GameFragment;
 import com.google.android.material.navigation.NavigationBarView;
-import com.rikkeisoft.project_training.R;
-import com.rikkeisoft.project_training.databinding.ActivityContainerBinding;
-import com.rikkeisoft.project_training.old.views.concat.ConcatFragment;
-import com.rikkeisoft.project_training.old.views.new_way.NewWayFragment;
-import com.rikkeisoft.project_training.old.views.old_way.OldWayFragment;
-import com.rikkeisoft.project_training.old.views.tab_game.GameFragment;
 
 public class ContainerActivity extends AppCompatActivity {
 

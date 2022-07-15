@@ -9,12 +9,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.rikkeisoft.project_training.databinding.FragmentConcatBinding;
-import com.rikkeisoft.project_training.old.adapters.old_way_recyclerview_adapter.SubItemOneAdapter;
-import com.rikkeisoft.project_training.old.adapters.old_way_recyclerview_adapter.SubItemThreeAdapter;
-import com.rikkeisoft.project_training.old.adapters.old_way_recyclerview_adapter.SubItemTwoAdapter;
-import com.rikkeisoft.project_training.old.data.mock.MainRepository;
-import com.rikkeisoft.project_training.old.models.SubItem;
+import com.android.recyclerview.databinding.FragmentConcatBinding;
+import com.android.recyclerview.old.adapters.old_way_recyclerview_adapter.SubItemOneAdapter;
+import com.android.recyclerview.old.adapters.old_way_recyclerview_adapter.SubItemThreeAdapter;
+import com.android.recyclerview.old.adapters.old_way_recyclerview_adapter.SubItemTwoAdapter;
+import com.android.recyclerview.old.data.mock.MainRepository;
+import com.android.recyclerview.old.models.SubItem;
 
 import java.util.List;
 
