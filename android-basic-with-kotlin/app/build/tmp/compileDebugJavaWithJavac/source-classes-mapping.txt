@@ -1,4 +1,0 @@
-com/williamnb/android_basic_with_kotlin/BuildConfig.java
- com.williamnb.android_basic_with_kotlin.BuildConfig
-com/williamnb/android_basic_with_kotlin/databinding/ActivityMainBinding.java
- com.williamnb.android_basic_with_kotlin.databinding.ActivityMainBinding
