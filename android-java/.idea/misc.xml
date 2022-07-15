@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DesignSurface">
-    <option name="filePathToZoomLevelMap">
-      <map>
-        <entry key="..\:/MyGithub/android-knowledges/android-java/android-life-cycles/src/main/res/drawable/button_background.xml" value="0.1935" />
-        <entry key="..\:/MyGithub/android-knowledges/android-java/android-life-cycles/src/main/res/layout/activity_container.xml" value="0.2421875" />
-        <entry key="..\:/MyGithub/android-knowledges/android-java/android-life-cycles/src/main/res/layout/activity_databinding.xml" value="0.2421875" />
-      </map>
-    </option>
-  </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/build/classes" />
-  </component>
-  <component name="ProjectType">
-    <option name="id" value="Android" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
