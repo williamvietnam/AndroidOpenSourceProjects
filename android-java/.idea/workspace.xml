@@ -13,27 +13,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="699ae4a1-3305-4159-a11b-168ccf2e318d" name="Changes" comment="recyclerview in android java">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/android-knowledges.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/ItemListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/ItemListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/SubItem1ListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/SubItem1ListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/SubItem2ListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/SubItem2ListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/SubItem3ListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/new_way_list_adapter/SubItem3ListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/old_way_recyclerview_adapter/ItemAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/old_way_recyclerview_adapter/ItemAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/old_way_recyclerview_adapter/SubItemOneAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/old_way_recyclerview_adapter/SubItemOneAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/old_way_recyclerview_adapter/SubItemThreeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/old_way_recyclerview_adapter/SubItemThreeAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/old_way_recyclerview_adapter/SubItemTwoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/adapters/old_way_recyclerview_adapter/SubItemTwoAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/container/ContainerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/container/ContainerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/views/concat/ConcatFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/views/concat/ConcatFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/views/new_way/NewWayFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/views/new_way/NewWayFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/views/old_way/OldWayFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/old/views/old_way/OldWayFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/adapters/ItemRecyclerViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/adapters/ItemRecyclerViewAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/models/ItemFavourite.java" beforeDir="false" afterPath="$PROJECT_DIR$/android_recyclerview/src/main/java/com/android/recyclerview/recyclerview/models/ItemFavourite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +79,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/android_recyclerview/src/main/res" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../android-google-services" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -107,7 +91,7 @@
       <recent name="D:\MyGithub\android-knowledges\android-java\android-life-cycles\src\main\res\drawable" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.android_recyclerview">
+  <component name="RunManager" selected="Android App.android-life-cycles">
     <configuration name="android-life-cycles" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Knowledges.android-life-cycles" />
       <option name="DEPLOY" value="true" />
