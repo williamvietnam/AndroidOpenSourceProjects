@@ -1,4 +1,0 @@
-package demokotlincoroutines
-
-class KotlinDemo {
-}
