@@ -7,6 +7,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-life-cycles/Knowledges.android-life-cycles.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/android-life-cycles/Knowledges.android-life-cycles.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-life-cycles/Knowledges.android-life-cycles.main.iml" filepath="$PROJECT_DIR$/.idea/modules/android-life-cycles/Knowledges.android-life-cycles.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-life-cycles/Knowledges.android-life-cycles.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/android-life-cycles/Knowledges.android-life-cycles.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android_recyclerview/Knowledges.android_recyclerview.iml" filepath="$PROJECT_DIR$/.idea/modules/android_recyclerview/Knowledges.android_recyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android_recyclerview/Knowledges.android_recyclerview.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/android_recyclerview/Knowledges.android_recyclerview.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android_recyclerview/Knowledges.android_recyclerview.main.iml" filepath="$PROJECT_DIR$/.idea/modules/android_recyclerview/Knowledges.android_recyclerview.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android_recyclerview/Knowledges.android_recyclerview.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/android_recyclerview/Knowledges.android_recyclerview.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Knowledges.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Knowledges.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Knowledges.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Knowledges.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Knowledges.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Knowledges.app.main.iml" />
