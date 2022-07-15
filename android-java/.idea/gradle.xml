@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/android-life-cycles" />
+            <option value="$PROJECT_DIR$/android_recyclerview" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

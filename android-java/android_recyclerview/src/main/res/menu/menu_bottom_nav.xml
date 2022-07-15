@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigationOldWay"
+        android:contentDescription="@string/old_way"
+        android:enabled="true"
+        android:icon="@drawable/ic_back"
+        android:orderInCategory="1"
+        android:title="@string/old_way" />
+
+    <item
+        android:id="@+id/navigationNewWay"
+        android:contentDescription="@string/new_way"
+        android:enabled="true"
+        android:icon="@drawable/ic_next"
+        android:orderInCategory="2"
+        android:title="@string/new_way" />
+
+    <item
+        android:id="@+id/navigationGame"
+        android:contentDescription="@string/game"
+        android:enabled="true"
+        android:icon="@drawable/ic_game"
+        android:orderInCategory="3"
+        android:title="@string/concat" />
+</menu>
