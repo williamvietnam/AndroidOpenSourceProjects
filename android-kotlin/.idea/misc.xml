@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MyGithub/android-knowledges/android-kotlin/api/src/main/res/layout/activity_fast_android_networking.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyGithub/android-knowledges/android-kotlin/api/src/main/res/layout/activity_retrofit.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyGithub/android-knowledges/android-kotlin/api/src/main/res/layout/fragment_f_a_n.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyGithub/android-knowledges/android-kotlin/api/src/main/res/layout/fragment_retrofit.xml" value="0.2421875" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
