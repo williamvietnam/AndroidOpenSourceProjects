@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogAddressSend"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_280sdp"
+    android:background="#232B36"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16sdp">
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/address"
+            android:textColor="#898E93"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/btnCloseDialog"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignEnd="@id/tvAddress"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:src="@drawable/ic_baseline_close_24" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_240sdp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listAddressSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:nestedScrollingEnabled="false" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

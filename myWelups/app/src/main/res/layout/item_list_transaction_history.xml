@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@drawable/bg_color_gray">
+
+    <ImageView
+        android:id="@+id/imgToken"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:src="@drawable/ic_down_transaction_history" />
+
+    <LinearLayout
+        android:layout_width="@dimen/_212sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_toStartOf="@+id/imgNext"
+        android:layout_toEndOf="@+id/imgToken"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMonney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="8.4234552 Wel"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tvToken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/roboto"
+            android:text="0x03e62E1B15a3995Aace67e474...3302F19 "
+            android:textColor="@color/content_promotional"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/roboto"
+            android:text="19/07/2021 14:16"
+            android:textColor="@color/content_promotional"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:src="@drawable/ic_next" />
+
+</RelativeLayout>

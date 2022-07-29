@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actionBar"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/widget_promotional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/widget_equityvalue"
+            layout="@layout/widget_equityvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/layoutSend"
+                style="@style/layoutCenter"
+                android:layout_weight="1"
+                android:background="@drawable/bg_color_yellow">
+
+                <TextView
+                    android:id="@+id/tvSend"
+                    style="@style/ContentTextHome"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:drawableLeft="@drawable/ic_send"
+                    android:gravity="center"
+                    android:text="@string/text_send" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutReceive"
+                style="@style/layoutCenter"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_color_teal200">
+
+                <TextView
+                    android:id="@+id/tvReceive"
+                    style="@style/ContentTextHome"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:drawableLeft="@drawable/ic_receive"
+                    android:gravity="center"
+                    android:text="@string/text_receive" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/my_token"
+            android:textColor="@color/content_promotional"
+            android:textSize="@dimen/_16sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listMyToken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            tools:itemCount="1"
+            tools:listitem="@layout/item_list_mytoken" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_24sdp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/layout_ConnectWallet"
+            style="@style/layoutCenter"
+            android:layout_weight="1"
+            android:background="@drawable/bg_color_gray">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_plus" />
+
+            <TextView
+                style="@style/ContentTextHome"
+                android:gravity="center"
+                android:text="@string/connect_wallet" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_Generate_Acc"
+            style="@style/layoutCenter"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_color_gray">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_wallet" />
+
+            <TextView
+                style="@style/ContentTextHome"
+                android:gravity="center"
+                android:text="@string/generate_account" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
