@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Welups</string>
+    <string name="title_splash">WELUPS Blockchain Wallet</string>
+    <string name="version_app">Welups Wallet - Version 1.0.4</string>
+    <string name="title_on_boarding1">Privacy &amp; Security</string>
+    <string name="content_on_boarding1">Privacy and security for your transactions.</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="title_on_boarding2">Address Book</string>
+    <string name="content_on_boarding2">Save the address of your friends and contacts.</string>
+    <string name="title_on_boarding3">Multiples Accounts</string>
+    <string name="content_on_boarding3">You can manage multiple accounts in your wallet.</string>
+    <string name="title_on_boarding4">Receive, Send &amp; Pay</string>
+    <string name="content_on_boarding4">Receive, Send and Pay with crypto currencies.</string>
+    <string name="tab_homepage">Home</string>
+    <string name="tab_transfer">Transfer</string>
+    <string name="tab_addressbook">Address Book</string>
+    <string name="text_enquity_value">Equity Value</string>
+    <string name="text_send">Send</string>
+    <string name="text_receive">Receive</string>
+    <string name="my_token">My Tokens</string>
+    <string name="connect_wallet">Connect Wallet</string>
+    <string name="generate_account">Generate Account</string>
+    <string name="privatekey_hint">Paste your private key string here</string>
+    <string name="connect">Connect </string>
+    <string name="current_balance">Current Balance: </string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="connect_your_other_wallets">Connect your other wallets</string>
+    <string name="backup_your_address_and_your_private_key">Please backup your address and your private key</string>
+    <string name="your_address">Your address:</string>
+    <string name="your_private_key">Your private key:</string>
+    <string name="i_understand_lose_peivate_key">I understand that if I lose my private key, I will not be able to access my wallet.</string>
+    <string name="warning">Warning</string>
+    <string name="got_it">Got it</string>
+    <string name="content_warning_back_generate_acc">Please ensure that you have already stored your wallet\'s address and private key. You may lose your digital assets forever if you don\'t store this infomation</string>
+    <string name="setting">Setting</string>
+    <string name="wallet_manager">Wallet Manager</string>
+    <string name="security">Security</string>
+    <string name="change_pin_code">Change pin code</string>
+    <string name="social">Social</string>
+    <string name="telegram" translatable="false">Telegram</string>
+    <string name="instagram" translatable="false">Instagram</string>
+    <string name="twitter" translatable="false">Twitter</string>
+    <string name="facebook" translatable="false">Facebook</string>
+    <string name="support">Support</string>
+    <string name="help_center">Help Center</string>
+    <string name="about">About</string>
+    <string name="language">Language</string>
+    <string name="hotline" translatable="false">Hotline</string>
+    <string name="logout">Logout</string>
+    <string name="all">All</string>
+    <string name="new_address">New Address</string>
+    <string name="add_the_address_and_contacs">Add the address of your friend and contacs</string>
+    <string name="name">Name</string>
+    <string name="submit">Submit</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="send_now">SEND NOW</string>
+    <string name="unit" translatable="false">WEL</string>
+    <string name="pay_with">Pay with</string>
+    <string name="address">Address</string>
+    <string name="save_this_address">SAVE THIS ADDRESS</string>
+    <string name="asset">Asset</string>
+    <string name="txid">TxID</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="time">Time</string>
+    <string name="amount">Amount</string>
+    <string name="fee">Fee</string>
+    <string name="content_text_connect_your_wallet_address_wallet_mamage">Connect your wallet address to Welups Wallet to manage your digital assets easily</string>
+    <string name="content_text_generate_a_new_wallet_address_wallet_manage">Generate a new wallet address and private key to store your digital asset</string>
+    <string name="confirm">Confirm</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="cancel">Cancel</string>
+    <string name="copy_successful">Copy Successful</string>
+    <string name="error">Error</string>
+    <string name="content_confirm_delete_address">Are you sure you want to delete this address?</string>
+    <string name="login">LOGIN</string>
+    <string name="use_your_idshare_acc_to_login">Use ID Share Login</string>
+    <string name="login_with">LOGIN WITH</string>
+    <string name="enter_your_pin_code">Enter your pin code</string>
+
+</resources>

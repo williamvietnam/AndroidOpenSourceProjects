@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".view.SettingAct">
+
+    <include layout="@layout/action_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="@dimen/_52sdp"
+                    android:layout_height="@dimen/_52sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:src="@drawable/welups_logo" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_toEndOf="@id/imgAvatar"
+                    android:text="William Giang Nguyen"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvName"
+                    android:layout_toEndOf="@id/imgAvatar"
+                    android:text="williamnb.vn@gmail.com"
+                    android:textColor="@color/content_promotional"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/titleInSetting"
+                android:text="@string/setting" />
+
+            <RelativeLayout
+                android:id="@+id/layoutWalletManager"
+                style="@style/layoutContentSetting">
+
+                <TextView
+                    android:id="@+id/tvWalletManager"
+                    style="@style/contentInSetting"
+                    android:layout_alignEnd="@+id/imgNext"
+                    android:layout_alignParentStart="true"
+                    android:drawableLeft="@drawable/ic_wallet"
+                    android:drawableTint="@color/yellow_send"
+                    android:text="@string/wallet_manager" />
+
+                <ImageView
+                    android:id="@+id/imgNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_24sdp"
+                    android:src="@drawable/ic_next" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/titleInSetting"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/security" />
+
+            <RelativeLayout
+                android:id="@+id/layoutPinCode"
+                style="@style/layoutContentSetting">
+
+                <TextView
+                    style="@style/contentInSetting"
+                    android:layout_alignEnd="@+id/imgNextPinCode"
+                    android:layout_alignParentStart="true"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:drawableTint="@color/yellow_send"
+                    android:text="@string/change_pin_code" />
+
+                <ImageView
+                    android:id="@+id/imgNextPinCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_24sdp"
+                    android:src="@drawable/ic_next" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/titleInSetting"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/social" />
+
+            <RelativeLayout style="@style/layoutContentSetting">
+
+                <RelativeLayout
+                    android:id="@+id/layoutTelegram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/contentInSetting"
+                        android:layout_alignEnd="@+id/imgNextTelegram"
+                        android:layout_alignParentStart="true"
+                        android:drawableLeft="@drawable/ic_telegram"
+                        android:text="@string/telegram" />
+
+                    <ImageView
+                        android:id="@+id/imgNextTelegram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_24sdp"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutTwitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutTelegram">
+
+                    <TextView
+                        style="@style/contentInSetting"
+                        android:layout_alignEnd="@+id/imgNextTwitter"
+                        android:layout_alignParentStart="true"
+                        android:drawableLeft="@drawable/ic_twitter"
+                        android:text="@string/twitter" />
+
+                    <ImageView
+                        android:id="@+id/imgNextTwitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_24sdp"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutFb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutTwitter">
+
+                    <TextView
+                        style="@style/contentInSetting"
+                        android:layout_alignEnd="@+id/imgNextFb"
+                        android:layout_alignParentStart="true"
+                        android:drawableLeft="@drawable/ic_fb"
+                        android:drawablePadding="@dimen/_16sdp"
+                        android:text="@string/facebook" />
+
+                    <ImageView
+                        android:id="@+id/imgNextFb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_24sdp"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutInstagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutFb">
+
+                    <TextView
+                        style="@style/contentInSetting"
+                        android:layout_alignEnd="@+id/imgNextInstagram"
+                        android:layout_alignParentStart="true"
+                        android:drawableLeft="@drawable/ic_instagram"
+                        android:text="@string/instagram" />
+
+                    <ImageView
+                        android:id="@+id/imgNextInstagram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_24sdp"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/titleInSetting"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/support" />
+
+            <RelativeLayout style="@style/layoutContentSetting">
+
+                <RelativeLayout
+                    android:id="@+id/layoutHelpCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/contentInSetting"
+                        android:layout_alignEnd="@+id/imgNextHelpCanter"
+                        android:layout_alignParentStart="true"
+                        android:drawableLeft="@drawable/ic_chat"
+                        android:text="@string/help_center" />
+
+                    <ImageView
+                        android:id="@+id/imgNextHelpCanter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_24sdp"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutHelpCenter">
+
+                    <TextView
+                        style="@style/contentInSetting"
+                        android:layout_alignEnd="@+id/imgNextAbout"
+                        android:layout_alignParentStart="true"
+                        android:drawableLeft="@drawable/ic_w_circle"
+                        android:text="@string/about" />
+
+                    <ImageView
+                        android:id="@+id/imgNextAbout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_24sdp"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutAbout">
+
+                    <TextView
+                        style="@style/contentInSetting"
+                        android:layout_alignEnd="@+id/imgNextLanguage"
+                        android:layout_alignParentStart="true"
+                        android:drawableLeft="@drawable/ic_network"
+                        android:text="@string/language" />
+
+                    <ImageView
+                        android:id="@+id/imgNextLanguage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_24sdp"
+                        android:src="@drawable/ic_next" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvHotline"
+                    style="@style/contentInSetting"
+                    android:layout_below="@+id/layoutLanguage"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:text="@string/hotline" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvLogout"
+                style="@style/layoutContentSetting"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_64sdp"
+                android:paddingLeft="@dimen/_16sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="@string/logout"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
