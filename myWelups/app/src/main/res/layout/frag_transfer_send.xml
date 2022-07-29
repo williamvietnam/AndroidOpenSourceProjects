@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp">
+
+    <include
+        layout="@layout/action_bar"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/viewTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/edtTotalTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:text="5.067846"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_44sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/shape_line"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/edtTotalTransfer"
+            android:src="@drawable/bg_line" />
+
+        <TextView
+            android:id="@+id/tvUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_toEndOf="@id/shape_line"
+            android:text="@string/unit"
+            android:textColor="#666E75"
+            android:textSize="@dimen/_13sdp" />
+
+        <LinearLayout
+            android:id="@+id/current_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtTotalTransfer"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_balance"
+                android:textColor="#898E93"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/tvCurrentBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9.44000567"
+                android:textColor="#898E93"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!--<LinearLayout
+        android:padding="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="start"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:src="@drawable/ic_logo_welups" />
+
+        <TextView
+            android:gravity="center"
+            android:paddingStart="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="WEL"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:layout_marginStart="@dimen/_182sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next" />
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/pay_with"
+            android:textColor="#F2F5FA"
+            android:textSize="@dimen/_13sdp" />
+
+        <RelativeLayout
+            android:id="@+id/btnPayWithSend"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_rectangle_29313c"
+            android:padding="@dimen/_8sdp">
+
+            <ImageView
+                android:id="@+id/imgLogoCoin"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_welups" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_toEndOf="@id/imgLogoCoin"
+                android:text="@string/unit"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_16sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_next" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/address"
+            android:textColor="#F2F5FA"
+            android:textSize="@dimen/_13sdp" />
+
+        <RelativeLayout
+            android:id="@+id/btnAddressSend"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_rectangle_29313c"
+            android:padding="@dimen/_8sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_next" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btnSendNow"
+            android:layout_width="374dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_24sdp"
+            android:background="@drawable/bg_ripple_yellow"
+            android:gravity="center"
+            android:text="@string/send_now"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
