@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:src="@drawable/ic_down_transaction_history" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:fontFamily="@font/roboto"
+                android:text="2.4234552 "
+                android:textColor="@color/white"
+                android:textSize="@dimen/_28sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:fontFamily="@font/roboto"
+                android:text="wel"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            style="@style/lineTransaction"
+            android:layout_marginTop="@dimen/_64sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TransactionTitleText"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:text="@string/txid" />
+
+            <TextView
+                style="@style/TransactionContentText"
+                android:text="kbnjk4564l2n423lnlbn6j2k" />
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/lineTransaction"
+            android:layout_marginTop="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TransactionTitleText"
+                android:layout_marginRight="@dimen/_36sdp"
+                android:text="@string/from" />
+
+            <TextView
+                style="@style/TransactionContentText"
+                android:text="0x03e62Eb56c5341B15467...5685a399" />
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/lineTransaction"
+            android:layout_marginTop="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TransactionTitleText"
+                android:layout_marginRight="@dimen/_55sdp"
+                android:text="@string/to" />
+
+            <TextView
+                style="@style/TransactionContentText"
+                android:text="0x03e6234434b567545353...4g346345" />
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/lineTransaction"
+            android:layout_marginTop="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TransactionTitleText"
+                android:layout_marginRight="@dimen/_36sdp"
+                android:text="@string/time" />
+
+            <TextView
+                style="@style/TransactionContentText"
+                android:text="19/07/2021 14:16" />
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/lineTransaction"
+            android:layout_marginTop="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TransactionTitleText"
+                android:layout_marginRight="@dimen/_17sdp"
+                android:text="@string/amount" />
+
+            <TextView
+                style="@style/TransactionContentText"
+                android:text="2.4234552 WEL"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/lineTransaction"
+            android:layout_marginTop="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TransactionTitleText"
+                android:layout_marginRight="@dimen/_47sdp"
+                android:text="@string/fee" />
+
+            <TextView
+                style="@style/TransactionContentText"
+                android:text="0.0000000 WEL"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/lineTransaction"
+            android:layout_marginTop="@dimen/_12sdp" />
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
