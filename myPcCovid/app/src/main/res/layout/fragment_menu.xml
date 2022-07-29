@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#EEE9E9">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:background="@drawable/bg_frag_home">
+
+      <RelativeLayout
+          android:background="@drawable/bg_img_menu_white"
+          android:layout_width="match_parent"
+          android:layout_height="256dp">
+
+          <ImageView
+              android:src="@drawable/img_moc_chau"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+      </RelativeLayout>
+
+      <LinearLayout
+          android:layout_marginTop="36dp"
+          android:layout_width="320dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:orientation="vertical">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <ImageView
+                  android:id="@+id/btnAboutApp"
+                  android:layout_width="48dp"
+                  android:layout_height="48dp"
+                  android:layout_alignParentStart="true"
+                  android:layout_marginStart="8dp"
+                  android:src="@drawable/ic_suggest" />
+
+              <TextView
+                  android:id="@+id/tvAboutApp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/btnAboutApp"
+                  android:layout_marginTop="3dp"
+                  android:text="@string/about_pc_covid" />
+
+              <ImageView
+                  android:id="@+id/btnSetting"
+                  android:layout_width="48dp"
+                  android:layout_height="48dp"
+                  android:layout_toStartOf="@id/btnTutorial"
+                  android:layout_toEndOf="@id/btnAboutApp"
+                  android:src="@drawable/ic_settings" />
+
+              <TextView
+                  android:id="@+id/tvSetting"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/btnSetting"
+                  android:layout_centerInParent="true"
+                  android:layout_marginTop="3dp"
+                  android:text="@string/settings" />
+
+              <ImageView
+                  android:id="@+id/btnTutorial"
+                  android:layout_width="48dp"
+                  android:layout_height="48dp"
+                  android:layout_alignParentEnd="true"
+                  android:layout_marginEnd="16dp"
+                  android:src="@drawable/ic_tutorial" />
+
+              <TextView
+                  android:id="@+id/tvTutorial"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/btnTutorial"
+                  android:layout_alignParentEnd="true"
+                  android:layout_marginTop="3dp"
+                  android:text="@string/user_guide" />
+
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="28dp">
+
+              <ImageView
+                  android:id="@+id/btnCheckInHistory"
+                  android:layout_width="48dp"
+                  android:layout_height="48dp"
+                  android:layout_alignParentStart="true"
+                  android:layout_marginStart="8dp"
+                  android:src="@drawable/ic_where" />
+
+              <TextView
+                  android:id="@+id/tvCheckInHistory"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/btnCheckInHistory"
+                  android:layout_marginTop="3dp"
+                  android:text="@string/check_in_history" />
+
+              <ImageView
+                  android:id="@+id/btnDataCovid"
+                  android:layout_width="48dp"
+                  android:layout_height="48dp"
+                  android:layout_toStartOf="@id/btnHotline"
+                  android:layout_toEndOf="@id/btnCheckInHistory"
+                  android:src="@drawable/ic_data_covid19" />
+
+              <TextView
+                  android:id="@+id/tvDataCovid"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/btnDataCovid"
+                  android:layout_centerInParent="true"
+                  android:layout_marginTop="3dp"
+                  android:text="@string/data_covid_19" />
+
+              <ImageView
+                  android:id="@+id/btnHotline"
+                  android:layout_width="48dp"
+                  android:layout_height="48dp"
+                  android:layout_alignParentEnd="true"
+                  android:layout_marginEnd="16dp"
+                  android:src="@drawable/ic_hotline" />
+
+              <TextView
+                  android:id="@+id/tvHotline"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/btnHotline"
+                  android:layout_alignParentEnd="true"
+                  android:layout_marginTop="3dp"
+                  android:text="@string/hotline_24_7" />
+
+          </RelativeLayout>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_marginTop="64dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <RelativeLayout
+              android:id="@+id/widget_qr_scan"
+              android:layout_width="match_parent"
+              android:layout_height="88dp"
+              android:layout_marginTop="16dp">
+
+              <LinearLayout
+                  android:id="@+id/btnQrScanner"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:background="@drawable/bg_circle_green"
+                  android:gravity="center"
+                  android:padding="16dp">
+
+                  <ImageView
+                      android:layout_width="48dp"
+                      android:layout_height="48dp"
+                      android:src="@drawable/ic_qr_code_scanner" />
+              </LinearLayout>
+
+              <View
+                  android:id="@+id/viewLeft"
+                  android:layout_width="wrap_content"
+                  android:layout_height="1dp"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginEnd="-12dp"
+                  android:layout_marginBottom="16dp"
+                  android:layout_toStartOf="@id/btnQrScanner"
+                  android:background="#7C000000" />
+
+              <View
+                  android:id="@+id/viewRight"
+                  android:layout_width="wrap_content"
+                  android:layout_height="1dp"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginStart="-12dp"
+                  android:layout_marginBottom="16dp"
+                  android:layout_toEndOf="@id/btnQrScanner"
+                  android:background="#7C000000" />
+
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <ImageView
+                  android:id="@+id/btnNotify"
+                  android:layout_width="36dp"
+                  android:layout_height="36dp"
+                  android:layout_alignParentStart="true"
+                  android:layout_marginStart="56dp"
+                  android:src="@drawable/ic_notifications" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:text="@string/scan_qr"
+                  android:textColor="#00CD66"
+                  android:textSize="15sp" />
+
+              <ImageView
+                  android:id="@+id/btnHome"
+                  android:layout_width="36dp"
+                  android:layout_height="36dp"
+                  android:layout_alignParentEnd="true"
+                  android:layout_marginEnd="56dp"
+                  android:src="@drawable/ic_home" />
+          </RelativeLayout>
+
+      </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/btnSuggest"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:src="@drawable/ic_suggest" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/btnSetting"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:layout_above="@id/btnDataCovid19"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:src="@drawable/ic_settings" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/btnTutorial"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:src="@drawable/ic_tutorial" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/btnWhere"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:layout_below="@id/btnSuggest"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:src="@drawable/ic_where" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:id="@+id/btnDataCovid19"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:layout_below="@id/btnSuggest"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:src="@drawable/ic_data_covid19" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:id="@+id/btnHotline"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:layout_below="@id/btnTutorial"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:src="@drawable/ic_hotline" />-->
