@@ -2,7 +2,7 @@
 <img alt="FromJavaToKotlin" src="https://raw.githubusercontent.com/MindorksOpenSource/from-java-to-kotlin/master/assets/from_java_to_kotlin.png">
 </p>
 
-# Kotlin's knowledges for Java developers
+# Kiến thức về Kotlin dành cho các nhà phát triển Java
 
 [comment]: <> ([![Mindorks]&#40;https://img.shields.io/badge/mindorks-opensource-blue.svg&#41;]&#40;https://mindorks.com/open-source-projects&#41;)
 
@@ -10,9 +10,9 @@
 
 [comment]: <> ([![Mindorks Android Store]&#40;https://img.shields.io/badge/Mindorks%20Android%20Store-From%20Java%20To%20Kotlin-blue.svg?style=flat&#41;]&#40;https://mindorks.com/android/store&#41;)
 
-> From Java To Kotlin - Your Cheat Sheet For Java To Kotlin
+> Ánh xạ từ Java sang Kotlin - Tài liệu tóm tắt nhanh dành cho các nhà phát triển tham khảo
 
-[Tiếng Việt](https://github.com/williamvietnam/android/blob/main/java-to-kotlin/README-VI.md)
+[English](https://github.com/williamvietnam/android/blob/main/java-to-kotlin/README.md)
 
 ---
 
@@ -22,7 +22,7 @@
 
 [comment]: <> ([Español]&#40;https://github.com/MindorksOpenSource/from-java-to-kotlin/blob/master/README-ES.md&#41;)
 ---
-## Print to Console
+## Hiển thị ra màn hình Console
 > Java
 
 ```java
@@ -38,7 +38,7 @@ println("Genius Brains")
 ```
 
 ---
-## Constants and Variables
+## Hằng và Biến
 > Java
 
 ```java
@@ -54,7 +54,7 @@ val name = "Genius Brains"
 ```
 
 ---
-## Assigning the null value
+## Gán giá trị null
 > Java
 
 ```java
@@ -70,7 +70,7 @@ otherName = null
 ```
 
 ---
-## Verify if value is null
+## Xác minh nếu giá trị là null
 > Java
 
 ```java
@@ -90,7 +90,7 @@ val length = text?.length
 ```
 
 ---
-## Verify if value is NotNull  OR NotEmpty
+## Xác minh nếu giá trị là NotNull (ko bị null) hoặc NotEmpty (không rỗng)
 > Java
 ```java
 String sampleString = "GeniusBrains";
@@ -113,7 +113,7 @@ if(!sampleString.isNullOrEmpty()){
 }
 ```
 ---
-## Concatenation of strings
+## Nối các chuỗi
 > Java
 
 ```java
@@ -131,7 +131,7 @@ var message = "My name is: $firstName $lastName"
 ```
 
 ---
-## New line in string
+## Xuống dòng với chuỗi String
 > Java
 
 ```java
@@ -152,7 +152,7 @@ val text = """
 
 ---
 
-## Substring
+## Chuỗi con (Substring)
 > Java
 
 ```java
@@ -205,7 +205,7 @@ log(message ?: "")
 ```
 
 ---
-## Bitwise Operators
+## Các toán tử thao tác Bit
 > Java
 
 ```java
@@ -229,7 +229,7 @@ val unsignedRightShift = a ushr 2
 ```
 
 ---
-## Check the type and casting
+## Kiểm tra kiểu và ép kiểu
 > Java
 
 ```java
@@ -250,7 +250,7 @@ var car = object as? Car // var car = object as Car?
 ```
 
 ---
-## Check the type and casting (implicit)
+## Kiểm tra kiểu và ép kiểu (implicit)
 > Java
 
 ```java
@@ -273,7 +273,7 @@ if (object is Car?) {
 ```
 
 ---
-## Multiple conditions
+## Câu điều kiện nhiều điều kiện bên trong sử dụng if(...)
 > Java
 
 ```java
@@ -287,7 +287,7 @@ if (score in 0..300) { }
 ```
 
 ---
-## Multiple Conditions (Switch case)
+## Câu điều kiện nhiều điều kiện bên trong sử dụng sử dụng Switch...case...
 > Java
 
 ```java
@@ -330,7 +330,7 @@ var grade = when (score) {
 ```
 
 ---
-## For-loops
+## Vòng lặp For(){...}
 > Java
 
 ```java
@@ -368,7 +368,7 @@ for ((key, value) in map) { }
 ```
 
 ---
-## Collections
+## Collections: List, Map,...
 > Java
 
 ```java
@@ -397,7 +397,7 @@ val keyValue = mapOf(1 to "William",
 ```
 
 ---
-## for each
+## Vòng lặp For(){...}
 > Java
 
 ```java
@@ -437,7 +437,7 @@ cars.parallelStream().filter { it.speed > 100 }.forEach { println(it.speed)}
 ```
 
 ---
-## Splitting arrays
+## Tách mảng
 > java
 
 ```java
@@ -454,7 +454,7 @@ val (param, value) = "param=car".split("=")
 ```
 
 ---
-## Defining methods
+## Định nghĩa phương thức (Khai báo hàm)
 > Java
 
 ```java
@@ -471,7 +471,7 @@ fun doSomething() {
 }
 ```
 
-### Default values for method parameters
+### Gán giá trị mặc định cho các tham số phương thức
 > Java
 
 ```java
@@ -514,7 +514,7 @@ fun doSomething(vararg numbers: Int) {
 ```
 
 ---
-## Defining methods with return
+## Định nghĩa phương thức có kiểu trả về
 > Java
 
 ```java
@@ -569,7 +569,7 @@ fun getScore(value: Int) = 2 * value // return-type is int
 ```
 
 ---
-## Constructors
+## Phương thức khởi tạo của Class
 > Java
 
 ```java
@@ -679,7 +679,7 @@ data class Developer(var name: String, var age: Int)
 ```
 
 ---
-## Cloning or copying
+## Bản sao và sao chép (Cloning or copying )
 > Java
 
 ```java
@@ -945,7 +945,7 @@ public class User {
 
 ---
 
-### Important things to know in Kotlin
+### Mọi thứ về Kotlin chúng ta nên biết (Tài liệu tiếng anh)
 * [What is the equivalent of Java static methods in Kotlin?](https://blog.mindorks.com/what-is-the-equivalent-of-java-static-methods-in-kotlin)
 * [What is the difference between "const" and "val"?](https://blog.mindorks.com/what-is-the-difference-between-const-and-val)
 * [Learn Kotlin - lateinit vs lazy](https://blog.mindorks.com/learn-kotlin-lateinit-vs-lazy)
@@ -960,10 +960,10 @@ public class User {
 * [Using Scoped Functions in Kotlin - let, run, with, also, apply](https://blog.mindorks.com/using-scoped-functions-in-kotlin-let-run-with-also-apply)
 * [What are Reified Types in Kotlin?](https://blog.mindorks.com/what-are-reified-types-in-kotlin)
 
-### Found this project useful :heart:
-* Support by clicking the :star: button on the upper right of this page. :v:
+### Nếu thấy dự án này hữu ích :heart:
+*  Hãy cho tôi một sao :v:
 
-[Check out GeniusBrains awesome open source projects here](https://github.com/williamvietnam)
+[Xem tất cả các dự án mã nguồn mở của GeniusBrains tại đây](https://github.com/williamvietnam)
 
-### Contributing to From Java To Kotlin
-Just make a pull request. You are in!
+### Nếu bạn muốn đóng góp vào dự án này
+Hãy tạo Pull Request
