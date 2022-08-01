@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">myZalo</string>
+    <string name="myzalo">myZalo</string>
+    <string name="imageWelcome">imageViewWelcome</string>
+</resources>
