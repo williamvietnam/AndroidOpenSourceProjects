@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/BgCardDialog"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:src="@drawable/ic_warning"
+            app:tint="@color/yellow_send" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="@string/warning"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:lineHeight="@dimen/_16sdp"
+            android:text="@string/content_warning_back_generate_acc"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
+
+        <Button
+            android:id="@+id/btnGoIt"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_24sdp"
+            android:backgroundTint="@color/yellow_send"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/got_it"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:src="@drawable/ic_xmark_circle" />
+
+</LinearLayout>

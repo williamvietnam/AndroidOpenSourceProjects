@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/myInstagram.iml" filepath="$PROJECT_DIR$/.idea/modules/myInstagram.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/myInstagram.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/myInstagram.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/myInstagram.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/myInstagram.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/myInstagram.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/myInstagram.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/myInstagram.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/myInstagram.app.unitTest.iml" />
     </modules>
   </component>
 </project>
