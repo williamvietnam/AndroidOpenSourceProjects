@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="374dp"
+    android:layout_height="@dimen/_56sdp"
+    android:background="@drawable/bg_rectangle_29313c"
+    android:padding="@dimen/_8sdp">
+
+    <ImageView
+        android:id="@+id/imgLogoCoin"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_welups" />
+
+    <TextView
+        android:id="@+id/tvUnit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_toEndOf="@id/imgLogoCoin"
+        android:text="@string/unit"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTotalWel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="00000000"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_16sdp" />
+
+    <TextView
+        android:id="@+id/tvUni2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="WEL"
+        android:textColor="#898E93"
+        android:textSize="@dimen/_12sdp" />
+</RelativeLayout>

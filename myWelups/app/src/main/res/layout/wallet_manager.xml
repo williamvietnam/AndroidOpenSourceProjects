@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_bar" />
+
+    <TextView
+        style="@style/TextBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/connect_wallet"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp" />
+
+    <TextView
+        style="@style/TextBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="@string/content_text_connect_your_wallet_address_wallet_mamage"
+        android:textColor="@color/content_promotional"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/tvConnectWalletManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/bg_color_gray"
+        android:drawableLeft="@drawable/ic_plus"
+        android:drawablePadding="@dimen/_8sdp"
+        android:padding="@dimen/_12sdp"
+        android:text="@string/connect_wallet"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp" />
+
+    <TextView
+        style="@style/TextBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:text="@string/generate_account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp" />
+
+    <TextView
+        style="@style/TextBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="@string/content_text_generate_a_new_wallet_address_wallet_manage"
+        android:textColor="@color/content_promotional"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/tvGenerateAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/bg_color_gray"
+        android:drawableLeft="@drawable/ic_wallet"
+        android:drawablePadding="@dimen/_8sdp"
+        android:padding="@dimen/_12sdp"
+        android:text="@string/generate_account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp" />
+</LinearLayout>
