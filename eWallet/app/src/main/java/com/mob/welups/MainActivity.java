@@ -12,9 +12,9 @@ import androidx.fragment.app.FragmentTabHost;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.mob.welups.base.BaseActivity;
 import com.mob.welups.config.LocaleHelper;
-import com.mob.welups.view.address_book.AddressBookFrag;
-import com.mob.welups.view.home.HomeFrag;
-import com.mob.welups.view.transfer.TransferFrag;
+import com.mob.welups.ui.address_book.AddressBookFrag;
+import com.mob.welups.ui.home.HomeFrag;
+import com.mob.welups.ui.transfer.TransferFrag;
 
 import java.util.Locale;
 

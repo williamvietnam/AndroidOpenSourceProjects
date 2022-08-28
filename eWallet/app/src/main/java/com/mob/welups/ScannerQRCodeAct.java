@@ -10,7 +10,7 @@ import com.budiyev.android.codescanner.CodeScannerView;
 import com.budiyev.android.codescanner.DecodeCallback;
 import com.google.zxing.Result;
 import com.mob.welups.base.BaseActivity;
-import com.mob.welups.view.WalletManagerAct;
+import com.mob.welups.ui.WalletManagerAct;
 
 import java.io.Serializable;
 

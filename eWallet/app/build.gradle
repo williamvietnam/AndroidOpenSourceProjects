@@ -15,6 +15,10 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures {
+        viewBinding true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -24,11 +28,6 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
-    }
-
-    buildFeatures {
-        dataBinding true
-        viewBinding true
     }
 }
 
@@ -79,5 +78,4 @@ dependencies {
     // qr code
     implementation 'com.budiyev.android:code-scanner:2.1.0'
     implementation 'com.journeyapps:zxing-android-embedded:4.1.0'
-
 }

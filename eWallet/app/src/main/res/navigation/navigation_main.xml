@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.mob.welups.view.home.HomeFrag"
+        android:name="com.mob.welups.ui.home.HomeFrag"
         android:label="@string/tab_homepage"
         tools:layout="@layout/frag_home"/>
 
     <fragment
         android:id="@+id/navigation_transfer"
-        android:name="com.mob.welups.view.transfer.TransferFrag"
+        android:name="com.mob.welups.ui.transfer.TransferFrag"
         android:label="@string/tab_transfer"
         tools:layout="@layout/frag_transfer" />
 
     <fragment
         android:id="@+id/navigation_addressBook"
-        android:name="com.mob.welups.view.address_book.AddressBookFrag"
+        android:name="com.mob.welups.ui.address_book.AddressBookFrag"
         android:label="@string/tab_addressbook"
         tools:layout="@layout/frag_address_book" />
 

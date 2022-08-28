@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Welups</string>
-    <string name="title_splash">WELUPS Blockchain Wallet</string>
-    <string name="version_app">Welups Wallet - Phiên bản 1.0.4</string>
+    <string name="app_name">eWallet</string>
+    <string name="title_splash">eWallet Blockchain Wallet</string>
+    <string name="version_app">Electronic Wallet - Phiên bản 1.0.4</string>
     <string name="title_on_boarding1">Quyền riêng tư và Bảo vệ</string>
     <string name="content_on_boarding1">Quyền riêng tư và bảo mật cho các giao dịch của bạn.</string>
     <string name="get_started">BẮT ĐẦU</string>
