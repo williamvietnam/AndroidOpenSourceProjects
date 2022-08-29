@@ -1,4 +1,4 @@
-package com.mob.welups.ui;
+package com.mob.welups.ui.home.generate_account;
 
 import android.app.Dialog;
 import android.content.ClipData;
@@ -167,6 +167,6 @@ public class GenerateAccountAct extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.generate_account;
+        return R.layout.fragment_generate_account;
     }
 }

@@ -19,16 +19,16 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.mob.welups.R;
-import com.mob.welups.ScannerQRCodeAct;
+import com.mob.welups.ui.qr_scanner.ScannerQRCodeFragment;
 import com.mob.welups.base.BaseFragment;
-import com.mob.welups.ui.GenerateAccountAct;
+import com.mob.welups.ui.home.generate_account.GenerateAccountAct;
 
 import java.text.ParseException;
 
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class HomeFrag extends BaseFragment {
+public class HomeFragment extends BaseFragment {
     private final int REQUEST_CODE_CAM = 111;
 
     private boolean isCheckedEye = false;
@@ -121,7 +121,7 @@ public class HomeFrag extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.frag_home;
+        return R.layout.fragment_home;
     }
 
     private void requestPermissionCAM() {
@@ -130,7 +130,7 @@ public class HomeFrag extends BaseFragment {
             ActivityCompat.requestPermissions(getActivity(),
                     new String[]{Manifest.permission.CAMERA}, REQUEST_CODE_CAM);
         } else {
-            Intent intent = new Intent(getContext(), ScannerQRCodeAct.class);
+            Intent intent = new Intent(getContext(), ScannerQRCodeFragment.class);
             intent.putExtra("testHomeFrag", "");
             startActivity(intent);
         }

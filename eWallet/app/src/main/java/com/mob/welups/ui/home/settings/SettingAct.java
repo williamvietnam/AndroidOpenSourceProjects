@@ -1,4 +1,4 @@
-package com.mob.welups.ui;
+package com.mob.welups.ui.home.settings;
 
 import android.Manifest;
 import android.app.Activity;
@@ -24,7 +24,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.mob.welups.config.LocaleHelper;
-import com.mob.welups.MainActivity;
+import com.mob.welups.ui.home.wallet_manager.WalletManagerAct;
+import com.mob.welups.ui.container.MainActivity;
 import com.mob.welups.R;
 import com.mob.welups.base.BaseActivity;
 import com.mob.welups.ui.pincode.PinCodeAct;
@@ -339,6 +340,6 @@ public class SettingAct extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.act_settings;
+        return R.layout.fragment_settings;
     }
 }

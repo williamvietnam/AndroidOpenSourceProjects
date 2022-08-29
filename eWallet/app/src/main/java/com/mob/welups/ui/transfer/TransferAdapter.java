@@ -15,11 +15,11 @@ public class TransferAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position) {
             case 0:
-                return new TransferSendFrag();
+                return new TransferSendFragment();
             case 1:
-                return new TransferReceiveFrag();
+                return new TransferReceiveFragment();
             default:
-                return new TransferSendFrag();
+                return new TransferSendFragment();
         }
     }
 

@@ -1,4 +1,4 @@
-package com.mob.welups;
+package com.mob.welups.ui.container;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
@@ -10,11 +10,12 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentTabHost;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.mob.welups.R;
 import com.mob.welups.base.BaseActivity;
 import com.mob.welups.config.LocaleHelper;
 import com.mob.welups.ui.address_book.AddressBookFrag;
-import com.mob.welups.ui.home.HomeFrag;
-import com.mob.welups.ui.transfer.TransferFrag;
+import com.mob.welups.ui.home.HomeFragment;
+import com.mob.welups.ui.transfer.TransferFragment;
 
 import java.util.Locale;
 
@@ -36,10 +37,10 @@ public class MainActivity extends BaseActivity {
         mTabHost.setup(this, getSupportFragmentManager(), android.R.id.tabcontent);
         mTabHost.addTab(
                 mTabHost.newTabSpec("tab1").setIndicator("", null),
-                HomeFrag.class, null);
+                HomeFragment.class, null);
         mTabHost.addTab(
                 mTabHost.newTabSpec("tab2").setIndicator("", null),
-                TransferFrag.class, null);
+                TransferFragment.class, null);
         mTabHost.addTab(
                 mTabHost.newTabSpec("tab3").setIndicator("", null),
                 AddressBookFrag.class, null);
@@ -57,13 +58,13 @@ public class MainActivity extends BaseActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
+                case R.id.homeFragment:
                     mTabHost.setCurrentTab(0);
                     return true;
-                case R.id.navigation_transfer:
+                case R.id.transferFragment:
                     mTabHost.setCurrentTab(1);
                     return true;
-                case R.id.navigation_addressBook:
+                case R.id.addressBookFragment:
                     mTabHost.setCurrentTab(2);
                     return true;
             }
@@ -81,11 +82,4 @@ public class MainActivity extends BaseActivity {
         getBaseContext().getResources().updateConfiguration(config,
                 getBaseContext().getResources().getDisplayMetrics());
     }
-
 }
-
-
-
-
-
-

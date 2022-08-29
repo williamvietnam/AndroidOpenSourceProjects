@@ -1,22 +1,17 @@
 package com.mob.welups.ui.onboarding;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mob.welups.R;
 import com.mob.welups.data.models.OnBoarding;
+import com.mob.welups.databinding.WidgetOnBoardingBinding;
 
 import java.util.List;
 
 public class OnBoardingAdapter extends RecyclerView.Adapter<OnBoardingAdapter.OnBoardingViewHolder> {
-
-
     private final List<OnBoarding> onBoardingList;
 
     public OnBoardingAdapter(List<OnBoarding> onBoardingList) {
@@ -26,20 +21,14 @@ public class OnBoardingAdapter extends RecyclerView.Adapter<OnBoardingAdapter.On
     @NonNull
     @Override
     public OnBoardingViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.widget_on_boarding, parent, false);
-        return new OnBoardingViewHolder(view);
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        WidgetOnBoardingBinding binding = WidgetOnBoardingBinding.inflate(inflater, parent, false);
+        return new OnBoardingAdapter.OnBoardingViewHolder(binding);
     }
 
     @Override
     public void onBindViewHolder(@NonNull OnBoardingViewHolder holder, int position) {
-        OnBoarding onBoarding = onBoardingList.get(position);
-        if (onBoarding == null) {
-            return;
-        }
-        holder.imgLogoOnBoarding.setImageResource(onBoarding.getDrawableOnBoarding());
-        holder.titleOnBoarding.setText(onBoarding.getTitleOnBoarding());
-        holder.contentOnBoarding.setText(onBoarding.getDescriptionOnBoarding());
-
+        holder.onBindData(position);
     }
 
     @Override
@@ -50,16 +39,19 @@ public class OnBoardingAdapter extends RecyclerView.Adapter<OnBoardingAdapter.On
         return 0;
     }
 
-    public static class OnBoardingViewHolder extends RecyclerView.ViewHolder {
-        private final ImageView imgLogoOnBoarding;
-        private final TextView titleOnBoarding;
-        private final TextView contentOnBoarding;
+    class OnBoardingViewHolder extends RecyclerView.ViewHolder {
+        private final WidgetOnBoardingBinding binding;
 
-        public OnBoardingViewHolder(@NonNull View itemView) {
-            super(itemView);
-            imgLogoOnBoarding = itemView.findViewById(R.id.imgLogoOnBoarding);
-            titleOnBoarding = itemView.findViewById(R.id.tvTitleOnBoarding);
-            contentOnBoarding = itemView.findViewById(R.id.tvContentOnBoarding);
+        public OnBoardingViewHolder(@NonNull WidgetOnBoardingBinding binding) {
+            super(binding.getRoot());
+            this.binding = binding;
+        }
+
+        public void onBindData(int position) {
+            OnBoarding item = onBoardingList.get(position);
+            this.binding.imgLogoOnBoarding.setImageResource(item.getDrawableOnBoarding());
+            this.binding.tvTitleOnBoarding.setText(item.getTitleOnBoarding());
+            this.binding.tvContentOnBoarding.setText(item.getDescriptionOnBoarding());
         }
     }
 }

@@ -17,7 +17,7 @@ import java.text.ParseException;
 
 import butterknife.BindView;
 
-public class TransferSendFrag extends BaseFragment {
+public class TransferSendFragment extends BaseFragment {
 
     @SuppressLint("NonConstantResourceId")
     @BindView(R.id.btnPayWithSend)
@@ -40,7 +40,7 @@ public class TransferSendFrag extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.frag_transfer_send;
+        return R.layout.fragment_transfer_send;
     }
 
     private void registerListener() {

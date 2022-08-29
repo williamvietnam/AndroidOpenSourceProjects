@@ -16,7 +16,7 @@ import java.text.ParseException;
 
 import butterknife.BindView;
 
-public class TransferReceiveFrag extends BaseFragment {
+public class TransferReceiveFragment extends BaseFragment {
 
     public String memoryText;
 
@@ -38,7 +38,7 @@ public class TransferReceiveFrag extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.frag_transfer_receive;
+        return R.layout.fragment_transfer_receive;
     }
 
     private void registerListener() {

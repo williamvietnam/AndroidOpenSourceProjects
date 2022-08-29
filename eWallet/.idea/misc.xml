@@ -3,8 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/action_bar.xml" value="0.2421875" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/drawable/ic_home_selector.xml" value="0.239" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/drawable/ic_warning.xml" value="0.2615" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/act_settings.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/action_bar.xml" value="0.225" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/activity_generate_account.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/activity_pin_code.xml" value="0.3546875" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/activity_send_noti.xml" value="0.3546875" />
         <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/activity_splash.xml" value="0.2421875" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/activity_transfer_receive.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/dialog_connectwallet.xml" value="0.10975609756097561" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/dialog_waring_back_generate_acc.xml" value="0.3546875" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/frag_home.xml" value="0.3546875" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/frag_transfer.xml" value="0.3546875" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/fragment_transfer.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/fragment_transfer_receive.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/generate_account.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/layout_copy_success_toast.xml" value="0.3546875" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/layout_error_toast.xml" value="0.3546875" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/list_item_coin.xml" value="0.3546875" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/onboarding_1.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/qrcode_scranner.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/wallet_detail.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/layout/wallet_manager.xml" value="0.3546875" />
+        <entry key="..\:/MyGithub/android/eWallet/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3546875" />
         <entry key="..\:/MyGithub/android/myWelups/app/src/main/res/layout/activity_transfer_receive.xml" value="0.2421875" />
       </map>
     </option>
