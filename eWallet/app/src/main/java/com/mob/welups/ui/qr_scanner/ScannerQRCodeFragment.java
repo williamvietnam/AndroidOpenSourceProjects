@@ -1,4 +1,4 @@
-package com.mob.welups;
+package com.mob.welups.ui.qr_scanner;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,22 +9,24 @@ import com.budiyev.android.codescanner.CodeScanner;
 import com.budiyev.android.codescanner.CodeScannerView;
 import com.budiyev.android.codescanner.DecodeCallback;
 import com.google.zxing.Result;
+import com.mob.welups.ui.container.MainActivity;
+import com.mob.welups.R;
 import com.mob.welups.base.BaseActivity;
-import com.mob.welups.ui.WalletManagerAct;
+import com.mob.welups.ui.home.wallet_manager.WalletManagerAct;
 
 import java.io.Serializable;
 
 import butterknife.BindView;
 
-public class ScannerQRCodeAct extends BaseActivity implements Serializable {
+public class ScannerQRCodeFragment extends BaseActivity implements Serializable {
     private CodeScanner codeScanner;
 
     @BindView(R.id.scanner_view)
-    CodeScannerView scannerView;
+    public CodeScannerView scannerView;
 
     @Override
     protected void initView(Bundle savedInstanceState) {
-        codeScanner = new CodeScanner(ScannerQRCodeAct.this, scannerView);
+        codeScanner = new CodeScanner(ScannerQRCodeFragment.this, scannerView);
 
         codeScanner.setDecodeCallback(new DecodeCallback() {
             @Override
@@ -39,7 +41,7 @@ public class ScannerQRCodeAct extends BaseActivity implements Serializable {
         if (intent != null) {
             // wallet manager screen
             if (intent.hasExtra("testWallet")) {
-                intent = new Intent(ScannerQRCodeAct.this, WalletManagerAct.class);
+                intent = new Intent(ScannerQRCodeFragment.this, WalletManagerAct.class);
                 intent.putExtra("resultQRCode", result.getText());
                 startActivity(intent);
 
@@ -52,7 +54,7 @@ public class ScannerQRCodeAct extends BaseActivity implements Serializable {
             }
             // Home Frag screen
             if (intent.hasExtra("testHomeFrag")) {
-                intent = new Intent(ScannerQRCodeAct.this, MainActivity.class);
+                intent = new Intent(ScannerQRCodeFragment.this, MainActivity.class);
                 intent.putExtra("data", result.getText());
                 startActivity(intent);
 
@@ -69,7 +71,7 @@ public class ScannerQRCodeAct extends BaseActivity implements Serializable {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.qrcode_scranner;
+        return R.layout.fragment_scanner_q_r_code;
     }
 
 }

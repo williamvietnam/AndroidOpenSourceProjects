@@ -21,7 +21,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.mob.welups.R;
-import com.mob.welups.ScannerQRCodeAct;
+import com.mob.welups.ui.qr_scanner.ScannerQRCodeFragment;
 import com.mob.welups.base.BaseFragment;
 
 import java.text.ParseException;
@@ -118,7 +118,7 @@ public class AddressBookFrag extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.frag_address_book;
+        return R.layout.fragment_address_book;
     }
 
     private void requestPermissionCAM() {
@@ -127,7 +127,7 @@ public class AddressBookFrag extends BaseFragment {
             ActivityCompat.requestPermissions(getActivity(),
                     new String[]{Manifest.permission.CAMERA}, REQUEST_CODE_CAM);
         } else {
-            Intent intent = new Intent(getContext(), ScannerQRCodeAct.class);
+            Intent intent = new Intent(getContext(), ScannerQRCodeFragment.class);
             intent.putExtra("testAdd", "");
             startActivity(intent);
         }

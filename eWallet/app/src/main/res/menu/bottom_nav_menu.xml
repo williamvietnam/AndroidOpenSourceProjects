@@ -2,21 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/homeFragment"
         android:contentDescription="@string/tab_homepage"
         android:icon="@drawable/ic_home_selector"
         android:orderInCategory="1"
         android:title="@string/tab_homepage" />
 
     <item
-        android:id="@+id/navigation_transfer"
+        android:id="@+id/transferFragment"
         android:contentDescription="@string/tab_transfer"
         android:icon="@drawable/ic_transfer_selector"
         android:orderInCategory="2"
         android:title="@string/tab_transfer" />
 
     <item
-        android:id="@+id/navigation_addressBook"
+        android:id="@+id/addressBookFragment"
         android:contentDescription="@string/tab_addressbook"
         android:icon="@drawable/ic_addressbook_selector"
         android:orderInCategory="3"

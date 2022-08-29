@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-import com.mob.welups.MainActivity;
+import com.mob.welups.ui.container.MainActivity;
 import com.mob.welups.R;
 import com.mob.welups.base.BaseActivity;
 import com.mob.welups.config.LocaleHelper;

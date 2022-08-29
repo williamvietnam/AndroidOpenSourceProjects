@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="@dimen/_132sdp"
         android:layout_marginTop="@dimen/_22sdp"
@@ -44,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginStart="@dimen/_6sdp"
             android:fontFamily="@font/roboto"
             android:text="Wel"
             android:textAllCaps="true"
@@ -54,13 +55,16 @@
 
     </LinearLayout>
 
-    <LinearLayout style="@style/layoutPrivateKey">
+    <FrameLayout
+        style="@style/layoutPrivateKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/tvPrivateKey"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_gravity="center|start"
             android:background="@android:color/transparent"
             android:fontFamily="@font/roboto"
             android:padding="@dimen/_12sdp"
@@ -68,20 +72,20 @@
             android:textColor="@color/white"
             android:textSize="@dimen/_12sdp" />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imgCopy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="end|center_vertical"
             android:layout_marginLeft="@dimen/_15sdp"
             android:layout_marginRight="@dimen/_15sdp"
             android:src="@drawable/ic_copy" />
-    </LinearLayout>
+    </FrameLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
         android:layout_marginTop="@dimen/_24sdp"
         android:fontFamily="@font/roboto"
         android:text="@string/transaction_history"
@@ -90,11 +94,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/_16sdp"
         android:layout_marginRight="@dimen/_16sdp"
         android:layout_marginBottom="@dimen/_24sdp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_list_transaction_history" />
-
-
 </LinearLayout>

@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.mob.welups.R;
-import com.mob.welups.ui.SettingAct;
+import com.mob.welups.ui.home.settings.SettingAct;
 
 import java.text.ParseException;
 

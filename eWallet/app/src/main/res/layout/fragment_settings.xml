@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="@color/background"
-    tools:context=".ui.SettingAct">
+    tools:context=".ui.home.settings.SettingAct">
 
     <include layout="@layout/action_bar" />
 

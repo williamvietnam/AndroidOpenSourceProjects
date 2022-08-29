@@ -3,14 +3,16 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 32
 
     defaultConfig {
         applicationId "com.mob.welups"
-        minSdk 21
-        targetSdk 31
+        minSdk 24
+        targetSdk 32
         versionCode 1
         versionName "1.0"
+
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -32,12 +34,14 @@ android {
 }
 
 dependencies {
+    //multidex
+    implementation "androidx.multidex:multidex:2.0.1"
 
     //material design 2
     implementation 'com.google.android.material:material:1.6.1'
 
     //androidX
-    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     //jetBrains annotations

@@ -15,7 +15,7 @@ import java.text.ParseException;
 
 import butterknife.BindView;
 
-public class TransferFrag extends BaseFragment {
+public class TransferFragment extends BaseFragment {
 
     @SuppressLint("NonConstantResourceId")
     @BindView(R.id.tabLayoutTransfer)
@@ -48,6 +48,6 @@ public class TransferFrag extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.frag_transfer;
+        return R.layout.fragment_transfer;
     }
 }

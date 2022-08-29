@@ -3,24 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_main"
-    app:startDestination="@id/navigation_home">
+    app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.mob.welups.ui.home.HomeFrag"
+        android:id="@+id/homeFragment"
+        android:name="com.mob.welups.ui.home.HomeFragment"
         android:label="@string/tab_homepage"
-        tools:layout="@layout/frag_home"/>
+        tools:layout="@layout/fragment_home"/>
 
     <fragment
-        android:id="@+id/navigation_transfer"
-        android:name="com.mob.welups.ui.transfer.TransferFrag"
+        android:id="@+id/transferFragment"
+        android:name="com.mob.welups.ui.transfer.TransferFragment"
         android:label="@string/tab_transfer"
-        tools:layout="@layout/frag_transfer" />
+        tools:layout="@layout/fragment_transfer" />
 
     <fragment
-        android:id="@+id/navigation_addressBook"
+        android:id="@+id/addressBookFragment"
         android:name="com.mob.welups.ui.address_book.AddressBookFrag"
         android:label="@string/tab_addressbook"
-        tools:layout="@layout/frag_address_book" />
-
+        tools:layout="@layout/fragment_address_book" />
 </navigation>

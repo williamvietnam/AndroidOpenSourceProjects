@@ -9,16 +9,17 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentActivity;
+import androidx.viewbinding.ViewBinding;
 
 import com.mob.welups.R;
-import com.mob.welups.ui.SettingAct;
+import com.mob.welups.ui.home.settings.SettingAct;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public abstract class BaseActivity extends AppCompatActivity {
+
     @BindView(R.id.img_back_actionbar)
     ImageView imgBackActionBar;
 

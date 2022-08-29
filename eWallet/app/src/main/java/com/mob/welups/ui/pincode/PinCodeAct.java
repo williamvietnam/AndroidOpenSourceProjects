@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.mob.welups.MainActivity;
+import com.mob.welups.ui.container.MainActivity;
 import com.mob.welups.R;
 import com.mob.welups.base.BaseActivity;
 
@@ -21,7 +21,6 @@ import butterknife.BindView;
 public class PinCodeAct extends BaseActivity {
 
     private final ArrayList<Integer> listPassCode = new ArrayList<>();
-    private PinCodeViewModel viewModel;
     private ArrayList<Integer> listPasswords = new ArrayList<>();
 
     @BindView(R.id.tvTitlePinCode)
@@ -75,7 +74,7 @@ public class PinCodeAct extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_pin_code;
+        return R.layout.fragment_pin_code;
     }
 
     private void registerListener() {

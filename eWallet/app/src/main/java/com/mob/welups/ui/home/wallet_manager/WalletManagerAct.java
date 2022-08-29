@@ -1,4 +1,4 @@
-package com.mob.welups.ui;
+package com.mob.welups.ui.home.wallet_manager;
 
 import android.Manifest;
 import android.app.Dialog;
@@ -18,7 +18,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.mob.welups.R;
-import com.mob.welups.ScannerQRCodeAct;
+import com.mob.welups.ui.home.generate_account.GenerateAccountAct;
+import com.mob.welups.ui.qr_scanner.ScannerQRCodeFragment;
 import com.mob.welups.base.BaseActivity;
 
 import butterknife.OnClick;
@@ -76,7 +77,7 @@ public class WalletManagerAct extends BaseActivity {
             ActivityCompat.requestPermissions(WalletManagerAct.this,
                     new String[]{Manifest.permission.CAMERA}, REQUEST_CODE_CAM);
         } else {
-            Intent intent = new Intent(WalletManagerAct.this, ScannerQRCodeAct.class);
+            Intent intent = new Intent(WalletManagerAct.this, ScannerQRCodeFragment.class);
             intent.putExtra("testWallet", "");
             startActivity(intent);
         }

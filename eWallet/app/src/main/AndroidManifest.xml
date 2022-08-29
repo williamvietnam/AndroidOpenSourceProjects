@@ -16,7 +16,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.container.MainActivity"
             android:exported="true" />
 
         <activity
@@ -29,13 +29,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.SettingAct"/>
+        <activity android:name=".ui.home.settings.SettingAct"/>
 
-        <activity android:name=".ui.GenerateAccountAct"/>
+        <activity android:name=".ui.home.generate_account.GenerateAccountAct"/>
 
-        <activity android:name=".ui.WalletManagerAct"/>
+        <activity android:name=".ui.home.wallet_manager.WalletManagerAct"/>
 
-        <activity android:name=".ScannerQRCodeAct"/>
+        <activity android:name=".ui.qr_scanner.ScannerQRCodeFragment"/>
 
         <activity android:name=".ui.login.LoginActivity"/>
 
