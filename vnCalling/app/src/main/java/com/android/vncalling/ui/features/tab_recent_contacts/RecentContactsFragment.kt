@@ -19,6 +19,5 @@ class RecentContactsFragment : BaseFragment<
     }
 
     override fun initialize() {
-        binding.text.text = viewModel.showViewModelName(RecentContactViewModel::class.java.simpleName)
     }
 }

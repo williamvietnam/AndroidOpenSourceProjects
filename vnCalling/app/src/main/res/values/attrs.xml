@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ToolbarCustom">
+        <attr name="leftToolbar" format="reference" />
+        <attr name="rightToolbar" format="reference" />
+        <attr name="toolbarName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TextFieldCustom">
+
+    </declare-styleable>
+</resources>
