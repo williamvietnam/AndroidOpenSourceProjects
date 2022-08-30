@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/_6sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="@dimen/_3sdp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_toStartOf="@id/btnMessage"
+        android:layout_toEndOf="@id/avatar"
+        android:textSize="@dimen/_13ssp"
+        tools:text="William Nguyen" />
+
+    <TextView
+        android:id="@+id/accountName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toStartOf="@id/btnMessage"
+        android:layout_toEndOf="@id/avatar"
+        android:textSize="@dimen/_11ssp"
+        tools:text="williamnb.vn@gmail.com" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnMessage"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="@dimen/_3sdp"
+        android:layout_toStartOf="@id/btnAudioCall"
+        android:src="@drawable/ic_message" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnAudioCall"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="@dimen/_3sdp"
+        android:layout_toStartOf="@id/btnVideoCall"
+        android:src="@drawable/ic_call" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnVideoCall"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:src="@drawable/ic_video_call" />
+</RelativeLayout>

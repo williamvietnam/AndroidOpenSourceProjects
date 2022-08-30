@@ -1,4 +1,7 @@
 package com.android.vncalling.ui.features.login
 
-class LoginViewModel {
+import com.android.vncalling.base.BaseViewModel
+
+class LoginViewModel:BaseViewModel() {
+
 }

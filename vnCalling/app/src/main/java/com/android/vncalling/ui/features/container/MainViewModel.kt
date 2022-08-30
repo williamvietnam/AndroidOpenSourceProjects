@@ -1,4 +1,6 @@
 package com.android.vncalling.ui.features.container
 
-class MainViewModel {
+import com.android.vncalling.base.BaseViewModel
+
+class MainViewModel:BaseViewModel() {
 }
