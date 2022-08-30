@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_main_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main_graph"
+    app:startDestination="@id/recentContactsFragment">
 
+    <fragment
+        android:id="@+id/recentContactsFragment"
+        android:name="com.android.vncalling.ui.features.tab_recent_contacts.RecentContactsFragment"
+        android:label="recentContactsFragment"
+        tools:layout="@layout/fragment_recent_contacts" />
+
+    <fragment
+        android:id="@+id/contactListFragment"
+        android:label="contactListFragment"
+        tools:layout="@layout/fragment_contact_list" />
+
+    <fragment
+        android:id="@+id/personalFragment"
+        android:label="personalFragment"
+        tools:layout="@layout/fragment_personal" />
 </navigation>

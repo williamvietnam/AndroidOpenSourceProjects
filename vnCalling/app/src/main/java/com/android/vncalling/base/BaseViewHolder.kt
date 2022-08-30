@@ -1,10 +1,20 @@
 package com.android.vncalling.base
 
-abstract class BaseViewHolder {
+import android.view.View
 
-    fun onBind(position: Int) {
+import androidx.recyclerview.widget.RecyclerView
+
+abstract class BaseViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    private var currentPosition = 0
+
+    open fun onBind(position: Int) {
+        this.currentPosition = position
         clear()
     }
 
-    abstract fun clear()
+    protected abstract fun clear()
+
+    fun getCurrentPosition(): Int {
+        return this.currentPosition
+    }
 }

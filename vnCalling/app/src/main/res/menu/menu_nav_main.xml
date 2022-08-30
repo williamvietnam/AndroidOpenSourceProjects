@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/recentContactsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_recently"
+        android:orderInCategory="1"
+        android:title="@string/recently"
+        app:showAsAction="ifRoom" />
 
+    <item
+        android:id="@+id/contactListFragment"
+        android:enabled="false"
+        android:icon="@drawable/ic_contacts_list"
+        android:orderInCategory="2"
+        android:title="@string/contact_list"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/personalFragment"
+        android:enabled="false"
+        android:icon="@drawable/ic_person"
+        android:orderInCategory="3"
+        android:title="@string/personal"
+        app:showAsAction="ifRoom" />
 </menu>
