@@ -8,16 +8,19 @@
     tools:context=".ui.features.tab_recent_contacts.RecentContactsFragment">
 
     <com.android.vncalling.ui.custom.ToolbarCustom
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:leftToolbar="@drawable/ic_back"
         app:toolbarName="@string/recently" />
 
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
     <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

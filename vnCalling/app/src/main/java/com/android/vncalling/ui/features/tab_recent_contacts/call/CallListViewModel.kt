@@ -1,4 +1,6 @@
 package com.android.vncalling.ui.features.tab_recent_contacts.call
 
-class CallListViewModel {
+import com.android.vncalling.base.BaseViewModel
+
+class CallListViewModel: BaseViewModel() {
 }
