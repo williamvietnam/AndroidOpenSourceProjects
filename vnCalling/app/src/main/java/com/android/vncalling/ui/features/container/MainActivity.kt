@@ -1,5 +1,7 @@
 package com.android.vncalling.ui.features.container
 
+import android.view.View.GONE
+import android.view.View.VISIBLE
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
@@ -22,5 +24,13 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainVie
         val navController: NavController = navHostFragment.navController
         findViewById<BottomNavigationView>(R.id.bottomNavigationView)
             .setupWithNavController(navController)
+    }
+
+    override fun hideBottomNavigationView(isHidden: Boolean) {
+        if (isHidden) {
+            this.binding.bottomNavigationView.visibility = GONE
+        } else {
+            this.binding.bottomNavigationView.visibility = VISIBLE
+        }
     }
 }
