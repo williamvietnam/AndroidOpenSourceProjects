@@ -1,4 +1,6 @@
 package com.android.vncalling.ui.features.tab_personal.update_information
 
-class UpdateInformationViewModel {
+import com.android.vncalling.base.BaseViewModel
+
+class UpdateInformationViewModel: BaseViewModel() {
 }

@@ -9,7 +9,7 @@ import com.android.vncalling.base.BaseActivity
 import com.android.vncalling.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
+class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainView {
 
     override fun createViewModel(): MainViewModel =
         ViewModelProvider(this)[MainViewModel::class.java]

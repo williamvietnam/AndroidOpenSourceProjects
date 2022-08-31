@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="@dimen/_3sdp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_toEndOf="@id/avatar"
+        android:textSize="@dimen/_13ssp"
+        tools:text="William Nguyen" />
+
+    <TextView
+        android:id="@+id/tvMessageContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toEndOf="@id/avatar"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/_11ssp"
+        tools:text="Xin chao abc... xyz..." />
+</RelativeLayout>

@@ -13,11 +13,13 @@
 
     <fragment
         android:id="@+id/contactListFragment"
+        android:name="com.android.vncalling.ui.features.tab_contacts_list.ContactListFragment"
         android:label="contactListFragment"
         tools:layout="@layout/fragment_contact_list" />
 
     <fragment
         android:id="@+id/personalFragment"
+        android:name="com.android.vncalling.ui.features.tab_personal.PersonalFragment"
         android:label="personalFragment"
         tools:layout="@layout/fragment_personal" />
 </navigation>
