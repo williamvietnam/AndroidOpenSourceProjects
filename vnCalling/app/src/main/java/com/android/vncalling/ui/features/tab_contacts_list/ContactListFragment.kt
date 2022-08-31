@@ -19,6 +19,6 @@ class ContactListFragment : BaseFragment<FragmentContactListBinding, ContactList
     }
 
     override fun initialize() {
-        TODO("Not yet implemented")
+        hideBottomNavigationView(false)
     }
 }

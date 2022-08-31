@@ -19,6 +19,6 @@ class PersonalFragment : BaseFragment<FragmentPersonalBinding, PersonalViewModel
     }
 
     override fun initialize() {
-        TODO("Not yet implemented")
+        hideBottomNavigationView(false)
     }
 }

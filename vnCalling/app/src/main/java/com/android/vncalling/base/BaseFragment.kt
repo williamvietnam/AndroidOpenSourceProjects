@@ -6,12 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
+import com.android.vncalling.ui.features.container.MainActivity
 
 abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel> : Fragment(), BaseView {
 
     lateinit var viewModel: VM
     private var _binding: VB? = null
     val binding get() = _binding!!
+
+    private val mainActivity: MainActivity = MainActivity()
 
     abstract fun createViewModel(): VM
     abstract fun getViewBinding(inflater: LayoutInflater, container: ViewGroup?): VB
@@ -33,5 +36,9 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel> : Fragment(), 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initialize()
+    }
+
+    override fun hideBottomNavigationView(isHidden: Boolean) {
+        this.mainActivity.hideBottomNavigationView(isHidden)
     }
 }

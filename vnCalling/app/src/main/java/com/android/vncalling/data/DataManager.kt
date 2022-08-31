@@ -5,5 +5,9 @@ import com.android.vncalling.data.preferences.PreferencesHelper
 import com.android.vncalling.data.remote.ApiHelper
 
 interface DataManager : PreferencesHelper, DatabaseHelper, ApiHelper {
+    fun getPreferencesHelper(): PreferencesHelper
 
+    fun getDatabaseHelper(): DatabaseHelper
+
+    fun getApiHelper(): ApiHelper
 }
