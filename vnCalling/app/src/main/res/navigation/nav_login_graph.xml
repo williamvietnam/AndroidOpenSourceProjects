@@ -7,16 +7,77 @@
 
     <fragment
         android:id="@+id/signInFragment"
+        android:name="com.android.vncalling.ui.features.login.signin.SignInFragment"
         android:label="signInFragment"
         tools:layout="@layout/fragment_sign_in">
 
         <action
             android:id="@+id/actionToSignUp"
             app:destination="@id/signUpFragment" />
+
+        <action
+            android:id="@+id/actionSignInToForgotPassword"
+            app:destination="@id/forgotPasswordFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/signUpFragment"
+        android:name="com.android.vncalling.ui.features.login.signup.SignUpFragment"
         android:label="signUpFragment"
         tools:layout="@layout/fragment_sign_up" />
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.android.vncalling.ui.features.login.forgot_password.ForgotPasswordFragment"
+        android:label="forgotPasswordFragment"
+        tools:layout="@layout/fragment_forgot_password">
+
+        <action
+            android:id="@+id/actionForgotPassToMakeSelection"
+            app:destination="@id/makeSelectionGetPasswordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/makeSelectionGetPasswordFragment"
+        android:name="com.android.vncalling.ui.features.login.selection.MakeSelectionGetPasswordFragment"
+        android:label="makeSelectionGetPasswordFragment"
+        tools:layout="@layout/fragment_make_selection_get_password">
+
+        <action
+            android:id="@+id/actionMakeSelectionToVerifyCode"
+            app:destination="@id/verifyCodeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/verifyCodeFragment"
+        android:name="com.android.vncalling.ui.features.login.verify.VerifyCodeFragment"
+        android:label="verifyCodeFragment"
+        tools:layout="@layout/fragment_verify_code">
+
+        <action
+            android:id="@+id/actionVerifyCodeToUpdateNewPassword"
+            app:destination="@id/updateNewPasswordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/updateNewPasswordFragment"
+        android:name="com.android.vncalling.ui.features.login.update_new_password.UpdateNewPasswordFragment"
+        android:label="updateNewPasswordFragment"
+        tools:layout="@layout/fragment_update_new_password">
+
+        <action
+            android:id="@+id/actionUpdateNewPassToChangePassSuccess"
+            app:destination="@id/changePasswordSuccessFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/changePasswordSuccessFragment"
+        android:name="com.android.vncalling.ui.features.login.change_password_success.ChangePasswordSuccessFragment"
+        android:label="changePasswordSuccessFragment"
+        tools:layout="@layout/fragment_change_password_success">
+
+        <action
+            android:id="@+id/actionChangePassToSignIn"
+            app:destination="@id/signInFragment" />
+    </fragment>
 </navigation>

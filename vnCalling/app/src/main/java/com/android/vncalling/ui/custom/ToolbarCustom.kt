@@ -9,10 +9,10 @@ import android.widget.FrameLayout
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import com.android.vncalling.R
-import com.android.vncalling.databinding.LayoutToolbarCustomViewBinding
+import com.android.vncalling.databinding.CustomToolbarViewBinding
 
 class ToolbarCustom : FrameLayout {
-    private lateinit var binding: LayoutToolbarCustomViewBinding
+    private lateinit var binding: CustomToolbarViewBinding
     private var toolbarLeftCallBack: ToolbarLeftCallBack? = null
     private var toolbarRightCallBack: ToolbarRightCallBack? = null
 
@@ -44,7 +44,7 @@ class ToolbarCustom : FrameLayout {
 
     private fun initialize(context: Context, attributeSet: AttributeSet?) {
         val inflater: LayoutInflater = LayoutInflater.from(context)
-        this.binding = LayoutToolbarCustomViewBinding.inflate(inflater, this, true)
+        this.binding = CustomToolbarViewBinding.inflate(inflater, this, true)
 
         this.binding.leftToolbar.setOnClickListener {
             toolbarLeftCallBack?.onLeftClicked()

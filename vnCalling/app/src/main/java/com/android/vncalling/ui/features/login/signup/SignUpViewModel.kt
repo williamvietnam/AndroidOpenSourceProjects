@@ -1,4 +1,6 @@
 package com.android.vncalling.ui.features.login.signup
 
-class SignUpViewModel {
+import com.android.vncalling.base.BaseViewModel
+
+class SignUpViewModel:BaseViewModel() {
 }
