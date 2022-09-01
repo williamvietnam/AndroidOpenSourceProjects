@@ -3,4 +3,13 @@
     <string name="recently">Gần đây</string>
     <string name="contact_list">Danh bạ</string>
     <string name="personal">Cá nhân</string>
+    <string name="login_to_continue">(Login to continue!)</string>
+    <string name="login">login</string>
+    <string name="dont_have_an_account">You don\'t have an account?</string>
+    <string name="register"><u>REGISTER NOW</u></string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="register_button">register</string>
+    <string name="login_now"><u>LOGIN NOW</u></string>
+    <string name="have_account">You already have an account?!</string>
+    <string name="sign_in">Sign In</string>
 </resources>
