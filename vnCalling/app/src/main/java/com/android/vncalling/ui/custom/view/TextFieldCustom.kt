@@ -1,4 +1,4 @@
-package com.android.vncalling.ui.custom
+package com.android.vncalling.ui.custom.view
 
 import android.content.Context
 import android.content.res.TypedArray

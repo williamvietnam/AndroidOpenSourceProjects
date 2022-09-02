@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".ui.features.tab_recent_contacts.RecentContactsFragment">
 
-    <com.android.vncalling.ui.custom.ToolbarCustom
+    <com.android.vncalling.ui.custom.toolbar.ToolbarCustom
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

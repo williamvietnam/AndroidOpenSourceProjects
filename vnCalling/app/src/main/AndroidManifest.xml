@@ -13,15 +13,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VnCalling"
         tools:targetApi="31">
+
         <activity
-            android:name=".ui.features.container.MainActivity"
-            android:exported="true">
+            android:name=".ui.features.splash.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity
+            android:name=".ui.features.welcome.WelcomeActivity"
+            android:screenOrientation="fullSensor" />
+
+        <activity
+            android:name=".ui.features.login.LoginActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.features.container.MainActivity"
+            android:screenOrientation="fullSensor" />
+    </application>
 </manifest>

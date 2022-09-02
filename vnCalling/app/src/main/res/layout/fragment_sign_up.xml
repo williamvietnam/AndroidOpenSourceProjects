@@ -7,7 +7,7 @@
     android:background="@color/background"
     android:orientation="vertical">
 
-    <com.android.vncalling.ui.custom.ToolbarCustom
+    <com.android.vncalling.ui.custom.toolbar.ToolbarCustom
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/_8sdp"
@@ -39,7 +39,7 @@
                     android:layout_gravity="center_horizontal"
                     android:background="@color/background" />
 
-                <com.android.vncalling.ui.custom.TextFieldCustom
+                <com.android.vncalling.ui.custom.view.TextFieldCustom
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/_6sdp"
@@ -50,7 +50,7 @@
                     app:textHint="User name"
                     tools:text="William Nguyen" />
 
-                <com.android.vncalling.ui.custom.TextFieldCustom
+                <com.android.vncalling.ui.custom.view.TextFieldCustom
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/_6sdp"
@@ -61,7 +61,7 @@
                     app:textHint="Account name"
                     tools:text="williamnb.vn@gmail.com" />
 
-                <com.android.vncalling.ui.custom.TextFieldCustom
+                <com.android.vncalling.ui.custom.view.TextFieldCustom
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/_6sdp"
@@ -73,7 +73,7 @@
                     app:text="123456"
                     app:textHint="Password" />
 
-                <com.android.vncalling.ui.custom.TextFieldCustom
+                <com.android.vncalling.ui.custom.view.TextFieldCustom
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/_6sdp"

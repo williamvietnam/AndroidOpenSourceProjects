@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginVertical="@dimen/_3sdp"
-    tools:context=".ui.custom.TextFieldCustom">
+    tools:context=".ui.custom.view.TextFieldCustom">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputLayout"
