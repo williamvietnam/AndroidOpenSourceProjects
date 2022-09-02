@@ -1,4 +1,6 @@
 package com.android.vncalling.ui.features.welcome
 
-class WelcomeViewModel {
+import com.android.vncalling.base.BaseViewModel
+
+class WelcomeViewModel: BaseViewModel() {
 }

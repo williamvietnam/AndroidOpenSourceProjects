@@ -1,4 +1,5 @@
 package com.android.vncalling.base
 
-class BaseAdapter {
+@Deprecated("not implement")
+abstract class BaseAdapter {
 }

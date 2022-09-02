@@ -12,4 +12,7 @@
     <string name="login_now"><u>LOGIN NOW</u></string>
     <string name="have_account">You already have an account?!</string>
     <string name="sign_in">Sign In</string>
+    <string name="author_william_giang_nguyen">Author: William Giang Nguyen</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get started</string>
 </resources>

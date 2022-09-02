@@ -16,4 +16,9 @@
         <attr name="inputTypes" format="string" />
         <attr name="drawableEnd" format="reference" />
     </declare-styleable>
+
+    <declare-styleable name="CircleImageCustom">
+
+
+    </declare-styleable>
 </resources>

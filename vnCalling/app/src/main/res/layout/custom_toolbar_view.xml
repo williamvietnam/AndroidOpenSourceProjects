@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:background="@android:color/transparent"
     android:paddingVertical="@dimen/_6sdp"
-    tools:context=".ui.custom.ToolbarCustom">
+    tools:context=".ui.custom.toolbar.ToolbarCustom">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/leftToolbar"

@@ -16,4 +16,14 @@
         android:textSize="@dimen/_56ssp"
         android:textStyle="bold" />
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:text="@string/author_william_giang_nguyen"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
 </FrameLayout>

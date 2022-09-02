@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/background_bottom_login.xml" value="0.191" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/background_top_end_welcome.xml" value="0.191" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/background_top_login.xml" value="0.191" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/ic_back.xml" value="0.248" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/ic_delete_text.xml" value="0.19" />
@@ -11,6 +12,7 @@
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/activity_splash.xml" value="0.24114583333333334" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/activity_welcome.xml" value="0.1987179487179487" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/custom_circle_image_view.xml" value="0.19880290722530997" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/custom_text_field_view.xml" value="0.2421875" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/custom_toolbar_view.xml" value="0.2421875" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/fragment_call_list.xml" value="0.3546875" />
@@ -31,9 +33,10 @@
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/item_contact_list.xml" value="0.1" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/item_message.xml" value="0.1" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/item_personal.xml" value="0.1" />
-        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/item_welcome.xml" value="0.3536458333333333" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/item_welcome.xml" value="0.181640625" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/layout_text_field_custom_view.xml" value="0.1" />
-        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/menu/menu_nav_main.xml" value="0.3546875" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/menu/menu_nav_main.xml" value="0.19880290722530997" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.191" />
       </map>
     </option>
   </component>
