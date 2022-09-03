@@ -8,6 +8,7 @@
     android:orientation="vertical">
 
     <com.android.vncalling.ui.custom.toolbar.ToolbarCustom
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/_8sdp"
@@ -34,12 +35,14 @@
                 android:padding="@dimen/_8sdp">
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatar"
                     android:layout_width="@dimen/_88sdp"
                     android:layout_height="@dimen/_88sdp"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/background" />
 
                 <com.android.vncalling.ui.custom.view.TextFieldCustom
+                    android:id="@+id/userName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/_6sdp"
@@ -51,6 +54,7 @@
                     tools:text="William Nguyen" />
 
                 <com.android.vncalling.ui.custom.view.TextFieldCustom
+                    android:id="@+id/accountName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/_6sdp"
@@ -62,6 +66,7 @@
                     tools:text="williamnb.vn@gmail.com" />
 
                 <com.android.vncalling.ui.custom.view.TextFieldCustom
+                    android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/_6sdp"
@@ -74,6 +79,7 @@
                     app:textHint="Password" />
 
                 <com.android.vncalling.ui.custom.view.TextFieldCustom
+                    android:id="@+id/confirmPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/_6sdp"
@@ -86,6 +92,7 @@
                     app:textHint="Confirm password" />
 
                 <Button
+                    android:id="@+id/btnRegister"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/_20sdp"
@@ -107,6 +114,7 @@
                     android:textStyle="italic" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnLoginNow"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_6sdp"

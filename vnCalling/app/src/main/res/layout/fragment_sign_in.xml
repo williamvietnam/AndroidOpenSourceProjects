@@ -48,6 +48,7 @@
                 android:textStyle="italic" />
 
             <com.android.vncalling.ui.custom.view.TextFieldCustom
+                android:id="@+id/accountName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_40sdp"
@@ -58,6 +59,7 @@
                 tools:text="williamnb.vn@gmail.com" />
 
             <com.android.vncalling.ui.custom.view.TextFieldCustom
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_8sdp"
@@ -110,6 +112,7 @@
             android:textStyle="italic" />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
