@@ -117,6 +117,10 @@ class TextFieldCustom : FrameLayout {
         }
     }
 
+    fun getText(): String {
+        return this.binding.inputEdt.text.toString()
+    }
+
     companion object {
         const val ACTION_NEXT = "next"
         const val ACTION_DONE = "done"
