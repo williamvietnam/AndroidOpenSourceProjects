@@ -3,30 +3,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@android:color/transparent"
     android:orientation="vertical"
     android:padding="@dimen/_8sdp"
     tools:context=".ui.features.welcome.WelcomeAdapter">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/thumbnail"
-        android:layout_width="@dimen/_222sdp"
-        android:layout_height="@dimen/_222sdp"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_140sdp"
         android:layout_gravity="center"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_video_call" />
+        android:src="@drawable/ic_video_call"
+        android:tint="@color/primarySecond" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvHeadline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_8sdp"
-        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
         android:ellipsize="end"
         android:gravity="center"
         android:maxLines="2"
         android:textColor="@color/white"
-        android:textSize="@dimen/_18ssp"
+        android:textSize="@dimen/_20ssp"
         android:textStyle="bold"
         tools:text="{headline headline headline headline headline headline headline headline headline}" />
 
@@ -35,8 +36,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_8sdp"
-        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_16sdp"
         android:gravity="center"
         android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
         tools:text="{description description description description description description}" />
 </LinearLayout>
