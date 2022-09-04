@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">vnCalling</string>
+
+    <string name="headlineWelcome1">Audio Call</string>
+    <string name="descriptionWelcome1">Audio call free with friends and family anywhere</string>
+    <string name="headlineWelcome2">Video Call</string>
+    <string name="descriptionWelcome2">Video call free with friends and family anywhere</string>
+    <string name="headlineWelcome3">Voice and Message</string>
+    <string name="descriptionWelcome3">Chat realtime with friends and family anywhere</string>
+
     <string name="recently">Gần đây</string>
     <string name="contact_list">Danh bạ</string>
     <string name="personal">Cá nhân</string>

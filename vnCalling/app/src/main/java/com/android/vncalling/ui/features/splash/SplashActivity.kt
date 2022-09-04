@@ -36,9 +36,9 @@ class SplashActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>() {
         }
     }
 
-    override fun createViewModel(): SplashViewModel {
-        return ViewModelProvider(this)[SplashViewModel::class.java]
-    }
+    override fun createViewModel(): SplashViewModel =
+        ViewModelProvider(this)[SplashViewModel::class.java]
+
 
     override fun getViewBinding(): ActivitySplashBinding {
         return ActivitySplashBinding.inflate(layoutInflater)

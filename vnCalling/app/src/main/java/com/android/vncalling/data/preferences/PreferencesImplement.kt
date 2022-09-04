@@ -2,9 +2,10 @@ package com.android.vncalling.data.preferences
 
 import android.content.Context
 import android.content.SharedPreferences
+import com.android.vncalling.MyApp
 
 class PreferencesImplement(
-    context: Context
+    context: Context = MyApp.appContext!!
 ) : PreferencesHelper {
 
     companion object {
