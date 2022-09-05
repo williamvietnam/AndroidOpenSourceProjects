@@ -47,7 +47,9 @@ class PersonalFragment : BaseFragment<FragmentPersonalBinding, PersonalViewModel
                     .setCancelable(false)
                     .setPositiveButton("Accept", object : DialogInterface.OnClickListener {
                         override fun onClick(dialog: DialogInterface?, id: Int) {
-                            getMainInstance().openLoginActivity()
+                            if (viewModel.isLogoutSuccess()) {
+                                getMainInstance().openLoginActivity()
+                            }
                         }
                     })
                     .setNegativeButton("Cancel", null)

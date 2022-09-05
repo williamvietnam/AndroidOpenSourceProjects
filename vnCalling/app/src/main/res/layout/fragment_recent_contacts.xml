@@ -11,8 +11,13 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:leftToolbar="@drawable/ic_back"
+        app:rightToolbar="@drawable/ic_search"
         app:toolbarName="@string/recently" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerThickness="1dp" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"

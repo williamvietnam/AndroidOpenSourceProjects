@@ -2,24 +2,40 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/avatar"
-        android:layout_width="@dimen/_36sdp"
-        android:layout_height="@dimen/_36sdp"
+    <FrameLayout
+        android:id="@+id/flAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:layout_marginHorizontal="@dimen/_3sdp"
-        android:src="@mipmap/ic_launcher" />
+        android:background="@drawable/background_circle_password_update"
+        android:padding="@dimen/_4sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_message"
+            android:tint="@color/background" />
+    </FrameLayout>
 
     <TextView
         android:id="@+id/userName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_6sdp"
-        android:layout_toEndOf="@id/avatar"
-        android:textSize="@dimen/_13ssp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_toEndOf="@id/flAvatar"
+        android:ellipsize="end"
+        android:textColor="@color/background"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
         tools:text="William Nguyen" />
 
     <TextView
@@ -27,11 +43,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/userName"
-        android:layout_marginStart="@dimen/_6sdp"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:layout_toEndOf="@id/avatar"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_toEndOf="@id/flAvatar"
         android:ellipsize="end"
         android:maxLines="1"
-        android:textSize="@dimen/_11ssp"
+        android:textColor="@color/background"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="normal"
         tools:text="Xin chao abc... xyz..." />
 </RelativeLayout>

@@ -2,8 +2,8 @@ package com.android.vncalling.ui.features.tab_recent_contacts
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.android.vncalling.ui.features.tab_recent_contacts.call.CallListFragment
-import com.android.vncalling.ui.features.tab_recent_contacts.message.MessageListFragment
+import com.android.vncalling.ui.features.tab_recent_contacts.recent_call_list.CallListFragment
+import com.android.vncalling.ui.features.tab_recent_contacts.recent_message_list.MessageListFragment
 
 class RecentContactsAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
 

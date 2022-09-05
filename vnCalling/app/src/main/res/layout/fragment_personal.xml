@@ -15,6 +15,11 @@
         app:rightToolbar="@drawable/ic_logout"
         app:toolbarName="@string/personal" />
 
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerThickness="1dp" />
+
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

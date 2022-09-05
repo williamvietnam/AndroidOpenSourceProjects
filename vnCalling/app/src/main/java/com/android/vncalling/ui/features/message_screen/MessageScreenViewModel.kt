@@ -1,4 +1,4 @@
-package com.android.vncalling.ui.features.tab_recent_contacts.message.detail
+package com.android.vncalling.ui.features.message_screen
 
 class MessageScreenViewModel {
 }

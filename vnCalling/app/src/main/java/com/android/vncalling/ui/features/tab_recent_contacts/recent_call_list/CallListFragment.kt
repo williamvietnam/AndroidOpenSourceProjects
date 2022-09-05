@@ -1,4 +1,4 @@
-package com.android.vncalling.ui.features.tab_recent_contacts.call
+package com.android.vncalling.ui.features.tab_recent_contacts.recent_call_list
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

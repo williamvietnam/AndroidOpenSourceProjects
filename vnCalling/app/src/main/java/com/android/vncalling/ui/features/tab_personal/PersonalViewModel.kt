@@ -12,4 +12,9 @@ class PersonalViewModel : BaseViewModel() {
         //todo("add data in here")
         return this.settingList
     }
+
+    fun isLogoutSuccess(): Boolean {
+        //todo
+        return true
+    }
 }

@@ -20,21 +20,46 @@ class DataManagerImplement(
         return this.preferencesHelper
     }
 
-    override fun isLogin(): Boolean {
-        return this.preferencesHelper.isLogin()
-    }
-
-    override fun setIsLogin(isLogin: Boolean) {
-        this.preferencesHelper.setIsLogin(isLogin)
-    }
-
     override fun isShowWelcomeScreen(): Boolean {
         return this.preferencesHelper.isShowWelcomeScreen()
     }
 
     override fun setIsShowWelcomeScreen(isShow: Boolean) {
-        this.preferencesHelper.setIsShowWelcomeScreen(isShow)
+        this.preferencesHelper.setIsShowWelcomeScreen(isShow = isShow)
     }
+
+    override fun isLogin(): Boolean {
+        return this.preferencesHelper.isLogin()
+    }
+
+    override fun setIsLogin(isLogin: Boolean) {
+        this.preferencesHelper.setIsLogin(isLogin = isLogin)
+    }
+
+    override fun setUserAvatar(userAvatar: String) {
+        this.preferencesHelper.setUserAvatar(userAvatar = userAvatar)
+    }
+
+    override fun setUserName(userName: String) {
+        this.preferencesHelper.setUserName(userName = userName)
+    }
+
+    override fun setUserAccount(accountName: String) {
+        this.preferencesHelper.setUserAccount(accountName = accountName)
+    }
+
+    override fun getUserAvatar(): String? {
+        return this.preferencesHelper.getUserAvatar()
+    }
+
+    override fun getUserName(): String? {
+        return this.preferencesHelper.getUserName()
+    }
+
+    override fun getUserAccount(): String? {
+        return this.preferencesHelper.getUserAccount()
+    }
+
 
     //-----------------------------------room database local--------------------------------------
     override fun getDatabaseHelper(): DatabaseHelper {

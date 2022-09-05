@@ -1,4 +1,4 @@
-package com.android.vncalling.ui.features.tab_recent_contacts.message
+package com.android.vncalling.ui.features.tab_recent_contacts.recent_message_list
 
 import android.util.Log
 import android.view.LayoutInflater
