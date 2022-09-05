@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 import com.android.vncalling.ui.features.container.MainActivity
+import com.android.vncalling.ui.features.container.MainView
 
 abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel> : Fragment(), BaseView {
 
@@ -14,7 +15,7 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel> : Fragment(), 
     private var _binding: VB? = null
     val binding get() = _binding!!
 
-    private val mainActivity: MainActivity = MainActivity()
+    private lateinit var mainView: MainView
 
     abstract fun createViewModel(): VM
     abstract fun getViewBinding(inflater: LayoutInflater, container: ViewGroup?): VB
@@ -22,6 +23,7 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel> : Fragment(), 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = createViewModel()
+        mainView = MainActivity.getInstance()
     }
 
     override fun onCreateView(
@@ -38,7 +40,11 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel> : Fragment(), 
         initialize()
     }
 
+    override fun getMainInstance(): MainView {
+        return this.mainView
+    }
+
     override fun hideBottomNavigationView(isHidden: Boolean) {
-        this.mainActivity.hideBottomNavigationView(isHidden)
+        this.mainView.hideBottomNavigationView(isHidden)
     }
 }

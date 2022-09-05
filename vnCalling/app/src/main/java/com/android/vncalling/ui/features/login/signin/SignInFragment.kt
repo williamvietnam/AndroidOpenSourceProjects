@@ -11,15 +11,21 @@ import com.android.vncalling.R
 import com.android.vncalling.base.BaseFragment
 import com.android.vncalling.databinding.FragmentSignInBinding
 import com.android.vncalling.ui.features.container.MainActivity
+import com.android.vncalling.ui.features.login.LoginActivity
+import com.android.vncalling.ui.features.login.LoginView
 
 class SignInFragment : BaseFragment<FragmentSignInBinding, SignInViewModel>() {
+
+    private lateinit var loginView: LoginView
 
     companion object {
         val TAG: String = SignInFragment::class.java.simpleName
     }
 
-    override fun createViewModel(): SignInViewModel =
-        ViewModelProvider(this)[SignInViewModel::class.java]
+    override fun createViewModel(): SignInViewModel {
+        this.loginView = LoginActivity.getInstance()
+        return ViewModelProvider(this)[SignInViewModel::class.java]
+    }
 
     override fun getViewBinding(
         inflater: LayoutInflater,

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginVertical="@dimen/_8sdp">
+    android:layout_marginVertical="@dimen/_8sdp"
+    android:background="@android:color/transparent"
+    tools:context=".ui.features.tab_personal.SettingsAdapter">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewLogo"
@@ -12,35 +15,52 @@
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="@dimen/_8sdp"
+        android:backgroundTint="@color/background"
         app:cardCornerRadius="@dimen/_8sdp"
         app:cardElevation="@dimen/_4sdp">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/logo"
-            android:layout_width="@dimen/_24sdp"
-            android:layout_height="@dimen/_24sdp"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
             android:layout_gravity="center"
             android:layout_margin="@dimen/_8sdp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_contacts_list" />
+            android:tint="@color/primarySecond"
+            tools:src="@drawable/ic_setting" />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/tvHeadline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_3sdp"
         android:layout_toStartOf="@id/imvNavigateNext"
         android:layout_toEndOf="@id/cardViewLogo"
-        android:textSize="@dimen/_14ssp" />
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/background"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        tools:text="PERSONAL INFORMATION" />
 
     <TextView
         android:id="@+id/tvDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvHeadline"
+        android:layout_marginStart="@dimen/_6sdp"
         android:layout_toStartOf="@id/imvNavigateNext"
         android:layout_toEndOf="@id/cardViewLogo"
-        android:textSize="@dimen/_12ssp" />
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/background"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="normal"
+        tools:text="Edit avatar, username, address, age,..." />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imvNavigateNext"
@@ -49,5 +69,6 @@
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="@dimen/_8sdp"
-        android:src="@drawable/ic_navigate_next" />
+        android:src="@drawable/ic_navigate_next"
+        android:tint="@color/background" />
 </RelativeLayout>

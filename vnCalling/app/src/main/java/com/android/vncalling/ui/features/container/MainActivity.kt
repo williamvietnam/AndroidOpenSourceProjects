@@ -1,5 +1,6 @@
 package com.android.vncalling.ui.features.container
 
+import android.content.Intent
 import android.view.View.GONE
 import android.view.View.VISIBLE
 import androidx.lifecycle.ViewModelProvider
@@ -9,14 +10,26 @@ import androidx.navigation.ui.setupWithNavController
 import com.android.vncalling.R
 import com.android.vncalling.base.BaseActivity
 import com.android.vncalling.databinding.ActivityMainBinding
+import com.android.vncalling.ui.features.login.LoginActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainView {
 
+    companion object {
+        private lateinit var activity: MainActivity
+
+        fun getInstance(): MainActivity {
+            return activity
+        }
+    }
+
     override fun createViewModel(): MainViewModel =
         ViewModelProvider(this)[MainViewModel::class.java]
 
-    override fun getViewBinding(): ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
+    override fun getViewBinding(): ActivityMainBinding {
+        activity = MainActivity()
+        return ActivityMainBinding.inflate(layoutInflater)
+    }
 
     override fun initialize() {
         val navHostFragment: NavHostFragment = supportFragmentManager
@@ -32,5 +45,10 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainVie
         } else {
             this.binding.bottomNavigationView.visibility = VISIBLE
         }
+    }
+
+    override fun openLoginActivity() {
+        startActivity(Intent(this, LoginActivity::class.java))
+        finish()
     }
 }
