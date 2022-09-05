@@ -82,6 +82,8 @@
             android:gravity="center"
             android:imeOptions="actionNext"
             android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
             android:textSize="@dimen/_24ssp"
             android:textStyle="bold"
             tools:text="1" />
@@ -95,6 +97,8 @@
             android:gravity="center"
             android:imeOptions="actionNext"
             android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
             android:textSize="@dimen/_24ssp"
             android:textStyle="bold"
             tools:text="2" />
@@ -108,6 +112,8 @@
             android:gravity="center"
             android:imeOptions="actionNext"
             android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
             android:textSize="@dimen/_24ssp"
             android:textStyle="bold"
             tools:text="3" />
@@ -121,6 +127,8 @@
             android:gravity="center"
             android:imeOptions="actionDone"
             android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
             android:textSize="@dimen/_24ssp"
             android:textStyle="bold"
             tools:text="4" />

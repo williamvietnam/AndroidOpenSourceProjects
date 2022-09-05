@@ -8,6 +8,7 @@
     tools:context=".ui.features.welcome.WelcomeActivity">
 
     <FrameLayout
+        android:id="@+id/flSkip"
         android:layout_width="@dimen/_99sdp"
         android:layout_height="@dimen/_80sdp"
         android:layout_gravity="end"

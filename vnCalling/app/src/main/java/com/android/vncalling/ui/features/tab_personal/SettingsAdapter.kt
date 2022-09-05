@@ -9,7 +9,7 @@ import com.android.vncalling.databinding.ItemSettingBinding
 import com.android.vncalling.utils.callback.PersonalCallBack
 
 class SettingsAdapter(
-    private val settingList: List<Setting>?,
+    private val settingList: List<Setting>,
     private val callBack: PersonalCallBack
 ) : RecyclerView.Adapter<BaseViewHolder>() {
 
@@ -24,23 +24,19 @@ class SettingsAdapter(
     }
 
     override fun getItemCount(): Int {
-        if (settingList != null) {
-            return settingList.size
-        }
-        return 0
+        return settingList.size
     }
 
-    inner class SettingsHolder(private val binding: ItemSettingBinding) :
-        BaseViewHolder(binding.root) {
+    inner class SettingsHolder(
+        private val binding: ItemSettingBinding
+    ) : BaseViewHolder(binding.root) {
 
         override fun onBind(position: Int) {
             super.onBind(position)
-            val item = settingList?.get(position)
-            if (item != null) {
-                this.binding.logo.setImageResource(item.logo)
-                this.binding.tvHeadline.text = item.headline
-                this.binding.tvDescription.text = item.description
-            }
+            val item = settingList[position]
+            this.binding.logo.setImageResource(item.logo)
+            this.binding.tvHeadline.text = item.headline
+            this.binding.tvDescription.text = item.description
             this.binding.root.setOnClickListener {
                 callBack.onItemClicked(item)
             }
@@ -48,6 +44,5 @@ class SettingsAdapter(
 
         override fun clear() {
         }
-
     }
 }

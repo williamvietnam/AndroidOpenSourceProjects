@@ -8,9 +8,9 @@
     <string name="headlineWelcome3">Voice and Message</string>
     <string name="descriptionWelcome3">Chat realtime with friends and family anywhere</string>
 
-    <string name="recently">Gần đây</string>
-    <string name="contact_list">Danh bạ</string>
-    <string name="personal">Cá nhân</string>
+    <string name="recently">Recent</string>
+    <string name="contact_list">Phonebook</string>
+    <string name="personal">Personal</string>
     <string name="login_to_continue">(Login to continue!)</string>
     <string name="login">login</string>
     <string name="dont_have_an_account">You don\'t have an account?</string>

@@ -1,4 +1,4 @@
-package com.android.vncalling.ui.features.tab_contacts_list
+package com.android.vncalling.ui.features.tab_recent_contacts.recent_call_list
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -9,16 +9,17 @@ import com.android.vncalling.base.BaseViewHolder
 import com.android.vncalling.data.remote.models.UserInformation
 import com.android.vncalling.databinding.ItemContactListBinding
 import com.android.vncalling.databinding.ItemLoadMoreBinding
+import com.android.vncalling.ui.features.tab_contacts_list.ContactListAdapter
 import com.android.vncalling.utils.callback.ContactListCallBack
 import com.squareup.picasso.Picasso
 
-class ContactListAdapter(
+class CallListAdapter(
     private val userInformationList: MutableList<UserInformation>?,
     private val callBack: ContactListCallBack
 ) : RecyclerView.Adapter<BaseViewHolder>() {
 
     companion object {
-        const val VIEW_TYPE_CONTACT_LIST = 0
+        const val VIEW_TYPE_CALL_LIST = 0
         const val VIEW_TYPE_LOAD_MORE = 1
     }
 
@@ -29,7 +30,7 @@ class ContactListAdapter(
             return LoadMoreViewHolder(loadMoreBinding)
         }
         val binding = ItemContactListBinding.inflate(inflater, parent, false)
-        return ContactListHolder(binding)
+        return CallListHolder(binding)
     }
 
     override fun onBindViewHolder(holder: BaseViewHolder, position: Int) {
@@ -47,12 +48,11 @@ class ContactListAdapter(
         if (userInformationList?.get(position) == UserInformation("null", "null", "null", "null")) {
             return VIEW_TYPE_LOAD_MORE
         }
-        return VIEW_TYPE_CONTACT_LIST
+        return VIEW_TYPE_CALL_LIST
     }
 
-    inner class ContactListHolder(
-        private val binding: ItemContactListBinding
-    ) : BaseViewHolder(binding.root) {
+    inner class CallListHolder(private val binding: ItemContactListBinding) :
+        BaseViewHolder(binding.root) {
 
         override fun onBind(position: Int) {
             super.onBind(position)
