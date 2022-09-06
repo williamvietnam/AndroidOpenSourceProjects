@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "828572989122",
+    "project_id": "vncalling-54c06",
+    "storage_bucket": "vncalling-54c06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828572989122:android:a312d7b0bf33c6c2e46d5b",
+        "android_client_info": {
+          "package_name": "com.android.vncalling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828572989122-2venicmspavku2p9o6fm2r16bkdq5aog.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.vncalling",
+            "certificate_hash": "047f618208eda5893d89161c10ef0556237df975"
+          }
+        },
+        {
+          "client_id": "828572989122-04vskm7u91et6m75kp83lng17973vf6g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfJ2Ll5P2Ek-xVce9cYtywvsCwC3aLywo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828572989122-04vskm7u91et6m75kp83lng17973vf6g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -13,10 +13,11 @@ import com.android.vncalling.databinding.ActivityMainBinding
 import com.android.vncalling.ui.features.login.LoginActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
+
 class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainView {
 
     companion object {
-        private lateinit var activity: MainActivity
+        private val activity: MainActivity = MainActivity()
 
         fun getInstance(): MainActivity {
             return activity
@@ -27,7 +28,6 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainVie
         ViewModelProvider(this)[MainViewModel::class.java]
 
     override fun getViewBinding(): ActivityMainBinding {
-        activity = MainActivity()
         return ActivityMainBinding.inflate(layoutInflater)
     }
 
@@ -37,6 +37,10 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainVie
         val navController: NavController = navHostFragment.navController
         findViewById<BottomNavigationView>(R.id.bottomNavigationView)
             .setupWithNavController(navController)
+    }
+
+    override fun getMainViewModel(): MainViewModel {
+        return this.viewModel
     }
 
     override fun hideBottomNavigationView(isHidden: Boolean) {

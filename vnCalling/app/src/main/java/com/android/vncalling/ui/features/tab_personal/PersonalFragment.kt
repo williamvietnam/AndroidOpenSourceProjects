@@ -12,7 +12,7 @@ import com.android.vncalling.base.BaseFragment
 import com.android.vncalling.data.database.entities.Setting
 import com.android.vncalling.databinding.FragmentPersonalBinding
 import com.android.vncalling.ui.custom.toolbar.ToolbarCustom
-import com.android.vncalling.utils.callback.PersonalCallBack
+import com.android.vncalling.utilities.callback.PersonalCallBack
 
 class PersonalFragment : BaseFragment<FragmentPersonalBinding, PersonalViewModel>(),
     PersonalCallBack {

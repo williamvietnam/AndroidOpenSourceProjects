@@ -1,4 +1,4 @@
-package com.android.vncalling.utils.callback
+package com.android.vncalling.utilities.callback
 
 import com.android.vncalling.data.database.entities.Setting
 

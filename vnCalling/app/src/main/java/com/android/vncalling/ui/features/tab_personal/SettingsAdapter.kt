@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.android.vncalling.base.BaseViewHolder
 import com.android.vncalling.data.database.entities.Setting
 import com.android.vncalling.databinding.ItemSettingBinding
-import com.android.vncalling.utils.callback.PersonalCallBack
+import com.android.vncalling.utilities.callback.PersonalCallBack
 
 class SettingsAdapter(
     private val settingList: List<Setting>,

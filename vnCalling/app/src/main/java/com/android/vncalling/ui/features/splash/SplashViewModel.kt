@@ -1,17 +1,16 @@
 package com.android.vncalling.ui.features.splash
 
 import com.android.vncalling.base.BaseViewModel
-import com.android.vncalling.utils.Constants
+import com.android.vncalling.utilities.Constants
 
 class SplashViewModel : BaseViewModel() {
 
     fun decideNextActivity(): String {
-        return if (!getDataManger().isShowWelcomeScreen()) {
-            Constants.WELCOME_ACTIVITY
+        if (!getDataManger().isShowWelcomeScreen()) {
+            return Constants.WELCOME_ACTIVITY
         } else if (!getDataManger().isLogin()) {
-            Constants.LOGIN_ACTIVITY
-        } else {
-            Constants.MAIN_ACTIVITY
+            return Constants.LOGIN_ACTIVITY
         }
+        return Constants.MAIN_ACTIVITY
     }
 }

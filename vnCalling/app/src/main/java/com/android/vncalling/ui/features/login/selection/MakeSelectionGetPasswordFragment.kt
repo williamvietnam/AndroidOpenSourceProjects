@@ -8,7 +8,7 @@ import androidx.navigation.fragment.findNavController
 import com.android.vncalling.R
 import com.android.vncalling.base.BaseFragment
 import com.android.vncalling.databinding.FragmentMakeSelectionGetPasswordBinding
-import com.android.vncalling.utils.Constants
+import com.android.vncalling.utilities.Constants
 
 class MakeSelectionGetPasswordFragment : BaseFragment<
         FragmentMakeSelectionGetPasswordBinding, MakeSelectionGetPasswordViewModel>() {

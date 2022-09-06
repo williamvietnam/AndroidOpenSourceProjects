@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -37,6 +38,17 @@ android {
 }
 
 dependencies {
+    //stringEe
+    implementation 'com.stringee.sdk.android:stringee-android-sdk:1.9.3'
+    implementation 'com.android.volley:volley:1.2.1'
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:30.3.2')
+    //Firebase
+    implementation 'com.google.firebase:firebase-messaging:23.0.8'
+    implementation 'com.google.firebase:firebase-firestore:24.3.0'
+    implementation 'com.google.firebase:firebase-analytics'
+
     //MultiDex
     implementation "androidx.multidex:multidex:2.0.1"
 
@@ -73,6 +85,7 @@ dependencies {
 
     //room
     implementation "androidx.room:room-ktx:2.4.3"
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.0.8'
     kapt "androidx.room:room-compiler:2.4.3"
 
     //androidX

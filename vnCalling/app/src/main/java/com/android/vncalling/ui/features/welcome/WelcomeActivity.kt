@@ -10,7 +10,7 @@ import com.android.vncalling.base.BaseActivity
 import com.android.vncalling.databinding.ActivityWelcomeBinding
 import com.android.vncalling.ui.features.container.MainActivity
 import com.android.vncalling.ui.features.login.LoginActivity
-import com.android.vncalling.utils.Constants
+import com.android.vncalling.utilities.Constants
 
 
 class WelcomeActivity : BaseActivity<ActivityWelcomeBinding, WelcomeViewModel>() {

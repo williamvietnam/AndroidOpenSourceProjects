@@ -1,4 +1,4 @@
-package com.android.vncalling.utils.rx
+package com.android.vncalling.utilities.rx
 
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Scheduler

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.vncalling.base.BaseFragment
 import com.android.vncalling.data.remote.models.Message
 import com.android.vncalling.databinding.FragmentMessageListBinding
-import com.android.vncalling.utils.callback.MessageListCallBack
+import com.android.vncalling.utilities.callback.MessageListCallBack
 
 class MessageListFragment : BaseFragment<FragmentMessageListBinding, MessageListViewModel>(),
     MessageListCallBack {
