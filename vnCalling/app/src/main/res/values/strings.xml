@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">vnCalling</string>
+
+    <string name="headlineWelcome1">Audio Call</string>
+    <string name="descriptionWelcome1">Audio call free with friends and family anywhere</string>
+    <string name="headlineWelcome2">Video Call</string>
+    <string name="descriptionWelcome2">Video call free with friends and family anywhere</string>
+    <string name="headlineWelcome3">Voice and Message</string>
+    <string name="descriptionWelcome3">Chat realtime with friends and family anywhere</string>
+
+    <string name="recently">Recent</string>
+    <string name="contact_list">Phonebook</string>
+    <string name="personal">Personal</string>
+    <string name="login_to_continue">(Login to continue!)</string>
+    <string name="login">login</string>
+    <string name="dont_have_an_account">You don\'t have an account?</string>
+    <string name="register"><u>REGISTER NOW</u></string>
+    <string name="forgot_password"><u>Forgot password?</u></string>
+    <string name="register_button">register</string>
+    <string name="login_now"><u>LOGIN NOW</u></string>
+    <string name="have_account">You already have an account?!</string>
+    <string name="sign_in">Sign In</string>
+    <string name="author_william_giang_nguyen">Author: William Giang Nguyen</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get started</string>
+    <string name="forget_password">FORGET\nPASSWORD</string>
+    <string name="description_forget_password">Provide your account for which you want to reset your password!</string>
+    <string name="next">next</string>
+    <string name="make_selection_title">MAKE\nSELECTION</string>
+    <string name="description_make_selection">Select which contact detail should we use to reset your password?</string>
+    <string name="update_new_password">UPDATE NEW PASSWORD</string>
+    <string name="description_update_new_password">Your identity has been verified!\nSet your new password</string>
+    <string name="update">update</string>
+    <string name="password_update">PASSWORD\nUPDATE</string>
+    <string name="description_change_pass_success">your password has been updated!</string>
+    <string name="otp_verification">OTP VERIFICATION</string>
+    <string name="enter_the_otp_send_to">Enter the OTP send to:</string>
+    <string name="resend_otp"><u>RESEND OTP</u></string>
+    <string name="don_t_receive_the_otp">Don\'t receive the OTP?</string>
+    <string name="verify_proceed"><![CDATA[VERIFY & PROCEED]]></string>
+    <string name="add_image">ADD IMAGE</string>
+</resources>

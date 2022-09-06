@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/_6sdp">
+
+    <FrameLayout
+        android:id="@+id/flAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="@dimen/_3sdp"
+        android:background="@drawable/background_circle_verify_code"
+        android:padding="@dimen/_3sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_missed_video_call" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_toStartOf="@id/btnMessage"
+        android:layout_toEndOf="@id/flAvatar"
+        android:textColor="@color/background"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        tools:text="William Nguyen" />
+
+    <TextView
+        android:id="@+id/accountName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_toStartOf="@id/btnMessage"
+        android:layout_toEndOf="@id/flAvatar"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="italic"
+        android:tint="@color/background"
+        tools:text="williamnb.vn@gmail.com" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnMessage"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="@dimen/_3sdp"
+        android:layout_toStartOf="@id/btnAudioCall"
+        android:src="@drawable/ic_message"
+        android:tint="@color/background" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnAudioCall"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="@dimen/_3sdp"
+        android:layout_toStartOf="@id/btnVideoCall"
+        android:src="@drawable/ic_call"
+        android:tint="@color/background" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnVideoCall"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:src="@drawable/ic_video_call"
+        android:tint="@color/background" />
+</RelativeLayout>
