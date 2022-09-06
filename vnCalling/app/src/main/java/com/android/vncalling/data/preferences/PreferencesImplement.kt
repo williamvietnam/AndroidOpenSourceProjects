@@ -16,11 +16,15 @@ class PreferencesImplement(
 
         const val KEY_PREFERENCE_IS_SHOW_WELCOME_SCREEN = "is_show_welcome_screen"
 
+        const val KEY_USER_ID = "userId"
+
         const val KEY_PREF_USER_AVATAR = "pref_user_avatar"
 
         const val KEY_PREF_USER_NAME = "pref_user_name"
 
         const val KEY_PREF_USER_ACCOUNT = "pref_user_account"
+
+        const val KEY_PREF_USER_PASSWORD = "pref_user_password"
     }
 
     private val sharedPreferences: SharedPreferences =
@@ -32,7 +36,7 @@ class PreferencesImplement(
         return this.sharedPreferences.getBoolean(KEY_PREFERENCE_IS_SHOW_WELCOME_SCREEN, false)
     }
 
-    override fun setIsShowWelcomeScreen(isShow: Boolean) {
+    override fun putIsShowWelcomeScreen(isShow: Boolean) {
         this.editor.putBoolean(KEY_PREFERENCE_IS_SHOW_WELCOME_SCREEN, isShow)
             .apply()
     }
@@ -41,24 +45,37 @@ class PreferencesImplement(
         return this.sharedPreferences.getBoolean(KEY_PREFERENCE_IS_LOGIN, false)
     }
 
-    override fun setIsLogin(isLogin: Boolean) {
+    override fun putIsLogin(isLogin: Boolean) {
         this.editor.putBoolean(KEY_PREFERENCE_IS_LOGIN, isLogin)
             .apply()
     }
 
-    override fun setUserAvatar(userAvatar: String) {
+    override fun putUserId(userId: String) {
+        this.editor.putString(KEY_USER_ID, userId)
+    }
+
+    override fun putUserAvatar(userAvatar: String?) {
         this.editor.putString(KEY_PREF_USER_AVATAR, userAvatar)
             .apply()
     }
 
-    override fun setUserName(userName: String) {
+    override fun putUserName(userName: String?) {
         this.editor.putString(KEY_PREF_USER_NAME, userName)
             .apply()
     }
 
-    override fun setUserAccount(accountName: String) {
+    override fun putUserAccount(accountName: String?) {
         this.editor.putString(KEY_PREF_USER_ACCOUNT, accountName)
             .apply()
+    }
+
+    override fun putUserPassword(password: String?) {
+        this.editor.putString(KEY_PREF_USER_PASSWORD, password)
+            .apply()
+    }
+
+    override fun getUserId(): String? {
+        return this.sharedPreferences.getString(KEY_USER_ID, "")
     }
 
     override fun getUserAvatar(): String? {
@@ -71,5 +88,9 @@ class PreferencesImplement(
 
     override fun getUserAccount(): String? {
         return this.sharedPreferences.getString(KEY_PREF_USER_ACCOUNT, "")
+    }
+
+    override fun getUserPassword(): String? {
+        return this.sharedPreferences.getString(KEY_PREF_USER_PASSWORD, "")
     }
 }

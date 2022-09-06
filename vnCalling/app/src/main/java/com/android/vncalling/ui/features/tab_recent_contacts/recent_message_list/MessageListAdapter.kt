@@ -10,7 +10,7 @@ import com.android.vncalling.data.remote.models.Message
 import com.android.vncalling.databinding.ItemLoadMoreBinding
 import com.android.vncalling.databinding.ItemMessageBinding
 import com.android.vncalling.ui.features.tab_contacts_list.ContactListAdapter
-import com.android.vncalling.utils.callback.MessageListCallBack
+import com.android.vncalling.utilities.callback.MessageListCallBack
 import com.squareup.picasso.Picasso
 
 class MessageListAdapter(

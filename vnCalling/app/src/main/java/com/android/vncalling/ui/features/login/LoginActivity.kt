@@ -1,8 +1,10 @@
 package com.android.vncalling.ui.features.login
 
+import android.content.Intent
 import androidx.lifecycle.ViewModelProvider
 import com.android.vncalling.base.BaseActivity
 import com.android.vncalling.databinding.ActivityLoginBinding
+import com.android.vncalling.ui.features.container.MainActivity
 
 class LoginActivity : BaseActivity<ActivityLoginBinding, LoginViewModel>(), LoginView {
 
@@ -24,5 +26,10 @@ class LoginActivity : BaseActivity<ActivityLoginBinding, LoginViewModel>(), Logi
     }
 
     override fun initialize() {
+    }
+
+    override fun openMainActivity() {
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
     }
 }

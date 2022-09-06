@@ -10,7 +10,7 @@ import com.android.vncalling.databinding.ActivitySplashBinding
 import com.android.vncalling.ui.features.container.MainActivity
 import com.android.vncalling.ui.features.login.LoginActivity
 import com.android.vncalling.ui.features.welcome.WelcomeActivity
-import com.android.vncalling.utils.Constants
+import com.android.vncalling.utilities.Constants
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>() {

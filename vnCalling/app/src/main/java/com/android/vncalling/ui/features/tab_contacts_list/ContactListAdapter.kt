@@ -9,7 +9,7 @@ import com.android.vncalling.base.BaseViewHolder
 import com.android.vncalling.data.remote.models.UserInformation
 import com.android.vncalling.databinding.ItemContactListBinding
 import com.android.vncalling.databinding.ItemLoadMoreBinding
-import com.android.vncalling.utils.callback.ContactListCallBack
+import com.android.vncalling.utilities.callback.ContactListCallBack
 import com.squareup.picasso.Picasso
 
 class ContactListAdapter(

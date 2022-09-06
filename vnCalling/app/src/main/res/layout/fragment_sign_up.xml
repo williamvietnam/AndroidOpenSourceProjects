@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".ui.features.login.signup.SignUpFragment">
 
     <com.android.vncalling.ui.custom.toolbar.ToolbarCustom
         android:id="@+id/toolbar"
@@ -34,12 +35,31 @@
                 android:orientation="vertical"
                 android:padding="@dimen/_8sdp">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/avatar"
-                    android:layout_width="@dimen/_88sdp"
-                    android:layout_height="@dimen/_88sdp"
+                <FrameLayout
+                    android:id="@+id/flAvatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:background="@color/background" />
+                    android:background="@drawable/background_circle_verify_code">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="@dimen/_88sdp"
+                        android:layout_height="@dimen/_88sdp"
+                        android:layout_gravity="center" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAddImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/add_image"
+                        android:textColor="@color/primarySecond"
+                        android:textSize="@dimen/_11ssp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </FrameLayout>
 
                 <com.android.vncalling.ui.custom.view.TextFieldCustom
                     android:id="@+id/userName"
@@ -91,17 +111,31 @@
                     app:text="123456"
                     app:textHint="Confirm password" />
 
-                <Button
-                    android:id="@+id/btnRegister"
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/_20sdp"
-                    android:layout_marginTop="@dimen/_16sdp"
-                    android:backgroundTint="@color/background"
-                    android:paddingVertical="@dimen/_6sdp"
-                    android:text="@string/register_button"
-                    android:textSize="@dimen/_14ssp"
-                    android:textStyle="bold" />
+                    android:layout_marginTop="@dimen/_16sdp">
+
+                    <Button
+                        android:id="@+id/btnRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/background"
+                        android:paddingVertical="@dimen/_6sdp"
+                        android:text="@string/register_button"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+                </FrameLayout>
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"

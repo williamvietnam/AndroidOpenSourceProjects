@@ -3,7 +3,7 @@ package com.android.vncalling.ui.features.welcome
 import com.android.vncalling.R
 import com.android.vncalling.base.BaseViewModel
 import com.android.vncalling.data.database.entities.Welcome
-import com.android.vncalling.utils.Constants
+import com.android.vncalling.utilities.Constants
 
 class WelcomeViewModel constructor(
     private val welcomeList: MutableList<Welcome> = mutableListOf()
@@ -36,7 +36,7 @@ class WelcomeViewModel constructor(
     }
 
     fun handlerNextActivity(): String {
-        getDataManger().setIsShowWelcomeScreen(false)
+        getDataManger().putIsShowWelcomeScreen(true)
         return if (!getDataManger().isShowWelcomeScreen()) {
             Constants.LOGIN_ACTIVITY
         } else {

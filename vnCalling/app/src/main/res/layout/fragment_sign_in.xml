@@ -70,18 +70,34 @@
                 app:textHint="Mật khẩu"
                 tools:text="123456" />
 
-            <Button
-                android:id="@+id/btnSignIn"
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_16sdp"
-                android:backgroundTint="@color/background"
-                android:paddingVertical="@dimen/_10sdp"
-                android:text="@string/login"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_13ssp"
-                android:textStyle="bold" />
+                android:layout_marginTop="@dimen/_16sdp">
+
+                <Button
+                    android:id="@+id/btnSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/background"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:text="@string/login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/background"
+                    android:visibility="gone" />
+
+            </FrameLayout>
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/forgotPassword"

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.vncalling.base.BaseFragment
 import com.android.vncalling.data.remote.models.UserInformation
 import com.android.vncalling.databinding.FragmentCallListBinding
-import com.android.vncalling.utils.callback.ContactListCallBack
+import com.android.vncalling.utilities.callback.ContactListCallBack
 
 class CallListFragment : BaseFragment<FragmentCallListBinding, CallListViewModel>(),
     ContactListCallBack {
