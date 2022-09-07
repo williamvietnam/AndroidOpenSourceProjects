@@ -26,7 +26,7 @@ class CallListFragment : BaseFragment<FragmentCallListBinding, CallListViewModel
     }
 
     override fun initialize() {
-        hideBottomNavigationView(false)
+
         this.adapter = CallListAdapter(viewModel.getUserInformationListFailure(), this)
         val divider = DividerItemDecoration(context, LinearLayoutManager.VERTICAL)
         this.binding.root.addItemDecoration(divider)

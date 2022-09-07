@@ -7,6 +7,7 @@ class FirebaseServicesImplement(
 ) : FirebaseServicesHelper {
 
     override fun getFirebaseFireStore(): FirebaseFirestore {
+        FirebaseFirestore.setLoggingEnabled(true)
         return this.firebaseFirestore
     }
 }

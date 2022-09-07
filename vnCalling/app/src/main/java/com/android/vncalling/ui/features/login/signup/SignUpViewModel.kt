@@ -16,8 +16,9 @@ class SignUpViewModel : BaseViewModel() {
         MutableLiveData<Boolean>()
     }
 
-    private var isRegisterSuccess: Boolean = false
-
+    private val isRegisterSuccess: MutableLiveData<Boolean> by lazy {
+        MutableLiveData<Boolean>()
+    }
 
     fun getShowToast(): MutableLiveData<String> {
         return this.showMessage
@@ -27,7 +28,7 @@ class SignUpViewModel : BaseViewModel() {
         return this.isLoading
     }
 
-    fun getIsRegisterSuccess(): Boolean {
+    fun getIsRegisterSuccess(): MutableLiveData<Boolean> {
         return this.isRegisterSuccess
     }
 
@@ -75,12 +76,13 @@ class SignUpViewModel : BaseViewModel() {
                 getDataManger().putUserName(userName = userName)
                 getDataManger().putUserAccount(accountName = accountName)
                 getDataManger().putUserPassword(password = password)
-                isRegisterSuccess = true
+                isRegisterSuccess.value = true
             }
             .addOnFailureListener { exception: Exception ->
                 run {
                     isLoading.value = false
                     showMessage.value = exception.message
+                    isRegisterSuccess.value = false
                 }
             }
     }

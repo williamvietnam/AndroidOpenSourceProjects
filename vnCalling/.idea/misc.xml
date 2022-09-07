@@ -5,19 +5,25 @@
       <map>
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/background_bottom_login.xml" value="0.191" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/background_bottom_personal.xml" value="0.2435" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/background_circle_button_negative.xml" value="0.265" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/background_circle_button_positive.xml" value="0.265" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/background_circle_password_update.xml" value="0.248" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/background_circle_verify_code.xml" value="0.191" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/background_top_end_welcome.xml" value="0.191" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/background_top_login.xml" value="0.191" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/ic_back.xml" value="0.248" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/ic_call.xml" value="0.191" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/ic_call_end.xml" value="0.265" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/ic_call_wifi.xml" value="0.191" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/ic_clear.xml" value="0.265" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/ic_delete_text.xml" value="0.19" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/ic_message.xml" value="0.191" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/ic_missed_video_call.xml" value="0.2435" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/drawable/ic_video_call.xml" value="0.191" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/activity_incoming_call.xml" value="0.11627906976744186" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/activity_login.xml" value="0.181640625" />
-        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/activity_main.xml" value="0.3546875" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/activity_outgoing_call.xml" value="0.1282051282051282" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/activity_splash.xml" value="0.24114583333333334" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/activity_welcome.xml" value="0.1987179487179487" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/custom_circle_image_view.xml" value="0.19880290722530997" />
@@ -36,10 +42,13 @@
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/fragment_message_screen.xml" value="0.3536458333333333" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/fragment_option_forgot_password.xml" value="0.2421875" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/fragment_personal.xml" value="0.1" />
-        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/fragment_recent_contacts.xml" value="0.1" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/fragment_recent_contacts.xml" value="0.3546875" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/fragment_security_and_privacy.xml" value="0.3546875" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/fragment_sign_in.xml" value="0.1" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/fragment_sign_up.xml" value="0.1" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/fragment_update_new_password.xml" value="0.181640625" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/fragment_update_personal_information.xml" value="0.3546875" />
+        <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/fragment_update_privacy.xml" value="0.3536458333333333" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/fragment_verify_code.xml" value="0.1" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/item_contact_list.xml" value="0.3546875" />
         <entry key="..\:/MyGithub/android/vnCalling/app/src/main/res/layout/item_load_more.xml" value="0.3546875" />
