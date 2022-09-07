@@ -1,4 +1,6 @@
 package com.android.vncalling.ui.features.calling_screen
 
-class CallingViewModel {
+import com.android.vncalling.base.BaseViewModel
+
+class CallingViewModel: BaseViewModel() {
 }

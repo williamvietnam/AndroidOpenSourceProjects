@@ -17,7 +17,9 @@ class SignInViewModel : BaseViewModel() {
     private val isLoading: MutableLiveData<Boolean> by lazy {
         MutableLiveData<Boolean>()
     }
-    private var isLoginSuccess: Boolean = false
+    private val isLoginSuccess: MutableLiveData<Boolean> by lazy {
+        MutableLiveData<Boolean>()
+    }
 
     fun getShowToast(): MutableLiveData<String> {
         return this.showMessage
@@ -27,7 +29,7 @@ class SignInViewModel : BaseViewModel() {
         return this.isLoading
     }
 
-    fun isLoginSuccess(): Boolean {
+    fun getIsLoginSuccess(): MutableLiveData<Boolean> {
         return this.isLoginSuccess
     }
 
@@ -50,18 +52,19 @@ class SignInViewModel : BaseViewModel() {
             .get()
             .addOnCompleteListener(object : OnCompleteListener<QuerySnapshot?> {
                 override fun onComplete(task: Task<QuerySnapshot?>) {
-                    if (task.isSuccessful && task.result != null && task.result?.documents?.size!! > 0) {
-                        val documentSnapshot = task.result?.documents!![0]
+                    if (task.isSuccessful && task.result != null && task.result!!.documents.size > 0) {
+                        val documentSnapshot = task.result!!.documents[0]
                         getDataManger().putIsLogin(true)
                         getDataManger().putUserId(documentSnapshot.id)
                         getDataManger().putUserAvatar(documentSnapshot.getString(Constants.KEY_USER_AVATAR))
                         getDataManger().putUserName(documentSnapshot.getString(Constants.KEY_USER_NAME))
                         getDataManger().putUserAccount(documentSnapshot.getString(Constants.KEY_USER_ACCOUNT))
                         Log.d(SignInFragment::class.simpleName, "debug: login success")
-                        isLoginSuccess = true
+                        isLoginSuccess.value = true
                     } else {
                         isLoading.value = false
                         showMessage.value = "Can not login!"
+                        isLoginSuccess.value = false
                     }
                 }
             })
