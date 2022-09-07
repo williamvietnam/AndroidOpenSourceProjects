@@ -29,15 +29,17 @@ class WelcomeActivity : BaseActivity<ActivityWelcomeBinding, WelcomeViewModel>()
     override fun createViewModel(): WelcomeViewModel =
         ViewModelProvider(this)[WelcomeViewModel::class.java]
 
-    override fun getViewBinding(): ActivityWelcomeBinding =
-        ActivityWelcomeBinding.inflate(layoutInflater)
+    override fun getViewBinding(): ActivityWelcomeBinding {
+        return ActivityWelcomeBinding.inflate(layoutInflater)
+    }
 
     override fun initialize() {
+        this.count = viewModel.getWelcomeList().size
         val welcomeAdapter = WelcomeAdapter(viewModel.getWelcomeList())
         binding.viewPager.adapter = welcomeAdapter
         binding.indicator.setViewPager(binding.viewPager)
-        binding.btnNext.visibility = View.INVISIBLE
         setupViewpager()
+        binding.btnNext.visibility = View.INVISIBLE
 
         binding.btnNext.setOnClickListener {
             openNextScreen(viewModel.handlerNextActivity())
@@ -68,7 +70,6 @@ class WelcomeActivity : BaseActivity<ActivityWelcomeBinding, WelcomeViewModel>()
                     binding.btnNext.visibility = View.VISIBLE
                     binding.btnSkip.visibility = View.INVISIBLE
                 } else {
-
                     binding.btnNext.visibility = View.INVISIBLE
                 }
             }

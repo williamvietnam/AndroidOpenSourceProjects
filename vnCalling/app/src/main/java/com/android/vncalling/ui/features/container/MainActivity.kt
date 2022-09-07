@@ -13,7 +13,6 @@ import com.android.vncalling.databinding.ActivityMainBinding
 import com.android.vncalling.ui.features.login.LoginActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-
 class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), MainView {
 
     companion object {

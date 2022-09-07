@@ -20,5 +20,9 @@ class Constants {
         const val KEY_USER_PASSWORD = "user_password"
 
         const val KEY_COLLECTION_USERS = "collection_users"
+
+        //language setting
+        const val KEY_LANGUAGE_VI = "language_vietnamese"
+        const val KEY_LANGUAGE_EN = "language_english"
     }
 }

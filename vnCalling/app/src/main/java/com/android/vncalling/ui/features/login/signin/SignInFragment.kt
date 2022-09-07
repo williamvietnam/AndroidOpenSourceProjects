@@ -1,5 +1,6 @@
 package com.android.vncalling.ui.features.login.signin
 
+import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -10,19 +11,15 @@ import androidx.navigation.fragment.findNavController
 import com.android.vncalling.R
 import com.android.vncalling.base.BaseFragment
 import com.android.vncalling.databinding.FragmentSignInBinding
-import com.android.vncalling.ui.features.login.LoginActivity
-import com.android.vncalling.ui.features.login.LoginView
+import com.android.vncalling.ui.features.container.MainActivity
 
 class SignInFragment : BaseFragment<FragmentSignInBinding, SignInViewModel>() {
-
-    private lateinit var loginView: LoginView
 
     companion object {
         val TAG: String = SignInFragment::class.java.simpleName
     }
 
     override fun createViewModel(): SignInViewModel {
-        this.loginView = LoginActivity.getInstance()
         return ViewModelProvider(this)[SignInViewModel::class.java]
     }
 
@@ -48,12 +45,19 @@ class SignInFragment : BaseFragment<FragmentSignInBinding, SignInViewModel>() {
         }
         viewModel.getIsLoading().observe(this, isLoading)
 
+        val isLoginSuccess: Observer<Boolean> = object : Observer<Boolean> {
+            override fun onChanged(isLoginSuccess: Boolean?) {
+                if (isLoginSuccess != null && isLoginSuccess) {
+                    startActivity(Intent(activity, MainActivity::class.java))
+                    activity?.finish()
+                }
+            }
+        }
+        viewModel.getIsLoginSuccess().observe(this, isLoginSuccess)
+
         //---------------------------- setup events click -----------------------------------
         this.binding.btnSignIn.setOnClickListener {
             login()
-            if (viewModel.isLoginSuccess()) {
-                loginView.openMainActivity()
-            }
         }
 
         this.binding.forgotPassword.setOnClickListener {

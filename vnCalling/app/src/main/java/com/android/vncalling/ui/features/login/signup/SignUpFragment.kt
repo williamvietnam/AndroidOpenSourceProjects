@@ -78,6 +78,15 @@ class SignUpFragment : BaseFragment<FragmentSignUpBinding, SignUpViewModel>() {
         }
         viewModel.getIsLoading().observe(this, isLoading)
 
+        val isRegisterSuccess: Observer<Boolean> = object : Observer<Boolean> {
+            override fun onChanged(isRegisterSuccess: Boolean?) {
+                if (isRegisterSuccess != null && isRegisterSuccess) {
+                    findNavController().popBackStack()
+                }
+            }
+        }
+        viewModel.getIsRegisterSuccess().observe(this, isRegisterSuccess)
+
         //-------------------------- setup events click in here --------------------------------
         this.binding.toolbar.setToolbarLeftCallBack(object : ToolbarCustom.ToolbarLeftCallBack {
             override fun onLeftClicked() {
@@ -94,9 +103,6 @@ class SignUpFragment : BaseFragment<FragmentSignUpBinding, SignUpViewModel>() {
 
         this.binding.btnRegister.setOnClickListener {
             register()
-            if (viewModel.getIsRegisterSuccess()) {
-                findNavController().popBackStack()
-            }
         }
 
         this.binding.btnLoginNow.setOnClickListener {

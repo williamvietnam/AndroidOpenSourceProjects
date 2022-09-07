@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginVertical="@dimen/_8sdp"
     android:background="@android:color/transparent"
+    android:paddingVertical="@dimen/_6sdp"
     tools:context=".ui.features.tab_personal.SettingsAdapter">
 
     <androidx.cardview.widget.CardView

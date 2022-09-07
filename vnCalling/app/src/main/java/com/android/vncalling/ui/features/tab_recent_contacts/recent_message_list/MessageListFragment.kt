@@ -26,7 +26,7 @@ class MessageListFragment : BaseFragment<FragmentMessageListBinding, MessageList
     }
 
     override fun initialize() {
-        hideBottomNavigationView(false)
+
         this.adapter = MessageListAdapter(viewModel.getMessageList(), this)
         val divider = DividerItemDecoration(context, LinearLayoutManager.VERTICAL)
         this.binding.root.addItemDecoration(divider)

@@ -23,7 +23,7 @@ class RecentContactsFragment : BaseFragment<
      * document: https://developer.android.com/guide/navigation/navigation-swipe-view-2#kotlin
      * */
     override fun initialize() {
-        hideBottomNavigationView(false)
+
         val recentContactsAdapter = RecentContactsAdapter(this)
         this.binding.viewPager.adapter = recentContactsAdapter
 

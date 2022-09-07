@@ -39,4 +39,9 @@
     <string name="don_t_receive_the_otp">Don\'t receive the OTP?</string>
     <string name="verify_proceed"><![CDATA[VERIFY & PROCEED]]></string>
     <string name="add_image">ADD IMAGE</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="stop">Stop</string>
+    <string name="connecting">Connecting</string>
 </resources>
