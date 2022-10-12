@@ -21,6 +21,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
+@Deprecated(since = "Use BaseFragmentV2 instead of this")
 public abstract class BaseFragment extends Fragment {
     private View mView;
 

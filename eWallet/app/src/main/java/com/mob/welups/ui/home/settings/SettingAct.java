@@ -35,11 +35,11 @@ import java.util.Locale;
 import butterknife.OnClick;
 
 public class SettingAct extends BaseActivity {
-    private int REQUEST_CODE_CALL = 123;
+    private static final int REQUEST_CODE_CALL = 123;
 
-    private static String VI_LANGUAGE = "vi";
+    private static final String VI_LANGUAGE = "vi";
 
-    private static String EN_LANGUAGE = "en";
+    private static final String EN_LANGUAGE = "en";
 
     @OnClick(R.id.layoutWalletManager)
     void openLayoutWalletManager() {
