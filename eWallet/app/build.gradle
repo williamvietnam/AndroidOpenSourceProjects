@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.mob.welups"
         minSdk 24
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -41,7 +41,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.6.1'
 
     //androidX
-    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     //jetBrains annotations
@@ -60,7 +60,7 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
 
     // lib sdp
-    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
 
     // circleImageview
     implementation 'de.hdodenhof:circleimageview:3.1.0'
@@ -76,8 +76,8 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel:2.5.1"
 
     // navigation
-    implementation 'androidx.navigation:navigation-fragment:2.5.1'
-    implementation 'androidx.navigation:navigation-ui:2.5.1'
+    implementation 'androidx.navigation:navigation-fragment:2.5.2'
+    implementation 'androidx.navigation:navigation-ui:2.5.2'
 
     // qr code
     implementation 'com.budiyev.android:code-scanner:2.1.0'

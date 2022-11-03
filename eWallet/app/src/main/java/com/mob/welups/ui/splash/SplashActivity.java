@@ -4,18 +4,21 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.mob.welups.R;
-import com.mob.welups.base.BaseActivity;
+import androidx.lifecycle.ViewModelProvider;
+
+import com.mob.welups.base.v2.BaseActivityV2;
 import com.mob.welups.config.LocaleHelper;
+import com.mob.welups.databinding.ActionBarBinding;
+import com.mob.welups.databinding.ActivitySplashBinding;
 import com.mob.welups.ui.onboarding.OnBoardingActivity;
 
 import java.util.Locale;
 
-public class SplashActivity extends BaseActivity {
+public class SplashActivity extends BaseActivityV2<ActivitySplashBinding, SplashViewModel> {
+
     private final Handler handler = new Handler(Looper.getMainLooper());
     private final Runnable runnable = new Runnable() {
         @Override
@@ -26,18 +29,28 @@ public class SplashActivity extends BaseActivity {
     };
 
     @Override
-    protected void initView(Bundle savedInstanceState) {
+    public ActivitySplashBinding createViewBinding() {
+        return ActivitySplashBinding.inflate(getLayoutInflater());
+    }
+
+    @Override
+    public ActionBarBinding createActionBarViewBinding() {
+        return null;
+    }
+
+    @Override
+    public SplashViewModel createViewModel() {
+        return new ViewModelProvider(this).get(SplashViewModel.class);
+    }
+
+    @Override
+    public void initialize() {
         setLanguage();
 
         hideItemActionBar();
         hideLogoWelupsAndMenu();
 
         handler.postDelayed(runnable, 3000);
-    }
-
-    @Override
-    protected int getLayoutId() {
-        return R.layout.activity_splash;
     }
 
     private void setLanguage() {

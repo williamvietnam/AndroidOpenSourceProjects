@@ -18,6 +18,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+@Deprecated(since = "Use BaseActivityV2 instead of this")
 public abstract class BaseActivity extends AppCompatActivity {
 
     @BindView(R.id.img_back_actionbar)
