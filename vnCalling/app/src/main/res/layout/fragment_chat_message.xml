@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/_8sdp">
+    android:background="@color/background"
+    tools:context=".ui.features.chat_message.ChatMessageFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/chat_message_toolbar" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="@dimen/_8sdp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="@dimen/_8sdp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
@@ -21,10 +28,14 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_4sdp"
             android:layout_marginEnd="@dimen/_8sdp"
             android:layout_weight="1"
             android:background="@drawable/background_text_field_chat_message"
             android:hint="Typing message..."
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:paddingVertical="@dimen/_4sdp"
+            android:textColorHint="@color/white"
             tools:ignore="HardcodedText" />
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -32,4 +43,4 @@
             android:layout_height="@dimen/_16sdp"
             android:src="@drawable/ic_send" />
     </LinearLayout>
-</FrameLayout>
+</RelativeLayout>
