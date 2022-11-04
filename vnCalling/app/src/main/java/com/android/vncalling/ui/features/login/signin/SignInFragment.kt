@@ -31,28 +31,8 @@ class SignInFragment : BaseFragment<FragmentSignInBinding, SignInViewModel>() {
     override fun initialize() {
 
         //------------------------------ setup live data ------------------------------------
-        val showToast: Observer<String> = object : Observer<String> {
-            override fun onChanged(message: String?) {
-                this@SignInFragment.showToast(message = message)
-            }
-        }
         viewModel.getShowToast().observe(this, showToast)
-
-        val isLoading: Observer<Boolean> = object : Observer<Boolean> {
-            override fun onChanged(isLoading: Boolean?) {
-                this@SignInFragment.loading(isLoading = isLoading)
-            }
-        }
         viewModel.getIsLoading().observe(this, isLoading)
-
-        val isLoginSuccess: Observer<Boolean> = object : Observer<Boolean> {
-            override fun onChanged(isLoginSuccess: Boolean?) {
-                if (isLoginSuccess != null && isLoginSuccess) {
-                    startActivity(Intent(activity, MainActivity::class.java))
-                    activity?.finish()
-                }
-            }
-        }
         viewModel.getIsLoginSuccess().observe(this, isLoginSuccess)
 
         //---------------------------- setup events click -----------------------------------
@@ -86,6 +66,27 @@ class SignInFragment : BaseFragment<FragmentSignInBinding, SignInViewModel>() {
         } else {
             this.binding.btnSignIn.visibility = View.VISIBLE
             this.binding.progressBar.visibility = View.GONE
+        }
+    }
+
+    private val showToast: Observer<String> = object : Observer<String> {
+        override fun onChanged(message: String?) {
+            this@SignInFragment.showToast(message = message)
+        }
+    }
+
+    private val isLoading: Observer<Boolean> = object : Observer<Boolean> {
+        override fun onChanged(isLoading: Boolean?) {
+            this@SignInFragment.loading(isLoading = isLoading)
+        }
+    }
+
+    private val isLoginSuccess: Observer<Boolean> = object : Observer<Boolean> {
+        override fun onChanged(isLoginSuccess: Boolean?) {
+            if (isLoginSuccess != null && isLoginSuccess) {
+                startActivity(Intent(activity, MainActivity::class.java))
+                activity?.finish()
+            }
         }
     }
 }
