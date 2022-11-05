@@ -36,6 +36,10 @@ class VerifyCodeFragment : BaseFragment<FragmentVerifyCodeBinding, VerifyCodeVie
                 .show()
         }
 
+        this.binding.resendOtp.setOnClickListener{
+            //todo("")
+        }
+
         this.binding.btnVerify.setOnClickListener {
             if (viewModel.isVerifyCodeSuccess(
                     firstInput = this.binding.inputFirst.text.toString().trim(),
