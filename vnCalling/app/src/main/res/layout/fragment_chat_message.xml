@@ -21,9 +21,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginHorizontal="@dimen/_8sdp"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_6sdp"
+        android:paddingVertical="@dimen/_8sdp">
 
         <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="0dp"
@@ -33,14 +34,24 @@
             android:layout_weight="1"
             android:background="@drawable/background_text_field_chat_message"
             android:hint="Typing message..."
-            android:paddingHorizontal="@dimen/_6sdp"
-            android:paddingVertical="@dimen/_4sdp"
-            android:textColorHint="@color/white"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9ssp"
             tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:src="@drawable/ic_mic_none"
+            android:tint="@color/white" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/_16sdp"
             android:layout_height="@dimen/_16sdp"
-            android:src="@drawable/ic_send" />
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:src="@drawable/ic_send"
+            android:tint="@color/white" />
     </LinearLayout>
 </RelativeLayout>
