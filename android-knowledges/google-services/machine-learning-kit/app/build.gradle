@@ -44,6 +44,10 @@ dependencies {
     implementation 'com.google.android.gms:play-services-mlkit-barcode-scanning:18.1.0'
     implementation 'com.google.mlkit:barcode-scanning:17.0.2'
 
+    //mlkit-image-labeling
+    implementation 'com.google.android.gms:play-services-mlkit-image-labeling:16.0.8'
+    implementation 'com.google.mlkit:image-labeling:17.0.7'
+
     //navigation component
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
