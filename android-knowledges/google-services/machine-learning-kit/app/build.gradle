@@ -17,7 +17,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
 
@@ -37,14 +37,32 @@ android {
 }
 
 dependencies {
+    //mlkit-face-detection
+    implementation 'com.google.android.gms:play-services-mlkit-face-detection:17.1.0'
+    implementation 'com.google.mlkit:face-detection:16.1.5'
+
+    //mlkit-text-recognition
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:18.0.2'
+
+    //mlkit-barcode-scanning
+    implementation 'com.google.android.gms:play-services-mlkit-barcode-scanning:18.1.0'
+    implementation 'com.google.mlkit:barcode-scanning:17.0.2'
+
+    //mlkit-image-labeling
+    implementation 'com.google.android.gms:play-services-mlkit-image-labeling:16.0.8'
+    implementation 'com.google.mlkit:image-labeling:17.0.7'
+
     //navigation component
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
 
+    //android sdk libraries
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // unitTest
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
