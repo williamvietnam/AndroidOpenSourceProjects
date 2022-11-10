@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MachineLearningKit"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -28,13 +30,19 @@
 
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="face">
+            <!-- To use multiple models: android:value="face,model2,model3" -->
+        </meta-data>
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
             android:value="ocr">
             <!-- To use multiple models: android:value="ocr,model2,model3" -->
         </meta-data>
 
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
-            android:value="barcode" >
+            android:value="barcode">
             <!-- To use multiple models: android:value="barcode,model2,model3" -->
         </meta-data>
 
