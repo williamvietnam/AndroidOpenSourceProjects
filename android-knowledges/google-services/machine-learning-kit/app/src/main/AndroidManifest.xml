@@ -28,7 +28,15 @@
 
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
-            android:value="ocr" />
+            android:value="ocr">
+            <!-- To use multiple models: android:value="ocr,model2,model3" -->
+        </meta-data>
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="barcode" >
+            <!-- To use multiple models: android:value="barcode,model2,model3" -->
+        </meta-data>
     </application>
 
 </manifest>

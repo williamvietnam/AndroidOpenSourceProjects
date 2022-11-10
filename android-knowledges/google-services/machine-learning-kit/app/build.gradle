@@ -40,6 +40,10 @@ dependencies {
     //mlkit-text-recognition
     implementation 'com.google.android.gms:play-services-mlkit-text-recognition:18.0.2'
 
+    //mlkit-barcode-scanning
+    implementation 'com.google.android.gms:play-services-mlkit-barcode-scanning:18.1.0'
+    implementation 'com.google.mlkit:barcode-scanning:17.0.2'
+
     //navigation component
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
