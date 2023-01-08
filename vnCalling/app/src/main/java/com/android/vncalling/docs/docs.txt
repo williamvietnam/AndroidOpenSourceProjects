@@ -1,7 +1,0 @@
-- mutableListOf vs ArrayList
- +  thực tế, trong quá trình triển khai hiện tại của Kotlin biên dịch sang JVM,
-    việc gọi mutableListOfsẽ tạo ra ArrayList và không có sự khác biệt về hành vi: một khi danh sách được tạo, mọi thứ sẽ hoạt động giống nhau.
-    Detail: https://stackoverflow.com/questions/43114367/difference-between-arrayliststring-and-mutablelistofstring-in-kotlin
-
- + The List type in Kotlin is not mutable. If you want to cause your list to change, you need to declare it as a MutableList
-   Detail: https://stackoverflow.com/questions/58147014/how-to-remove-all-items-from-arraylist-in-kotlin
