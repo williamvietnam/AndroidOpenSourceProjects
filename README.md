@@ -1,44 +1,98 @@
-## [Android knowledges](https://github.com/williamvietnam/android/tree/main/android-knowledges)
-### 1. Android tutorials use Java to demo [See more]()
-- Life cycle demo
-- RecyclerView demo
+## Android Development Courses
 
-### 2. Android tutorials use Kotlin to demo [See more]()
-- Coroutine
-- Network Call API demo by Retrofit and Fast-Android-Networking
+#### 0. Android Basic Knowledge
 
-### 3 Design pattern [See detail]()
-- **Overview**: Design Patterns are Elements of Reusable Object-Oriented Software, describing 23 classic software design patterns.
-###### Creational patterns are ones that create objects, rather than having to instantiate objects directly. This gives the program more flexibility in deciding which objects need to be created for a given case.
-- [Abstract factory]() groups object factories that have a common theme.
-- [Builder]() constructs complex objects by separating construction and representation.
-- [Factory]() method creates objects without specifying the exact class to create.
-- [Prototype]() creates objects by cloning an existing object.
-- [Singleton]() restricts object creation for a class to only one instance.
-- 
-###### Structural: These concern class and object composition. They use inheritance to compose interfaces and define ways to compose objects to obtain new functionality.
-- [Adapter]() allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.
-- [Bridge]() decouples an abstraction from its implementation so that the two can vary independently.
-- [Composite]() composes zero-or-more similar objects so that they can be manipulated as one object.
-- [Decorator]() dynamically adds/overrides behaviour in an existing method of an object.
-- [Facade]() provides a simplified interface to a large body of code.
-- [Flyweight]() reduces the cost of creating and manipulating a large number of similar objects.
-- [Proxy]() provides a placeholder for another object to control access, reduce cost, and reduce complexity.
+- Android Project Structure
+- Views & ViewGroups
+-
 
-###### Behavioral: Most of these design patterns are specifically concerned with communication between objects.
-- [Chain of responsibility]() delegates commands to a chain of processing objects.
-- [Command]() creates objects that encapsulate actions and parameters.
-- [Interpreter]() implements a specialized language.
-- [Iterator]() accesses the elements of an object sequentially without exposing its underlying representation.
-- [Mediator]() allows loose coupling between classes by being the only class that has detailed knowledge of their methods.
-- [Memento]() provides the ability to restore an object to its previous state (undo).
-- [Observer]() is a publish/subscribe pattern, which allows a number of observer objects to see an event.
-- [State]() allows an object to alter its behavior when its internal state changes.
-- [Strategy]() allows one of a family of algorithms to be selected on-the-fly at runtime.
-- [Template method]() defines the skeleton of an algorithm as an abstract class, allowing its subclasses to provide concrete behavior.
-- [Visitor]() separates an algorithm from an object structure by moving the hierarchy of methods into one object.
-### 4. Google services [See detail]()
-- Cloud messaging vs Authentication: 
-- Google map demo:
-- Machine learning kit: 
-### 5. Kotlin knowledges [See detail]()
+#### 1. Activity & Fragment components
+
+- Activity Lifecycle
+- Fragment Lifecycle
+
+#### 2. Android Networking Libraries
+
+- Retrofit library to call API
+- Fast Android Networking library to call API
+- Image Loading Libraries:
+    + _Glide_
+    + _Picasso_
+    + _Coil-kt_
+
+#### 3. Android Local Databases
+
+- SharedPreferences
+- RoomDatabase/RealmDatabase/SQLiteDatabase
+
+#### 4. Asynchronous Programming
+
+- RxJava | RxAndroid
+- Coroutines
+
+#### 5. Services component
+
+#### 6. Broadcast Receiver & Content Provider components
+
+- Broadcast Receiver component
+- Content Provider component
+
+#### 7. Android Architectures
+
+- Model-View-ViewModel | MVVM
+- Model-View-Presenter | MVP
+- Model-View-Controller | MVC
+
+#### 8. Dependency Injection
+
+- Dagger 2
+
+--------------------------------------------------
+
+## Android Common Use Cases
+
+- Android Login/Register Form Use Case
+- Android Input Form Validation Use Case
+- Android Slide Image Auto Run Use Case
+
+--------------------------------------------------
+
+## Java-Kotlin-C/C++
+
+### 1. JavaCore
+
+- DataType & Variables
+- Conditionals: if-else, switch-case,...
+- Loops: while, do...while, for,...
+- Functions
+- OOP, Interfaces, Classes
+- Java Collection:
+    + Interfaces: Set, List, Queue, Deque,...
+    + Classes: ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet,...
+- Java Streams API: InputStream, OutputStream,...
+- Generics
+- Serialization
+- Networking Sockets
+
+### 2. Kotlin
+
+- DataType & Variables
+- Conditionals: if-else, when,...
+- Loops: while, do...while, for,...
+- Functions
+
+### 3. C/C++
+- DataType & Variables
+- Conditionals: if-else, switch-case,...
+- Loops: while, do...while, for,...
+- Functions
+
+--------------------------------------------------
+
+## Software Common Knowledge
+
+- Design Pattern
+- Google Services:
+    + Google Map
+    + Cloud Messaging and Authentication
+    + Machine Learning Kit
