@@ -62,6 +62,6 @@ public class LayoutItemUseCaseAdapter extends RecyclerView.Adapter<LayoutItemUse
     }
 
     public interface UseCaseCallBack {
-        void onClicked(String text);
+        void onClicked(String useCase);
     }
 }
