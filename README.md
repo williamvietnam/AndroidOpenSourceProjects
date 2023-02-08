@@ -51,9 +51,9 @@
 
 ## Android Common Use Cases
 
-- Android Login/Register Form Use Case
-- Android Input Form Validation Use Case
-- Android Slide Image Auto Run Use Case
+1. [x] Android Login/Register Form Use Case
+2. [x] Android Input Form Validation Use Case
+3. [x] Android Slide Image Auto Run Use Case
 
 --------------------------------------------------
 
@@ -61,31 +61,31 @@
 
 ### 1. JavaCore
 
-- DataType & Variables
-- Conditionals: if-else, switch-case,...
-- Loops: while, do...while, for,...
-- Functions
-- OOP, Interfaces, Classes
-- Java Collection:
+1. [x] DataType & Variables
+2. [x] Conditionals: if-else, switch-case,...
+3. [x] Loops: while, do...while, for,...
+4. [x] Functions
+5. [x] OOP, Interfaces, Classes
+6. [x] Java Collection:
     + Interfaces: Set, List, Queue, Deque,...
     + Classes: ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet,...
-- Java Streams API: InputStream, OutputStream,...
-- Generics
-- Serialization
-- Networking Sockets
+7. [x] Java Streams API: InputStream, OutputStream,...
+8. [x] Generics
+9. [x] Serialization
+10. [x] Networking Sockets
 
 ### 2. Kotlin
 
-- DataType & Variables
-- Conditionals: if-else, when,...
-- Loops: while, do...while, for,...
-- Functions
+1. [x] DataType & Variables
+2. [x] Conditionals: if-else, when,...
+3. [x] Loops: while, do...while, for,...
+4. [x] Functions
 
 ### 3. C/C++
-- DataType & Variables
-- Conditionals: if-else, switch-case,...
-- Loops: while, do...while, for,...
-- Functions
+1. [x] DataType & Variables
+2. [x] Conditionals: if-else, switch-case,...
+3. [x] Loops: while, do...while, for,...
+4. [x] Functions
 
 --------------------------------------------------
 
