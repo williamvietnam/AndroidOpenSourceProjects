@@ -78,7 +78,7 @@ hiện trên tất cả các thiết bị của bạn._
 - World Clock: See the local time in different time zones around the world.
 
 - Alarm: Set regular alarms for any time of day and have them repeat on one or more days of the week, or manage your
-  sleep schedule. Choose from a library of sounds, or pick a song from your Apple Music library.
+  sleep schedule. Choose from a library of sounds.
 
 - Stopwatch and Timer: Count down from a specified time or measure the duration of an event. To switch between the
   digital and analog faces, swipe the stopwatch, or tap Lap to record a lap or split.
@@ -116,8 +116,8 @@ hiện trên tất cả các thiết bị của bạn._
 <p>
 <img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Maps/assets/previews/screenshot1.png" height="400" alt="Maps screenshot 1">
 <img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Maps/assets/previews/screenshot2.png" height="400" alt="Maps screenshot 2">
-<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Maps/assets/previews/screenshot3.png" height="400" alt="Maps screenshot 1">
-<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Maps/assets/previews/screenshot4.png" height="400" alt="Maps screenshot 2">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Maps/assets/previews/screenshot3.png" height="400" alt="Maps screenshot 3">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Maps/assets/previews/screenshot4.png" height="400" alt="Maps screenshot 4">
 </p>
 
 ### _(3) Plan_
@@ -130,11 +130,30 @@ hiện trên tất cả các thiết bị của bạn._
 
 ## [IV. Music]()
 
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Music/assets/images/image_logo_app.png" height="88" width="88" alt="Music logo">
+
 ### _(1) Overview_
+
+- **Music Application Description:** Get unlimited access to 100 million songs, thousands of curated playlists, and
+  original content from the artists you know and love – all ad-free. Hear sound all around you with spatial audio
+  featuring Dolby Atmos.
+- **Technologies:** Android + Java + MediaPlayer
 
 ### _(2) Preview_
 
+<p>
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Music/assets/previews/screenshot1.png" height="400" alt="Music screenshot 1">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Music/assets/previews/screenshot2.png" height="400" alt="Music screenshot 2">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Music/assets/previews/screenshot3.png" height="400" alt="Music screenshot 3">
+</p>
+
 ### _(3) Plan_
+
+- Progress kick off date: April 1, 2023
+- In progress: 0% (not started yet)
+- Task list:
+    1. [x] Initial Project Configuration
+    2. [ ] etc...
 
 ## [V. Notes]()
 
