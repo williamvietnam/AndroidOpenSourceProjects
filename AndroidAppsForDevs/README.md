@@ -230,3 +230,9 @@ with checklists, images, web links, scanned documents, handwritten notes, or ske
 </p>
 
 ### _(3) Plan_
+
+- Progress kick off date: May 15, 2023
+- In progress: 0% (not started yet)
+- Task list:
+    1. [x] Initial Project Configuration
+    2. [ ] etc...
