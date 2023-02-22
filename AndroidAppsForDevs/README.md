@@ -83,6 +83,8 @@ hiện trên tất cả các thiết bị của bạn._
 - Stopwatch and Timer: Count down from a specified time or measure the duration of an event. To switch between the
   digital and analog faces, swipe the stopwatch, or tap Lap to record a lap or split.
 
+**[iii] Technologies:** Android + Kotlin
+
 ### _(2) Preview_
 
 <p>
@@ -198,8 +200,33 @@ with checklists, images, web links, scanned documents, handwritten notes, or ske
 
 ## [VI. Weather]()
 
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Weather/assets/images/image_logo_app.png" height="88" width="88" alt="Weather logo">
+
 ### _(1) Overview_
 
+- **Weather Application Description:** Get the weather forecast in a beautiful and powerful app. See current and
+  forecasted weather with a smart layout that
+  updates as conditions change. And view precipitation, air quality, and temperature maps to see different conditions
+  near
+  you.
+- **Features:**
+    + See the most important weather information in a smart layout that adjusts to the current conditions.
+    + View daily forecasts for the next ten days, including color-coded bars displaying the high and low temperatures.
+    + Tap any module to reveal a deeper set of data such as hourly temperature and precipitation over the next ten days.
+    + Get notifications for severe weather events such as tornados, hurricanes, and flash floods so you can stay safe
+      and prepared.
+    + View a chart that shows a minute‑by‑minute forecast of precipitation intensity over the next hour.
+    + Receive notifications when rain or snow is about to start or stop.
+    + See graphical representations of UV index, sunset, wind, and more.
+- Technologies: Android + Kotlin
+
 ### _(2) Preview_
+
+<p>
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Weather/assets/previews/screenshot1.png" height="320" alt="Weather screenshot 1">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Weather/assets/previews/screenshot2.png" height="320" alt="Weather screenshot 2">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Weather/assets/previews/screenshot3.png" height="320" alt="Weather screenshot 1">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Weather/assets/previews/screenshot4.png" height="320" alt="Weather screenshot 2">
+</p>
 
 ### _(3) Plan_
