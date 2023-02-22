@@ -103,9 +103,30 @@ hiện trên tất cả các thiết bị của bạn._
 
 ### _(1) Overview_
 
+- **Maps Application Description:** Tìm đường nhanh hơn và dễ dàng hơn bằng Google Maps. Hơn 220 quốc gia và vùng lãnh
+  thổ được lập bản đồ cũng như hàng
+  trăm triệu doanh nghiệp và địa điểm đã có mặt trên bản đồ. Xem thông tin đường đi qua GPS, thông tin về tình hình giao
+  thông và phương tiện công cộng theo thời gian thực, và tìm thông tin bạn cần bằng cách xem thông tin mới nhất về các
+  doanh nghiệp (bao gồm cửa hàng tạp hóa, hiệu thuốc và các địa điểm quan trọng khác).
+- **Technologies:** Android + Java + MVP + Google Maps API
+- **Libraries used in project:** Google Maps + Material Design 2
+
 ### _(2) Preview_
 
+<p>
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Maps/assets/previews/screenshot1.png" height="400" alt="Maps screenshot 1">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Maps/assets/previews/screenshot2.png" height="400" alt="Maps screenshot 2">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Maps/assets/previews/screenshot3.png" height="400" alt="Maps screenshot 1">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Maps/assets/previews/screenshot4.png" height="400" alt="Maps screenshot 2">
+</p>
+
 ### _(3) Plan_
+
+- Progress kick off date: March 28, 2023
+- In progress: 0% (not started yet)
+- Task list:
+    1. [x] Initial Project Configuration
+    2. [ ] etc...
 
 ## [IV. Music]()
 
@@ -132,12 +153,12 @@ with checklists, images, web links, scanned documents, handwritten notes, or ske
 - ViewBinding
 
 ### _(2) Preview_
+
 <p>
 <img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Notes/assets/previews/screenshot1.png" height="320" alt="Notes screenshot 1">
 <img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Notes/assets/previews/screenshot2.png" height="320" alt="Notes screenshot 2">
 <img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Notes/assets/previews/screenshot3.png" height="320" alt="Notes screenshot 1">
 <img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Notes/assets/previews/screenshot4.png" height="320" alt="Notes screenshot 2">
-
 </p>
 
 ### _(3) Plan_
