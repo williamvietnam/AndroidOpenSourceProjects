@@ -2,6 +2,8 @@
 
 ## [I. Calendar]()
 
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Calendar/assets/images/image_logo_app.png" height="56" width="56" alt="Calendar logo">
+
 ### _(1) Overview_
 
 **[ i ] Calendar Application Description:**
@@ -49,8 +51,10 @@ hiện trên tất cả các thiết bị của bạn._
 
 ### _(2) Preview_
 
+<p>
 <img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Calendar/assets/previews/screenshot1.png" height="320" alt="Calendar screenshot 1">
 <img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Calendar/assets/previews/screenshot2.png" height="320" alt="Calendar screenshot 2">
+</p>
 
 ### _(3) Plan_
 
@@ -63,40 +67,90 @@ hiện trên tất cả các thiết bị của bạn._
 
 ## [II. Clock]()
 
-#### 1. Overview
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Clock/assets/images/image_logo_app.png" height="88" width="88" alt="Clock logo">
 
-#### 2. Preview
+### _(1) Overview_
 
-#### 3. Plan
+**[i] Clock Application Description:** Manage your time with ease using the Clock app.
+
+**[ii] Features:**
+
+- World Clock: See the local time in different time zones around the world.
+
+- Alarm: Set regular alarms for any time of day and have them repeat on one or more days of the week, or manage your
+  sleep schedule. Choose from a library of sounds, or pick a song from your Apple Music library.
+
+- Stopwatch and Timer: Count down from a specified time or measure the duration of an event. To switch between the
+  digital and analog faces, swipe the stopwatch, or tap Lap to record a lap or split.
+
+### _(2) Preview_
+
+<p>
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Clock/assets/previews/screenshot1.png" height="320" alt="Calendar screenshot 1">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Clock/assets/previews/screenshot2.png" height="320" alt="Calendar screenshot 2">
+</p>
+
+### _(3) Plan_
+
+- Project kick off date: July 1, 2023
+- In Progress: 0% (not started yet)
+- Task list:
+    1. [x] Initial Project Configuration
+    2. [ ] Build code base Model-View-ViewModel by Kotlin
+    3. [ ] etc...
 
 ## [III. Maps]()
 
-#### 1. Overview
+### _(1) Overview_
 
-#### 2. Preview
+### _(2) Preview_
 
-#### 3. Plan
+### _(3) Plan_
 
 ## [IV. Music]()
 
-#### 1. Overview
+### _(1) Overview_
 
-#### 2. Preview
+### _(2) Preview_
 
-#### 3. Plan
+### _(3) Plan_
 
 ## [V. Notes]()
 
-#### 1. Overview
+### _(1) Overview_
 
-#### 2. Preview
+**[i] Notes Application Description:** Notes is the best place to jot down quick thoughts or to save longer notes filled
+with checklists, images, web links, scanned documents, handwritten notes, or sketches.
 
-#### 3. Plan
+**[ii] Technologies:** Android + Java + Multiple Activity
+
+**[iii] Libraries used in project:**
+
+- Jetpack Room Database
+- ViewBinding
+
+### _(2) Preview_
+
+### _(3) Plan_
+
+- Project kick off date: February 14, 2023
+- In Progress: 100% (done)
+- Task list:
+    1. [x] Initial Project Configuration
+    2. [x] Database Setup by RoomDatabase library
+    3. [x] Create and Save Note
+    4. [x] Display Notes List by RecyclerView
+    5. [x] Add Image & URL in Note
+    6. [x] View & Update Note
+    7. [x] Remove Image/URL
+    8. [x] Delete Note
+    9. [x] Search Notes
+    10. [x] Create Quick Actions
 
 ## [VI. Weather]()
 
-#### 1. Overview
+### _(1) Overview_
 
-#### 2. Preview
+### _(2) Preview_
 
-#### 3. Plan
+### _(3) Plan_
