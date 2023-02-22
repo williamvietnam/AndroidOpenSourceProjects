@@ -2,7 +2,7 @@
 
 ## [I. Calendar]()
 
-<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Calendar/assets/images/image_logo_app.png" height="56" width="56" alt="Calendar logo">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Calendar/assets/images/image_logo_app.png" height="88" width="88" alt="Calendar logo">
 
 ### _(1) Overview_
 
@@ -86,8 +86,8 @@ hiện trên tất cả các thiết bị của bạn._
 ### _(2) Preview_
 
 <p>
-<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Clock/assets/previews/screenshot1.png" height="320" alt="Calendar screenshot 1">
-<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Clock/assets/previews/screenshot2.png" height="320" alt="Calendar screenshot 2">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Clock/assets/previews/screenshot1.png" height="320" alt="Clock screenshot 1">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Clock/assets/previews/screenshot2.png" height="320" alt="Clock screenshot 2">
 </p>
 
 ### _(3) Plan_
@@ -117,6 +117,8 @@ hiện trên tất cả các thiết bị của bạn._
 
 ## [V. Notes]()
 
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Notes/assets/images/image_logo_app.png" height="88" width="88" alt="Notes logo">
+
 ### _(1) Overview_
 
 **[i] Notes Application Description:** Notes is the best place to jot down quick thoughts or to save longer notes filled
@@ -130,6 +132,13 @@ with checklists, images, web links, scanned documents, handwritten notes, or ske
 - ViewBinding
 
 ### _(2) Preview_
+<p>
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Notes/assets/previews/screenshot1.png" height="320" alt="Notes screenshot 1">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Notes/assets/previews/screenshot2.png" height="320" alt="Notes screenshot 2">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Notes/assets/previews/screenshot3.png" height="320" alt="Notes screenshot 1">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Notes/assets/previews/screenshot4.png" height="320" alt="Notes screenshot 2">
+
+</p>
 
 ### _(3) Plan_
 
