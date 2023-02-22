@@ -5,15 +5,15 @@
 ### _(1) Overview_
 
 **[ i ] Calendar Application Description:**
-   Keep track of your schedule and share it with others using Calendar. Create
-   separate calendars for home, school, work, and more. See all your calendars in a single window or view just the
-   calendars you want. Calendar works with iCloud, Yahoo, Google, and other accounts. So every change you make on one
-   device automatically appears across all your devices.
+Keep track of your schedule and share it with others using Calendar. Create
+separate calendars for home, school, work, and more. See all your calendars in a single window or view just the
+calendars you want. Calendar works with iCloud, Yahoo, Google, and other accounts. So every change you make on one
+device automatically appears across all your devices.
 
-   _Theo dõi lịch trình của bạn và chia sẻ nó với những người khác bằng Lịch. Tạo lịch riêng cho gia đình, trường học,
-   cơ quan, v.v. Xem tất cả lịch của bạn trong một cửa sổ duy nhất hoặc chỉ xem lịch bạn muốn. Lịch hoạt động với
-   iCloud, Yahoo, Google và các tài khoản khác. Vì vậy, mọi thay đổi bạn thực hiện trên một thiết bị sẽ tự động xuất
-   hiện trên tất cả các thiết bị của bạn._
+_Theo dõi lịch trình của bạn và chia sẻ nó với những người khác bằng Lịch. Tạo lịch riêng cho gia đình, trường học,
+cơ quan, v.v. Xem tất cả lịch của bạn trong một cửa sổ duy nhất hoặc chỉ xem lịch bạn muốn. Lịch hoạt động với
+iCloud, Yahoo, Google và các tài khoản khác. Vì vậy, mọi thay đổi bạn thực hiện trên một thiết bị sẽ tự động xuất
+hiện trên tất cả các thiết bị của bạn._
 
 **[ ii ] Features:**
 
@@ -49,10 +49,17 @@
 
 ### _(2) Preview_
 
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Calendar/assets/previews/screenshot1.png" height="320" alt="Calendar screenshot 1">
+<img src="https://raw.githubusercontent.com/williamvietnam/AndroidOpenSourceProjects/main/AndroidAppsForDevs/Calendar/assets/previews/screenshot2.png" height="320" alt="Calendar screenshot 2">
+
 ### _(3) Plan_
 
-1. Project kick off date:
-2. 
+- Project kick off date: June 1, 2023
+- In Progress: 0% (not started yet)
+- Task list:
+    1. [x] Initial Project Configuration
+    2. [ ] Build code base Model-View-ViewModel by Kotlin
+    3. [ ] etc...
 
 ## [II. Clock]()
 
