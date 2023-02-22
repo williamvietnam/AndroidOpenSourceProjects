@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">MachineLearningKit</string>
-    <string name="text_recognition">Text recognition</string>
-    <string name="image_labeling">Image labeling</string>
-    <string name="barcode_scanning">Barcode scanning</string>
-    <string name="face_detection">Face detection</string>
-    <string name="landmark_recognition">Landmark recognition</string>
-</resources>
