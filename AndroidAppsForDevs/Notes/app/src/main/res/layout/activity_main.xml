@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="20dp"
+    tools:context=".activities.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitleApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/my_notes"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitleApp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background_edittext"
+        android:drawableStart="@drawable/ic_search"
+        android:drawableTint="@color/white"
+        android:hint="  Search notes"
+        android:padding="12dp"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvNotes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/layoutActions"
+        android:layout_below="@id/search"
+        android:layout_marginTop="8dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnAddNotesMain"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_above="@id/layoutActions"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_add"
+        app:tint="#FFC107" />
+
+    <LinearLayout
+        android:id="@+id/layoutActions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_add_2"
+            app:tint="#80FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_photo"
+            app:tint="#80FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_internet"
+            app:tint="#80FFFFFF" />
+    </LinearLayout>
+</RelativeLayout>
