@@ -1,17 +1,14 @@
-package com.android.recyclerview
+package com.android.tutorials.shared_preferences
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.android.databinding.FragmentRecyclerViewBinding
+import com.android.databinding.FragmentSharedPreferencesBinding
 
-class RecyclerViewFragment : Fragment() {
-
-    private var _binding: FragmentRecyclerViewBinding? = null
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+class SharedPreferencesFragment : Fragment() {
+    private var _binding: FragmentSharedPreferencesBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -19,8 +16,9 @@ class RecyclerViewFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentRecyclerViewBinding.inflate(inflater, container, false)
-        return this.binding.root
+        _binding = FragmentSharedPreferencesBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
     }
 
     override fun onDestroyView() {
