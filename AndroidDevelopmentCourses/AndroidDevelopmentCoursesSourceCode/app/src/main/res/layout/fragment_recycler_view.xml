@@ -23,7 +23,7 @@
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:spanCount="2"
-        tools:listitem="@layout/layout_item_recycler_view" />
+        tools:listitem="@layout/item_recycler_view" />
 
     <FrameLayout
         android:layout_width="match_parent"

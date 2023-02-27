@@ -4,7 +4,7 @@ package com.android.tutorials.recyclerview
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.android.databinding.LayoutItemRecyclerViewBinding
+import com.android.databinding.ItemRecyclerViewBinding
 
 class RecyclerViewAdapter(
     private val itemList: List<String>?,
@@ -13,7 +13,7 @@ class RecyclerViewAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewHolder {
         val inflater: LayoutInflater = LayoutInflater.from(parent.context)
-        val binding = LayoutItemRecyclerViewBinding.inflate(inflater, parent, false)
+        val binding = ItemRecyclerViewBinding.inflate(inflater, parent, false)
         return RecyclerViewHolder(binding)
     }
 
@@ -29,7 +29,7 @@ class RecyclerViewAdapter(
     }
 
     inner class RecyclerViewHolder(
-        private val binding: LayoutItemRecyclerViewBinding
+        private val binding: ItemRecyclerViewBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun onBind(position: Int) {
