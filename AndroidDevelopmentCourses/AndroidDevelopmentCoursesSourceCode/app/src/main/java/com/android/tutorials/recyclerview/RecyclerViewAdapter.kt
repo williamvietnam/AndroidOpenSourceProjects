@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.android.databinding.ItemRecyclerViewBinding
 
 class RecyclerViewAdapter(
-    private val itemList: List<String>?,
+    private val itemList: List<RecyclerViewModel>?,
     private val callBack: ItemCallBack
 ) : RecyclerView.Adapter<RecyclerViewAdapter.RecyclerViewHolder>() {
 
@@ -33,11 +33,17 @@ class RecyclerViewAdapter(
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun onBind(position: Int) {
-            //todo
+            val item = itemList?.get(position)
+            if (item != null) {
+                this.binding.tvUseCase.text = item.text
+                this.binding.root.setOnClickListener {
+                    callBack.onClicked(item = item)
+                }
+            }
         }
     }
 
     interface ItemCallBack {
-        fun onClicked();
+        fun onClicked(item: RecyclerViewModel);
     }
 }
