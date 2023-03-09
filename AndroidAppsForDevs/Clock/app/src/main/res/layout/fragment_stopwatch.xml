@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_theme"
+    tools:context=".Stopwatch.StopwatchFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/stopwatch_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:000"
+            android:padding="@dimen/offset_medium"
+            android:textSize="72sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <Button
+            android:id="@+id/start_button"
+            style="@style/button_gray_color"
+            android:layout_width="0dp"
+            android:text="@string/start"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="@+id/stopwatch_tv"
+            app:layout_constraintTop_toBottomOf="@+id/stopwatch_tv"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <Button
+            android:id="@+id/stop_button"
+            style="@style/button_gray_color"
+            android:layout_width="0dp"
+            android:text="@string/stop"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            app:layout_constraintBottom_toBottomOf="@id/start_button"
+            app:layout_constraintEnd_toEndOf="@+id/stopwatch_tv"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@id/start_button" />
+
+        <Button
+            android:id="@+id/reset_button"
+            style="@style/button_gray_color"
+            android:layout_width="0dp"
+            android:layout_marginVertical="@dimen/offset_large"
+            android:layout_marginHorizontal="0dp"
+            android:text="@string/reset"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            app:layout_constraintEnd_toEndOf="@+id/stop_button"
+            app:layout_constraintStart_toStartOf="@+id/start_button"
+            app:layout_constraintTop_toBottomOf="@id/start_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
