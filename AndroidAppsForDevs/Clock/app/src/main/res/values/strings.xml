@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">Clock</string>
+
+    <!--    Menu related string   -->
+    <string name="app_name">MyClock</string>
+    <string name="clock">Clock</string>
+    <string name="alarm">Alarm</string>
+    <string name="stopwatch">Stopwatch</string>
+    <string name="timer">Timer</string>
+    <string name="manual_switch_label">Analog</string>
+    <string name="set">SET</string>
+    <string name="cancel">CANCEL</string>
+
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="menu_about">About</string>
+
+    <string name="support_message">We are keep adding feature for this app. \n If you like this app, please support us :</string>
+    <string name="donate">Donate</string>
+    <string name="ok">OK</string>
+    <string name="app_credit">Created by Andrea\'sGift 2020</string>
+    <string name="snooze">Snooze</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="reset">Reset</string>
 </resources>
