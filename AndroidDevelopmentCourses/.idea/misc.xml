@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MyGithub/AndroidOpenSourceProjects/AndroidDevelopmentCourses/AndroidDevelopmentCoursesSourceCode/app/src/main/res/layout/activity_activity_lifecycle.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyGithub/AndroidOpenSourceProjects/AndroidDevelopmentCourses/AndroidDevelopmentCoursesSourceCode/app/src/main/res/layout/fragment_first_screen.xml" value="0.1987179487179487" />
+        <entry key="..\:/MyGithub/AndroidOpenSourceProjects/AndroidDevelopmentCourses/AndroidDevelopmentCoursesSourceCode/app/src/main/res/layout/fragment_fragment_lifecycle.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyGithub/AndroidOpenSourceProjects/AndroidDevelopmentCourses/AndroidDevelopmentCoursesSourceCode/app/src/main/res/layout/fragment_recyclerview.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyGithub/AndroidOpenSourceProjects/AndroidDevelopmentCourses/AndroidDevelopmentCoursesSourceCode/app/src/main/res/layout/fragment_second_screen.xml" value="0.24114583333333334" />
+        <entry key="..\:/MyGithub/AndroidOpenSourceProjects/AndroidDevelopmentCourses/AndroidDevelopmentCoursesSourceCode/app/src/main/res/layout/layout_item_recycler_view.xml" value="0.24114583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
