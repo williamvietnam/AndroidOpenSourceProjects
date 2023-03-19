@@ -1,4 +1,4 @@
-package com.multi.app
+package com.multiapplication
 
 import org.junit.Test
 
