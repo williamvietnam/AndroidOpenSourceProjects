@@ -46,4 +46,11 @@
 
 ## Commonly Used Android Templates
 
+- Retrofit + RecyclerView
+- RoomDB + RecyclerView
+- SearchView + RecyclerView
+- RxJava/RxAndroid + Retrofit + RecyclerView
+- Coroutines + Retrofit + RecyclerView
+- BottomSheet + RecyclerView
+
 ## Commonly Used Android Libraries
