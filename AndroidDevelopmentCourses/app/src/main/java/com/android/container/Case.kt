@@ -1,7 +1,6 @@
 package com.android.container
 
-data class UseCase(
+data class Case(
     val id: String,
-    val image: Int,
     val text: String,
 )

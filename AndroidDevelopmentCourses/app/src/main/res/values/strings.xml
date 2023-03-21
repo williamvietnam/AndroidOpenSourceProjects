@@ -2,4 +2,8 @@
     <string name="app_name">Android Development Courses</string>
     <string name="tutorials">Tutorials</string>
     <string name="templates">Templates</string>
+    <string name="android_basic_tutorials"><u>Android Basic Tutorials</u></string>
+    <string name="commonly_used_android_templates"><u>Commonly Used Android Templates</u></string>
+    <string name="commonly_used_android_libraries"><u>Commonly Used Android Libraries</u></string>
+    <string name="libraries">Libraries</string>
 </resources>

@@ -21,4 +21,12 @@
 
     </fragment>
 
+    <fragment
+        android:id="@+id/librariesFragment"
+        android:name="com.android.container.LibrariesFragment"
+        android:label="LibrariesFragment"
+        tools:layout="@layout/fragment_libraries">
+
+    </fragment>
+
 </navigation>
