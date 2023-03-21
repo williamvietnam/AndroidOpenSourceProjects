@@ -16,4 +16,12 @@
         android:orderInCategory="2"
         android:title="@string/templates"
         app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/librariesFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_libraries"
+        android:orderInCategory="2"
+        android:title="@string/libraries"
+        app:showAsAction="ifRoom" />
 </menu>

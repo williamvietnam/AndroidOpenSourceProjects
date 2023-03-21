@@ -6,11 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.android.R
 import com.android.databinding.FragmentTutorialsBinding
 
 class TutorialsFragment : Fragment() {
-    private lateinit var tutorialsAdapter: TutorialsAdapter
+    private lateinit var adapter: CasesAdapter
     private var _binding: FragmentTutorialsBinding? = null
 
     // This property is only valid between onCreateView and
@@ -29,38 +28,38 @@ class TutorialsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        tutorialsAdapter = TutorialsAdapter(
-            useCaseList = initializeUseCasesList(),
-            callBack = object : UseCaseCallBack {
-                override fun useCaseOnClicked(useCase: UseCase) {
-                    when (useCase.id) {
+        adapter = CasesAdapter(
+            cases = initializeCasesList(),
+            callback = object : CasesAdapter.CaseCallBack {
+                override fun onCaseClicked(case: Case) {
+                    when (case.id) {
                         Constants.LIFECYCLE_TUTORIAL -> {
-                            Toast.makeText(context, useCase.text, Toast.LENGTH_LONG).show()
+                            Toast.makeText(context, case.text, Toast.LENGTH_LONG).show()
                         }
                         Constants.RECYCLERVIEW_TUTORIAL -> {
-                            Toast.makeText(context, useCase.text, Toast.LENGTH_LONG).show()
+                            Toast.makeText(context, case.text, Toast.LENGTH_LONG).show()
                         }
                         Constants.SHARED_PREFERENCES_TUTORIAL -> {
-                            Toast.makeText(context, useCase.text, Toast.LENGTH_LONG).show()
+                            Toast.makeText(context, case.text, Toast.LENGTH_LONG).show()
                         }
                         Constants.BROADCAST_RECEIVER_TUTORIAL -> {
-                            Toast.makeText(context, useCase.text, Toast.LENGTH_LONG).show()
+                            Toast.makeText(context, case.text, Toast.LENGTH_LONG).show()
                         }
                         Constants.PERSISTENT_BOTTOM_SHEET_TUTORIAL -> {
-                            Toast.makeText(context, useCase.text, Toast.LENGTH_LONG).show()
+                            Toast.makeText(context, case.text, Toast.LENGTH_LONG).show()
                         }
                         Constants.MODAL_BOTTOM_SHEET_DIALOG_TUTORIAL -> {
-                            Toast.makeText(context, useCase.text, Toast.LENGTH_LONG).show()
+                            Toast.makeText(context, case.text, Toast.LENGTH_LONG).show()
                         }
                         Constants.MODAL_BOTTOM_SHEET_DIALOG_FRAGMENT_TUTORIAL -> {
-                            Toast.makeText(context, useCase.text, Toast.LENGTH_LONG).show()
+                            Toast.makeText(context, case.text, Toast.LENGTH_LONG).show()
                         }
                     }
                 }
             }
         )
 
-        this.binding.recyclerViewTutorials.adapter = tutorialsAdapter
+        this.binding.recyclerViewTutorials.adapter = adapter
     }
 
     override fun onDestroyView() {
@@ -68,58 +67,51 @@ class TutorialsFragment : Fragment() {
         _binding = null
     }
 
-    private fun initializeUseCasesList(): List<UseCase> {
-        val useCases = ArrayList<UseCase>()
+    private fun initializeCasesList(): List<Case> {
+        val cases = ArrayList<Case>()
 
-        val useCase1 = UseCase(
+        val case1 = Case(
             Constants.LIFECYCLE_TUTORIAL,
-            R.drawable.image_tutorial,
             "Lifecycle"
         )
-        useCases.add(useCase1)
+        cases.add(case1)
 
-        val useCase2 = UseCase(
+        val case2 = Case(
             Constants.RECYCLERVIEW_TUTORIAL,
-            R.drawable.image_tutorial,
             "RecyclerView"
         )
-        useCases.add(useCase2)
+        cases.add(case2)
 
-        val useCase3 = UseCase(
+        val case3 = Case(
             Constants.SHARED_PREFERENCES_TUTORIAL,
-            R.drawable.image_tutorial,
             "Shared Preferences"
         )
-        useCases.add(useCase3)
+        cases.add(case3)
 
-        val useCase4 = UseCase(
+        val case4 = Case(
             Constants.BROADCAST_RECEIVER_TUTORIAL,
-            R.drawable.image_tutorial,
             "Broadcast Receiver"
         )
-        useCases.add(useCase4)
+        cases.add(case4)
 
-        val useCase5 = UseCase(
+        val case5 = Case(
             Constants.PERSISTENT_BOTTOM_SHEET_TUTORIAL,
-            R.drawable.image_tutorial,
             "Persistent Bottom Sheet"
         )
-        useCases.add(useCase5)
+        cases.add(case5)
 
-        val useCase6 = UseCase(
+        val case6 = Case(
             Constants.MODAL_BOTTOM_SHEET_DIALOG_TUTORIAL,
-            R.drawable.image_tutorial,
             "Modal Bottom Sheet Dialog"
         )
-        useCases.add(useCase6)
+        cases.add(case6)
 
-        val useCase7 = UseCase(
+        val case7 = Case(
             Constants.MODAL_BOTTOM_SHEET_DIALOG_FRAGMENT_TUTORIAL,
-            R.drawable.image_tutorial,
             "Modal Bottom Sheet Dialog Fragment"
         )
-        useCases.add(useCase7)
+        cases.add(case7)
 
-        return useCases
+        return cases
     }
 }

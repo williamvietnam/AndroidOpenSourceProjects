@@ -6,11 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.android.R
 import com.android.databinding.FragmentTemplatesBinding
 
 class TemplatesFragment : Fragment() {
-    private lateinit var templatesAdapter: TemplatesAdapter
+    private lateinit var adapter: CasesAdapter
     private var _binding: FragmentTemplatesBinding? = null
 
     // This property is only valid between onCreateView and
@@ -33,52 +32,49 @@ class TemplatesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        templatesAdapter = TemplatesAdapter(
-            useCaseList = initializeUseCasesList(),
-            callBack = object : UseCaseCallBack {
-                override fun useCaseOnClicked(useCase: UseCase) {
-                    when (useCase.id) {
+        adapter = CasesAdapter(
+            cases = initializeCasesList(),
+            callback = object : CasesAdapter.CaseCallBack {
+                override fun onCaseClicked(case: Case) {
+                    when (case.id) {
                         Constants.RETROFIT_RECYCLERVIEW_TEMPLATE -> {
-                            Toast.makeText(context, useCase.text, Toast.LENGTH_SHORT).show()
+                            Toast.makeText(context, case.text, Toast.LENGTH_SHORT).show()
                         }
                         Constants.ROOM_RECYCLERVIEW_TEMPLATE -> {
-                            Toast.makeText(context, useCase.text, Toast.LENGTH_SHORT).show()
+                            Toast.makeText(context, case.text, Toast.LENGTH_SHORT).show()
                         }
                         Constants.BOTTOM_SHEET_RECYCLERVIEW_TEMPLATE -> {
-                            Toast.makeText(context, useCase.text, Toast.LENGTH_SHORT).show()
+                            Toast.makeText(context, case.text, Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
             }
         )
 
-        this.binding.recyclerViewTemplates.adapter = templatesAdapter
+        this.binding.recyclerViewTemplates.adapter = adapter
     }
 
-    private fun initializeUseCasesList(): List<UseCase> {
-        val useCases = ArrayList<UseCase>()
+    private fun initializeCasesList(): List<Case> {
+        val cases = ArrayList<Case>()
 
-        val useCase1 = UseCase(
+        val case1 = Case(
             Constants.RETROFIT_RECYCLERVIEW_TEMPLATE,
-            R.drawable.image_template,
             "RetrofitRecyclerView"
         )
-        useCases.add(useCase1)
+        cases.add(case1)
 
-        val useCase2 = UseCase(
+        val case2 = Case(
             Constants.ROOM_RECYCLERVIEW_TEMPLATE,
-            R.drawable.image_template,
             "RoomRecyclerView"
         )
-        useCases.add(useCase2)
+        cases.add(case2)
 
-        val useCase3 = UseCase(
+        val case3 = Case(
             Constants.BOTTOM_SHEET_RECYCLERVIEW_TEMPLATE,
-            R.drawable.image_template,
             "BottomSheetRecyclerView"
         )
-        useCases.add(useCase3)
+        cases.add(case3)
 
-        return useCases
+        return cases
     }
 }
