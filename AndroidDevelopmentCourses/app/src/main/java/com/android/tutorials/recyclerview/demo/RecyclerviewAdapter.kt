@@ -1,4 +1,4 @@
-package com.android.tutorials.recyclerview
+package com.android.tutorials.recyclerview.demo
 
 
 import android.view.LayoutInflater
@@ -6,18 +6,18 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.android.databinding.ItemRecyclerViewBinding
 
-class RecyclerViewAdapter(
-    private val itemList: List<RecyclerViewModel>?,
+class RecyclerviewAdapter(
+    private val itemList: List<RecyclerviewModel>?,
     private val callBack: ItemCallBack
-) : RecyclerView.Adapter<RecyclerViewAdapter.RecyclerViewHolder>() {
+) : RecyclerView.Adapter<RecyclerviewAdapter.RecyclerviewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerviewHolder {
         val inflater: LayoutInflater = LayoutInflater.from(parent.context)
         val binding = ItemRecyclerViewBinding.inflate(inflater, parent, false)
-        return RecyclerViewHolder(binding)
+        return RecyclerviewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: RecyclerViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: RecyclerviewHolder, position: Int) {
         holder.onBind(position)
     }
 
@@ -28,7 +28,7 @@ class RecyclerViewAdapter(
         return 0
     }
 
-    inner class RecyclerViewHolder(
+    inner class RecyclerviewHolder(
         private val binding: ItemRecyclerViewBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
@@ -44,6 +44,6 @@ class RecyclerViewAdapter(
     }
 
     interface ItemCallBack {
-        fun onClicked(item: RecyclerViewModel);
+        fun onClicked(item: RecyclerviewModel);
     }
 }

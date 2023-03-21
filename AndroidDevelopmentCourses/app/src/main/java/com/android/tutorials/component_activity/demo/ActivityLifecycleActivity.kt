@@ -1,4 +1,4 @@
-package com.android.tutorials.lifecycle
+package com.android.tutorials.component_activity.demo
 
 import android.os.Bundle
 import android.util.Log
