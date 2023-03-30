@@ -5,30 +5,89 @@ import com.multiapplication.base.BaseViewModel
 
 class CalculatorViewModel : BaseViewModel() {
 
+    var typeButton: String = ""
+    var isEnablePlusButton: Boolean = false
+    var isEnableMinusButton: Boolean = false
+    var isEnableMultipleButton: Boolean = false
+    var isEnableDivideButton: Boolean = false
     private var temporaryData: String = ""
     var temporary: String? = null
     val data = MutableLiveData<String>()
+    private var storeData: String? = null
 
     fun getDataDisplay() {
         if (data.value != null) {
             temporaryData = data.value!!
         }
         data.value = temporaryData + temporary
+
+        if ((isEnablePlusButton || isEnableMinusButton || isEnableMultipleButton || isEnableDivideButton) && (storeData == null)) {
+            if (data.value != null) {
+                storeData = data.value!!
+                data.value = temporary
+
+                isEnablePlusButton = false
+                isEnableMinusButton = false
+                isEnableMultipleButton = false
+                isEnableDivideButton = false
+            }
+        }
     }
 
-    fun calculatePlus(X: Double, Y: Double): Double {
-        return X + Y
+    fun getCalculationResultWhenClickCalculationButton() {
+        if (storeData != null && data.value != null) {
+            if (isEnablePlusButton) {
+                this.calculatePlus(storeData!!, data.value!!)
+            } else if (isEnableMinusButton) {
+                this.calculateMinus(storeData!!, data.value!!)
+            } else if (isEnableMultipleButton) {
+                this.calculateMultiple(storeData!!, data.value!!)
+            } else if (isEnableDivideButton) {
+                this.calculateDivide(storeData!!, data.value!!)
+            }
+        }
     }
 
-    fun calculateMinus(X: Double, Y: Double): Double {
-        return X - Y
+    fun getCalculationResultWhenClickEqualButton() {
+        if (storeData != null && data.value != null) {
+            when (typeButton) {
+                CalculatorConstants.PLUS -> {
+                    this.calculatePlus(storeData!!, data.value!!)
+                }
+                CalculatorConstants.MINUS -> {
+                    this.calculateMinus(storeData!!, data.value!!)
+                }
+                CalculatorConstants.MULTIPLE -> {
+                    this.calculateMultiple(storeData!!, data.value!!)
+                }
+                CalculatorConstants.DIVIDE -> {
+                    this.calculateDivide(storeData!!, data.value!!)
+                }
+            }
+        }
     }
 
-    fun calculateMultiple(X: Double, Y: Double): Double {
-        return X * Y
+    private fun calculatePlus(X: String, Y: String): String {
+        val x: Double = X.toDouble()
+        val y: Double = Y.toDouble()
+        return (x + y).toString()
     }
 
-    fun calculateDivide(X: Double, Y: Double): Double {
-        return X / Y
+    private fun calculateMinus(X: String, Y: String): String {
+        val x: Double = X.toDouble()
+        val y: Double = Y.toDouble()
+        return (x - y).toString()
+    }
+
+    private fun calculateMultiple(X: String, Y: String): String {
+        val x: Double = X.toDouble()
+        val y: Double = Y.toDouble()
+        return (x * y).toString()
+    }
+
+    private fun calculateDivide(X: String, Y: String): String {
+        val x: Double = X.toDouble()
+        val y: Double = Y.toDouble()
+        return (x / y).toString()
     }
 }
