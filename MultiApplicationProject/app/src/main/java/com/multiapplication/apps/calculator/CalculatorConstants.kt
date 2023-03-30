@@ -2,7 +2,9 @@ package com.multiapplication.apps.calculator
 
 class CalculatorConstants {
     companion object{
-        const val ZERO = "0"
-        const val ONE = "1"
+        const val PLUS = "PLUS"
+        const val MINUS = "MINUS"
+        const val MULTIPLE = "MULTIPLE"
+        const val DIVIDE = "DIVIDE"
     }
 }
