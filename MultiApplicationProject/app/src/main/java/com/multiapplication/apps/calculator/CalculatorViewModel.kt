@@ -23,7 +23,7 @@ class CalculatorViewModel : BaseViewModel() {
 
         if ((isEnablePlusButton || isEnableMinusButton || isEnableMultipleButton || isEnableDivideButton) && (storeData == null)) {
             if (data.value != null) {
-                storeData = data.value!!
+                storeData = temporaryData
                 data.value = temporary
 
                 isEnablePlusButton = false
@@ -36,14 +36,19 @@ class CalculatorViewModel : BaseViewModel() {
 
     fun getCalculationResultWhenClickCalculationButton() {
         if (storeData != null && data.value != null) {
-            if (isEnablePlusButton) {
-                this.calculatePlus(storeData!!, data.value!!)
-            } else if (isEnableMinusButton) {
-                this.calculateMinus(storeData!!, data.value!!)
-            } else if (isEnableMultipleButton) {
-                this.calculateMultiple(storeData!!, data.value!!)
-            } else if (isEnableDivideButton) {
-                this.calculateDivide(storeData!!, data.value!!)
+            when (typeButton) {
+                CalculatorConstants.PLUS -> {
+                    data.value = this.calculatePlus(storeData!!, data.value!!)
+                }
+                CalculatorConstants.MINUS -> {
+                    data.value = this.calculateMinus(storeData!!, data.value!!)
+                }
+                CalculatorConstants.MULTIPLE -> {
+                    data.value = this.calculateMultiple(storeData!!, data.value!!)
+                }
+                CalculatorConstants.DIVIDE -> {
+                    data.value = this.calculateDivide(storeData!!, data.value!!)
+                }
             }
         }
     }
@@ -52,42 +57,66 @@ class CalculatorViewModel : BaseViewModel() {
         if (storeData != null && data.value != null) {
             when (typeButton) {
                 CalculatorConstants.PLUS -> {
-                    this.calculatePlus(storeData!!, data.value!!)
+                    data.value = this.calculatePlus(storeData!!, data.value!!)
                 }
                 CalculatorConstants.MINUS -> {
-                    this.calculateMinus(storeData!!, data.value!!)
+                    data.value = this.calculateMinus(storeData!!, data.value!!)
                 }
                 CalculatorConstants.MULTIPLE -> {
-                    this.calculateMultiple(storeData!!, data.value!!)
+                    data.value = this.calculateMultiple(storeData!!, data.value!!)
                 }
                 CalculatorConstants.DIVIDE -> {
-                    this.calculateDivide(storeData!!, data.value!!)
+                    data.value = this.calculateDivide(storeData!!, data.value!!)
                 }
             }
         }
     }
 
     private fun calculatePlus(X: String, Y: String): String {
-        val x: Double = X.toDouble()
-        val y: Double = Y.toDouble()
-        return (x + y).toString()
+        return if (X.contains(".") || Y.contains(".")) {
+            val x = X.toDouble()
+            val y = Y.toDouble()
+            (x + y).toString()
+        } else {
+            val x = X.toInt()
+            val y = Y.toInt()
+            (x + y).toString()
+        }
     }
 
     private fun calculateMinus(X: String, Y: String): String {
-        val x: Double = X.toDouble()
-        val y: Double = Y.toDouble()
-        return (x - y).toString()
+        return if (X.contains(".") || Y.contains(".")) {
+            val x = X.toDouble()
+            val y = Y.toDouble()
+            (x - y).toString()
+        } else {
+            val x = X.toInt()
+            val y = Y.toInt()
+            (x - y).toString()
+        }
     }
 
     private fun calculateMultiple(X: String, Y: String): String {
-        val x: Double = X.toDouble()
-        val y: Double = Y.toDouble()
-        return (x * y).toString()
+        return if (X.contains(".") || Y.contains(".")) {
+            val x = X.toDouble()
+            val y = Y.toDouble()
+            (x * y).toString()
+        } else {
+            val x = X.toInt()
+            val y = Y.toInt()
+            (x * y).toString()
+        }
     }
 
     private fun calculateDivide(X: String, Y: String): String {
-        val x: Double = X.toDouble()
-        val y: Double = Y.toDouble()
-        return (x / y).toString()
+        return if (X.contains(".") || Y.contains(".")) {
+            val x = X.toDouble()
+            val y = Y.toDouble()
+            (x / y).toString()
+        } else {
+            val x = X.toInt()
+            val y = Y.toInt()
+            (x / y).toString()
+        }
     }
 }
