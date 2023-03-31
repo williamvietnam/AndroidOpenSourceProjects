@@ -15,6 +15,7 @@
         android:layout_weight="3.5">
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/data"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
@@ -44,6 +45,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonAC"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -78,6 +80,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonPercent"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -95,6 +98,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonDivide"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -120,6 +124,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button7"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -137,6 +142,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button8"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -154,6 +160,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button9"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -171,6 +178,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonMultiple"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -196,6 +204,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button4"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -213,6 +222,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button5"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -230,6 +240,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button6"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -247,6 +258,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonMinus"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -271,6 +283,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button1"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -288,6 +301,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button2"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -305,6 +319,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button3"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -322,6 +337,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonPlus"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -348,12 +364,14 @@
                 android:paddingHorizontal="12dp">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button0"
                     android:layout_width="match_parent"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
                     android:background="@drawable/background_button_round_3c4043"
                     android:gravity="start|center_vertical"
                     android:paddingStart="24sp"
+                    android:paddingEnd="0dp"
                     android:text="0"
                     android:textColor="@color/white"
                     android:textSize="40sp"
@@ -366,6 +384,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonDot"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
@@ -383,6 +402,7 @@
                 android:layout_weight="2.5">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonEqual"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_gravity="center"
