@@ -1,4 +1,0 @@
-package com.android.templates.coroutines_retrofit_recyclerview
-
-class CoroutinesRetrofitRecyclerviewFragment {
-}

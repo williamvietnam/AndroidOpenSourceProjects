@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:drawable="@drawable/background_button_circle_ff9800"
-        android:state_enabled="false" android:textColor="@color/white" />
-
-    <item android:drawable="@drawable/background_button_circle_white"
-        android:state_enabled="true" android:textColor="#ff9800" />
-</selector>
