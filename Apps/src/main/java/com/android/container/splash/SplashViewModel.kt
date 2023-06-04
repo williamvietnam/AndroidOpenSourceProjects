@@ -1,4 +1,4 @@
-package com.multiapplication.container
+package com.android.container.splash
 
 import com.android.base.BaseViewModel
 
