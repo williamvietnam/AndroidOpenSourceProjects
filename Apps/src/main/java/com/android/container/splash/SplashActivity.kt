@@ -1,4 +1,4 @@
-package com.android.container
+package com.android.container.splash
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -6,8 +6,8 @@ import android.os.Handler
 import android.os.Looper
 import androidx.lifecycle.ViewModelProvider
 import com.android.base.BaseActivity
+import com.android.container.MainActivity
 import com.android.databinding.ActivitySplashBinding
-import com.multiapplication.container.SplashViewModel
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>() {

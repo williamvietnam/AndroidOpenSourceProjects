@@ -1,4 +1,4 @@
-package com.android.container
+package com.android.container.appsMenu
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
