@@ -13,4 +13,7 @@ interface ContactDAO {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun createContactsListToDatabase(contacts: MutableList<ContactEntity>)
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun addNewContactToDatabase(vararg contacts: ContactEntity)
 }

@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.android.R
 import com.android.apps.appFakeCall.data.entities.ContactEntity
 import com.android.base.BaseFragment
 import com.android.databinding.FragmentContactsBinding
@@ -38,9 +39,8 @@ class ContactsFragment : BaseFragment<FragmentContactsBinding, ContactsViewModel
             findNavController().popBackStack()
         }
 
-
         binding.buttonAddNewContact.setOnClickListener {
-
+            findNavController().navigate(R.id.action_contacts_to_newContact)
         }
     }
 
