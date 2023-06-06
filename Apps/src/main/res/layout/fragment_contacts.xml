@@ -11,10 +11,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <ImageView
+            android:id="@+id/buttonBack"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="start|center_vertical"
+            android:src="@drawable/ic_back"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Contacts List"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
     </FrameLayout>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/buttonAddNewVideoCaller"
+        android:id="@+id/buttonAddNewContact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
@@ -53,7 +70,7 @@
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/buttonAddNewVideoCaller"
+        android:layout_below="@+id/buttonAddNewContact"
         android:layout_marginHorizontal="14dp"
         android:layout_marginTop="16dp"
         android:clipToPadding="false"
