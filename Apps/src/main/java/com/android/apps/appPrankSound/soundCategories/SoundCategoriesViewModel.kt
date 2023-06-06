@@ -1,4 +1,6 @@
 package com.android.apps.appPrankSound.soundCategories
 
-class SoundCategoriesViewModel {
+import com.android.base.BaseViewModel
+
+class SoundCategoriesViewModel: BaseViewModel() {
 }

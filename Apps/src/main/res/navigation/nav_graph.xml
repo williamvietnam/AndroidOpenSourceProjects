@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/appsMenuFragment">
+
+    <fragment
+        android:id="@+id/appsMenuFragment"
+        android:name="com.android.container.appsMenu.AppsMenuFragment"
+        android:label="AppsMenuFragment"
+        tools:layout="@layout/fragment_apps_menu">
+
+        <action
+            android:id="@+id/action_from_appsMenu_to_soundCategories"
+            app:destination="@id/soundCategoriesFragment" />
+
+        <action
+            android:id="@+id/action_from_appsMenu_to_contacts"
+            app:destination="@id/contactsFragment" />
+
+        <action
+            android:id="@+id/action_from_appsMenu_to_lieDetector"
+            app:destination="@id/lieDetectorFragment" />
+
+        <action
+            android:id="@+id/action_from_appsMenu_to_aiChat"
+            app:destination="@id/aiChatFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/soundCategoriesFragment"
+        android:name="com.android.apps.appPrankSound.soundCategories.SoundCategoriesFragment"
+        android:label="SoundCategoriesFragment"
+        tools:layout="@layout/fragment_sound_cateogies">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.android.apps.appFakeCall.contacts.ContactsFragment"
+        android:label="ContactsFragment"
+        tools:layout="@layout/fragment_contacts">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/lieDetectorFragment"
+        android:name="com.android.apps.appLieDetector.LieDetectorFragment"
+        android:label="LieDetectorFragment"
+        tools:layout="@layout/fragment_lie_detector">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/aiChatFragment"
+        android:name="com.android.apps.appAIChat.AIChatFragment"
+        android:label="AIChatFragment"
+        tools:layout="@layout/fragment_a_i_chat">
+
+
+    </fragment>
+</navigation>
