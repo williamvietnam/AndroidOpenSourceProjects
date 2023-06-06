@@ -4,10 +4,10 @@ import com.android.tutorials.recyclerviewRetrofitRx.models.UserResponse;
 
 import java.util.List;
 
+import io.reactivex.rxjava3.core.Single;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
-import rx.Single;
 
 public interface ApiServices {
     @GET(ApiEndpoint.GET_USERS)

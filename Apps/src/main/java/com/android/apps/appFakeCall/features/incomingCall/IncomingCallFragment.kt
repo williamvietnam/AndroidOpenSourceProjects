@@ -3,10 +3,14 @@ package com.android.apps.appFakeCall.features.incomingCall
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import com.android.apps.appFakeCall.data.entities.ContactEntity
 import com.android.base.BaseFragment
 import com.android.databinding.FragmentIncomingCallBinding
 
 class IncomingCallFragment : BaseFragment<FragmentIncomingCallBinding, IncomingCallViewModel>() {
+    private var contact: ContactEntity? = null
+    private var isRecord: Boolean = false
+    private var timeCall: Int = 0
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?

@@ -161,8 +161,7 @@ class NewContactFragment : BaseFragment<FragmentNewContactBinding, NewContactVie
                     contactNumber = binding.edtNumber.text.toString().trim(),
                     contactVideo = videoUri
                 )
-                activity?.supportFragmentManager?.beginTransaction()?.remove(this)
-                    ?.commitNow()
+                findNavController().popBackStack()
             } else {
                 AlertDialog.Builder(context)
                     .setTitle("Please fill in the blanks")
