@@ -8,7 +8,7 @@ import com.android.databinding.ItemAppBinding
 
 class AppsAdapter(
     private val apps: List<App>?,
-    private val callback: CallBack,
+    private val callback: AppsCallBack,
 ) : Adapter<AppsAdapter.AppsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AppsViewHolder {
@@ -39,13 +39,13 @@ class AppsAdapter(
                 this.binding.text.text = app.name
 
                 this.binding.root.setOnClickListener {
-                    callback.onClicked(app)
+                    callback.onAppClicked(app)
                 }
             }
         }
     }
 
-    interface CallBack {
-        fun onClicked(app: App)
+    interface AppsCallBack {
+        fun onAppClicked(app: App)
     }
 }

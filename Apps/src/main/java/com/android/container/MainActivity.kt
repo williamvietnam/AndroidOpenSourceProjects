@@ -1,6 +1,8 @@
 package com.android.container
 
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.NavHostFragment
+import com.android.R
 import com.android.base.BaseActivity
 import com.android.databinding.ActivityMainBinding
 
@@ -14,5 +16,12 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
         return ViewModelProvider(this)[MainViewModel::class.java]
     }
 
-    override fun initializeView() {}
+    override fun initializeViews() {
+        val navHostFragment = supportFragmentManager.findFragmentById(
+            R.id.nav_host_fragment
+        ) as NavHostFragment
+        val navController = navHostFragment.navController
+    }
+
+    override fun initializeEvents() {}
 }

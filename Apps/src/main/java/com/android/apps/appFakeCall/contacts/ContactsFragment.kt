@@ -18,7 +18,9 @@ class ContactsFragment : BaseFragment<FragmentContactsBinding, ContactsViewModel
         return ViewModelProvider(this)[ContactsViewModel::class.java]
     }
 
-    override fun initializeView() {
-        TODO("Not yet implemented")
+    override fun initializeViews() {
+    }
+
+    override fun initializeEvents() {
     }
 }
