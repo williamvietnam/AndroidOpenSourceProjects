@@ -17,11 +17,17 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
     }
 
     override fun initializeViews() {
+        // init navigation component
         val navHostFragment = supportFragmentManager.findFragmentById(
             R.id.nav_host_fragment
         ) as NavHostFragment
         val navController = navHostFragment.navController
+
+        // check create contactsDatabase from json
+        viewModel.saveContactsListFromJsonToDatabase(this)
     }
 
-    override fun initializeEvents() {}
+    override fun initializeEvents() {
+
+    }
 }

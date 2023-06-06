@@ -39,7 +39,7 @@
 
     <fragment
         android:id="@+id/contactsFragment"
-        android:name="com.android.apps.appFakeCall.contacts.ContactsFragment"
+        android:name="com.android.apps.appFakeCall.features.contacts.ContactsFragment"
         android:label="ContactsFragment"
         tools:layout="@layout/fragment_contacts">
 

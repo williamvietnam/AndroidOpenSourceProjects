@@ -1,12 +1,17 @@
-package com.android.apps.appFakeCall.contacts
+package com.android.apps.appFakeCall.features.contacts
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import com.android.apps.appFakeCall.data.entities.ContactEntity
 import com.android.base.BaseFragment
 import com.android.databinding.FragmentContactsBinding
 
-class ContactsFragment : BaseFragment<FragmentContactsBinding, ContactsViewModel>() {
+class ContactsFragment : BaseFragment<FragmentContactsBinding, ContactsViewModel>(),
+    ContactsAdapter.ContactsCallBack {
+
+    private lateinit var adapter: ContactsAdapter
+
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
@@ -19,8 +24,19 @@ class ContactsFragment : BaseFragment<FragmentContactsBinding, ContactsViewModel
     }
 
     override fun initializeViews() {
+        adapter = ContactsAdapter(this)
+        binding.recyclerview.adapter = adapter
+        viewModel.allContactsData.observe(viewLifecycleOwner) {
+            adapter.loadData(it)
+        }
+        viewModel.getAllContacts(requireContext())
     }
 
     override fun initializeEvents() {
+
+    }
+
+    override fun onContactClicked(contact: ContactEntity) {
+
     }
 }

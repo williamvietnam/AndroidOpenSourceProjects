@@ -1,5 +1,6 @@
-package com.android.apps.appFakeCall.contacts
+package com.android.apps.appFakeCall.features.contacts
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.drawable.Drawable
 import android.net.Uri
@@ -43,7 +44,7 @@ class ContactsAdapter(
                     binding.image.setImageURI(uriDatabase)
                 } else {
                     val drawableImage = getImageFromAsset(
-                        fileName = "images/fakecall/${contact.contactIcon}.jpg",
+                        fileName = "app_fake_call/images/${contact.contactIcon}.jpg",
                         context = itemView.context
                     )
                     Glide.with(this.itemView.context).load(drawableImage).into(this.binding.image)
@@ -58,8 +59,15 @@ class ContactsAdapter(
         }
     }
 
+    @SuppressLint("notifyDataSetChanged")
+    fun loadData(data: MutableList<ContactEntity>) {
+        this.contactList.clear()
+        this.contactList.addAll(data)
+        notifyDataSetChanged()
+    }
+
     private fun getImageFromAsset(fileName: String, context: Context): Drawable? {
-        var result: Drawable? = null
+        val result: Drawable?
         try {
             val stream = context.assets.open(fileName)
             result = Drawable.createFromStream(stream, null)
