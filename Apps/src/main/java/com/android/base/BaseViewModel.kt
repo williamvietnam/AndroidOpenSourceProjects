@@ -2,6 +2,7 @@ package com.android.base
 
 import android.content.Context
 import android.graphics.drawable.Drawable
+import android.net.Uri
 import androidx.lifecycle.ViewModel
 import java.io.IOException
 import java.nio.charset.StandardCharsets
@@ -33,5 +34,16 @@ abstract class BaseViewModel : ViewModel() {
             return null
         }
         return jsonString
+    }
+
+    fun getRawUriFile(filename: String, context: Context): Uri? {
+        val rawId: Int =
+            context.resources.getIdentifier(
+                filename,
+                "raw",
+                context.packageName
+            )
+
+        return Uri.parse("android.resource://" + context.packageName + "/" + rawId)
     }
 }

@@ -6,6 +6,8 @@ import com.android.apps.appFakeCall.data.ContactDatabase
 import com.android.apps.appFakeCall.data.entities.ContactEntity
 import com.android.apps.appFakeCall.data.entities.ContactsResponse
 import com.android.base.BaseViewModel
+import com.android.common.KEY
+import com.android.common.Preferences
 import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

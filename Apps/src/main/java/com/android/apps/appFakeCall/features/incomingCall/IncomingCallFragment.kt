@@ -1,16 +1,25 @@
 package com.android.apps.appFakeCall.features.incomingCall
 
+import android.annotation.SuppressLint
+import android.net.Uri
+import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.android.R
 import com.android.apps.appFakeCall.data.entities.ContactEntity
 import com.android.base.BaseFragment
+import com.android.common.Constants
+import com.android.common.Preferences
+import com.android.common.player.PlayerManager
 import com.android.databinding.FragmentIncomingCallBinding
 
 class IncomingCallFragment : BaseFragment<FragmentIncomingCallBinding, IncomingCallViewModel>() {
+
     private var contact: ContactEntity? = null
-    private var isRecord: Boolean = false
-    private var timeCall: Int = 0
+
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
@@ -22,11 +31,56 @@ class IncomingCallFragment : BaseFragment<FragmentIncomingCallBinding, IncomingC
         return ViewModelProvider(this)[IncomingCallViewModel::class.java]
     }
 
+    @SuppressLint("SetTextI18n")
     override fun initializeViews() {
-        TODO("Not yet implemented")
+        // re-show status bar
+        val decorView: View = requireActivity().window.decorView
+        val uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN
+        decorView.systemUiVisibility = uiOptions
+        val actionBar: android.app.ActionBar? = requireActivity().actionBar
+        actionBar?.show()
+
+        this.contact = requireArguments().getSerializable(Constants.FAKE_CALL_DATA) as ContactEntity
+
+        PlayerManager.shared.play(name = "app_fake_call/mp3/ringstone.mp3", true, requireContext())
+        if (Preferences.instance.get(Constants.CALL_MODE, false) as Boolean) {
+            binding.textStatusCall.text = "Video call from messenger...."
+            binding.icAnswer.setImageResource(R.drawable.ic_video)
+        } else {
+            binding.textStatusCall.text = "Audio call from messenger...."
+            binding.icAnswer.setImageResource(R.drawable.ic_call)
+        }
+        if (contact != null) {
+            binding.textName.text = contact!!.contactName
+            if (contact!!.isDataBase) {
+                val uriDatabase = Uri.parse("${contact!!.contactIcon}")
+                binding.imvAvatar.setImageURI(uriDatabase)
+                binding.imageBackground.setImageURI(uriDatabase)
+            } else {
+                val drawableAvt = viewModel.getImageFromAsset(
+                    fileName = "app_fake_call/images/${contact!!.contactIcon}.jpg",
+                    context = requireContext()
+                )
+                binding.imvAvatar.setImageDrawable(drawableAvt)
+                binding.imageBackground.setImageDrawable(drawableAvt)
+            }
+        }
     }
 
     override fun initializeEvents() {
-        TODO("Not yet implemented")
+        binding.buttonDecline.setOnClickListener {
+            PlayerManager.shared.stop()
+            if (Preferences.instance.get(Constants.IS_FAKE_CALL_RECORD, false) as Boolean) {
+                Preferences.instance.set(Constants.IS_FAKE_CALL_RECORD, false)
+            }
+            findNavController().popBackStack()
+        }
+
+        binding.buttonAnswer.setOnClickListener {
+            PlayerManager.shared.stop()
+            val bundle = Bundle()
+            bundle.putSerializable(Constants.FAKE_CALL_DATA, contact)
+            findNavController().navigate(R.id.action_incomingCall_to_inTheCall, bundle)
+        }
     }
 }

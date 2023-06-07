@@ -8,7 +8,7 @@ import androidx.navigation.fragment.findNavController
 import com.android.R
 import com.android.apps.appFakeCall.data.entities.ContactEntity
 import com.android.base.BaseFragment
-import com.android.container.Constants
+import com.android.common.Constants
 import com.android.databinding.FragmentContactsBinding
 
 class ContactsFragment : BaseFragment<FragmentContactsBinding, ContactsViewModel>(),
@@ -49,6 +49,6 @@ class ContactsFragment : BaseFragment<FragmentContactsBinding, ContactsViewModel
     override fun onContactClicked(contact: ContactEntity) {
         val bundle = Bundle()
         bundle.putSerializable(Constants.FAKE_CALL_INFORMATION, contact)
-        findNavController().navigate(R.id)
+        findNavController().navigate(R.id.action_contacts_to_contactInfo, bundle)
     }
 }
