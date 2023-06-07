@@ -2,7 +2,7 @@ package com.android
 
 import android.app.Application
 import android.util.Log
-import com.android.container.Preferences
+import com.android.common.Preferences
 
 class AppsApplication : Application() {
     override fun onCreate() {
