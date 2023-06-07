@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        tools:background="@color/black" />
+
+    <ImageView
+        android:id="@+id/imvAvatar"
+        android:layout_width="136dp"
+        android:layout_height="136dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        tools:src="@drawable/image_vietnam" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imvAvatar"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/sfpro_display_medium"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        tools:text="Adele" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textStatusCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textName"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/sfpro_display_regular"
+        android:gravity="center"
+        android:textColor="#EFF2F5"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+
+    <FrameLayout
+        android:id="@+id/actionsBeforeAudioFakeCall"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="56dp"
+        android:layout_marginBottom="88dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/buttonDecline"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/background_circle_ed2323"
+                android:padding="8dp"
+                android:src="@drawable/ic_call"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Decline"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonAnswer"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/icAnswer"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/background_circle_72ba50"
+                android:padding="8dp"
+                android:src="@drawable/ic_video"
+                app:tint="@color/white"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Answer"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

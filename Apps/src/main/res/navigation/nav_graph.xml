@@ -34,17 +34,71 @@
         android:label="SoundCategoriesFragment"
         tools:layout="@layout/fragment_sound_cateogies">
 
+    </fragment>
 
+    <!-- ______________________________appFakeCall start______________________________________-->
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.android.apps.appFakeCall.features.contacts.ContactsFragment"
+        android:label="ContactsFragment"
+        tools:layout="@layout/fragment_contacts">
+        <action
+            android:id="@+id/action_contacts_to_newContact"
+            app:destination="@id/newContactFragment" />
+        <action
+            android:id="@+id/action_contacts_to_contactInfo"
+            app:destination="@id/contactInformationFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/contactsFragment"
-        android:name="com.android.apps.appFakeCall.contacts.ContactsFragment"
-        android:label="ContactsFragment"
-        tools:layout="@layout/fragment_contacts">
+        android:id="@+id/newContactFragment"
+        android:name="com.android.apps.appFakeCall.features.newContact.NewContactFragment"
+        android:label="NewContactFragment"
+        tools:layout="@layout/fragment_new_contact" />
 
-
+    <fragment
+        android:id="@+id/contactInformationFragment"
+        android:name="com.android.apps.appFakeCall.features.contactInformation.ContactInformationFragment"
+        android:label="ContactInformationFragment"
+        tools:layout="@layout/fragment_contact_information">
+        <action
+            android:id="@+id/action_contactInfo_to_incomingCall"
+            app:destination="@id/incomingCallFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true" />
     </fragment>
+
+    <fragment
+        android:id="@+id/incomingCallFragment"
+        android:name="com.android.apps.appFakeCall.features.incomingCall.IncomingCallFragment"
+        android:label="IncomingCallFragment"
+        tools:layout="@layout/fragment_incoming_call">
+        <action
+            android:id="@+id/action_incomingCall_to_inTheCall"
+            app:destination="@id/inTheCallFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inTheCallFragment"
+        android:name="com.android.apps.appFakeCall.features.inTheCall.InTheCallFragment"
+        android:label="InTheCallFragment"
+        tools:layout="@layout/fragment_in_the_call">
+        <action
+            android:id="@+id/action_inTheCall_to_afterTheCall"
+            app:destination="@id/afterTheCallFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/afterTheCallFragment"
+        android:name="com.android.apps.appFakeCall.features.afterTheCall.AfterTheCallFragment"
+        android:label="AfterTheCallFragment"
+        tools:layout="@layout/fragment_after_the_call" />
+
+    <!-- ______________________________appFakeCall end______________________________________-->
 
     <fragment
         android:id="@+id/lieDetectorFragment"

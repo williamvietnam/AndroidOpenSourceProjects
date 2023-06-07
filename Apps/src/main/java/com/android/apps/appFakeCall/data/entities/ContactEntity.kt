@@ -5,6 +5,7 @@ import androidx.room.Entity
 import androidx.room.Ignore
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 @Entity(tableName = "ContactsEntity")
 data class ContactEntity(
@@ -38,4 +39,4 @@ data class ContactEntity(
 
     @ColumnInfo("is_database")
     var isDataBase: Boolean = false,
-)
+): Serializable
