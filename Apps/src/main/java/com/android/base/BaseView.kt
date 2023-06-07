@@ -1,5 +1,7 @@
 package com.android.base
 
 interface BaseView {
-    fun initializeView()
+    fun initializeViews()
+
+    fun initializeEvents()
 }

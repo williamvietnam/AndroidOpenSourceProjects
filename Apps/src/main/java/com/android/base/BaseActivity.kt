@@ -27,7 +27,8 @@ abstract class BaseActivity<VB : ViewBinding, VM : BaseViewModel> : AppCompatAct
 
         viewModel = createViewModel()
 
-        initializeView()
+        initializeViews()
+        initializeEvents()
     }
 
     /**

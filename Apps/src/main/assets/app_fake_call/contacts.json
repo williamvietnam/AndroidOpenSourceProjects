@@ -1,0 +1,44 @@
+{
+  "contacts": [
+    {
+      "contactName": "Jisoo Black Pink",
+      "contactNumber": "19107254534",
+      "contactIcon": "JisooBlackPink",
+      "contactVideo": "jisoo_black_pink",
+      "isReward": false,
+      "isPremium": false
+    },
+    {
+      "contactName": "Cristiano Ronaldo",
+      "contactNumber": "19714870566",
+      "contactIcon": "CristianoRonaldo",
+      "contactVideo": "cristiano_ronaldo",
+      "isReward": false,
+      "isPremium": false
+    },
+    {
+      "contactName": "Jenny Black Pink",
+      "contactNumber": "19014101735",
+      "contactIcon": "JennyBlackPink",
+      "contactVideo": "jenny_black_pink",
+      "isReward": false,
+      "isPremium": true
+    },
+    {
+      "contactName": "Justin Bieber",
+      "contactNumber": "19714870566",
+      "contactIcon": "justinbieber",
+      "contactVideo": "justin_bieber",
+      "isReward": false,
+      "isPremium": true
+    },
+    {
+      "contactName": "Kylin Mbappe",
+      "contactNumber": "19127159694",
+      "contactIcon": "Mabappe",
+      "contactVideo": "kylin_mbappe",
+      "isReward": false,
+      "isPremium": false
+    }
+  ]
+}
