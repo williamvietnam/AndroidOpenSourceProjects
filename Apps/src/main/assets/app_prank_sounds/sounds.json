@@ -1,0 +1,301 @@
+{
+  "soundCategories": [
+    {
+      "name_category": "Fart Sound",
+      "id": 1,
+      "icon_category": "FartSound",
+      "isReward": true,
+      "isPremium": false,
+      "list_sound": [
+        {
+          "name": "Bean",
+          "category": 1,
+          "id": "1_1",
+          "sound": "11",
+          "icon": "11",
+          "isPremium": false,
+          "isReward": true
+        },
+        {
+          "name": "Big bomb",
+          "category": 1,
+          "id": "1_2",
+          "sound": "12",
+          "icon": "12",
+          "isPremium": true,
+          "isReward": false
+        },
+        {
+          "name": "Dry",
+          "category": 1,
+          "id": "1_3",
+          "sound": "13",
+          "icon": "13",
+          "isPremium": false,
+          "isReward": true
+        },
+        {
+          "name": "Funny",
+          "category": 1,
+          "id": "1_4",
+          "sound": "14",
+          "icon": "14",
+          "isPremium": false,
+          "isReward": true
+        },
+        {
+          "name": "Heavy",
+          "category": 1,
+          "id": "1_5",
+          "sound": "15",
+          "icon": "15",
+          "isPremium": true,
+          "isReward": false
+        },
+        {
+          "name": "Huge",
+          "category": 1,
+          "id": "1_6",
+          "sound": "16",
+          "icon": "16",
+          "isPremium": false,
+          "isReward": true
+        },
+        {
+          "name": "Long",
+          "category": 1,
+          "id": "1_7",
+          "sound": "17",
+          "icon": "17",
+          "isPremium": false,
+          "isReward": false
+        },
+        {
+          "name": "Loud",
+          "category": 1,
+          "id": "1_8",
+          "sound": "18",
+          "icon": "18",
+          "isPremium": false,
+          "isReward": false
+        },
+        {
+          "name": "Single",
+          "category": 1,
+          "id": "1_9",
+          "sound": "19",
+          "icon": "19",
+          "isPremium": false,
+          "isReward": true
+        },
+        {
+          "name": "Wet",
+          "category": 1,
+          "id": "1_10",
+          "sound": "110",
+          "icon": "110",
+          "isPremium": true,
+          "isReward": false
+        }
+      ]
+    },
+    {
+      "name_category": "Air horn",
+      "id": 2,
+      "icon_category": "Airhorn",
+      "isReward": false,
+      "isPremium": true,
+      "list_sound": [
+        {
+          "name": "Club sample",
+          "category": 2,
+          "id": "2_1",
+          "sound": "21",
+          "icon": "21",
+          "isPremium": false,
+          "isReward": true
+        },
+        {
+          "name": "DJ",
+          "category": 2,
+          "id": "2_2",
+          "sound": "22",
+          "icon": "22",
+          "isPremium": true,
+          "isReward": false
+        },
+        {
+          "name": "Legolas",
+          "category": 2,
+          "id": "2_3",
+          "sound": "23",
+          "icon": "23",
+          "isPremium": false,
+          "isReward": false
+        },
+        {
+          "name": "MLG",
+          "category": 2,
+          "id": "2_4",
+          "sound": "24",
+          "icon": "24",
+          "isPremium": false,
+          "isReward": true
+        },
+        {
+          "name": "Rap",
+          "category": 2,
+          "id": "2_5",
+          "sound": "25",
+          "icon": "25",
+          "isPremium": false,
+          "isReward": false
+        },
+        {
+          "name": "Sad violin",
+          "category": 2,
+          "id": "2_6",
+          "sound": "26",
+          "icon": "26",
+          "isPremium": false,
+          "isReward": false
+        },
+        {
+          "name": "Short",
+          "category": 2,
+          "id": "2_7",
+          "sound": "27",
+          "icon": "27",
+          "isPremium": false,
+          "isReward": false
+        },
+        {
+          "name": "Single",
+          "category": 2,
+          "id": "2_8",
+          "sound": "28",
+          "icon": "28",
+          "isPremium": false,
+          "isReward": true
+        },
+        {
+          "name": "Style",
+          "category": 2,
+          "id": "2_9",
+          "sound": "29",
+          "icon": "29",
+          "isPremium": false,
+          "isReward": false
+        },
+        {
+          "name": "Tripple",
+          "category": 2,
+          "id": "2_10",
+          "sound": "210",
+          "icon": "210",
+          "isPremium": true,
+          "isReward": false
+        }
+      ]
+    },
+    {
+      "name_category": "Hair clipper",
+      "id": 4,
+      "icon_category": "Hairclipper",
+      "isReward": false,
+      "isPremium": false,
+      "list_sound": [
+        {
+          "name": "Buzzing",
+          "category": 4,
+          "id": "4_1",
+          "sound": "41",
+          "icon": "41",
+          "isPremium": false,
+          "isReward": false
+        },
+        {
+          "name": "Crazy",
+          "category": 4,
+          "id": "4_2",
+          "sound": "42",
+          "icon": "42",
+          "isPremium": true,
+          "isReward": false
+        },
+        {
+          "name": "Fully",
+          "category": 4,
+          "id": "4_3",
+          "sound": "43",
+          "icon": "43",
+          "isPremium": false,
+          "isReward": true
+        },
+        {
+          "name": "Long",
+          "category": 4,
+          "id": "4_4",
+          "sound": "44",
+          "icon": "44",
+          "isPremium": true,
+          "isReward": false
+        },
+        {
+          "name": "Loud",
+          "category": 4,
+          "id": "4_5",
+          "sound": "45",
+          "icon": "45",
+          "isPremium": false,
+          "isReward": false
+        },
+        {
+          "name": "New",
+          "category": 4,
+          "id": "4_6",
+          "sound": "46",
+          "icon": "46",
+          "isPremium": false,
+          "isReward": true
+        },
+        {
+          "name": "Noisy",
+          "category": 4,
+          "id": "4_7",
+          "sound": "47",
+          "icon": "47",
+          "isPremium": false,
+          "isReward": false
+        },
+        {
+          "name": "Old",
+          "category": 4,
+          "id": "4_8",
+          "sound": "48",
+          "icon": "48",
+          "isPremium": false,
+          "isReward": false
+        },
+        {
+          "name": "Single",
+          "category": 4,
+          "id": "4_9",
+          "sound": "49",
+          "icon": "49",
+          "isPremium": true,
+          "isReward": false
+        },
+        {
+          "name": "Wavering",
+          "category": 4,
+          "id": "4_10",
+          "sound": "410",
+          "icon": "410",
+          "isPremium": false,
+          "isReward": true
+        }
+      ]
+    }
+  ]
+}

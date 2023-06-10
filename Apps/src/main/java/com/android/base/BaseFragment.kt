@@ -17,7 +17,7 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel> : Fragment(), 
 
     lateinit var viewModel: VM
 
-    abstract fun createViewBinding(): VB
+    abstract fun createViewBinding(inflater: LayoutInflater, container: ViewGroup?): VB
     abstract fun createViewModel(): VM
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,7 +31,7 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel> : Fragment(), 
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = createViewBinding()
+        _binding = createViewBinding(inflater = inflater, container = container)
         return binding.root
     }
 
