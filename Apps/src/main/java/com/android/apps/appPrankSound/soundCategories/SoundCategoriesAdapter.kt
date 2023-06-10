@@ -11,10 +11,10 @@ import com.android.databinding.ItemSoundCategoryBinding
 import java.io.IOException
 
 class SoundCategoriesAdapter(
-    private val callBack: SoundCategoryCallBack
+    private val soundCategories: MutableList<SoundCategory>,
+    private val callback: ISoundCategoriesCallBack
 ) : RecyclerView.Adapter<SoundCategoriesAdapter.SoundCategoriesViewHolder>() {
 
-    private var items: ArrayList<Any> = ArrayList()
     private var arrayColors: Array<Int> = arrayOf(
         R.color.all_view_background_1,
         R.color.all_view_background_2,
@@ -41,14 +41,14 @@ class SoundCategoriesAdapter(
     }
 
     override fun getItemCount(): Int {
-        return items.size
+        return soundCategories.size
     }
 
     inner class SoundCategoriesViewHolder(
         private val binding: ItemSoundCategoryBinding
     ) : RecyclerView.ViewHolder(binding.root) {
         fun onBind(position: Int) {
-            val item = items[position] as SoundCategory
+            val item = soundCategories[position] as SoundCategory
 
             //set background color item
             this.binding.cardView.setCardBackgroundColor(
@@ -57,14 +57,12 @@ class SoundCategoriesAdapter(
                 )
             )
 
-            //set icon card
-            if (item.listSound[0].category != null) {
-                val icon = getImageFromAsset(
-                    "images/prank_sounds/thumb/${item.iconCategory}.png",
-                    itemView.context
-                )
-                binding.image.setImageDrawable(icon)
-            }
+            val icon = getImageFromAsset(
+                "app_prank_sounds/images/${item.id}/${item.iconCategory}.png",
+                itemView.context
+            )
+            binding.image.setImageDrawable(icon)
+
 
             //set name card
             if (item.nameCategory != null) {
@@ -72,7 +70,7 @@ class SoundCategoriesAdapter(
             }
 
             this.binding.root.setOnClickListener {
-                callback.onSoundCategoryClicked(item)
+                callback.onSoundCategoryClick(item)
             }
         }
     }
@@ -89,7 +87,7 @@ class SoundCategoriesAdapter(
         return result
     }
 
-    interface SoundCategoryCallBack {
-        fun onSoundCategoryClicked(soundCategory: SoundCategory)
+    interface ISoundCategoriesCallBack {
+        fun onSoundCategoryClick(soundCategory: SoundCategory)
     }
 }

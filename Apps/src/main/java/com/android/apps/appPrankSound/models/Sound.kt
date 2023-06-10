@@ -2,6 +2,7 @@ package com.android.apps.appPrankSound.models
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class Sound(
     @SerializedName("name")
@@ -31,4 +32,4 @@ data class Sound(
     @SerializedName("isFavorite")
     @Expose
     var isFavorite: Boolean = false
-)
+) : Serializable

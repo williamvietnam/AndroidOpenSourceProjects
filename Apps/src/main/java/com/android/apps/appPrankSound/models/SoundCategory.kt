@@ -27,6 +27,6 @@ data class SoundCategory(
 
     @SerializedName("list_sound")
     @Expose
-    var listSound: List<Sound> = arrayListOf()
+    var listSound: MutableList<Sound> = ArrayList()
 
 ) : Serializable

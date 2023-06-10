@@ -1,4 +1,6 @@
 package com.android.apps.appPrankSound.sound
 
-class SoundViewModel {
+import com.android.core.base.BaseViewModel
+
+class SoundViewModel : BaseViewModel(){
 }
