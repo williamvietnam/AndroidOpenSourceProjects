@@ -5,7 +5,7 @@ import android.content.Intent
 import android.os.Handler
 import android.os.Looper
 import androidx.lifecycle.ViewModelProvider
-import com.android.base.BaseActivity
+import com.android.core.base.BaseActivity
 import com.android.container.MainActivity
 import com.android.databinding.ActivitySplashBinding
 
@@ -19,7 +19,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>() {
         return ViewModelProvider(this)[SplashViewModel::class.java]
     }
 
-    override fun initializeView() {
+    override fun initializeViews() {
         val handler = Handler(Looper.getMainLooper())
         val runnable = Runnable {
             val intent = Intent(applicationContext, MainActivity::class.java)
@@ -27,4 +27,6 @@ class SplashActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>() {
         }
         handler.postDelayed(runnable, 1500)
     }
+
+    override fun initializeEvents() {}
 }

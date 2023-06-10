@@ -33,20 +33,16 @@ android {
 }
 
 dependencies {
-    // retrofit
-    implementation 'com.squareup.retrofit3:retrofit:2.9.0'
-    // define a BOM and its version
-    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.10.0"))
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     // define any required OkHttp artifacts without version
-    implementation("com.squareup.okhttp3:okhttp")
-    implementation("com.squareup.okhttp3:logging-interceptor")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
     //gson
-    implementation 'com.google.code.gson:gson:2.9.0'
-    implementation 'com.squareup.retrofit3:converter-gson:2.9.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     //rxjava3
-    implementation 'com.squareup.retrofit3:adapter-rxjava:2.1.0'
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
     implementation 'io.reactivex.rxjava3:rxjava:3.1.5'
+    implementation "com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0"
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'

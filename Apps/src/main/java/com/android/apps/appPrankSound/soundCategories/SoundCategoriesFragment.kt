@@ -3,22 +3,27 @@ package com.android.apps.appPrankSound.soundCategories
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import com.android.base.BaseFragment
-import com.android.databinding.FragmentSoundCategoriesBinding
+import com.android.core.base.BaseFragment
+import com.android.databinding.FragmentSoundCateogiesBinding
 
-class SoundCategoriesFragment : BaseFragment<
-        FragmentSoundCategoriesBinding,
-        SoundCategoriesViewModel>() {
+class SoundCategoriesFragment :
+    BaseFragment<FragmentSoundCateogiesBinding, SoundCategoriesViewModel>() {
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
-    ) = FragmentSoundCategoriesBinding.inflate(inflater, container, false)
+    ): FragmentSoundCateogiesBinding {
+        return FragmentSoundCateogiesBinding.inflate(inflater, container, false)
+    }
 
     override fun createViewModel(): SoundCategoriesViewModel {
         return ViewModelProvider(this)[SoundCategoriesViewModel::class.java]
     }
 
-    override fun initializeView() {
+    override fun initializeViews() {
+        TODO("Not yet implemented")
+    }
+
+    override fun initializeEvents() {
         TODO("Not yet implemented")
     }
 }
