@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical">
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="8dp">
+
+        <ImageButton
+            android:id="@+id/buttonBack"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="start|center_vertical"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sound Category Name"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </FrameLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/main_banner_view"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
-        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        tools:spanCount="2" />
-
-    <FrameLayout
-        android:id="@+id/main_banner_view"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_alignParentBottom="true"
-        android:visibility="invisible" />
-</RelativeLayout>
+        android:padding="8dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/item_sound" />
+</LinearLayout>
