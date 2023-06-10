@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.android.R
-import com.android.base.BaseFragment
+import com.android.core.base.BaseFragment
 import com.android.databinding.FragmentAppsMenuBinding
 
 class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel>(),

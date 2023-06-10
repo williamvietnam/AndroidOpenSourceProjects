@@ -6,7 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.android.apps.appFakeCall.data.ContactDatabase
 import com.android.apps.appFakeCall.data.entities.ContactEntity
-import com.android.base.BaseViewModel
+import com.android.core.base.BaseViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

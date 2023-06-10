@@ -11,9 +11,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.android.R
 import com.android.apps.appFakeCall.data.entities.ContactEntity
-import com.android.base.BaseFragment
-import com.android.common.Constants
-import com.android.common.Preferences
+import com.android.core.base.BaseFragment
+import com.android.core.common.Constants
+import com.android.core.common.Preferences
 import com.android.container.MainActivity
 import com.android.databinding.FragmentContactInformationBinding
 

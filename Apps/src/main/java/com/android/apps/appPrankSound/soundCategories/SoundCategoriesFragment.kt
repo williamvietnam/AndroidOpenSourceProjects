@@ -3,7 +3,7 @@ package com.android.apps.appPrankSound.soundCategories
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import com.android.base.BaseFragment
+import com.android.core.base.BaseFragment
 import com.android.databinding.FragmentSoundCateogiesBinding
 
 class SoundCategoriesFragment :

@@ -1,4 +1,4 @@
-package com.android.common.player
+package com.android.core.common
 
 import android.content.Context
 import android.media.MediaPlayer

@@ -5,9 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import com.android.base.BaseFragment
-import com.android.common.Constants
-import com.android.common.Preferences
+import com.android.core.base.BaseFragment
+import com.android.core.common.Constants
+import com.android.core.common.Preferences
 import com.android.container.MainActivity
 import com.android.databinding.FragmentAfterTheCallBinding
 

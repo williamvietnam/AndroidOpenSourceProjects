@@ -1,4 +1,4 @@
-package com.android.base
+package com.android.core.base
 
 import android.content.Context
 import android.graphics.Rect

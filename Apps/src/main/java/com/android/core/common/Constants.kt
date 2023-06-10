@@ -1,4 +1,4 @@
-package com.android.common
+package com.android.core.common
 
 object Constants {
     const val PRANK_SOUND_DATA = "prank_sound_data"

@@ -1,4 +1,4 @@
-package com.android.base
+package com.android.core.base
 
 interface BaseView {
     fun initializeViews()
