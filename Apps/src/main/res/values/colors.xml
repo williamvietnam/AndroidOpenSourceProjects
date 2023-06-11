@@ -22,6 +22,8 @@
     <color name="all_view_background_11">#92BBF3</color>
     <color name="all_view_background_12">#FF8584</color>
     <color name="color_717171">#717171</color>
+    <color name="color_aba4ff">#ABA4FF</color>
+    <color name="color_818181">#818181</color>
 
     <!--custom seekbar-->
     <color name="progress_gray">#FFD8D8D8</color>

@@ -12,8 +12,8 @@ import com.android.R
 import com.android.apps.appFakeCall.data.entities.ContactEntity
 import com.android.core.base.BaseFragment
 import com.android.core.common.Constants
-import com.android.core.common.Preferences
 import com.android.core.common.PlayerManager
+import com.android.core.common.Preferences
 import com.android.databinding.FragmentIncomingCallBinding
 
 class IncomingCallFragment : BaseFragment<FragmentIncomingCallBinding, IncomingCallViewModel>() {
@@ -42,7 +42,7 @@ class IncomingCallFragment : BaseFragment<FragmentIncomingCallBinding, IncomingC
 
         this.contact = requireArguments().getSerializable(Constants.FAKE_CALL_DATA) as ContactEntity
 
-        PlayerManager.shared.play(name = "app_fake_call/mp3/ringstone.mp3", true, requireContext())
+        PlayerManager.shared.play("app_fake_call/mp3/ringstone.mp3", true, requireContext())
         if (Preferences.instance.get(Constants.CALL_MODE, false) as Boolean) {
             binding.textStatusCall.text = "Video call from messenger...."
             binding.icAnswer.setImageResource(R.drawable.ic_video)

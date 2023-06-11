@@ -20,14 +20,14 @@ class PlayerManager {
         return this@PlayerManager.player
     }
 
-    fun play(name: String, context: Context) {
+    fun play(fileName: String, context: Context) {
         try {
             if (player?.isPlaying == true) {
                 player?.stop()
                 player?.reset()
             }
             player = MediaPlayer()
-            val descriptor = context.assets.openFd("mp3/$name")
+            val descriptor = context.assets.openFd(fileName)
             player?.setDataSource(
                 descriptor.fileDescriptor,
                 descriptor.startOffset,
@@ -43,14 +43,14 @@ class PlayerManager {
         }
     }
 
-    fun play(name: String, isLoop: Boolean, context: Context) {
+    fun play(fileName: String, isLoop: Boolean, context: Context) {
         try {
             if (player?.isPlaying == true) {
                 player?.stop()
                 player?.reset()
             }
             player = MediaPlayer()
-            val descriptor = context.assets.openFd("mp3/$name")
+            val descriptor = context.assets.openFd(fileName)
             player?.setDataSource(
                 descriptor.fileDescriptor,
                 descriptor.startOffset,

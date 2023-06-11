@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.android.R
-import com.android.apps.appPrankSound.models.Sound
+import com.android.apps.appPrankSound.data.models.Sound
 import com.android.databinding.ItemSoundBinding
+import com.bumptech.glide.Glide
 import java.io.IOException
 
 class SoundsAdapter(
@@ -64,7 +65,7 @@ class SoundsAdapter(
                     "app_prank_sounds/images/${item.category}/${item.icon}.png",
                     itemView.context
                 )
-                this.binding.image.setImageDrawable(icon)
+                Glide.with(itemView.context).load(icon).into(binding.image)
             } else {
                 this.binding.image.visibility = View.INVISIBLE
             }

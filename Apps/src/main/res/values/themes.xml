@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.AndroidOpenSourceProjects" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
@@ -12,5 +12,29 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalStyle</item>
+    </style>
+
+    <style name="ModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/background_top_round_white</item>
+        <item name="behavior_peekHeight">256dp</item>
+    </style>
+
+    <style name="TimePicker" parent="android:Widget.Material.Light.TimePicker">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="NumberPickerTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#F3F3F3</item>
+        <item name="android:textColorPrimary">#864ED5</item>
+        <item name="android:textColor">#EAC7FF</item>
+        <item name="background">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/titan_one_regular</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>

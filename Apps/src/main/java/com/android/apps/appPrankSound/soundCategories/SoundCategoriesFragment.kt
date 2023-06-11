@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.android.R
-import com.android.apps.appPrankSound.models.SoundCategory
+import com.android.apps.appPrankSound.data.models.SoundCategory
 import com.android.core.base.BaseFragment
 import com.android.core.common.Constants
 import com.android.databinding.FragmentSoundCateogiesBinding

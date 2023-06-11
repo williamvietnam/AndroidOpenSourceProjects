@@ -1,20 +1,22 @@
-package com.android.apps.appPrankSound.soundCategories
+package com.android.apps.appPrankSound.sound
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.android.R
-import com.android.apps.appPrankSound.data.models.SoundCategory
-import com.android.databinding.ItemSoundCategoryBinding
+import com.android.apps.appPrankSound.data.models.Sound
+import com.android.databinding.ItemSoundBinding
+import com.bumptech.glide.Glide
 import java.io.IOException
 
-class SoundCategoriesAdapter(
-    private val soundCategories: MutableList<SoundCategory>,
-    private val callback: ISoundCategoriesCallBack
-) : RecyclerView.Adapter<SoundCategoriesAdapter.SoundCategoriesViewHolder>() {
+class FavouriteSoundsAdapter(
+    private val callback: IFavouriteSoundsCallBack
+) : RecyclerView.Adapter<FavouriteSoundsAdapter.FavouriteSoundsViewHolder>() {
 
+    private val sounds: MutableList<Sound> = ArrayList()
     private var arrayColors: Array<Int> = arrayOf(
         R.color.all_view_background_1,
         R.color.all_view_background_2,
@@ -30,25 +32,25 @@ class SoundCategoriesAdapter(
         R.color.all_view_background_12
     )
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SoundCategoriesViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FavouriteSoundsViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        val binding = ItemSoundCategoryBinding.inflate(inflater, parent, false)
-        return SoundCategoriesViewHolder(binding = binding)
+        val binding = ItemSoundBinding.inflate(inflater, parent, false)
+        return FavouriteSoundsViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: SoundCategoriesViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: FavouriteSoundsViewHolder, position: Int) {
         holder.onBind(position)
     }
 
     override fun getItemCount(): Int {
-        return soundCategories.size
+        return sounds.size
     }
 
-    inner class SoundCategoriesViewHolder(
-        private val binding: ItemSoundCategoryBinding
+    inner class FavouriteSoundsViewHolder(
+        private val binding: ItemSoundBinding
     ) : RecyclerView.ViewHolder(binding.root) {
         fun onBind(position: Int) {
-            val item = soundCategories[position]
+            val sound = sounds[position]
 
             //set background color item
             this.binding.cardView.setCardBackgroundColor(
@@ -57,26 +59,31 @@ class SoundCategoriesAdapter(
                 )
             )
 
+            //set icon card
             val icon = getImageFromAsset(
-                "app_prank_sounds/images/${item.id}/${item.iconCategory}.png",
+                "app_prank_sounds/images/${sound.category}/${sound.icon}.png",
                 itemView.context
             )
-            binding.image.setImageDrawable(icon)
-
+            Glide.with(itemView.context).load(icon).into(binding.image)
 
             //set name card
-            if (item.nameCategory != null) {
-                this.binding.text.text = item.nameCategory
-            }
+            binding.text.text = sound.name
 
-            this.binding.root.setOnClickListener {
-                callback.onSoundCategoryClick(item)
+            binding.root.setOnClickListener {
+                callback.onSoundClick(sound)
             }
         }
     }
 
+    @SuppressLint("NotifyDataSetChanged")
+    fun loadData(sounds: MutableList<Sound>) {
+        sounds.clear()
+        sounds.addAll(sounds)
+        notifyDataSetChanged()
+    }
+
     private fun getImageFromAsset(fileName: String, context: Context): Drawable? {
-        var result: Drawable? = null
+        val result: Drawable?
         try {
             val stream = context.assets.open(fileName)
             result = Drawable.createFromStream(stream, null)
@@ -87,7 +94,7 @@ class SoundCategoriesAdapter(
         return result
     }
 
-    interface ISoundCategoriesCallBack {
-        fun onSoundCategoryClick(soundCategory: SoundCategory)
+    interface IFavouriteSoundsCallBack {
+        fun onSoundClick(sound: Sound)
     }
 }

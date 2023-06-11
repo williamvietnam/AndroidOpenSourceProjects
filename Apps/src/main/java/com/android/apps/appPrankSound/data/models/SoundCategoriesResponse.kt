@@ -1,4 +1,4 @@
-package com.android.apps.appPrankSound.models
+package com.android.apps.appPrankSound.data.models
 
 import com.google.gson.annotations.SerializedName
 

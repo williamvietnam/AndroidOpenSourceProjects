@@ -3,7 +3,7 @@ package com.android.apps.appPrankSound.sounds
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.android.apps.appPrankSound.models.SoundCategory
+import com.android.apps.appPrankSound.data.models.SoundCategory
 import com.android.core.base.BaseViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

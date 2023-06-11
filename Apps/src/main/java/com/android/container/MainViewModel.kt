@@ -15,7 +15,9 @@ import kotlinx.coroutines.launch
 class MainViewModel : BaseViewModel() {
 
     //-----------------------------appPrankSound start-------------------------------
-    //todo
+    fun saveSoundsFromJsonToDatabase(context: Context) {
+        //todo
+    }
     //-----------------------------appPrankSound end-------------------------------
 
     //-----------------------------appFakeCall start-----------------------------

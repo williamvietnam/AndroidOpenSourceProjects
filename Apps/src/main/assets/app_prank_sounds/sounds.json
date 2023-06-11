@@ -4,44 +4,34 @@
       "name_category": "Fart Sound",
       "id": 1,
       "icon_category": "FartSound",
-      "isReward": true,
-      "isPremium": false,
       "list_sound": [
         {
           "name": "Bean",
           "category": 1,
           "id": "1_1",
           "sound": "11",
-          "icon": "11",
-          "isPremium": false,
-          "isReward": true
+          "icon": "11"
         },
         {
           "name": "Big bomb",
           "category": 1,
           "id": "1_2",
           "sound": "12",
-          "icon": "12",
-          "isPremium": true,
-          "isReward": false
+          "icon": "12"
         },
         {
           "name": "Dry",
           "category": 1,
           "id": "1_3",
           "sound": "13",
-          "icon": "13",
-          "isPremium": false,
-          "isReward": true
+          "icon": "13"
         },
         {
           "name": "Funny",
           "category": 1,
           "id": "1_4",
           "sound": "14",
-          "icon": "14",
-          "isPremium": false,
-          "isReward": true
+          "icon": "14"
         },
         {
           "name": "Heavy",

@@ -4,8 +4,8 @@ import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.android.apps.appPrankSound.models.SoundCategoriesResponse
-import com.android.apps.appPrankSound.models.SoundCategory
+import com.android.apps.appPrankSound.data.models.SoundCategoriesResponse
+import com.android.apps.appPrankSound.data.models.SoundCategory
 import com.android.core.base.BaseViewModel
 import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
