@@ -20,7 +20,7 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
 import com.android.R
-import com.android.base.BaseActivity
+import com.android.core.base.BaseActivity
 import com.android.databinding.ActivityMainBinding
 import com.hbisoft.hbrecorder.HBRecorder
 import com.hbisoft.hbrecorder.HBRecorderCodecInfo

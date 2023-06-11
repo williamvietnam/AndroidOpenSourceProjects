@@ -1,5 +1,5 @@
 package com.android.container.splash
 
-import com.android.base.BaseViewModel
+import com.android.core.base.BaseViewModel
 
 class SplashViewModel : BaseViewModel()

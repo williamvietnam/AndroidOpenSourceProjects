@@ -3,7 +3,7 @@ package com.android.apps.appAIChat
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import com.android.base.BaseFragment
+import com.android.core.base.BaseFragment
 import com.android.databinding.FragmentAIChatBinding
 
 class AIChatFragment : BaseFragment<FragmentAIChatBinding, AIChatViewModel>() {

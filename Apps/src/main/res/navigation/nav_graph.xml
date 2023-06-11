@@ -27,14 +27,34 @@
             android:id="@+id/action_from_appsMenu_to_aiChat"
             app:destination="@id/aiChatFragment" />
     </fragment>
-
+    <!-- ______________________________appPrankSound start______________________________________-->
     <fragment
         android:id="@+id/soundCategoriesFragment"
         android:name="com.android.apps.appPrankSound.soundCategories.SoundCategoriesFragment"
         android:label="SoundCategoriesFragment"
         tools:layout="@layout/fragment_sound_cateogies">
 
+        <action
+            android:id="@+id/action_soundCategories_to_sounds"
+            app:destination="@id/soundsFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/soundsFragment"
+        android:name="com.android.apps.appPrankSound.sounds.SoundsFragment"
+        android:label="SoundsFragment"
+        tools:layout="@layout/fragment_sounds">
+        <action
+            android:id="@+id/action_sounds_to_sound"
+            app:destination="@id/soundFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/soundFragment"
+        android:name="com.android.apps.appPrankSound.sound.SoundFragment"
+        android:label="SoundFragment"
+        tools:layout="@layout/fragment_sound" />
+    <!-- ______________________________appPrankSound end______________________________________-->
 
     <!-- ______________________________appFakeCall start______________________________________-->
     <fragment

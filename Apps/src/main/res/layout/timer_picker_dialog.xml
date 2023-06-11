@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_top_round_white"
+    android:orientation="vertical"
+    android:paddingTop="12dp"
+    android:paddingBottom="24dp">
+
+    <ImageView
+        android:id="@+id/buttonClose"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="16dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_delete"
+        app:tint="@color/black"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/buttonDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/titan_one_regular"
+        android:text="Done"
+        android:textColor="#aba4ff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonClose"
+        android:fontFamily="@font/titan_one_regular"
+        android:gravity="center"
+        android:text="Timer"
+        android:textColor="#5E5E5E"
+        android:textSize="24sp" />
+
+    <NumberPicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTimer"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/NumberPickerTheme" />
+</RelativeLayout>
