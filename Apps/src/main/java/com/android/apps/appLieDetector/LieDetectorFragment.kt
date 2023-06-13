@@ -5,18 +5,16 @@ import android.app.AlertDialog
 import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import android.os.Build
-import android.os.CountDownTimer
-import android.os.Handler
-import android.os.VibrationEffect
-import android.os.Vibrator
+import android.os.*
 import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.fragment.app.commit
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.android.R
 import com.android.apps.appLieDetector.questionpack.LieDetectorQuestionsPacksFragment
 import com.android.core.base.BaseFragment
@@ -49,6 +47,8 @@ class LieDetectorFragment : BaseFragment<FragmentLieDetectorBinding, LieDetector
 
     private var countDownTimer: CountDownTimer? = null
 
+    private lateinit var handler: Handler
+
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
@@ -61,7 +61,9 @@ class LieDetectorFragment : BaseFragment<FragmentLieDetectorBinding, LieDetector
     }
 
     override fun initializeViews() {
+        binding.imvButtonLieDetector.isEnabled = true
         vibration = activity?.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+        handler = Handler(requireContext().mainLooper)
 
         sharedViewModel.questionPack.observe(viewLifecycleOwner) {
             if (it.questionPack == QuestionPack.ASK_YOUR_QUESTION) {
@@ -98,8 +100,18 @@ class LieDetectorFragment : BaseFragment<FragmentLieDetectorBinding, LieDetector
 
     @SuppressLint("SetTextI18n", "ClickableViewAccessibility")
     override fun initializeEvents() {
+        requireActivity().onBackPressedDispatcher.addCallback(
+            viewLifecycleOwner,
+            object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    findNavController().popBackStack()
+                }
+            })
+
         binding.buttonBack.setOnClickListener {
-            activity?.supportFragmentManager?.beginTransaction()?.hide(this)?.commitNow()
+            PlayerManager.shared.stop()
+            handler.removeCallbacksAndMessages(null)
+            findNavController().popBackStack()
         }
 
         binding.buttonNo.setOnClickListener {
@@ -156,6 +168,7 @@ class LieDetectorFragment : BaseFragment<FragmentLieDetectorBinding, LieDetector
                             return false
                         } else if (answerYesNo == NOT_HAVE_ANSWER) {
                             binding.tvCondition.text = CONDITION_ANSWER
+                            return false
                         } else {
                             binding.imvButtonLieDetector.setImageDrawable(
                                 AppCompatResources.getDrawable(
@@ -215,15 +228,23 @@ class LieDetectorFragment : BaseFragment<FragmentLieDetectorBinding, LieDetector
                                 }
 
                                 override fun onFinish() {
+                                    binding.imvButtonLieDetector.isEnabled = false
                                     PlayerManager.shared.stop()
+                                    vibration?.cancel()
                                     binding.animationWave.cancelAnimation()
                                     binding.animationWave.visibility = View.GONE
                                     binding.tvCondition.visibility = View.VISIBLE
+                                    binding.imvButtonLieDetector.setImageDrawable(
+                                        AppCompatResources.getDrawable(
+                                            requireContext(),
+                                            R.drawable.ic_ai_chat_button_circle_green
+                                        )
+                                    )
                                     binding.tvCondition.text = "finger analyzing"
-                                    Handler(requireContext().mainLooper).postDelayed({
+                                    handler.postDelayed({
                                         binding.tvCondition.text = "analyzing"
                                     }, 2000)
-                                    Handler(requireContext().mainLooper).postDelayed({
+                                    handler.postDelayed({
                                         binding.tvCondition.text = ""
                                         showResult(viewModel.getRandomBoolean())
                                     }, 3500)
@@ -244,6 +265,23 @@ class LieDetectorFragment : BaseFragment<FragmentLieDetectorBinding, LieDetector
                                 requireContext(), R.drawable.ic_ai_chat_button_circle_green
                             )
                         )
+                        binding.tvCondition.text = "WAIT 4 SECONDS TO SCAN..."
+                        binding.tvCondition.visibility = View.VISIBLE
+                    }
+
+                    MotionEvent.ACTION_CANCEL -> {
+                        PlayerManager.shared.stop()
+                        vibration?.cancel()
+                        countDownTimer?.cancel()
+                        binding.animationWave.cancelAnimation()
+                        binding.animationWave.visibility = View.GONE
+                        binding.imvButtonLieDetector.setImageDrawable(
+                            AppCompatResources.getDrawable(
+                                requireContext(), R.drawable.ic_ai_chat_button_circle_green
+                            )
+                        )
+                        binding.tvCondition.text = "WAIT 4 SECONDS TO SCAN..."
+                        binding.tvCondition.visibility = View.VISIBLE
                     }
                 }
                 return true
@@ -261,6 +299,7 @@ class LieDetectorFragment : BaseFragment<FragmentLieDetectorBinding, LieDetector
 
     @SuppressLint("SetTextI18n")
     private fun showResult(isTruth: Boolean) {
+        binding.imvButtonLieDetector.isEnabled = true
         val builder = AlertDialog.Builder(requireContext())
         val inflater = LayoutInflater.from(requireContext())
         val dialogBinding = LieDetectorResultDialogBinding.inflate(inflater)
@@ -311,7 +350,6 @@ class LieDetectorFragment : BaseFragment<FragmentLieDetectorBinding, LieDetector
             binding.buttonYes.setTextColor(requireContext().getColor(R.color.white))
             PlayerManager.shared.stop()
             dialog.dismiss()
-
         }
         dialog.show()
     }
