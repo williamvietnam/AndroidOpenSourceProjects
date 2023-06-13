@@ -1,0 +1,214 @@
+{
+  "questionPacks": [
+    {
+      "questionPack": "Ask Your Question"
+    },
+    {
+      "questionPack": "Couple",
+      "questions": [
+        {
+          "question": "Do you love me?"
+        },
+        {
+          "question": "Have you ever dated an ex?"
+        },
+        {
+          "question": "Have you ever dated a friend’s ex?"
+        },
+        {
+          "question": "Are you still friends with any of your exes?"
+        },
+        {
+          "question": "Have you ever been married?"
+        },
+        {
+          "question": "Have you ever been engaged?"
+        },
+        {
+          "question": "Is there a song that reminds you of me?"
+        },
+        {
+          "question": "Do you believe in soulmates?"
+        },
+        {
+          "question": "Have you ever gone on vacation with a partner?"
+        }
+      ]
+    },
+    {
+      "questionPack": "Friends",
+      "questions": [
+        {
+          "question": "Do you know my middle name?"
+        },
+        {
+          "question": "Do you know my birthday?"
+        },
+        {
+          "question": "Do you remember the first time we met?"
+        },
+        {
+          "question": "Have I ever told you a secret?"
+        },
+        {
+          "question": "Are you good at keeping secrets?"
+        },
+        {
+          "question": "Are you able to tell when I’m upset?"
+        },
+        {
+          "question": "Have you ever slept over at my house?"
+        },
+        {
+          "question": "Would you tell me if I smelled bad?"
+        },
+        {
+          "question": "Would you go on vacation with me?"
+        },
+        {
+          "question": "Would you come to me for advice?"
+        }
+      ]
+    },
+    {
+      "questionPack": "Kids",
+      "questions": [
+        {
+          "question": "Do you have a best friend?"
+        },
+        {
+          "question": "Do you have any siblings?"
+        },
+        {
+          "question": "Are you afraid of the dark?"
+        },
+        {
+          "question": "Do you have a favorite superhero?"
+        },
+        {
+          "question": "Do you know your mom’s and dad’s first names?"
+        },
+        {
+          "question": "Do your parents ever embarrass you?"
+        },
+        {
+          "question": "Do you have a favorite dinosaur?"
+        },
+        {
+          "question": "Do you know why the sky is blue?"
+        },
+        {
+          "question": "Can you spell onomatopoeia?"
+        },
+        {
+          "question": "Have you ever lied to your parents?"
+        }
+      ]
+    },
+    {
+      "questionPack": "Work",
+      "questions": [
+        {
+          "question": "Do you feel like you belong at work?"
+        },
+        {
+          "question": "Is this your first job?"
+        },
+        {
+          "question": "Do you enjoy your job?"
+        },
+        {
+          "question": "Is this the job you dreamed of"
+        },
+        {
+          "question": "Have you ever been a manager?"
+        },
+        {
+          "question": "Have you ever had an awful interview?"
+        },
+        {
+          "question": "Do you ever procrastinate during work?"
+        },
+        {
+          "question": "Do you ever work past midnight?"
+        },
+        {
+          "question": "Have you ever played a prank on your boss?"
+        },
+        {
+          "question": "Do you like working by yourself?"
+        }
+      ]
+    },
+    {
+      "questionPack": "Adults",
+      "questions": [
+        {
+          "question": "Do you drive?"
+        },
+        {
+          "question": "Do you live alone?"
+        },
+        {
+          "question": "Are you married?"
+        },
+        {
+          "question": "Do you have kids?"
+        },
+        {
+          "question": "Do you have pets?"
+        },
+        {
+          "question": "Are you an only child?"
+        },
+        {
+          "question": "Do you work full time?"
+        },
+        {
+          "question": "Do you like your job?"
+        },
+        {
+          "question": "Do you have a second job?"
+        },
+        {
+          "question": "Did you go to college?"
+        }
+      ]
+    },
+    {
+      "questionPack": "Probe",
+      "questions": [
+        {
+          "question": "Have you ever seen a ghost?"
+        },
+        {
+          "question": "Can you cry underwater?"
+        },
+        {
+          "question": "Are aliens real?"
+        },
+        {
+          "question": "Could you beat me in a foot race?"
+        },
+        {
+          "question": "Do fish speak in bubbles?"
+        },
+        {
+          "question": "Have you ever cried to get out of a ticket?"
+        },
+        {
+          "question": "Would you slap someone for a million dollars?"
+        },
+        {
+          "question": "Is Big Foot real?"
+        },
+        {
+          "question": "Have you ever tasted soap?"
+        },
+        {
+          "question": "Do you have a secret talent?"
+        }
+      ]
+    }
+  ]
+}

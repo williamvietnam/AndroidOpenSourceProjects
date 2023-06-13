@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/llQuestionsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="108dp"
+        android:background="@drawable/background_lie_detector_question_packs"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/titan_one_regular"
+            android:gravity="center"
+            android:paddingVertical="16dp"
+            android:text="Choose Question"
+            android:textAllCaps="true"
+            android:textColor="#6F8A84"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/buttonContinue"
+            android:layout_below="@id/tvTitle"
+            android:orientation="vertical"
+            android:padding="32dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_lie_detector_question_pack" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/ic_lie_detector_button_continue"
+            android:fontFamily="@font/titan_one_regular"
+            android:text="continue"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/buttonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/llQuestionsList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_lie_detector_close"
+        tools:ignore="ContentDescription" />
+</RelativeLayout>

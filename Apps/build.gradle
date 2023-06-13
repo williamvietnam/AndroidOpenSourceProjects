@@ -33,12 +33,15 @@ android {
         jvmTarget = '11'
     }
 
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
 }
 
 dependencies {
+    // lottie animation images
+    implementation 'com.airbnb.android:lottie:6.0.0'
+
     // recording screen
     implementation 'com.github.HBiSoft:HBRecorder:3.0.1'
 
