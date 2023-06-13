@@ -1,40 +1,32 @@
 package com.android.apps.appLieDetector.questionpack
 
-import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.android.core.base.SharedViewModel
+import com.android.core.base.BaseFragment
 import com.android.databinding.FragmentLieDetectorQuestionPacksBinding
 import com.prank.sounds.fake.videocall.screens.liedetector.models.QuestionPack
 
-class LieDetectorQuestionsPacksFragment : Fragment(),
+class LieDetectorQuestionsPacksFragment : BaseFragment<FragmentLieDetectorQuestionPacksBinding,
+        LieDetectorQuestionsPacksViewModel>(),
     LieDetectorQuestionPacksAdapter.QuestionPacksCallBack {
 
-    private lateinit var binding: FragmentLieDetectorQuestionPacksBinding
-    private lateinit var viewModel: LieDetectorQuestionsPacksViewModel
     private lateinit var adapter: LieDetectorQuestionPacksAdapter
-    private lateinit var sharedViewModel: SharedViewModel
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        viewModel = ViewModelProvider(this)[LieDetectorQuestionsPacksViewModel::class.java]
-        sharedViewModel = ViewModelProvider(requireActivity())[SharedViewModel::class.java]
+    override fun createViewBinding(
+        inflater: LayoutInflater,
+        container: ViewGroup?
+    ): FragmentLieDetectorQuestionPacksBinding {
+        return FragmentLieDetectorQuestionPacksBinding.inflate(inflater, container, false)
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentLieDetectorQuestionPacksBinding.inflate(inflater, container, false)
-        return binding.root
+    override fun createViewModel(): LieDetectorQuestionsPacksViewModel {
+        return ViewModelProvider(this)[LieDetectorQuestionsPacksViewModel::class.java]
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    override fun initializeViews() {
         viewModel.getQuestionsPacks(requireContext())
         viewModel.data.observe(viewLifecycleOwner) {
             adapter = LieDetectorQuestionPacksAdapter(it, this)
@@ -48,6 +40,9 @@ class LieDetectorQuestionsPacksFragment : Fragment(),
                 viewModel.setQuestionPackName(it[0])
             }
         }
+    }
+
+    override fun initializeEvents() {
         binding.buttonClose.setOnClickListener {
             activity?.supportFragmentManager?.beginTransaction()?.remove(this)?.commitNow()
         }
