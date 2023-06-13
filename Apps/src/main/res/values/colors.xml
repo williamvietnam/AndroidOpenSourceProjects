@@ -24,6 +24,8 @@
     <color name="color_717171">#717171</color>
     <color name="color_aba4ff">#ABA4FF</color>
     <color name="color_818181">#818181</color>
+    <color name="color_05F73F">#05F73F</color>
+    <color name="color_FB3131">#FB3131</color>
 
     <!--custom seekbar-->
     <color name="progress_gray">#FFD8D8D8</color>

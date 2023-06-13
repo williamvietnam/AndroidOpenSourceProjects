@@ -1,6 +1,328 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background_lie_detector"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="8dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/buttonBack"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="start|center_vertical"
+            android:src="@drawable/ic_lie_detector_back"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/titan_one_regular"
+            android:text="lie detector"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/viewDivider1"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@drawable/ic_lie_detector_divider"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/flBackground1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingHorizontal="16dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="start|center_vertical"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="88dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_lie_detector_rectangle"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="end|center_vertical"
+                    tools:ignore="ContentDescription" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flTextScreen"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/flBackground1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_lie_detector_screen"
+                    android:visibility="visible"
+                    tools:ignore="ContentDescription" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/pixelmix_regular"
+                    android:gravity="top"
+                    android:hint="TYPE YOUR QUESTION HERE..."
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingHorizontal="24dp"
+                    android:paddingVertical="16dp"
+                    android:textColor="#05F73F"
+                    android:textColorHint="#A2A5A3"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    tools:ignore="HardcodedText"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/pixelmix_regular"
+                    android:gravity="top"
+                    android:lineSpacingExtra="8dp"
+                    android:paddingHorizontal="24dp"
+                    android:paddingVertical="16dp"
+                    android:textColor="#05F73F"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    tools:text="Please press to scanning..."
+                    tools:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonNo"
+                        android:layout_width="80dp"
+                        android:layout_height="28dp"
+                        android:layout_marginEnd="24dp"
+                        android:background="@drawable/background_round_stroke_white"
+                        android:text="No"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        tools:background="@drawable/background_round_stroke_red"
+                        tools:ignore="HardcodedText"
+                        tools:textColor="#F23535" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonYes"
+                        android:layout_width="80dp"
+                        android:layout_height="28dp"
+                        android:layout_marginStart="24dp"
+                        android:background="@drawable/background_round_stroke_white"
+                        android:text="Yes"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        tools:background="@drawable/background_round_stroke_green"
+                        tools:ignore="HardcodedText"
+                        tools:textColor="#05F73F" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/llQuestions"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:weightSum="5.5"
+                app:layout_constraintTop_toBottomOf="@id/flTextScreen">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="-16dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_lie_detector_view"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/imvLightLeft"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_lie_detector_circle_red"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/imvQuestionPack"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/ic_lie_detector_question_pack"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/imvLightRight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_lie_detector_circle_green"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="-16dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_lie_detector_view"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewDivider2"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_lie_detector_divider"
+                app:layout_constraintTop_toBottomOf="@id/llQuestions" />
+
+            <RelativeLayout
+                android:id="@+id/flWaveScreen"
+                android:layout_width="match_parent"
+                android:layout_height="116dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/viewDivider2">
+
+                <View
+                    android:id="@+id/viewDividerSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_lie_detector_small_divider" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="108dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginHorizontal="40dp"
+                    android:background="@drawable/ic_lie_detector_screen"
+                    tools:ignore="ContentDescription" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationWave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginHorizontal="40dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/heartbeat"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="56dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/pixelmix_regular"
+                    android:gravity="center"
+                    android:lineSpacingExtra="8dp"
+                    android:textAllCaps="true"
+                    android:textColor="#A2A5A3"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    tools:text="Your answer is Yes"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAnswer"
+                    android:layout_centerInParent="true"
+                    android:layout_marginHorizontal="56dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/pixelmix_regular"
+                    android:gravity="center"
+                    android:lineSpacingExtra="8dp"
+                    android:textAllCaps="true"
+                    android:textColor="#A2A5A3"
+                    android:textSize="16sp"
+                    tools:text="type your question, answer and fingerprint scan to detector" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imvButtonLieDetector"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_ai_chat_button_circle_green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/flWaveScreen"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-16dp"
+                android:src="@drawable/ic_lie_detector_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imvButtonLieDetector"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-16dp"
+                android:src="@drawable/ic_lie_detector_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imvButtonLieDetector"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -11,4 +11,7 @@ object Constants {
     const val CALL_MODE = "call_mode"
     const val SLEEP_SOUND_DATA = "sleep_sound_data"
     const val VOICE_CHANGER_DATA = "voice_changer_data"
+
+    // lie detector
+    const val LIE_DETECTOR_OPEN_SCREEN = "lie_detector_open_screen"
 }

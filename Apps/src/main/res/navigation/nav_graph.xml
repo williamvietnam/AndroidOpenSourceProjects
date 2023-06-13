@@ -120,15 +120,24 @@
 
     <!-- ______________________________appFakeCall end______________________________________-->
 
+    <!-- ______________________________appLieDetector start_____________________________________-->
     <fragment
         android:id="@+id/lieDetectorFragment"
         android:name="com.android.apps.appLieDetector.LieDetectorFragment"
         android:label="LieDetectorFragment"
         tools:layout="@layout/fragment_lie_detector">
 
-
+        <action
+            android:id="@+id/action_lieDetector_to_questionPacks"
+            app:destination="@id/lieDetectorQuestionPacksFragment" />
     </fragment>
 
+    <fragment
+        android:id="@+id/lieDetectorQuestionPacksFragment"
+        android:name="com.android.apps.appLieDetector.questionpack.LieDetectorQuestionsPacksFragment"
+        android:label="LieDetectorQuestionsPacksFragment"
+        tools:layout="@layout/fragment_lie_detector_question_packs" />
+    <!-- ______________________________appLieDetector end______________________________________-->
     <fragment
         android:id="@+id/aiChatFragment"
         android:name="com.android.apps.appAIChat.AIChatFragment"
@@ -137,4 +146,6 @@
 
 
     </fragment>
+
+
 </navigation>

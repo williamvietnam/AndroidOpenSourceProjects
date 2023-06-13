@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="32dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imvScreen"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/ic_lie_detector_screen"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/pixelmix_regular"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:textSize="36sp"
+            tools:text="You are Truth"
+            tools:textColor="#05F73F" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonPlayAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/imvScreen"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_lie_detector_button_continue"
+            android:fontFamily="@font/titan_one_regular"
+            android:text="Play again"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+</FrameLayout>
