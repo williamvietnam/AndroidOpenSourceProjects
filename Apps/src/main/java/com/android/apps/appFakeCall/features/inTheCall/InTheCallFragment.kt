@@ -20,10 +20,10 @@ import androidx.navigation.fragment.findNavController
 import com.android.R
 import com.android.apps.appFakeCall.data.entities.ContactEntity
 import com.android.apps.appFakeCall.utils.CountUpTimer
+import com.android.container.MainActivity
 import com.android.core.base.BaseFragment
 import com.android.core.common.Constants
 import com.android.core.common.Preferences
-import com.android.container.MainActivity
 import com.android.databinding.FragmentInTheCallBinding
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
@@ -32,6 +32,7 @@ class InTheCallFragment : BaseFragment<FragmentInTheCallBinding, InTheCallViewMo
 
     private var contact: ContactEntity? = null
     private var isVideoCall: Boolean = false
+    private var timer: CountUpTimer? = null
 
     //camera
     private lateinit var cameraExecutor: ExecutorService
@@ -65,7 +66,7 @@ class InTheCallFragment : BaseFragment<FragmentInTheCallBinding, InTheCallViewMo
         startCamera()
 
         // count up timer | default: 1000seconds, when finish = click button turn off the call
-        object : CountUpTimer(1000000) {
+        timer = object : CountUpTimer(1000000) {
             override fun onTick(totalSecond: Int) {
                 val min = (totalSecond % 3600) / 60
                 val second = totalSecond % 60
@@ -73,17 +74,8 @@ class InTheCallFragment : BaseFragment<FragmentInTheCallBinding, InTheCallViewMo
                 binding.textTimeCall.text = time
                 binding.textTimeVideoCall.text = time
             }
-
-            override fun onFinish() {
-                super.onFinish()
-                if (Preferences.instance.get(Constants.IS_FAKE_CALL_RECORD, false) as Boolean
-                ) {
-                    Preferences.instance.set(Constants.IS_FAKE_CALL_RECORD, false)
-                }
-                activity?.supportFragmentManager?.beginTransaction()
-                    ?.remove(this@InTheCallFragment)?.commitNow()
-            }
-        }.start()
+        }
+        timer?.start()
 
         // show resources to views
         if (contact != null) {
@@ -159,6 +151,7 @@ class InTheCallFragment : BaseFragment<FragmentInTheCallBinding, InTheCallViewMo
         }
 
         binding.buttonTurnOffCall.setOnClickListener {
+            timer?.cancel()
             if (Preferences.instance.get(Constants.IS_FAKE_CALL_RECORD, false) as Boolean) {
                 if ((requireActivity() as MainActivity).hasPermissions) {
                     if ((requireActivity() as MainActivity).hbRecorder!!.isBusyRecording) {
@@ -261,5 +254,6 @@ class InTheCallFragment : BaseFragment<FragmentInTheCallBinding, InTheCallViewMo
     override fun onDestroyView() {
         super.onDestroyView()
         cameraExecutor.shutdown()
+        timer?.cancel()
     }
 }

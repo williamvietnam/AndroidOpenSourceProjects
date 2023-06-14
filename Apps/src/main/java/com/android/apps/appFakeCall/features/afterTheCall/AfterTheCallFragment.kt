@@ -5,10 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.android.container.MainActivity
 import com.android.core.base.BaseFragment
 import com.android.core.common.Constants
 import com.android.core.common.Preferences
-import com.android.container.MainActivity
 import com.android.databinding.FragmentAfterTheCallBinding
 
 class AfterTheCallFragment : BaseFragment<FragmentAfterTheCallBinding, AfterTheCallViewModel>() {
@@ -32,12 +33,12 @@ class AfterTheCallFragment : BaseFragment<FragmentAfterTheCallBinding, AfterTheC
     }
 
     override fun initializeEvents() {
-//        binding.topView.buttonBack.setOnClickListener {
-//            if (Preferences.instance.get(Constants.IS_FAKE_CALL_RECORD, false) as Boolean) {
-//                Preferences.instance.set(Constants.IS_FAKE_CALL_RECORD, false)
-//            }
-//            activity?.supportFragmentManager?.beginTransaction()?.remove(this)?.commitNow()
-//        }
+        binding.buttonBack.setOnClickListener {
+            if (Preferences.instance.get(Constants.IS_FAKE_CALL_RECORD, false) as Boolean) {
+                Preferences.instance.set(Constants.IS_FAKE_CALL_RECORD, false)
+            }
+            findNavController().popBackStack()
+        }
 
         binding.buttonShare.setOnClickListener {
             val intent = Intent(Intent.ACTION_SEND)
