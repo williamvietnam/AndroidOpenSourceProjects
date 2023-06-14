@@ -9,6 +9,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <ImageButton
+            android:id="@+id/buttonBack"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back" />
     </FrameLayout>
 
     <VideoView
