@@ -8,8 +8,8 @@ import androidx.navigation.fragment.findNavController
 import com.android.R
 import com.android.apps.appPrankSound.data.models.Sound
 import com.android.apps.appPrankSound.data.models.SoundCategory
-import com.android.core.base.BaseFragment
-import com.android.core.common.Constants
+import com.android.commons.base.BaseFragment
+import com.android.commons.utilities.Constants
 import com.android.databinding.FragmentSoundsBinding
 
 class SoundsFragment : BaseFragment<FragmentSoundsBinding, SoundsViewModel>(),

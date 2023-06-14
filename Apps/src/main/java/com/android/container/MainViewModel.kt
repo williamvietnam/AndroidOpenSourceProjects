@@ -5,9 +5,9 @@ import androidx.lifecycle.viewModelScope
 import com.android.apps.appFakeCall.data.ContactDatabase
 import com.android.apps.appFakeCall.data.entities.ContactEntity
 import com.android.apps.appFakeCall.data.entities.ContactsResponse
-import com.android.core.base.BaseViewModel
-import com.android.core.common.KEY
-import com.android.core.common.Preferences
+import com.android.commons.base.BaseViewModel
+import com.android.commons.utilities.KEY
+import com.android.commons.utilities.Preferences
 import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

@@ -7,8 +7,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.android.R
 import com.android.apps.appFakeCall.data.entities.ContactEntity
-import com.android.core.base.BaseFragment
-import com.android.core.common.Constants
+import com.android.commons.base.BaseFragment
+import com.android.commons.utilities.Constants
 import com.android.databinding.FragmentContactsBinding
 
 class ContactsFragment : BaseFragment<FragmentContactsBinding, ContactsViewModel>(),

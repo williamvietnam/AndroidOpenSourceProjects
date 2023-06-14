@@ -1,4 +1,4 @@
-package com.android.core.common
+package com.android.commons.utilities
 import android.content.Context
 import android.content.SharedPreferences
 import java.util.concurrent.*
