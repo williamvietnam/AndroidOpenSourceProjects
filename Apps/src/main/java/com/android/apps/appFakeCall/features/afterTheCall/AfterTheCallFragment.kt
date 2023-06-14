@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.android.container.MainActivity
-import com.android.core.base.BaseFragment
-import com.android.core.common.Constants
-import com.android.core.common.Preferences
+import com.android.commons.base.BaseFragment
+import com.android.commons.utilities.Constants
+import com.android.commons.utilities.Preferences
 import com.android.databinding.FragmentAfterTheCallBinding
 
 class AfterTheCallFragment : BaseFragment<FragmentAfterTheCallBinding, AfterTheCallViewModel>() {

@@ -21,9 +21,9 @@ import com.android.R
 import com.android.apps.appFakeCall.data.entities.ContactEntity
 import com.android.apps.appFakeCall.utils.CountUpTimer
 import com.android.container.MainActivity
-import com.android.core.base.BaseFragment
-import com.android.core.common.Constants
-import com.android.core.common.Preferences
+import com.android.commons.base.BaseFragment
+import com.android.commons.utilities.Constants
+import com.android.commons.utilities.Preferences
 import com.android.databinding.FragmentInTheCallBinding
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors

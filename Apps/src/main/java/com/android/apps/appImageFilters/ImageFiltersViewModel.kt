@@ -1,6 +1,6 @@
 package com.android.apps.appImageFilters
 
-import com.android.core.base.BaseViewModel
+import com.android.commons.base.BaseViewModel
 
 class ImageFiltersViewModel : BaseViewModel() {
 }

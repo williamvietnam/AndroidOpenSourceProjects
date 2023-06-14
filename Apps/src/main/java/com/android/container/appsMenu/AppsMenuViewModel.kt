@@ -1,7 +1,7 @@
 package com.android.container.appsMenu
 
 import com.android.R
-import com.android.core.base.BaseViewModel
+import com.android.commons.base.BaseViewModel
 
 class AppsMenuViewModel : BaseViewModel() {
     fun createApps(): MutableList<App> {

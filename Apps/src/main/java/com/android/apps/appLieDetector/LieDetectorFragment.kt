@@ -17,10 +17,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.android.R
 import com.android.apps.appLieDetector.questionpack.LieDetectorQuestionsPacksFragment
-import com.android.core.base.BaseFragment
-import com.android.core.common.Constants
-import com.android.core.common.PlayerManager
-import com.android.core.common.Preferences
+import com.android.commons.base.BaseFragment
+import com.android.commons.utilities.Constants
+import com.android.commons.utilities.PlayerManager
+import com.android.commons.utilities.Preferences
 import com.android.databinding.FragmentLieDetectorBinding
 import com.android.databinding.LieDetectorResultDialogBinding
 import com.prank.sounds.fake.videocall.screens.liedetector.models.QuestionPack

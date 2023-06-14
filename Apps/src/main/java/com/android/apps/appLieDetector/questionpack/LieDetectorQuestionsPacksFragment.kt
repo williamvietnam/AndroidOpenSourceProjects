@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.android.core.base.BaseFragment
+import com.android.commons.base.BaseFragment
 import com.android.databinding.FragmentLieDetectorQuestionPacksBinding
 import com.prank.sounds.fake.videocall.screens.liedetector.models.QuestionPack
 
