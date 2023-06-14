@@ -30,7 +30,7 @@ class AppsMenuViewModel : BaseViewModel() {
 
         val appAIChat = App(
             id = App.APP_AI_CHAT_ID,
-            logo = R.drawable.app_ai_chat_logo_v2,
+            logo = R.drawable.app_ai_chat_logo,
             name = App.APP_AI_CHAT_NAME
         )
         apps.add(appAIChat)
