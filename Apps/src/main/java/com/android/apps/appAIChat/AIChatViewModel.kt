@@ -2,7 +2,7 @@ package com.android.apps.appAIChat
 
 import android.content.Context
 import com.android.R
-import com.android.core.base.BaseViewModel
+import com.android.commons.base.BaseViewModel
 
 class AIChatViewModel : BaseViewModel() {
     fun getDefaultAnswer(message: Message, context: Context): String {

@@ -100,7 +100,7 @@ class AIChatAdapter(
     }
 
     private fun getImageFromAsset(fileName: String, context: Context): Drawable? {
-        var result: Drawable? = null
+        var result: Drawable?
         try {
             val stream = context.assets.open(fileName)
             result = Drawable.createFromStream(stream, null)

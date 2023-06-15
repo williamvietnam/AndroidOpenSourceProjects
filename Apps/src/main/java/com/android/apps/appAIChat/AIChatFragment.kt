@@ -18,25 +18,19 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.android.R
-import com.android.core.base.BaseFragment
-import com.android.core.common.Constants
-import com.android.core.common.Preferences
+import com.android.commons.base.BaseFragment
+import com.android.commons.utilities.Constants
+import com.android.commons.utilities.Preferences
 import com.android.databinding.AiChatDialogBinding
 import com.android.databinding.FragmentAIChatBinding
 import com.bumptech.glide.Glide
-import okhttp3.Call
-import okhttp3.Callback
-import okhttp3.MediaType
+import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
-import okhttp3.OkHttpClient
-import okhttp3.Request
-import okhttp3.RequestBody
-import okhttp3.Response
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
 import java.io.IOException
-import java.util.Locale
+import java.util.*
 import java.util.concurrent.TimeUnit
 
 class AIChatFragment : BaseFragment<FragmentAIChatBinding, AIChatViewModel>(),
