@@ -48,6 +48,12 @@ class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel
             App.APP_AI_CHAT_ID -> {
                 findNavController().navigate(R.id.action_from_appsMenu_to_aiChat)
             }
+
+            App.APP_PAINT_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_paint)
+            }
+
+
         }
     }
 }
