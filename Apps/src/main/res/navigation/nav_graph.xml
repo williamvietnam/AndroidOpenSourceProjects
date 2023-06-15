@@ -26,6 +26,14 @@
         <action
             android:id="@+id/action_from_appsMenu_to_aiChat"
             app:destination="@id/aiChatFragment" />
+
+        <action
+            android:id="@+id/action_from_appsMenu_to_paint"
+            app:destination="@id/paintFragment" />
+
+        <action
+            android:id="@+id/action_from_appsMenu_to_imageFilters"
+            app:destination="@id/imageFiltersFragment" />
     </fragment>
     <!-- ______________________________appPrankSound start______________________________________-->
     <fragment
@@ -142,10 +150,23 @@
         android:id="@+id/aiChatFragment"
         android:name="com.android.apps.appAIChat.AIChatFragment"
         android:label="AIChatFragment"
-        tools:layout="@layout/fragment_a_i_chat">
+        tools:layout="@layout/fragment_a_i_chat" />
 
 
-    </fragment>
+    <!-- ______________________________appPaint start______________________________________-->
+    <fragment
+        android:id="@+id/paintFragment"
+        android:name="com.android.apps.appPaint.PaintFragment"
+        android:label="PaintFragment"
+        tools:layout="@layout/fragment_paint" />
+    <!-- ______________________________appPaint end______________________________________-->
 
 
+    <!-- ____________________________appImageFilters start____________________________________-->
+    <fragment
+        android:id="@+id/imageFiltersFragment"
+        android:name="com.android.apps.appImageFilters.ImageFiltersFragment"
+        android:label="ImageFiltersFragment"
+        tools:layout="@layout/fragment_image_filters" />
+    <!-- ______________________________appImageFilters end______________________________________-->
 </navigation>
