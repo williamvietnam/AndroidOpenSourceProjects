@@ -1,4 +1,4 @@
-package com.remote
+package com.remote.commons.main
 
 data class Brand(
     var id: String,

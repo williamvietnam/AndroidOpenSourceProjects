@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sony_nav_graph"
+    app:startDestination="@id/sonyTVRemoteControlFragment">
+
+    <fragment
+        android:id="@+id/sonyTVRemoteControlFragment"
+        android:name="com.remote.brands.sony.features.SonyTVRemoteControlFragment"
+        android:label="SonyTVRemoteControlFragment"
+        tools:layout="@layout/fragment_sony_tv_remote_control">
+
+    </fragment>
+</navigation>

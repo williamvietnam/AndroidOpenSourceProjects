@@ -1,4 +1,4 @@
-package com.remote
+package com.remote.commons.main
 
 import android.app.Application
 import android.util.Log
