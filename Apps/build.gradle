@@ -39,6 +39,9 @@ android {
 }
 
 dependencies {
+    //ok http
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+
     // lottie animation images
     implementation 'com.airbnb.android:lottie:6.0.0'
 

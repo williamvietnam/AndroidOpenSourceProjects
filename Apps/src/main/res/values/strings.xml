@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">Apps</string>
+    <string name="app_name">MultipleApps</string>
+
+    <!--ai chat default QA-->
+    <string name="aiChatDefaultAnswer1">I am AI Chat, a large language model. I am designed to understand and generate natural language text, and I can answer questions, provide information, and engage in conversation on a wide range of topics</string>
+
+    <string name="aiChatDefaultAnswer2">Once upon a time, there was a man who went to a zoo. He noticed that the only animal in the entire zoo was a dog. It was a shih tzu.
+        \nThe man asked the zookeeper why there was only one animal in the zoo. The zookeeper replied, Well, it is s a shih tzu zoo!
+    </string>
+
+    <string name="aiChatDefaultAnswer3">There are many foods that are considered to be good for health, as they provide essential nutrients and have been linked to a lower risk of chronic diseases. Here are some examples:
+        \n\n1. Fruits and vegetables: These are rich in vitamins, minerals, and antioxidants, which help protect the body against inflammation and disease. Aim for a variety of colorful fruits and vegetables, such as leafy greens, berries, citrus fruits, carrots, and peppers.
+        \n\n2. Whole grains: Whole grains are a good source of fiber, which can help regulate digestion and reduce the risk of heart disease, diabetes, and certain types of cancer. Examples of whole grains include brown rice, quinoa, oats, and whole wheat bread.
+        \n\n3. Lean proteins: Lean proteins, such as fish, chicken, turkey, beans, and lentils, are low in saturated fat and high in nutrients like protein, iron, and zinc. They can help build and repair tissues in the body and support healthy muscles and bones.
+        \n\nRemember that a balanced and varied diet is key to maintaining good health. It is also important to limit processed and sugary foods, as these can increase the risk of obesity, diabetes, and other health problems
+    </string>
+
+    <string name="aiChatDefaultAnswer4">As of 2023, the game genre that has the most players is: Block man Go! Build your world.
+        In this game, you will transform into Multiplayer craft to explore and build block house on the lands of block earth.
+        You can move around easily in this world and make building dream come true.
+    </string>
+
+    <string name="aiChatDefaultAnswer5">The first man to go to the moon was Neil Armstrong, an American astronaut, on July 20, 1969, as part of the Apollo 11 mission.
+        Armstrong was the commander of the Apollo 11 spacecraft, and he took the historic one small step for man, one giant leap for mankind as he became the first human to set foot on the lunar surface.
+        \n\nThe Apollo 11 mission was a major achievement for the United States in the Cold War space race against the Soviet Union.
+        Armstrong and his fellow crew members, Buzz Aldrin and Michael Collins, returned to Earth as heroes and their accomplishment remains one of the most significant moments in human history.
+    </string>
 </resources>

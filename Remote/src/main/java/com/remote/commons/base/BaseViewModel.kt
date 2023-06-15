@@ -1,4 +1,7 @@
 package com.remote.commons.base
 
-class BaseViewModel {
+import androidx.lifecycle.ViewModel
+
+abstract class BaseViewModel : ViewModel() {
+
 }
