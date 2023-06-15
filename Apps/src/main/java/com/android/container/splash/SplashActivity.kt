@@ -5,7 +5,7 @@ import android.content.Intent
 import android.os.Handler
 import android.os.Looper
 import androidx.lifecycle.ViewModelProvider
-import com.android.core.base.BaseActivity
+import com.android.commons.base.BaseActivity
 import com.android.container.MainActivity
 import com.android.databinding.ActivitySplashBinding
 

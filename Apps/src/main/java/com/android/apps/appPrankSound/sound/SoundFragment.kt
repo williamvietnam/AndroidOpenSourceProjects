@@ -13,9 +13,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.android.R
 import com.android.apps.appPrankSound.data.models.Sound
-import com.android.core.base.BaseFragment
-import com.android.core.common.Constants
-import com.android.core.common.PlayerManager
+import com.android.commons.base.BaseFragment
+import com.android.commons.utilities.Constants
+import com.android.commons.utilities.PlayerManager
 import com.android.databinding.FragmentSoundBinding
 import com.android.databinding.TimerPickerDialogBinding
 import com.bumptech.glide.Glide

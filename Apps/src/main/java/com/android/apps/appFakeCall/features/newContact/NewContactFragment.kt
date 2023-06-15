@@ -27,7 +27,7 @@ import androidx.core.app.ActivityCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.android.R
-import com.android.core.base.BaseFragment
+import com.android.commons.base.BaseFragment
 import com.android.databinding.FragmentNewContactBinding
 import java.io.File
 

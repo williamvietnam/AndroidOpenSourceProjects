@@ -1,7 +1,7 @@
 package com.android.container.appsMenu
 
 import com.android.R
-import com.android.core.base.BaseViewModel
+import com.android.commons.base.BaseViewModel
 
 class AppsMenuViewModel : BaseViewModel() {
     fun createApps(): MutableList<App> {
@@ -30,7 +30,7 @@ class AppsMenuViewModel : BaseViewModel() {
 
         val appAIChat = App(
             id = App.APP_AI_CHAT_ID,
-            logo = R.drawable.app_ai_chat_logo_v2,
+            logo = R.drawable.app_ai_chat_logo,
             name = App.APP_AI_CHAT_NAME
         )
         apps.add(appAIChat)
