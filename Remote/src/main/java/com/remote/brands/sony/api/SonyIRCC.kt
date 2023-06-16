@@ -1,5 +1,8 @@
 package com.remote.brands.sony.api
 
+/**
+ * Created: William Nguyen on 16/6/23
+ * */
 object SonyIRCC {
     const val Power = "AAAAAQAAAAEAAAAVAw=="
 
