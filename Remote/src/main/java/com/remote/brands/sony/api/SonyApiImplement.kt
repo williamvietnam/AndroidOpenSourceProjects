@@ -1,5 +1,12 @@
 package com.remote.brands.sony.api
 
+import com.remote.brands.sony.models.PowerStatusResponse
+import com.remote.brands.sony.models.ServicesInfoResponse
+import io.reactivex.rxjava3.core.Single
+import okhttp3.MediaType
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.RequestBody
+import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
 
@@ -7,70 +14,167 @@ class SonyApiImplement : ISonyApiHelper {
 
 
     //------------------------------guide--------------------------------------
-    override fun getSupportedApiInfo() {
-        val request: JSONObject = JSONObject()
+    override fun getSupportedApiInfo(): Single<ServicesInfoResponse>? {
+        val request = JSONObject()
+        var response: Single<ServicesInfoResponse>? = null
         try {
+            request.put("method", "getSupportedApiInfo")
+            request.put("id", 5)
+            val services = JSONArray()
+            request.put("params", services)
+            request.put("version", "1.0")
+            response = SonyApiClient.instance?.getApiService()?.getSupportedApiInfo(request)
+        } catch (jsonException: JSONException) {
+            jsonException.printStackTrace()
+        }
+        return response
+    }
+
+    override fun getSupportedAppControlServicesInfo() {
+
+    }
+
+    override fun getSupportedAudioServicesInfo() {
+
+    }
+
+    override fun getSupportedAvContentServicesInfo() {
+
+    }
+
+    override fun getSupportedEncryptionServicesInfo() {
+
+    }
+
+    override fun getSupportedSystemServicesInfo() {
+
+    }
+
+    override fun getSupportedVideoServicesInfo() {
+
+    }
+
+    override fun getSupportedVideoScreenServicesInfo() {
+
+    }
+
+    //----------------------------appControl--------------------------------------
+    override fun getApplicationList() {
+
+    }
+
+    override fun getApplicationStatusList() {
+
+    }
+
+    override fun getTextForm() {
+
+    }
+
+    override fun getWebAooStatus() {
+
+    }
+
+    override fun setActiveApp() {
+
+    }
+
+    override fun setTextForm() {
+
+    }
+
+    override fun terminateApps() {
+
+    }
+
+    //----------------------------audio--------------------------------------
+    override fun setAudioMute(isMute: Boolean) {
+        val request = JSONObject()
+        try {
+            request.put("method", "setAudioMute")
+
+            request.put("id", 601)
+
+            val paramsArray = JSONArray()
+            paramsArray.put(JSONObject().put("status", isMute))
+            request.put("params", paramsArray)
+
+            request.put("version", "1.0")
+
+            SonyApiClient.instance?.getApiService()?.setAudioMute(request)
         } catch (jsonException: JSONException) {
             jsonException.printStackTrace()
         }
     }
 
-    override fun getSupportedAppControlServicesInfo() {
-        TODO("Not yet implemented")
+    override fun setAudioVolume(volume: String) {
+        val request = JSONObject()
+        try {
+            request.put("method", "setAudioVolume")
+
+            request.put("id", 601)
+
+            val paramsArray = JSONArray()
+            paramsArray.put(JSONObject().put("volume", volume))
+            paramsArray.put(JSONObject().put("target", "speaker"))
+            request.put("params", paramsArray)
+
+            request.put("version", "1.0")
+
+            SonyApiClient.instance?.getApiService()?.setAudioVolume(request)
+        } catch (jsonException: JSONException) {
+            jsonException.printStackTrace()
+        }
     }
 
-    override fun getSupportedAudioServicesInfo() {
-        TODO("Not yet implemented")
+    //----------------------------- system --------------------------------
+    override fun setLanguage(language: String) {
+        val request = JSONObject()
+        try {
+            request.put("method", "setLanguage")
+            request.put("id", 55)
+            request.put("params", JSONArray().put(JSONObject().put("language", language)))
+            request.put("version", "1.0")
+            SonyApiClient.instance?.getApiService()?.setLanguage(request)
+        } catch (jsonException: JSONException) {
+            jsonException.printStackTrace()
+        }
     }
 
-    override fun getSupportedAvContentServicesInfo() {
-        TODO("Not yet implemented")
+    override fun getPowerStatus(): Single<PowerStatusResponse>? {
+        val request = JSONObject()
+        var response: Single<PowerStatusResponse>? = null
+        try {
+            request.put("method", "getPowerStatus")
+            request.put("id", 50)
+            request.put("params", JSONArray())
+            request.put("version", "1.0")
+            response = SonyApiClient.instance?.getApiService()?.getPowerStatus(request)
+        } catch (jsonException: JSONException) {
+            jsonException.printStackTrace()
+        }
+        return response
     }
 
-    override fun getSupportedEncryptionServicesInfo() {
-        TODO("Not yet implemented")
+    override fun setPowerStatus(status: Boolean) {
+        val request = JSONObject()
+        try {
+            request.put("method", "setPowerStatus")
+            request.put("id", 55)
+            request.put("params", JSONArray().put(JSONObject().put("status", status)))
+            request.put("version", "1.0")
+            SonyApiClient.instance?.getApiService()?.setPowerStatus(request)
+        } catch (jsonException: JSONException) {
+            jsonException.printStackTrace()
+        }
     }
 
-    override fun getSupportedSystemServicesInfo() {
-        TODO("Not yet implemented")
-    }
+    //-------------------- InfraRed Compatible Control over Internet Protocol ---------------------
+    override fun setRemoteController(IRCCCode: String) {
+        try {
 
-    override fun getSupportedVideoServicesInfo() {
-        TODO("Not yet implemented")
+        } catch (jsonException: JSONException) {
+            jsonException.printStackTrace()
+        }
     }
-
-    override fun getSupportedVideoScreenServicesInfo() {
-        TODO("Not yet implemented")
-    }
-
-    //----------------------------appControl--------------------------------------
-    override fun getApplicationList() {
-        TODO("Not yet implemented")
-    }
-
-    override fun getApplicationStatusList() {
-        TODO("Not yet implemented")
-    }
-
-    override fun getTextForm() {
-        TODO("Not yet implemented")
-    }
-
-    override fun getWebAooStatus() {
-        TODO("Not yet implemented")
-    }
-
-    override fun setActiveApp() {
-        TODO("Not yet implemented")
-    }
-
-    override fun setTextForm() {
-        TODO("Not yet implemented")
-    }
-
-    override fun terminateApps() {
-        TODO("Not yet implemented")
-    }
-
-    //----------------------------audio--------------------------------------
 }
