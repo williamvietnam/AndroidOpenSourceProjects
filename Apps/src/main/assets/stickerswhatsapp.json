@@ -1,0 +1,284 @@
+{
+  "android_play_store_link": "",
+  "ios_app_store_link": "",
+  "sticker_packs": [
+    {
+      "stickerPackName": "Avenger",
+      "name": "Avenger",
+      "publisher": "XGame",
+      "id": 6,
+      "identifier": "avenger",
+      "tray_image_file": "avenger_icon.png",
+      "isPremium": true,
+      "isRewardAds": false,
+      "image_data_version": "1",
+      "avoid_cache": false,
+      "publisher_email": "",
+      "publisher_website": "",
+      "privacy_policy_website": "",
+      "license_agreement_website": "",
+      "animated_sticker_pack": true,
+      "stickers": [
+        {
+          "name": "avenger-1",
+          "type": "gif",
+          "id": "6_1",
+          "identifier": "avenger",
+          "image_file": "avenger1.webp",
+          "isRewardAds": false,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "avenger-2",
+          "type": "gif",
+          "id": "6_2",
+          "identifier": "avenger",
+          "image_file": "avenger2.webp",
+          "isRewardAds": true,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "avenger-3",
+          "type": "gif",
+          "id": "6_3",
+          "identifier": "avenger",
+          "image_file": "avenger3.webp",
+          "isRewardAds": false,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "avenger-4",
+          "type": "gif",
+          "id": "6_4",
+          "identifier": "avenger",
+          "image_file": "avenger4.webp",
+          "isRewardAds": false,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "avenger-5",
+          "type": "gif",
+          "id": "6_5",
+          "identifier": "avenger",
+          "image_file": "avenger5.webp",
+          "isRewardAds": false,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "avenger-6",
+          "type": "gif",
+          "id": "6_6",
+          "identifier": "avenger",
+          "image_file": "avenger6.webp",
+          "isRewardAds": true,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "avenger-12",
+          "type": "gif",
+          "id": "6_12",
+          "identifier": "avenger",
+          "image_file": "avenger12.webp",
+          "isRewardAds": true,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        }
+      ]
+    },
+    {
+      "stickerPackName": "Meme",
+      "name": "Meme",
+      "publisher": "XGame",
+      "id": 2,
+      "identifier": "meme",
+      "tray_image_file": "meme_icon.png",
+      "isPremium": true,
+      "isRewardAds": false,
+      "image_data_version": "1",
+      "avoid_cache": false,
+      "publisher_email": "",
+      "publisher_website": "",
+      "privacy_policy_website": "",
+      "license_agreement_website": "",
+      "animated_sticker_pack": true,
+      "stickers": [
+        {
+          "name": "meme-1",
+          "type": "gif",
+          "id": "2_1",
+          "identifier": "meme",
+          "image_file": "meme1.webp",
+          "isRewardAds": false,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "meme-2",
+          "type": "gif",
+          "id": "2_2",
+          "identifier": "meme",
+          "image_file": "meme2.webp",
+          "isRewardAds": true,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "meme-3",
+          "type": "gif",
+          "id": "2_3",
+          "identifier": "meme",
+          "image_file": "meme3.webp",
+          "isRewardAds": false,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "meme-4",
+          "type": "gif",
+          "id": "2_4",
+          "identifier": "meme",
+          "image_file": "meme4.webp",
+          "isRewardAds": false,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "meme-5",
+          "type": "gif",
+          "id": "2_5",
+          "identifier": "meme",
+          "image_file": "meme5.webp",
+          "isRewardAds": false,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "meme-6",
+          "type": "gif",
+          "id": "2_6",
+          "identifier": "meme",
+          "image_file": "meme6.webp",
+          "isRewardAds": true,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "meme-7",
+          "type": "gif",
+          "id": "2_7",
+          "identifier": "meme",
+          "image_file": "meme7.webp",
+          "isRewardAds": false,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "meme-8",
+          "type": "gif",
+          "id": "2_8",
+          "identifier": "meme",
+          "image_file": "meme8.webp",
+          "isRewardAds": false,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "meme-9",
+          "type": "gif",
+          "id": "2_9",
+          "identifier": "meme",
+          "image_file": "meme9.webp",
+          "isRewardAds": false,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "meme-10",
+          "type": "gif",
+          "id": "2_10",
+          "identifier": "meme",
+          "image_file": "meme10.webp",
+          "isRewardAds": false,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "meme-11",
+          "type": "gif",
+          "id": "2_11",
+          "identifier": "meme",
+          "image_file": "meme11.webp",
+          "isRewardAds": false,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "meme-12",
+          "type": "gif",
+          "id": "2_12",
+          "identifier": "meme",
+          "image_file": "meme12.webp",
+          "isRewardAds": true,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        },
+        {
+          "name": "meme-16",
+          "type": "gif",
+          "id": "2_16",
+          "identifier": "meme",
+          "image_file": "meme16.webp",
+          "isRewardAds": false,
+          "emojis": [
+            "☕",
+            "🙂"
+          ]
+        }
+      ]
+    }
+  ]
+}
