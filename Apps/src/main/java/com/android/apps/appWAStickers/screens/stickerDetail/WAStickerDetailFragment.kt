@@ -1,4 +1,6 @@
 package com.android.apps.appWAStickers.screens.stickerDetail
 
-class WAStickerDetailFragment {
+import com.android.commons.base.BaseFragment
+
+class WAStickerDetailFragment: BaseFragment<> {
 }

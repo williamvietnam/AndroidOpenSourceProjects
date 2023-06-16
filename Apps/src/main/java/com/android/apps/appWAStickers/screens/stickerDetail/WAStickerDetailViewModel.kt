@@ -1,4 +1,6 @@
 package com.android.apps.appWAStickers.screens.stickerDetail
 
-class WAStickerDetailViewModel {
+import com.android.commons.base.BaseViewModel
+
+class WAStickerDetailViewModel: BaseViewModel() {
 }
