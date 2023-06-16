@@ -78,4 +78,7 @@ dependencies {
     implementation 'androidx.camera:camera-lifecycle:1.3.0-alpha06'
     // CameraX View class
     implementation 'androidx.camera:camera-view:1.3.0-alpha06'
+
+    // pick color
+    implementation 'com.github.Dhaval2404:ColorPicker:2.3'
 }
