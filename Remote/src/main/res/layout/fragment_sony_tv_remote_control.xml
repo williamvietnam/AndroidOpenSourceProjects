@@ -38,11 +38,138 @@
         tools:ignore="HardcodedText" />
 
     <Button
-        android:layout_marginTop="8dp"
         android:id="@+id/buttonSupportedApiInfo"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
+        android:layout_marginTop="8dp"
         android:text="Supported Api Info"
         android:textSize="11sp"
         tools:ignore="HardcodedText" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/buttonMute"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:text="Mute"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonUnMute"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="UnMute"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:text="Volume -1"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="Volume +1"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/buttonPowerOn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:text="Turn On TV"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonPowerOff"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="Turn Off TV"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/buttonUp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="8dp"
+            android:text="Up"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonDown"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="8dp"
+            android:text="Down"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginTop="8dp"
+            android:text="Left"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonRight"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginTop="8dp"
+            android:text="Right"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+    </FrameLayout>
 </LinearLayout>
