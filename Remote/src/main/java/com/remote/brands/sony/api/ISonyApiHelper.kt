@@ -1,9 +1,13 @@
 package com.remote.brands.sony.api
 
+import com.remote.brands.sony.models.PowerStatusResponse
+import com.remote.brands.sony.models.ServicesInfoResponse
+import io.reactivex.rxjava3.core.Single
+
 interface ISonyApiHelper {
     //----------------------------- guide --------------------------------
 
-    fun getSupportedApiInfo()
+    fun getSupportedApiInfo(): Single<ServicesInfoResponse>?
 
     fun getSupportedAppControlServicesInfo()
 
@@ -34,4 +38,18 @@ interface ISonyApiHelper {
     fun setTextForm()
 
     fun terminateApps()
+
+    //----------------------------- audio --------------------------------
+    fun setAudioMute(isMute: Boolean)
+
+    fun setAudioVolume(volume: String)
+
+    //----------------------------- system --------------------------------
+    fun setLanguage(language: String)
+
+    fun getPowerStatus(): Single<PowerStatusResponse>?
+    fun setPowerStatus(status: Boolean) // true: on state | false: off state
+
+    //-------------------- InfraRed Compatible Control over Internet Protocol ---------------------
+    fun setRemoteController(IRCCCode: String)
 }

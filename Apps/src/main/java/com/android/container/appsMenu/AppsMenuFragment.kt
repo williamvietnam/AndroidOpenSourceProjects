@@ -49,11 +49,13 @@ class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel
                 findNavController().navigate(R.id.action_from_appsMenu_to_aiChat)
             }
 
+            App.APP_WHATSAPP_STICKERS_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_waStickers)
+            }
+
             App.APP_PAINT_ID -> {
                 findNavController().navigate(R.id.action_from_appsMenu_to_paint)
             }
-
-
         }
     }
 }

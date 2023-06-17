@@ -4,7 +4,7 @@ object SonyApiEndpoints {
     var SONY_BASE_URL = ""
 
     fun initializeSonyBaseUrl(apiAddress: String) {
-        SONY_BASE_URL = apiAddress
+        SONY_BASE_URL = "$apiAddress/sony"
     }
 
     const val guide = "/guide"
@@ -15,4 +15,5 @@ object SonyApiEndpoints {
     const val system = "/system"
     const val video = "/video"
     const val videoScreen = "/videoScreen"
+    const val SONY_IRCCCode = "/ircc"
 }

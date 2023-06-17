@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="108dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/background_rectangle_f6f6f6">
+
+    <ImageView
+        android:id="@+id/imvSticker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/image_vietnam" />
+</FrameLayout>

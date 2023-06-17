@@ -16,11 +16,20 @@ android {
         versionCode 1
         versionName "1.0"
 
+        def contentProviderAuthority = applicationId + ".stickercontentprovider"
+        manifestPlaceholders = [contentProviderAuthority: contentProviderAuthority]
+        buildConfigField("String", "CONTENT_PROVIDER_AUTHORITY", "\"${contentProviderAuthority}\"")
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -36,7 +45,55 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
+    packagingOptions {
+        exclude 'lib/*/libnative-imagetranscoder.so'
+        exclude 'lib/*/libnative-filters.so'
+    }
 }
+
+task checkDebug {
+    doLast {
+        println("checkDebug")
+        if (android.defaultConfig.applicationId.startsWith("com.whatsapp")) {
+            throw new GradleException("applicationId in defaultConfig cannot start with com.whatsapp, please change your applicationId in app/build.gradle")
+        }
+        checkApplicationIdInDebug()
+    }
+}
+
+private void checkApplicationIdInDebug() {
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    def ignoreApplicationIdCheck = properties.getProperty('ignoreApplicationIdCheck')
+    if (ignoreApplicationIdCheck == null) {
+//        if (android.defaultConfig.applicationId == "com.example.samplestickerapp") {
+//            throw new GradleException("Your applicationId is currently com.example.samplestickerapp, please change your applicationId to a different string in app/build.gradle in line 10")
+//        }
+    } else {
+        println("application id check ignored")
+    }
+}
+
+task checkRelease {
+    doLast {
+        println("checkRelease")
+        if (android.defaultConfig.applicationId.startsWith("com.example")) {
+            throw new GradleException("applicationId in defaultConfig cannot start with com.example, please change your applicationId in app/build.gradle")
+        }
+    }
+}
+
+tasks.whenTaskAdded { task ->
+    println(task.name)
+    if (task.name.contains("assembleDebug")) {
+        task.dependsOn checkDebug
+    }
+    if (task.name.contains("assembleRelease")) {
+        task.dependsOn checkRelease
+    }
+}
+
 
 dependencies {
     //ok http
@@ -81,4 +138,10 @@ dependencies {
 
     // pick color
     implementation 'com.github.Dhaval2404:ColorPicker:2.3'
+
+    // whatsapp
+    implementation "com.facebook.fresco:fresco:2.5.0"
+    implementation "com.facebook.fresco:webpsupport:2.5.0"
+    implementation "com.facebook.fresco:animated-webp:2.5.0"
+    implementation "com.facebook.fresco:animated-base:2.5.0"
 }

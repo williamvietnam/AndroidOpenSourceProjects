@@ -17,7 +17,7 @@ import java.net.InetAddress
 
 class SonyActivity : BaseActivity<ActivitySonyBinding, SonyViewModel>() {
 
-    private lateinit var networkSniffTask: NetworkSniffTask
+//    private lateinit var networkSniffTask: NetworkSniffTask
 
     override fun createViewBinding(): ActivitySonyBinding {
         return ActivitySonyBinding.inflate(layoutInflater)
@@ -34,7 +34,7 @@ class SonyActivity : BaseActivity<ActivitySonyBinding, SonyViewModel>() {
         ) as NavHostFragment
         val navController = navHostFragment.navController
 
-        this.networkSniffTask = NetworkSniffTask(this)
+//        this.networkSniffTask = NetworkSniffTask(this)
     }
 
     override fun initializeEvents() {
@@ -45,49 +45,49 @@ class SonyActivity : BaseActivity<ActivitySonyBinding, SonyViewModel>() {
 
     }
 
-    class NetworkSniffTask(context: Context) : AsyncTask<Void, Void, Void>() {
-
-        private var mContextRef: WeakReference<Context>? = null
-
-        init {
-            mContextRef = WeakReference(context)
-        }
-
-        override fun doInBackground(vararg voids: Void?): Void? {
-            try {
-                val context = mContextRef!!.get()
-
-                if (context != null) {
-                    val cm =
-                        context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-                    val activeNetwork = cm.activeNetworkInfo
-                    val wm =
-                        context.applicationContext.getSystemService(Context.WIFI_SERVICE) as WifiManager
-                    val connectionInfo = wm.connectionInfo
-                    val ipAddress = connectionInfo.ipAddress
-                    val ipString: String = Formatter.formatIpAddress(ipAddress)
-                    Log.d(
-                        NetworkSniffTask::class.simpleName,
-                        "activeNetwork: " + activeNetwork.toString()
-                    )
-                    Log.d(NetworkSniffTask::class.simpleName, "ipString: $ipString")
-                    val prefix = ipString.substring(0, ipString.lastIndexOf(".") + 1)
-                    Log.d(NetworkSniffTask::class.simpleName, "prefix: $prefix")
-                    for (i in 0..254) {
-                        val testIp = prefix + i.toString()
-                        val address = InetAddress.getByName(testIp)
-                        val reachable = address.isReachable(1000)
-                        val hostName = address.canonicalHostName
-                        if (reachable) Log.i(
-                            NetworkSniffTask::class.simpleName,
-                            "Host: $hostName($testIp) is reachable!"
-                        )
-                    }
-                }
-            } catch (throwable: Throwable) {
-                Log.e(NetworkSniffTask::class.simpleName, "Well that's not good.", throwable)
-            }
-            return null
-        }
-    }
+//    class NetworkSniffTask(context: Context) : AsyncTask<Void, Void, Void>() {
+//
+//        private var mContextRef: WeakReference<Context>? = null
+//
+//        init {
+//            mContextRef = WeakReference(context)
+//        }
+//
+//        override fun doInBackground(vararg voids: Void?): Void? {
+//            try {
+//                val context = mContextRef!!.get()
+//
+//                if (context != null) {
+//                    val cm =
+//                        context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+//                    val activeNetwork = cm.activeNetworkInfo
+//                    val wm =
+//                        context.applicationContext.getSystemService(Context.WIFI_SERVICE) as WifiManager
+//                    val connectionInfo = wm.connectionInfo
+//                    val ipAddress = connectionInfo.ipAddress
+//                    val ipString: String = Formatter.formatIpAddress(ipAddress)
+//                    Log.d(
+//                        NetworkSniffTask::class.simpleName,
+//                        "activeNetwork: " + activeNetwork.toString()
+//                    )
+//                    Log.d(NetworkSniffTask::class.simpleName, "ipString: $ipString")
+//                    val prefix = ipString.substring(0, ipString.lastIndexOf(".") + 1)
+//                    Log.d(NetworkSniffTask::class.simpleName, "prefix: $prefix")
+//                    for (i in 0..254) {
+//                        val testIp = prefix + i.toString()
+//                        val address = InetAddress.getByName(testIp)
+//                        val reachable = address.isReachable(1000)
+//                        val hostName = address.canonicalHostName
+//                        if (reachable) Log.i(
+//                            NetworkSniffTask::class.simpleName,
+//                            "Host: $hostName($testIp) is reachable!"
+//                        )
+//                    }
+//                }
+//            } catch (throwable: Throwable) {
+//                Log.e(NetworkSniffTask::class.simpleName, "Well that's not good.", throwable)
+//            }
+//            return null
+//        }
+//    }
 }
