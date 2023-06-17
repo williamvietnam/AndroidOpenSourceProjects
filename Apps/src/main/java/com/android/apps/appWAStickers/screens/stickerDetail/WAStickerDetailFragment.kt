@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.android.apps.appWAStickers.core.AddStickerPackFragment
 import com.android.apps.appWAStickers.models.StickerPack
@@ -67,7 +68,7 @@ class WAStickerDetailFragment : AddStickerPackFragment() {
 
     private fun initializeEvents() {
         binding.buttonClose.setOnClickListener {
-            activity?.supportFragmentManager?.beginTransaction()?.remove(this)?.commitNow()
+            findNavController().popBackStack()
         }
 
         binding.buttonPrevious.setOnClickListener {
