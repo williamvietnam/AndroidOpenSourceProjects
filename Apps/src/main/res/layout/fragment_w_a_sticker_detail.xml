@@ -1,6 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:background="@android:color/black">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:visibility="invisible"
+        tools:background="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:background="@drawable/background_rectangle_round_corner_ffffff">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/horizontalDivider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_round_horizontal_rule" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/buttonClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_circle_b7b7b7"
+            android:padding="6dp"
+            android:src="@drawable/ic_delete"
+            android:tint="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStickerPackageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontalDivider"
+            android:fontFamily="@font/inter_semi_bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:visibility="visible"
+            tools:text="Xdog" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/indicator"
+            android:layout_below="@id/tvStickerPackageName"
+            android:layout_marginHorizontal="32dp"
+            android:orientation="horizontal" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/buttonPrevious"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/indicator"
+            android:layout_below="@id/tvStickerPackageName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/ic_arrow_circle_left"
+            app:tint="#ABA4FF" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/buttonNext"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/indicator"
+            android:layout_below="@id/tvStickerPackageName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/ic_arrow_circle_right"
+            app:tint="#ABA4FF" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ads"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="10/12" />
+
+        <FrameLayout
+            android:id="@+id/ads"
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:layout_above="@id/flButton"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/flButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/background_rectangle_b15bda"
+            android:orientation="horizontal"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="8dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imvButton"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_ads"
+                android:tint="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="Add to WhatsApp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
