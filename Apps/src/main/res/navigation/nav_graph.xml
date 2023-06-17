@@ -28,6 +28,10 @@
             app:destination="@id/aiChatFragment" />
 
         <action
+            android:id="@+id/action_from_appsMenu_to_waStickers"
+            app:destination="@id/waStickersFragment" />
+
+        <action
             android:id="@+id/action_from_appsMenu_to_paint"
             app:destination="@id/paintFragment" />
 
@@ -151,6 +155,28 @@
         android:name="com.android.apps.appAIChat.AIChatFragment"
         android:label="AIChatFragment"
         tools:layout="@layout/fragment_a_i_chat" />
+
+    <!-- ______________________________appWAStickers start______________________________________-->
+
+    <fragment
+        android:id="@+id/waStickersFragment"
+        android:name="com.android.apps.appWAStickers.screens.stickers.WAStickersFragment"
+        android:label="WAStickersFragment"
+        tools:layout="@layout/fragment_w_a_sticker">
+
+        <action
+            android:id="@+id/action_WAStickers_to_WAStickersDetail"
+            app:destination="@id/waStickerDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/waStickerDetailFragment"
+        android:name="com.android.apps.appWAStickers.screens.stickerDetail.WAStickerDetailFragment"
+        android:label="WAStickerDetailFragment"
+        tools:layout="@layout/fragment_w_a_sticker_detail">
+
+    </fragment>
+    <!-- ______________________________appWAStickers end______________________________________-->
 
 
     <!-- ______________________________appPaint start______________________________________-->

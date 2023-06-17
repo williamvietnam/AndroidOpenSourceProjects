@@ -15,4 +15,11 @@ object Constants {
     const val AI_CHAT_OPEN_SCREEN_FIRST_TIME = "open_screen_for_the_first_time"
     const val AI_CHAT_REMAINING_MESSAGES = "ai_chat_remaining_messages"
     const val AI_CHAT_IS_AUDIO_ON = "ai_chat_is_audio_on"
+
+    // whatsapp
+    const val STICKER_DATA = "sticker_data"
+    const val STICKER_POSITION = "sticker_position"
+    const val STICKER_PACKAGE_NAME = "sticker_package_name"
+    const val STICKER_DATA_SIZE = "sticker_data_size"
+    const val STICKER_IS_WHITELISTED = "sticker_is_whitelisted"
 }
