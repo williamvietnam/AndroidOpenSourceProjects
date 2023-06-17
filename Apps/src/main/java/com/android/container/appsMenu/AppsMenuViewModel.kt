@@ -23,7 +23,7 @@ class AppsMenuViewModel : BaseViewModel() {
 
         val appLieDetector = App(
             id = App.APP_LIE_DETECTOR_ID,
-            logo = R.drawable.app_lie_detector_logo_v2,
+            logo = R.drawable.app_lie_detector_logo,
             name = App.APP_LIE_DETECTOR_NAME
         )
         apps.add(appLieDetector)
@@ -37,7 +37,7 @@ class AppsMenuViewModel : BaseViewModel() {
 
         val appWhatsappSticker = App(
             id = App.APP_WHATSAPP_STICKERS_ID,
-            logo = R.drawable.app_sticker_whatsapp_logo_v2,
+            logo = R.drawable.app_sticker_whatsapp_logo,
             name = App.APP_WHATSAPP_STICKERS_NAME
         )
         apps.add(appWhatsappSticker)
@@ -55,6 +55,27 @@ class AppsMenuViewModel : BaseViewModel() {
             name = App.APP_IMAGE_FILTERS_NAME
         )
         apps.add(appImageFilters)
+
+        val appWallpaper = App(
+            id = App.APP_WALLPAPER_ID,
+            logo = R.drawable.app_wallpaper_logo,
+            name = App.APP_WALLPAPER_NAME
+        )
+        apps.add(appWallpaper)
+
+        val appCharts = App(
+            id = App.APP_CHARTS_ID,
+            logo = R.drawable.app_chart_logo,
+            name = App.APP_CHARTS_NAME
+        )
+        apps.add(appCharts)
+
+        val appVideoShorts = App(
+            id = App.APP_SHORTS_ID,
+            logo = R.drawable.app_video_shorts_logo,
+            name = App.APP_SHORTS_NAME
+        )
+        apps.add(appVideoShorts)
 
         return apps
     }

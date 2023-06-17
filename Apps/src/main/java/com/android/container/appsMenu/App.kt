@@ -18,6 +18,9 @@ data class App(
         const val APP_WHATSAPP_STICKERS_ID = "app.whatsapp.stickers.id"
         const val APP_PAINT_ID = "app.paint.id"
         const val APP_IMAGE_FILTERS_ID = "app.image.filters.id"
+        const val APP_WALLPAPER_ID = "app.wallpaper.id"
+        const val APP_CHARTS_ID = "app.charts.id"
+        const val APP_SHORTS_ID = "app.shorts.id"
 
         // Apps Name
         const val APP_PRANK_SOUND_NAME = "Prank Sounds"
@@ -27,5 +30,8 @@ data class App(
         const val APP_WHATSAPP_STICKERS_NAME = "WA Stickers"
         const val APP_PAINT_NAME = "Paint"
         const val APP_IMAGE_FILTERS_NAME = "Image Filters"
+        const val APP_WALLPAPER_NAME = "Wallpaper"
+        const val APP_CHARTS_NAME = "Charts"
+        const val APP_SHORTS_NAME = "Video Shorts"
     }
 }
