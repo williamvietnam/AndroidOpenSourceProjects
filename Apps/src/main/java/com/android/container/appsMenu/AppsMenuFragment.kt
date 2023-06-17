@@ -2,6 +2,7 @@ package com.android.container.appsMenu
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.android.R
@@ -55,6 +56,14 @@ class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel
 
             App.APP_PAINT_ID -> {
                 findNavController().navigate(R.id.action_from_appsMenu_to_paint)
+            }
+
+            App.APP_IMAGE_FILTERS_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_imageFilters)
+            }
+
+            App.APP_WALLPAPER_ID -> {
+                Toast.makeText(requireContext(), "Developing", Toast.LENGTH_SHORT).show()
             }
         }
     }
