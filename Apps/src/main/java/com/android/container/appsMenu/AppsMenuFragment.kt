@@ -66,6 +66,10 @@ class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel
                 Toast.makeText(requireContext(), "Developing", Toast.LENGTH_SHORT).show()
             }
 
+            App.APP_CHARTS_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_charts)
+            }
+
             App.APP_SHORTS_ID -> {
                 findNavController().navigate(R.id.action_from_appsMenu_to_videoShorts)
             }
