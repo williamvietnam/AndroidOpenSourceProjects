@@ -7,6 +7,8 @@ import com.android.commons.base.BaseFragment
 import com.android.databinding.FragmentVideoShortsBinding
 
 class VideoShortsFragment : BaseFragment<FragmentVideoShortsBinding, VideoShortsViewModel>() {
+    private lateinit var adapter: VideoShortsAdapter
+
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
@@ -19,7 +21,8 @@ class VideoShortsFragment : BaseFragment<FragmentVideoShortsBinding, VideoShorts
     }
 
     override fun initializeViews() {
-
+        adapter = VideoShortsAdapter(viewModel.initializeData())
+        binding.viewPager.adapter = adapter
     }
 
     override fun initializeEvents() {

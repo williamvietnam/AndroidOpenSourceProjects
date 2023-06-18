@@ -38,6 +38,10 @@
         <action
             android:id="@+id/action_from_appsMenu_to_imageFilters"
             app:destination="@id/imageFiltersFragment" />
+
+        <action
+            android:id="@+id/action_from_appsMenu_to_videoShorts"
+            app:destination="@id/videoShortsFragment" />
     </fragment>
     <!-- ______________________________appPrankSound start______________________________________-->
     <fragment
@@ -195,4 +199,10 @@
         android:label="ImageFiltersFragment"
         tools:layout="@layout/fragment_image_filters" />
     <!-- ______________________________appImageFilters end______________________________________-->
+
+    <fragment
+        android:id="@+id/videoShortsFragment"
+        android:name="com.android.apps.appVideoShorts.VideoShortsFragment"
+        android:label="VideoShortsFragment"
+        tools:layout="@layout/fragment_video_shorts" />
 </navigation>
