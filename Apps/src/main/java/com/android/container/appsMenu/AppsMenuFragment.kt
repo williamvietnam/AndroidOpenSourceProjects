@@ -65,6 +65,10 @@ class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel
             App.APP_WALLPAPER_ID -> {
                 Toast.makeText(requireContext(), "Developing", Toast.LENGTH_SHORT).show()
             }
+
+            App.APP_SHORTS_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_videoShorts)
+            }
         }
     }
 }

@@ -47,7 +47,8 @@
         android:theme="@style/Theme.AndroidOpenSourceProjects">
         <activity
             android:name=".container.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
