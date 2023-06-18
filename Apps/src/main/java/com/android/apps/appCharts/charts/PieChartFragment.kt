@@ -1,17 +1,18 @@
-package com.android.apps.appCharts
+package com.android.apps.appCharts.charts
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import com.android.apps.appCharts.commons.ChartsViewModel
 import com.android.commons.base.BaseFragment
-import com.android.databinding.FragmentChartsBinding
+import com.android.databinding.FragmentPieChartBinding
 
-class ChartsFragment : BaseFragment<FragmentChartsBinding, ChartsViewModel>() {
+class PieChartFragment : BaseFragment<FragmentPieChartBinding, ChartsViewModel>() {
     override fun createViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
-    ): FragmentChartsBinding {
-        return FragmentChartsBinding.inflate(inflater, container, false)
+    ): FragmentPieChartBinding {
+        return FragmentPieChartBinding.inflate(inflater, container, false)
     }
 
     override fun createViewModel(): ChartsViewModel {

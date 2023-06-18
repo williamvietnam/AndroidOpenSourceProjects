@@ -40,6 +40,10 @@
             app:destination="@id/imageFiltersFragment" />
 
         <action
+            android:id="@+id/action_from_appsMenu_to_charts"
+            app:destination="@id/chartsFragment" />
+
+        <action
             android:id="@+id/action_from_appsMenu_to_videoShorts"
             app:destination="@id/videoShortsFragment" />
     </fragment>
@@ -199,6 +203,12 @@
         android:label="ImageFiltersFragment"
         tools:layout="@layout/fragment_image_filters" />
     <!-- ______________________________appImageFilters end______________________________________-->
+
+    <fragment
+        android:id="@+id/chartsFragment"
+        android:name="com.android.apps.appCharts.commons.ChartsFragment"
+        android:label="ChartsFragment"
+        tools:layout="@layout/fragment_charts" />
 
     <fragment
         android:id="@+id/videoShortsFragment"
