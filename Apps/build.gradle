@@ -144,4 +144,7 @@ dependencies {
     implementation "com.facebook.fresco:webpsupport:2.5.0"
     implementation "com.facebook.fresco:animated-webp:2.5.0"
     implementation "com.facebook.fresco:animated-base:2.5.0"
+
+    // charts
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }

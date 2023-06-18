@@ -3,6 +3,7 @@ package com.android.apps.appCharts.commons
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.android.commons.base.BaseFragment
 import com.android.databinding.FragmentChartsBinding
 import com.google.android.material.tabs.TabLayoutMediator
@@ -52,6 +53,8 @@ class ChartsFragment : BaseFragment<FragmentChartsBinding, ChartsViewModel>() {
     }
 
     override fun initializeEvents() {
-
+        binding.buttonBack.setOnClickListener {
+            findNavController().popBackStack()
+        }
     }
 }
