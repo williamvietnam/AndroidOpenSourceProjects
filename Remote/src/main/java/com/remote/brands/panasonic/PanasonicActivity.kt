@@ -1,4 +1,6 @@
 package com.remote.brands.panasonic
 
-class PanasonicActivity {
+import androidx.appcompat.app.AppCompatActivity
+
+class PanasonicActivity : AppCompatActivity(){
 }
