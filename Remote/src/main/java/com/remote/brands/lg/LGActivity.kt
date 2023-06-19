@@ -1,6 +1,7 @@
 package com.remote.brands.lg
 
 import android.app.AlertDialog
+import android.os.Handler
 import android.text.InputType
 import android.util.Log
 import android.view.Menu
@@ -20,6 +21,7 @@ import com.connectsdk.discovery.DiscoveryManager
 import com.connectsdk.service.DeviceService
 import com.connectsdk.service.capability.MediaPlayer
 import com.connectsdk.service.command.ServiceCommandError
+import com.remote.R
 import com.remote.commons.base.BaseActivity
 import com.remote.databinding.ActivityLGBinding
 

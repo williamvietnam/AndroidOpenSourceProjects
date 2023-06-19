@@ -1,4 +1,6 @@
 package com.remote.brands.samsung
 
-class SamsungActivity {
+import androidx.appcompat.app.AppCompatActivity
+
+class SamsungActivity:AppCompatActivity() {
 }
