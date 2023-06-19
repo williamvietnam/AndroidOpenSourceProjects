@@ -1,4 +1,6 @@
 package com.remote.brands.lg
 
-class LGViewModel {
+import com.remote.commons.base.BaseViewModel
+
+class LGViewModel: BaseViewModel() {
 }

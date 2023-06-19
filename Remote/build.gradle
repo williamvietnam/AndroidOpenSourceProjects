@@ -7,12 +7,18 @@ android {
     namespace 'com.remote'
     compileSdk 33
 
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
     defaultConfig {
         applicationId "com.remote"
         minSdk 23
         targetSdk 33
         versionCode 1
         versionName "1.0"
+
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -33,9 +39,16 @@ android {
     buildFeatures {
         viewBinding true
     }
+
+    ndkVersion "24.0.8215888"
 }
 
 dependencies {
+    implementation "androidx.multidex:multidex:2.0.1"
+
+    // connectSDK LG
+    implementation 'com.github.ConnectSDK:Connect-SDK-Android:2.0.0'
+
     implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
