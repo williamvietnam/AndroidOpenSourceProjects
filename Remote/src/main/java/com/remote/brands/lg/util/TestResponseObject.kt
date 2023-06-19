@@ -1,4 +1,4 @@
-package com.android.remotes.lg.util
+package com.remote.brands.lg.util
 
 class TestResponseObject {
     var isSuccess: Boolean

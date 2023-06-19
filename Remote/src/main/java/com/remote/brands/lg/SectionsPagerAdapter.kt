@@ -4,13 +4,13 @@ import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.android.R
-import com.android.remotes.lg.features.AppsFragment
-import com.android.remotes.lg.features.KeyControlFragment
-import com.android.remotes.lg.features.MediaPlayerFragment
-import com.android.remotes.lg.features.SystemFragment
-import com.android.remotes.lg.features.TVFragment
-import com.android.remotes.lg.features.WebAppFragment
+import com.remote.R
+import com.remote.brands.lg.features.AppsFragment
+import com.remote.brands.lg.features.KeyControlFragment
+import com.remote.brands.lg.features.MediaPlayerFragment
+import com.remote.brands.lg.features.SystemFragment
+import com.remote.brands.lg.features.TVFragment
+import com.remote.brands.lg.features.WebAppFragment
 import com.remote.brands.lg.LGBaseFragment
 
 class SectionsPagerAdapter(

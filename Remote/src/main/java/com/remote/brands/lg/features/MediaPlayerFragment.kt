@@ -1,4 +1,4 @@
-package com.android.remotes.lg.features
+package com.remote.brands.lg.features
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -14,17 +14,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.SeekBar
 import android.widget.SeekBar.OnSeekBarChangeListener
-import com.android.databinding.FragmentMediaPlayerBinding
-import com.remote.brands.lg.LGBaseFragment
-import com.android.remotes.lg.util.TestResponseObject
 import com.connectsdk.core.MediaInfo
 import com.connectsdk.core.SubtitleInfo
 import com.connectsdk.device.ConnectableDevice
 import com.connectsdk.service.capability.MediaControl
-import com.connectsdk.service.capability.MediaControl.DurationListener
-import com.connectsdk.service.capability.MediaControl.PlayStateListener
-import com.connectsdk.service.capability.MediaControl.PlayStateStatus
-import com.connectsdk.service.capability.MediaControl.PositionListener
+import com.connectsdk.service.capability.MediaControl.*
 import com.connectsdk.service.capability.MediaPlayer
 import com.connectsdk.service.capability.MediaPlayer.MediaInfoListener
 import com.connectsdk.service.capability.MediaPlayer.MediaLaunchObject
@@ -34,10 +28,11 @@ import com.connectsdk.service.capability.VolumeControl.VolumeListener
 import com.connectsdk.service.capability.listeners.ResponseListener
 import com.connectsdk.service.command.ServiceCommandError
 import com.connectsdk.service.sessions.LaunchSession
+import com.remote.brands.lg.LGBaseFragment
+import com.remote.brands.lg.util.TestResponseObject
+import com.remote.databinding.FragmentMediaPlayerBinding
 import java.net.URL
-import java.util.Locale
-import java.util.Timer
-import java.util.TimerTask
+import java.util.*
 import java.util.concurrent.TimeUnit
 
 class MediaPlayerFragment : LGBaseFragment {

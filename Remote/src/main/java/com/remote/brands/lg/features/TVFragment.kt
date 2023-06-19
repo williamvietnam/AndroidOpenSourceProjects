@@ -1,4 +1,4 @@
-package com.android.remotes.lg.features
+package com.remote.brands.lg.features
 
 import android.content.Context
 import android.os.Bundle
@@ -6,11 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView.OnItemClickListener
-import com.android.R
-import com.android.databinding.FragmentTvBinding
-import com.remote.brands.lg.LGBaseFragment
-import com.android.remotes.lg.util.TestResponseObject
-import com.android.remotes.lg.widget.ChannelAdapter
 import com.connectsdk.core.ChannelInfo
 import com.connectsdk.service.capability.KeyControl
 import com.connectsdk.service.capability.PowerControl
@@ -18,6 +13,11 @@ import com.connectsdk.service.capability.TVControl
 import com.connectsdk.service.capability.TVControl.ChannelListListener
 import com.connectsdk.service.command.ServiceCommandError
 import com.connectsdk.service.command.ServiceSubscription
+import com.remote.R
+import com.remote.brands.lg.LGBaseFragment
+import com.remote.brands.lg.util.TestResponseObject
+import com.remote.brands.lg.widget.ChannelAdapter
+import com.remote.databinding.FragmentTvBinding
 
 class TVFragment : LGBaseFragment {
 

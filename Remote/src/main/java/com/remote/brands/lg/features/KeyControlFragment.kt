@@ -1,4 +1,4 @@
-package com.android.remotes.lg.features
+package com.remote.brands.lg.features
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -9,25 +9,20 @@ import android.text.Editable
 import android.text.InputType
 import android.text.TextWatcher
 import android.util.Log
-import android.view.KeyEvent
-import android.view.LayoutInflater
-import android.view.MotionEvent
-import android.view.View
+import android.view.*
 import android.view.View.OnTouchListener
-import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import android.widget.TextView.OnEditorActionListener
-import com.android.databinding.FragmentFivewayBinding
-import com.remote.brands.lg.LGBaseFragment
-import com.android.remotes.lg.util.TestResponseObject
 import com.connectsdk.core.TextInputStatusInfo
 import com.connectsdk.core.TextInputStatusInfo.TextInputType
 import com.connectsdk.service.capability.KeyControl
 import com.connectsdk.service.capability.TextInputControl
 import com.connectsdk.service.capability.TextInputControl.TextInputStatusListener
 import com.connectsdk.service.command.ServiceCommandError
-import java.util.Timer
-import java.util.TimerTask
+import com.remote.brands.lg.LGBaseFragment
+import com.remote.brands.lg.util.TestResponseObject
+import com.remote.databinding.FragmentFivewayBinding
+import java.util.*
 
 class KeyControlFragment : LGBaseFragment {
     private lateinit var binding: FragmentFivewayBinding
@@ -44,7 +39,7 @@ class KeyControlFragment : LGBaseFragment {
     var lastY = Float.NaN
 
     var scrollDx: Int = 0
-    var scrollDy:Int = 0
+    var scrollDy: Int = 0
     var eventStart: Long = 0
     var timer = Timer()
     var autoScrollTimerTask: TimerTask? = null

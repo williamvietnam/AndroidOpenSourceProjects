@@ -1,4 +1,4 @@
-package com.android.remotes.lg.widget
+package com.remote.brands.lg.widget
 
 import android.content.Context
 import android.graphics.Color
@@ -7,12 +7,11 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import com.android.R
 import com.connectsdk.core.AppInfo
+import com.remote.R
 
-class AppAdapter(
-    private var context: Context, private var resourceId: Int
-) : ArrayAdapter<AppInfo>(context, resourceId) {
+class AppAdapter(context: Context, private var resourceId: Int) :
+    ArrayAdapter<AppInfo>(context, resourceId) {
 
     private var runningAppId: String? = null
 

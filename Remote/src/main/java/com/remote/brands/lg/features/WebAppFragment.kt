@@ -1,4 +1,4 @@
-package com.android.remotes.lg.features
+package com.remote.brands.lg.features
 
 import android.content.Context
 import android.os.Bundle
@@ -6,9 +6,6 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.android.databinding.FragmentWebappBinding
-import com.remote.brands.lg.LGBaseFragment
-import com.android.remotes.lg.util.TestResponseObject
 import com.connectsdk.service.capability.WebAppLauncher
 import com.connectsdk.service.capability.listeners.ResponseListener
 import com.connectsdk.service.command.ServiceCommandError
@@ -17,6 +14,9 @@ import com.connectsdk.service.sessions.LaunchSession
 import com.connectsdk.service.sessions.WebAppSession
 import com.connectsdk.service.sessions.WebAppSession.WebAppPinStatusListener
 import com.connectsdk.service.sessions.WebAppSessionListener
+import com.remote.brands.lg.LGBaseFragment
+import com.remote.brands.lg.util.TestResponseObject
+import com.remote.databinding.FragmentWebappBinding
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject

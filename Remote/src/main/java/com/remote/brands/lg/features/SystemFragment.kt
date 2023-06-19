@@ -1,6 +1,5 @@
-package com.android.remotes.lg.features
+package com.remote.brands.lg.features
 
-import android.R
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
@@ -11,9 +10,6 @@ import android.widget.AdapterView.OnItemClickListener
 import android.widget.ArrayAdapter
 import android.widget.SeekBar
 import android.widget.SeekBar.OnSeekBarChangeListener
-import com.android.databinding.FragmentSystemBinding
-import com.remote.brands.lg.LGBaseFragment
-import com.android.remotes.lg.util.TestResponseObject
 import com.connectsdk.core.ExternalInputInfo
 import com.connectsdk.service.capability.ExternalInputControl
 import com.connectsdk.service.capability.ExternalInputControl.ExternalInputListListener
@@ -25,6 +21,10 @@ import com.connectsdk.service.capability.VolumeControl.VolumeListener
 import com.connectsdk.service.command.ServiceCommandError
 import com.connectsdk.service.command.ServiceSubscription
 import com.connectsdk.service.sessions.LaunchSession
+import com.remote.R
+import com.remote.brands.lg.LGBaseFragment
+import com.remote.brands.lg.util.TestResponseObject
+import com.remote.databinding.FragmentSystemBinding
 
 class SystemFragment : LGBaseFragment {
 
@@ -56,7 +56,7 @@ class SystemFragment : LGBaseFragment {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        adapter = ArrayAdapter(requireContext(), R.layout.simple_list_item_1)
+//        adapter = ArrayAdapter(requireContext(), R.layout.simple_list_item_1)
         binding.inputListView.adapter = adapter
 
         binding.volumeSlider.max = 100
@@ -135,7 +135,7 @@ class SystemFragment : LGBaseFragment {
     private val volumeChangedClickListener =
         View.OnClickListener { v ->
             when (v.id) {
-                com.android.R.id.volumeDownButton -> {
+                R.id.volumeDownButton -> {
                     getVolumeControl()!!.volumeDown(null)
                     testResponse = TestResponseObject(
                         true,
@@ -144,7 +144,7 @@ class SystemFragment : LGBaseFragment {
                     )
                 }
 
-                com.android.R.id.volumeUpButton -> {
+                R.id.volumeUpButton -> {
                     getVolumeControl()!!.volumeUp(null)
                     testResponse = TestResponseObject(
                         true,

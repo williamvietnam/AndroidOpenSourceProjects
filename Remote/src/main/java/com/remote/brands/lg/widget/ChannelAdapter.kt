@@ -1,12 +1,12 @@
-package com.android.remotes.lg.widget
+package com.remote.brands.lg.widget
 
 import android.content.Context
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import com.android.R
 import com.connectsdk.core.ChannelInfo
+import com.remote.R
 
 class ChannelAdapter : ArrayAdapter<ChannelInfo> {
 
