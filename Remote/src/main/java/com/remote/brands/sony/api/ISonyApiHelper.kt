@@ -1,7 +1,7 @@
 package com.remote.brands.sony.api
 
-import com.remote.brands.sony.models.PowerStatusResponse
-import com.remote.brands.sony.models.ServicesInfoResponse
+import com.remote.brands.sony.models.responses.PowerStatusResponse
+import com.remote.brands.sony.models.responses.ServicesInfoResponse
 import io.reactivex.rxjava3.core.Single
 
 interface ISonyApiHelper {
@@ -9,7 +9,7 @@ interface ISonyApiHelper {
 
     fun getSupportedApiInfo(): Single<ServicesInfoResponse>?
 
-    fun getSupportedAppControlServicesInfo()
+    fun getSupportedAppControlServicesInfo():Single<ServicesInfoResponse>?
 
     fun getSupportedAudioServicesInfo()
 
