@@ -1,6 +1,9 @@
 package com.remote.brands.sony.api
 
+import okhttp3.Interceptor
 import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.Response
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
@@ -13,6 +16,13 @@ class SonyApiClient private constructor() {
         val httpLoggingInterceptor = HttpLoggingInterceptor()
         httpLoggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
         val okHttpClient: OkHttpClient = OkHttpClient.Builder()
+            .addInterceptor(Interceptor { chain ->
+                val request: Request = chain.request()
+                    .newBuilder()
+                    .addHeader("X-Auth-PSK", SonyApiEndpoints.SONY_PRE_SHARED_KEY)
+                    .build()
+                chain.proceed(request)
+            })
             .addInterceptor(httpLoggingInterceptor)
             .build()
         val retrofit: Retrofit = Retrofit.Builder()

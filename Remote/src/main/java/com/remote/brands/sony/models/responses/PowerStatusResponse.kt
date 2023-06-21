@@ -1,4 +1,4 @@
-package com.remote.brands.sony.models
+package com.remote.brands.sony.models.responses
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

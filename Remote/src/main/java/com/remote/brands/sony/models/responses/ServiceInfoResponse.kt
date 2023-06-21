@@ -1,4 +1,4 @@
-package com.remote.brands.sony.models
+package com.remote.brands.sony.models.responses
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
@@ -16,7 +16,7 @@ data class ServiceInfo(
 
     @Expose
     @SerializedName("protocols")
-    var protocols: MutableList<String>,
+    var protocols: MutableList<String>? = null,
 
     @Expose
     @SerializedName("apis")
