@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vision_nav_graph"
+    app:startDestination="@id/VisionFeaturesListFragment">
+
+    <fragment
+        android:id="@+id/VisionFeaturesListFragment"
+        android:name="com.android.visionApis.commons.visionFeaturesList.VisionFeaturesListFragment"
+        android:label="VisionFeaturesListFragment"
+        tools:layout="@layout/fragment_vision_features_list">
+
+
+    </fragment>
+
+</navigation>

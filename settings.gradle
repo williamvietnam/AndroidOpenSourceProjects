@@ -20,3 +20,4 @@ rootProject.name = "AndroidOpenSourceProjects"
 include ':Apps'
 include ':Tutorials'
 include ':Remote'
+include ':MachineLearning'
