@@ -24,7 +24,7 @@ class VisionFeaturesListViewModel : ViewModel() {
         featuresList.add(faceDetection)
 
         val faceMeshDetection = VisionFeatureModel(
-            id = VisionFeatureModel.OBJECT_DETECTION_ID,
+            id = VisionFeatureModel.FACE_MESH_DETECTION_ID,
             title = "Face Mesh Detection",
             description = "Detect, track, and classify objects in real time and static images",
             background = R.drawable.background_item_face_mesh_detect
@@ -32,7 +32,7 @@ class VisionFeaturesListViewModel : ViewModel() {
         featuresList.add(faceMeshDetection)
 
         val textRecognition = VisionFeatureModel(
-            id = VisionFeatureModel.FACE_DETECTION_ID,
+            id = VisionFeatureModel.TEXT_RECOGNITION_ID,
             title = "Text Recognition",
             description = "Recognize text in real time and static images",
             background = R.drawable.background_item_text_recognition
@@ -40,7 +40,7 @@ class VisionFeaturesListViewModel : ViewModel() {
         featuresList.add(textRecognition)
 
         val barcodeScanning = VisionFeatureModel(
-            id = VisionFeatureModel.OBJECT_DETECTION_ID,
+            id = VisionFeatureModel.BARCODE_DETECTION_ID,
             title = "Barcode Scanning",
             description = "Scan barcodes in real time and static images",
             background = R.drawable.background_item_barcode_scanning
@@ -48,7 +48,7 @@ class VisionFeaturesListViewModel : ViewModel() {
         featuresList.add(barcodeScanning)
 
         val imageLabeling = VisionFeatureModel(
-            id = VisionFeatureModel.FACE_DETECTION_ID,
+            id = VisionFeatureModel.IMAGE_LABELING_ID,
             title = "Image Labeling",
             description = "Label images in real time and static images",
             background = R.drawable.background_item_image_labeling
@@ -56,7 +56,7 @@ class VisionFeaturesListViewModel : ViewModel() {
         featuresList.add(imageLabeling)
 
         val poseDetection = VisionFeatureModel(
-            id = VisionFeatureModel.OBJECT_DETECTION_ID,
+            id = VisionFeatureModel.POSE_DETECTION_ID,
             title = "Pose Detection",
             description = " Detect the position of the human body in real time",
             background = R.drawable.background_item_pose_detect
@@ -64,7 +64,7 @@ class VisionFeaturesListViewModel : ViewModel() {
         featuresList.add(poseDetection)
 
         val selfieSegmentation = VisionFeatureModel(
-            id = VisionFeatureModel.FACE_DETECTION_ID,
+            id = VisionFeatureModel.SELFIE_SEGMENTATION_ID,
             title = "Selfie Segmentation",
             description = "Segment people from the background in real time",
             background = R.drawable.background_item_selfie_segmentation
