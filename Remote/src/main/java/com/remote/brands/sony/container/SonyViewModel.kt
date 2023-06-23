@@ -33,4 +33,10 @@ class SonyViewModel : BaseViewModel() {
             getSonyApis().setAudioMute(isMute = status)
         }
     }
+
+    fun setRemoteController(IRCCCode: String) {
+        viewModelScope.launch(Dispatchers.IO) {
+            getSonyApis().setRemoteController(IRCCCode)
+        }
+    }
 }
