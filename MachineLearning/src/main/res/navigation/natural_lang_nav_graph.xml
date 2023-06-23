@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/natural_lang_nav_graph"
+    app:startDestination="@id/NLFeaturesListFragment">
+
+    <fragment
+        android:id="@+id/NLFeaturesListFragment"
+        android:name="com.android.naturalLanguageApis.commons.NLFeaturesListFragment"
+        android:label="NLFeaturesListFragment"
+        tools:layout="@layout/fragment_n_l_features_list">
+
+    </fragment>
+</navigation>

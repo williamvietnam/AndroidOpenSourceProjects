@@ -1,18 +1,17 @@
-package com.android.visionApis.commons
+package com.android.naturalLanguageApis.commons
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import com.android.R
-import com.android.databinding.ActivityVisionApisBinding
+import com.android.databinding.ActivityNaturalLanguageApisBinding
 
-class VisionApisActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityVisionApisBinding
+class NaturalLanguageApisActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityNaturalLanguageApisBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityVisionApisBinding.inflate(layoutInflater)
+        binding = ActivityNaturalLanguageApisBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // init navigation component
