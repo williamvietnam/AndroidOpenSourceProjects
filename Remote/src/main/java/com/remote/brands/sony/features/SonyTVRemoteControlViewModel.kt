@@ -50,6 +50,4 @@ class SonyTVRemoteControlViewModel : BaseViewModel() {
             getSonyApis().setRemoteController(key)
         }
     }
-
-    
 }

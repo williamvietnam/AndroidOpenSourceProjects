@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.remote.brands.sony.api.SonyIRCC
 import com.remote.databinding.ActivitySonyBinding
 
 
@@ -26,6 +27,16 @@ class SonyActivity : AppCompatActivity(), View.OnClickListener {
         binding.buttonVolumeDown.setOnClickListener(this)
         binding.buttonMute.setOnClickListener(this)
         binding.buttonUnMute.setOnClickListener(this)
+
+        binding.button1.setOnClickListener(this)
+        binding.button2.setOnClickListener(this)
+        binding.button3.setOnClickListener(this)
+        binding.button4.setOnClickListener(this)
+        binding.button5.setOnClickListener(this)
+        binding.button6.setOnClickListener(this)
+        binding.button7.setOnClickListener(this)
+        binding.button8.setOnClickListener(this)
+        binding.button9.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
@@ -63,6 +74,42 @@ class SonyActivity : AppCompatActivity(), View.OnClickListener {
 
             binding.buttonUnMute.id -> {
                 viewModel.setAudioMute(false)
+            }
+
+            binding.button1.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num1)
+            }
+
+            binding.button2.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num2)
+            }
+
+            binding.button3.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num3)
+            }
+
+            binding.button4.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num4)
+            }
+
+            binding.button5.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num5)
+            }
+
+            binding.button6.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num6)
+            }
+
+            binding.button7.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num7)
+            }
+
+            binding.button8.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num8)
+            }
+
+            binding.button9.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num9)
             }
         }
     }

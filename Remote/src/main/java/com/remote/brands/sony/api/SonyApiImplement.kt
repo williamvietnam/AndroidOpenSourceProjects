@@ -7,6 +7,8 @@ import com.remote.brands.sony.models.requests.SonyRequest
 import com.remote.brands.sony.models.responses.PowerStatusResponse
 import com.remote.brands.sony.models.responses.ServicesInfoResponse
 import io.reactivex.rxjava3.core.Single
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
@@ -167,10 +169,16 @@ class SonyApiImplement : ISonyApiHelper {
 
     //-------------------- InfraRed Compatible Control over Internet Protocol ---------------------
     override fun setRemoteController(IRCCCode: String) {
-        try {
-
-        } catch (jsonException: JSONException) {
-            jsonException.printStackTrace()
-        }
+        val requestBodyText = "<s:Envelope\n" +
+                "    xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"\n" +
+                "    s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\n" +
+                "    <s:Body>\n" +
+                "        <u:X_SendIRCC xmlns:u=\"urn:schemas-sony-com:service:IRCC:1\">\n" +
+                "            <IRCCCode>${IRCCCode}</IRCCCode>\n" +
+                "        </u:X_SendIRCC>\n" +
+                "    </s:Body>\n" +
+                "</s:Envelope>"
+        val requestBody = requestBodyText.toRequestBody("text/xml".toMediaTypeOrNull())
+        SonyApiClient.instance?.getApiService()?.setRemoteController(requestBody)
     }
 }
