@@ -11,6 +11,8 @@ data class App(
 ) {
     companion object {
         // Apps ID
+        const val APP_CAMERA_ID = "app.camera.id"
+        const val APP_STEP_COUNTER_ID = "app.step.counter.id"
         const val APP_PRANK_SOUND_ID = "app.prank.sound.id"
         const val APP_FAKE_CALL_ID = "app.fake.call.id"
         const val APP_LIE_DETECTOR_ID = "app.lie.detector.id"
@@ -23,6 +25,8 @@ data class App(
         const val APP_SHORTS_ID = "app.shorts.id"
 
         // Apps Name
+        const val APP_CAMERA_NAME = "My Camera"
+        const val APP_STEP_COUNTER_NAME = "Step Counter"
         const val APP_PRANK_SOUND_NAME = "Prank Sounds"
         const val APP_FAKE_CALL_NAME = "Fake Call"
         const val APP_LIE_DETECTOR_NAME = "Lie Detector"

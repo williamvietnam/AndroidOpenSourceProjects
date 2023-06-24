@@ -13,8 +13,7 @@ class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel
 
     private lateinit var adapter: AppsAdapter
     override fun createViewBinding(
-        inflater: LayoutInflater,
-        container: ViewGroup?
+        inflater: LayoutInflater, container: ViewGroup?
     ): FragmentAppsMenuBinding {
         return FragmentAppsMenuBinding.inflate(inflater, container, false)
     }
@@ -33,6 +32,14 @@ class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel
 
     override fun onAppClicked(app: App) {
         when (app.id) {
+            App.APP_CAMERA_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_camera)
+            }
+
+            App.APP_STEP_COUNTER_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_stepCounter)
+            }
+
             App.APP_PRANK_SOUND_ID -> {
                 findNavController().navigate(R.id.action_from_appsMenu_to_soundCategories)
             }

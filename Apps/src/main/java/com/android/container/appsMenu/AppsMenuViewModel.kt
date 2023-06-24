@@ -7,6 +7,20 @@ class AppsMenuViewModel : BaseViewModel() {
     fun createApps(): MutableList<App> {
         val apps = ArrayList<App>()
 
+        val appCamera = App(
+            id = App.APP_CAMERA_ID,
+            logo = R.drawable.app_camera_logo,
+            name = App.APP_CAMERA_NAME
+        )
+        apps.add(appCamera)
+
+        val appStepCounter = App(
+            id = App.APP_STEP_COUNTER_ID,
+            logo = R.drawable.app_step_counter_logo,
+            name = App.APP_STEP_COUNTER_NAME
+        )
+        apps.add(appStepCounter)
+
         val appPrankSound = App(
             id = App.APP_PRANK_SOUND_ID,
             logo = R.drawable.app_prank_sound_logo,
