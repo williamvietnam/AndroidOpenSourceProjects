@@ -20,12 +20,24 @@
             app:destination="@id/stepCounterFragment" />
 
         <action
+            android:id="@+id/action_from_appsMenu_to_secretPhotos"
+            app:destination="@id/secretPhotosFragment" />
+
+        <action
             android:id="@+id/action_from_appsMenu_to_soundCategories"
             app:destination="@id/soundCategoriesFragment" />
 
         <action
+            android:id="@+id/action_from_appsMenu_to_weather"
+            app:destination="@id/weatherFragment" />
+
+        <action
             android:id="@+id/action_from_appsMenu_to_contacts"
             app:destination="@id/contactsFragment" />
+
+        <action
+            android:id="@+id/action_from_appsMenu_to_alarm"
+            app:destination="@id/alarmFragment" />
 
         <action
             android:id="@+id/action_from_appsMenu_to_lieDetector"
@@ -72,6 +84,12 @@
         android:label="StepCounterFragment"
         tools:layout="@layout/fragment_step_counter" />
 
+    <fragment
+        android:id="@+id/secretPhotosFragment"
+        android:name="com.android.apps.appSecretPhotos.SecretPhotosFragment"
+        android:label="SecretPhotosFragment"
+        tools:layout="@layout/fragment_secret_photos" />
+
     <!-- ______________________________appPrankSound start______________________________________-->
     <fragment
         android:id="@+id/soundCategoriesFragment"
@@ -100,6 +118,12 @@
         android:label="SoundFragment"
         tools:layout="@layout/fragment_sound" />
     <!-- ______________________________appPrankSound end______________________________________-->
+
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.android.apps.appWeather.WeatherFragment"
+        android:label="WeatherFragment"
+        tools:layout="@layout/fragment_weather" />
 
     <!-- ______________________________appFakeCall start______________________________________-->
     <fragment
@@ -164,6 +188,12 @@
         tools:layout="@layout/fragment_after_the_call" />
 
     <!-- ______________________________appFakeCall end______________________________________-->
+
+    <fragment
+        android:id="@+id/alarmFragment"
+        android:name="com.android.apps.appAlarm.AlarmFragment"
+        android:label="AlarmFragment"
+        tools:layout="@layout/fragment_alarm" />
 
     <!-- ______________________________appLieDetector start_____________________________________-->
     <fragment

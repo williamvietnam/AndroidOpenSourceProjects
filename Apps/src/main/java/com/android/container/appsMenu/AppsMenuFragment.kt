@@ -40,12 +40,24 @@ class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel
                 findNavController().navigate(R.id.action_from_appsMenu_to_stepCounter)
             }
 
+            App.APP_SECRET_PHOTOS_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_secretPhotos)
+            }
+
             App.APP_PRANK_SOUND_ID -> {
                 findNavController().navigate(R.id.action_from_appsMenu_to_soundCategories)
             }
 
+            App.APP_WEATHER_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_weather)
+            }
+
             App.APP_FAKE_CALL_ID -> {
                 findNavController().navigate(R.id.action_from_appsMenu_to_contacts)
+            }
+
+            App.APP_ALARM_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_alarm)
             }
 
             App.APP_LIE_DETECTOR_ID -> {

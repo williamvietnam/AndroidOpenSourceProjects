@@ -21,6 +21,13 @@ class AppsMenuViewModel : BaseViewModel() {
         )
         apps.add(appStepCounter)
 
+        val appSecretPhotos = App(
+            id = App.APP_SECRET_PHOTOS_ID,
+            logo = R.drawable.app_secret_photos_logo,
+            name = App.APP_SECRET_PHOTOS_NAME
+        )
+        apps.add(appSecretPhotos)
+
         val appPrankSound = App(
             id = App.APP_PRANK_SOUND_ID,
             logo = R.drawable.app_prank_sound_logo,
@@ -28,12 +35,26 @@ class AppsMenuViewModel : BaseViewModel() {
         )
         apps.add(appPrankSound)
 
+        val appWeather = App(
+            id = App.APP_WEATHER_ID,
+            logo = R.drawable.app_weather_logo,
+            name = App.APP_WEATHER_NAME
+        )
+        apps.add(appWeather)
+
         val appFakeCall = App(
             id = App.APP_FAKE_CALL_ID,
             logo = R.drawable.app_fake_call_logo,
             name = App.APP_FAKE_CALL_NAME
         )
         apps.add(appFakeCall)
+
+        val appAlarm = App(
+            id = App.APP_ALARM_ID,
+            logo = R.drawable.app_alarm_logo,
+            name = App.APP_ALARM_NAME
+        )
+        apps.add(appAlarm)
 
         val appLieDetector = App(
             id = App.APP_LIE_DETECTOR_ID,
