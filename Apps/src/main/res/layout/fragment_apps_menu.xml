@@ -5,42 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.container.appsMenu.AppsMenuFragment">
+    tools:context=".container.appsMenu.AppsMenuFragment">
 
-    <FrameLayout
-        android:layout_width="match_parent"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingVertical="4dp">
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Apps  Menu"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/buttonLeft"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:layout_gravity="start|center_vertical" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="Apps Menu"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/buttonRight"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:layout_gravity="end|center_vertical" />
-
-    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#40000000" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="3"

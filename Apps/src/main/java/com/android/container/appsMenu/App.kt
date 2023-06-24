@@ -11,8 +11,13 @@ data class App(
 ) {
     companion object {
         // Apps ID
+        const val APP_CAMERA_ID = "app.camera.id"
+        const val APP_STEP_COUNTER_ID = "app.step.counter.id"
+        const val APP_SECRET_PHOTOS_ID = "app.secret.photos.id"
         const val APP_PRANK_SOUND_ID = "app.prank.sound.id"
+        const val APP_WEATHER_ID = "app.weather.id"
         const val APP_FAKE_CALL_ID = "app.fake.call.id"
+        const val APP_ALARM_ID = "app.alarm.id"
         const val APP_LIE_DETECTOR_ID = "app.lie.detector.id"
         const val APP_AI_CHAT_ID = "app.ai.chat.id"
         const val APP_WHATSAPP_STICKERS_ID = "app.whatsapp.stickers.id"
@@ -23,8 +28,13 @@ data class App(
         const val APP_SHORTS_ID = "app.shorts.id"
 
         // Apps Name
+        const val APP_CAMERA_NAME = "My Camera"
+        const val APP_STEP_COUNTER_NAME = "Step Counter"
+        const val APP_SECRET_PHOTOS_NAME = "Secret Photos"
         const val APP_PRANK_SOUND_NAME = "Prank Sounds"
+        const val APP_WEATHER_NAME = "Weather"
         const val APP_FAKE_CALL_NAME = "Fake Call"
+        const val APP_ALARM_NAME = "Alarm"
         const val APP_LIE_DETECTOR_NAME = "Lie Detector"
         const val APP_AI_CHAT_NAME = "AI Chat"
         const val APP_WHATSAPP_STICKERS_NAME = "WA Stickers"

@@ -2,7 +2,6 @@ package com.android.container.appsMenu
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.android.R
@@ -14,8 +13,7 @@ class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel
 
     private lateinit var adapter: AppsAdapter
     override fun createViewBinding(
-        inflater: LayoutInflater,
-        container: ViewGroup?
+        inflater: LayoutInflater, container: ViewGroup?
     ): FragmentAppsMenuBinding {
         return FragmentAppsMenuBinding.inflate(inflater, container, false)
     }
@@ -34,12 +32,32 @@ class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel
 
     override fun onAppClicked(app: App) {
         when (app.id) {
+            App.APP_CAMERA_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_camera)
+            }
+
+            App.APP_STEP_COUNTER_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_stepCounter)
+            }
+
+            App.APP_SECRET_PHOTOS_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_secretPhotos)
+            }
+
             App.APP_PRANK_SOUND_ID -> {
                 findNavController().navigate(R.id.action_from_appsMenu_to_soundCategories)
             }
 
+            App.APP_WEATHER_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_weather)
+            }
+
             App.APP_FAKE_CALL_ID -> {
                 findNavController().navigate(R.id.action_from_appsMenu_to_contacts)
+            }
+
+            App.APP_ALARM_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_alarm)
             }
 
             App.APP_LIE_DETECTOR_ID -> {
@@ -63,7 +81,7 @@ class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel
             }
 
             App.APP_WALLPAPER_ID -> {
-                Toast.makeText(requireContext(), "Developing", Toast.LENGTH_SHORT).show()
+                findNavController().navigate(R.id.action_from_appsMenu_to_wallpaper)
             }
 
             App.APP_CHARTS_ID -> {

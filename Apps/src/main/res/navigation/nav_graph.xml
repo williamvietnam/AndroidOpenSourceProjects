@@ -12,12 +12,32 @@
         tools:layout="@layout/fragment_apps_menu">
 
         <action
+            android:id="@+id/action_from_appsMenu_to_camera"
+            app:destination="@id/cameraFragment" />
+
+        <action
+            android:id="@+id/action_from_appsMenu_to_stepCounter"
+            app:destination="@id/stepCounterFragment" />
+
+        <action
+            android:id="@+id/action_from_appsMenu_to_secretPhotos"
+            app:destination="@id/secretPhotosFragment" />
+
+        <action
             android:id="@+id/action_from_appsMenu_to_soundCategories"
             app:destination="@id/soundCategoriesFragment" />
 
         <action
+            android:id="@+id/action_from_appsMenu_to_weather"
+            app:destination="@id/weatherFragment" />
+
+        <action
             android:id="@+id/action_from_appsMenu_to_contacts"
             app:destination="@id/contactsFragment" />
+
+        <action
+            android:id="@+id/action_from_appsMenu_to_alarm"
+            app:destination="@id/alarmFragment" />
 
         <action
             android:id="@+id/action_from_appsMenu_to_lieDetector"
@@ -40,6 +60,10 @@
             app:destination="@id/imageFiltersFragment" />
 
         <action
+            android:id="@+id/action_from_appsMenu_to_wallpaper"
+            app:destination="@id/wallpaperFragment" />
+
+        <action
             android:id="@+id/action_from_appsMenu_to_charts"
             app:destination="@id/chartsFragment" />
 
@@ -47,6 +71,25 @@
             android:id="@+id/action_from_appsMenu_to_videoShorts"
             app:destination="@id/videoShortsFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.android.apps.appCamera.CameraFragment"
+        android:label="CameraFragment"
+        tools:layout="@layout/fragment_camera" />
+
+    <fragment
+        android:id="@+id/stepCounterFragment"
+        android:name="com.android.apps.appStepCounter.StepCounterFragment"
+        android:label="StepCounterFragment"
+        tools:layout="@layout/fragment_step_counter" />
+
+    <fragment
+        android:id="@+id/secretPhotosFragment"
+        android:name="com.android.apps.appSecretPhotos.SecretPhotosFragment"
+        android:label="SecretPhotosFragment"
+        tools:layout="@layout/fragment_secret_photos" />
+
     <!-- ______________________________appPrankSound start______________________________________-->
     <fragment
         android:id="@+id/soundCategoriesFragment"
@@ -75,6 +118,12 @@
         android:label="SoundFragment"
         tools:layout="@layout/fragment_sound" />
     <!-- ______________________________appPrankSound end______________________________________-->
+
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.android.apps.appWeather.WeatherFragment"
+        android:label="WeatherFragment"
+        tools:layout="@layout/fragment_weather" />
 
     <!-- ______________________________appFakeCall start______________________________________-->
     <fragment
@@ -140,6 +189,12 @@
 
     <!-- ______________________________appFakeCall end______________________________________-->
 
+    <fragment
+        android:id="@+id/alarmFragment"
+        android:name="com.android.apps.appAlarm.AlarmFragment"
+        android:label="AlarmFragment"
+        tools:layout="@layout/fragment_alarm" />
+
     <!-- ______________________________appLieDetector start_____________________________________-->
     <fragment
         android:id="@+id/lieDetectorFragment"
@@ -203,6 +258,12 @@
         android:label="ImageFiltersFragment"
         tools:layout="@layout/fragment_image_filters" />
     <!-- ______________________________appImageFilters end______________________________________-->
+
+    <fragment
+        android:id="@+id/wallpaperFragment"
+        android:name="com.android.apps.appWallpaper.screens.WallpaperFragment"
+        android:label="WallpaperFragment"
+        tools:layout="@layout/fragment_wallpaper" />
 
     <fragment
         android:id="@+id/chartsFragment"
