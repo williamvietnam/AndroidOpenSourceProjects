@@ -40,6 +40,10 @@
             app:destination="@id/imageFiltersFragment" />
 
         <action
+            android:id="@+id/action_from_appsMenu_to_wallpaper"
+            app:destination="@id/wallpaperFragment"/>
+
+        <action
             android:id="@+id/action_from_appsMenu_to_charts"
             app:destination="@id/chartsFragment" />
 
@@ -203,6 +207,12 @@
         android:label="ImageFiltersFragment"
         tools:layout="@layout/fragment_image_filters" />
     <!-- ______________________________appImageFilters end______________________________________-->
+
+    <fragment
+        android:id="@+id/wallpaperFragment"
+        android:name="com.android.apps.appWallpaper.screens.WallpaperFragment"
+        android:label="WallpaperFragment"
+        tools:layout="@layout/fragment_wallpaper" />
 
     <fragment
         android:id="@+id/chartsFragment"

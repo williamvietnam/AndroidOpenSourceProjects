@@ -1,5 +1,6 @@
 package com.android.apps.appVideoShorts
 
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -32,19 +33,11 @@ class VideoShortsAdapter(
             val video = data[position]
             binding.tvVideoTitle.text = video.videoTitle
             binding.tvVideoDescription.text = video.videoDescription
-            binding.videoView.setVideoPath(video.videoURL)
+            val uri = Uri.parse(video.videoURL)
+            binding.videoView.setVideoURI(uri)
             binding.videoView.setOnPreparedListener {
                 binding.videoProgressBar.visibility = View.GONE
                 it.start()
-                val videoRatio: Float = (it.videoWidth.toFloat() / it.videoHeight.toFloat())
-                val screenRatio: Float =
-                    binding.videoView.width.toFloat() / binding.videoView.height.toFloat()
-                val scale: Float = videoRatio / screenRatio
-                if (scale >= 1f) {
-                    binding.videoView.scaleX = scale
-                } else {
-                    binding.videoView.scaleY = (1f / scale)
-                }
             }
             binding.videoView.setOnCompletionListener {
                 it.start()

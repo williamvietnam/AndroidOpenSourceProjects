@@ -1,4 +1,6 @@
 package com.android.apps.appWallpaper.screens
 
-class WallpaperViewModel {
+import com.android.commons.base.BaseViewModel
+
+class WallpaperViewModel : BaseViewModel(){
 }
