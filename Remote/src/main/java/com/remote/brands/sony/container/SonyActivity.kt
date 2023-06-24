@@ -1,93 +1,116 @@
 package com.remote.brands.sony.container
 
-import android.content.Context
-import android.net.ConnectivityManager
-import android.net.wifi.WifiManager
-import android.os.AsyncTask
-import android.text.format.Formatter
-import android.util.Log
+import android.os.Bundle
+import android.view.View
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.NavHostFragment
-import com.remote.R
-import com.remote.commons.base.BaseActivity
+import com.remote.brands.sony.api.SonyIRCC
 import com.remote.databinding.ActivitySonyBinding
-import java.lang.ref.WeakReference
-import java.net.InetAddress
 
 
-class SonyActivity : BaseActivity<ActivitySonyBinding, SonyViewModel>() {
+class SonyActivity : AppCompatActivity(), View.OnClickListener {
+    private lateinit var binding: ActivitySonyBinding
+    private lateinit var viewModel: SonyViewModel
 
-//    private lateinit var networkSniffTask: NetworkSniffTask
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-    override fun createViewBinding(): ActivitySonyBinding {
-        return ActivitySonyBinding.inflate(layoutInflater)
+        viewModel = ViewModelProvider(this)[SonyViewModel::class.java]
+        binding = ActivitySonyBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.buttonSetIpAndPSK.setOnClickListener(this)
+        binding.buttonPowerOn.setOnClickListener(this)
+        binding.buttonPowerOff.setOnClickListener(this)
+        binding.buttonVolumeUp.setOnClickListener(this)
+        binding.buttonVolumeDown.setOnClickListener(this)
+        binding.buttonMute.setOnClickListener(this)
+        binding.buttonUnMute.setOnClickListener(this)
+
+        binding.button1.setOnClickListener(this)
+        binding.button2.setOnClickListener(this)
+        binding.button3.setOnClickListener(this)
+        binding.button4.setOnClickListener(this)
+        binding.button5.setOnClickListener(this)
+        binding.button6.setOnClickListener(this)
+        binding.button7.setOnClickListener(this)
+        binding.button8.setOnClickListener(this)
+        binding.button9.setOnClickListener(this)
     }
 
-    override fun createViewModel(): SonyViewModel {
-        return ViewModelProvider(this)[SonyViewModel::class.java]
+    override fun onClick(view: View?) {
+        when (view?.id) {
+            binding.buttonSetIpAndPSK.id -> {
+                if (binding.edtIPAddress.text?.trim().toString().isNotEmpty()
+                    && binding.edtPSK.text?.trim().toString().isNotEmpty()
+                ) {
+                    viewModel.setIPAddress(binding.edtIPAddress.text?.trim().toString())
+                    viewModel.setPreShredKey(binding.edtPSK.text?.trim().toString())
+                } else {
+                    Toast.makeText(this, "Please input your IP and PSK", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            binding.buttonPowerOn.id -> {
+                viewModel.setPowerStatus(true)
+            }
+
+            binding.buttonPowerOff.id -> {
+                viewModel.setPowerStatus(false)
+            }
+
+            binding.buttonVolumeUp.id -> {
+                viewModel.setAudioVolume("+1")
+            }
+
+            binding.buttonVolumeDown.id -> {
+                viewModel.setAudioVolume("-1")
+            }
+
+            binding.buttonMute.id -> {
+                viewModel.setAudioMute(true)
+            }
+
+            binding.buttonUnMute.id -> {
+                viewModel.setAudioMute(false)
+            }
+
+            binding.button1.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num1)
+            }
+
+            binding.button2.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num2)
+            }
+
+            binding.button3.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num3)
+            }
+
+            binding.button4.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num4)
+            }
+
+            binding.button5.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num5)
+            }
+
+            binding.button6.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num6)
+            }
+
+            binding.button7.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num7)
+            }
+
+            binding.button8.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num8)
+            }
+
+            binding.button9.id -> {
+                viewModel.setRemoteController(SonyIRCC.Num9)
+            }
+        }
     }
-
-    override fun initializeViews() {
-        // init navigation component
-        val navHostFragment = supportFragmentManager.findFragmentById(
-            R.id.nav_host_fragment
-        ) as NavHostFragment
-        val navController = navHostFragment.navController
-
-//        this.networkSniffTask = NetworkSniffTask(this)
-    }
-
-    override fun initializeEvents() {
-
-    }
-
-    private fun getAllIpAddresses() {
-
-    }
-
-//    class NetworkSniffTask(context: Context) : AsyncTask<Void, Void, Void>() {
-//
-//        private var mContextRef: WeakReference<Context>? = null
-//
-//        init {
-//            mContextRef = WeakReference(context)
-//        }
-//
-//        override fun doInBackground(vararg voids: Void?): Void? {
-//            try {
-//                val context = mContextRef!!.get()
-//
-//                if (context != null) {
-//                    val cm =
-//                        context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-//                    val activeNetwork = cm.activeNetworkInfo
-//                    val wm =
-//                        context.applicationContext.getSystemService(Context.WIFI_SERVICE) as WifiManager
-//                    val connectionInfo = wm.connectionInfo
-//                    val ipAddress = connectionInfo.ipAddress
-//                    val ipString: String = Formatter.formatIpAddress(ipAddress)
-//                    Log.d(
-//                        NetworkSniffTask::class.simpleName,
-//                        "activeNetwork: " + activeNetwork.toString()
-//                    )
-//                    Log.d(NetworkSniffTask::class.simpleName, "ipString: $ipString")
-//                    val prefix = ipString.substring(0, ipString.lastIndexOf(".") + 1)
-//                    Log.d(NetworkSniffTask::class.simpleName, "prefix: $prefix")
-//                    for (i in 0..254) {
-//                        val testIp = prefix + i.toString()
-//                        val address = InetAddress.getByName(testIp)
-//                        val reachable = address.isReachable(1000)
-//                        val hostName = address.canonicalHostName
-//                        if (reachable) Log.i(
-//                            NetworkSniffTask::class.simpleName,
-//                            "Host: $hostName($testIp) is reachable!"
-//                        )
-//                    }
-//                }
-//            } catch (throwable: Throwable) {
-//                Log.e(NetworkSniffTask::class.simpleName, "Well that's not good.", throwable)
-//            }
-//            return null
-//        }
-//    }
 }

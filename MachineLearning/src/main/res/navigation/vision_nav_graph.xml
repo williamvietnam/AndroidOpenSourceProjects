@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vision_nav_graph"
+    app:startDestination="@id/VisionFeaturesListFragment">
+
+    <fragment
+        android:id="@+id/VisionFeaturesListFragment"
+        android:name="com.android.visionApis.commons.visionFeaturesList.VisionFeaturesListFragment"
+        android:label="VisionFeaturesListFragment"
+        tools:layout="@layout/fragment_vision_features_list">
+
+        <action
+            android:id="@+id/actionFeaturesListToObjectDetection"
+            app:destination="@id/ObjectDetectionFragment" />
+
+        <action
+            android:id="@+id/actionFeaturesListToFaceDetection"
+            app:destination="@id/FaceDetectionFragment" />
+
+        <action
+            android:id="@+id/actionFeaturesListToFaceMeshDetection"
+            app:destination="@id/FaceMeshDetectionFragment" />
+
+        <action
+            android:id="@+id/actionFeaturesListToTextRecognition"
+            app:destination="@id/TextRecognitionFragment" />
+
+        <action
+            android:id="@+id/actionFeaturesListToBarcodeScanning"
+            app:destination="@id/BarcodeScanningFragment" />
+
+        <action
+            android:id="@+id/actionFeaturesListToImageLabeling"
+            app:destination="@id/ImageLabelingFragment" />
+
+        <action
+            android:id="@+id/actionFeaturesListToPoseDetection"
+            app:destination="@id/PoseDetectionFragment" />
+
+        <action
+            android:id="@+id/actionFeaturesListToSelfieSegmentation"
+            app:destination="@id/SelfieSegmentationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ObjectDetectionFragment"
+        android:name="com.android.visionApis.features.objectDetection.ObjectDetectionFragment"
+        android:label="ObjectDetectionFragment"
+        tools:layout="" />
+
+    <fragment
+        android:id="@+id/FaceDetectionFragment"
+        android:name="com.android.visionApis.features.faceDetection.FaceDetectionFragment"
+        android:label="FaceDetectionFragment"
+        tools:layout="" />
+
+    <fragment
+        android:id="@+id/FaceMeshDetectionFragment"
+        android:name="com.android.visionApis.features.faceMeshDetection.FaceMeshDetectionFragment"
+        android:label="FaceMeshDetectionFragment"
+        tools:layout="" />
+
+    <fragment
+        android:id="@+id/TextRecognitionFragment"
+        android:name="com.android.visionApis.features.textRecognition.TextRecognitionFragment"
+        android:label="TextRecognitionFragment"
+        tools:layout="" />
+
+    <fragment
+        android:id="@+id/BarcodeScanningFragment"
+        android:name="com.android.visionApis.features.barcodeScanning.BarcodeScanningFragment"
+        android:label="BarcodeScanningFragment"
+        tools:layout="" />
+
+    <fragment
+        android:id="@+id/ImageLabelingFragment"
+        android:name="com.android.visionApis.features.imageLabeling.ImageLabelingFragment"
+        android:label="ImageLabelingFragment"
+        tools:layout="" />
+
+    <fragment
+        android:id="@+id/PoseDetectionFragment"
+        android:name="com.android.visionApis.features.poseDetection.PoseDetectionFragment"
+        android:label="PoseDetectionFragment"
+        tools:layout="" />
+
+    <fragment
+        android:id="@+id/SelfieSegmentationFragment"
+        android:name="com.android.visionApis.features.selfieSegmentation.SelfieSegmentationFragment"
+        android:label="SelfieSegmentationFragment"
+        tools:layout="" />
+</navigation>

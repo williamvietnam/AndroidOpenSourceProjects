@@ -1,0 +1,68 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.android'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.android"
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+    // cameraX
+    implementation "androidx.camera:camera-core:1.2.3"
+    implementation "androidx.camera:camera-camera2:1.2.3"
+    implementation "androidx.camera:camera-lifecycle:1.2.3"
+    implementation "androidx.camera:camera-video:1.2.3"
+    implementation "androidx.camera:camera-view:1.2.3"
+    implementation "androidx.camera:camera-extensions:1.2.3"
+
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:32.1.1')
+
+    // To recognize Latin script
+    implementation 'com.google.mlkit:text-recognition:16.0.0'
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:19.0.0'
+
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    //navigation component
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+
+    // androidX
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+
+    // unit test
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

@@ -1,11 +1,14 @@
 package com.remote.brands.sony.api
 
-import com.remote.brands.sony.models.PowerStatusResponse
-import com.remote.brands.sony.models.ServicesInfoResponse
+import com.remote.brands.sony.models.PowerStatusParam
+import com.remote.brands.sony.models.SonyServiceParam
+import com.remote.brands.sony.models.SonyVolumeParam
+import com.remote.brands.sony.models.requests.SonyRequest
+import com.remote.brands.sony.models.responses.PowerStatusResponse
+import com.remote.brands.sony.models.responses.ServicesInfoResponse
 import io.reactivex.rxjava3.core.Single
-import okhttp3.MediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
-import okhttp3.RequestBody
+import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
@@ -15,23 +18,37 @@ class SonyApiImplement : ISonyApiHelper {
 
     //------------------------------guide--------------------------------------
     override fun getSupportedApiInfo(): Single<ServicesInfoResponse>? {
-        val request = JSONObject()
-        var response: Single<ServicesInfoResponse>? = null
-        try {
-            request.put("method", "getSupportedApiInfo")
-            request.put("id", 5)
-            val services = JSONArray()
-            request.put("params", services)
-            request.put("version", "1.0")
-            response = SonyApiClient.instance?.getApiService()?.getSupportedApiInfo(request)
-        } catch (jsonException: JSONException) {
-            jsonException.printStackTrace()
-        }
-        return response
+        val sonyServices: MutableList<String> = ArrayList()
+        sonyServices.add("appControl")
+        sonyServices.add("audio")
+        sonyServices.add("avContent")
+        sonyServices.add("encryption")
+        sonyServices.add("system")
+        sonyServices.add("video")
+        sonyServices.add("videoScreen")
+        val sonyServiceParam = SonyServiceParam(sonyServices)
+        val sonyServiceParams: MutableList<SonyServiceParam> = ArrayList()
+        sonyServiceParams.add(sonyServiceParam)
+        val request: SonyRequest<SonyServiceParam> = SonyRequest(
+            method = "getSupportedApiInfo",
+            id = 5,
+            params = sonyServiceParams
+        )
+        return SonyApiClient.instance?.getApiService()?.getSupportedApiInfo(request)
     }
 
-    override fun getSupportedAppControlServicesInfo() {
-
+    override fun getSupportedAppControlServicesInfo(): Single<ServicesInfoResponse>? {
+        val sonyServices: MutableList<String> = ArrayList()
+        sonyServices.add("appControl")
+        val sonyServiceParam = SonyServiceParam(sonyServices)
+        val sonyServiceParams: MutableList<SonyServiceParam> = ArrayList()
+        sonyServiceParams.add(sonyServiceParam)
+        val request: SonyRequest<SonyServiceParam> = SonyRequest(
+            method = "getSupportedApiInfo",
+            id = 5,
+            params = sonyServiceParams
+        )
+        return SonyApiClient.instance?.getApiService()?.getSupportedApiInfo(request)
     }
 
     override fun getSupportedAudioServicesInfo() {
@@ -108,23 +125,10 @@ class SonyApiImplement : ISonyApiHelper {
     }
 
     override fun setAudioVolume(volume: String) {
-        val request = JSONObject()
-        try {
-            request.put("method", "setAudioVolume")
-
-            request.put("id", 601)
-
-            val paramsArray = JSONArray()
-            paramsArray.put(JSONObject().put("volume", volume))
-            paramsArray.put(JSONObject().put("target", "speaker"))
-            request.put("params", paramsArray)
-
-            request.put("version", "1.0")
-
-            SonyApiClient.instance?.getApiService()?.setAudioVolume(request)
-        } catch (jsonException: JSONException) {
-            jsonException.printStackTrace()
-        }
+        val params: MutableList<SonyVolumeParam> = ArrayList()
+        params.add(SonyVolumeParam(volume))
+        val request = SonyRequest<SonyVolumeParam>("setAudioVolume", 601, params)
+        SonyApiClient.instance?.getApiService()?.setAudioVolume(request)
     }
 
     //----------------------------- system --------------------------------
@@ -157,24 +161,24 @@ class SonyApiImplement : ISonyApiHelper {
     }
 
     override fun setPowerStatus(status: Boolean) {
-        val request = JSONObject()
-        try {
-            request.put("method", "setPowerStatus")
-            request.put("id", 55)
-            request.put("params", JSONArray().put(JSONObject().put("status", status)))
-            request.put("version", "1.0")
-            SonyApiClient.instance?.getApiService()?.setPowerStatus(request)
-        } catch (jsonException: JSONException) {
-            jsonException.printStackTrace()
-        }
+        val params: MutableList<PowerStatusParam> = ArrayList()
+        params.add(PowerStatusParam(status))
+        val request = SonyRequest("setPowerStatus", 55, params)
+        SonyApiClient.instance?.getApiService()?.setPowerStatus(request)
     }
 
     //-------------------- InfraRed Compatible Control over Internet Protocol ---------------------
     override fun setRemoteController(IRCCCode: String) {
-        try {
-
-        } catch (jsonException: JSONException) {
-            jsonException.printStackTrace()
-        }
+        val requestBodyText = "<s:Envelope\n" +
+                "    xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"\n" +
+                "    s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\n" +
+                "    <s:Body>\n" +
+                "        <u:X_SendIRCC xmlns:u=\"urn:schemas-sony-com:service:IRCC:1\">\n" +
+                "            <IRCCCode>${IRCCCode}</IRCCCode>\n" +
+                "        </u:X_SendIRCC>\n" +
+                "    </s:Body>\n" +
+                "</s:Envelope>"
+        val requestBody = requestBodyText.toRequestBody("text/xml".toMediaTypeOrNull())
+        SonyApiClient.instance?.getApiService()?.setRemoteController(requestBody)
     }
 }

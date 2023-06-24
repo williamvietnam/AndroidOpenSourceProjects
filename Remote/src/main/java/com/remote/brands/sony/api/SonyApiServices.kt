@@ -1,7 +1,11 @@
 package com.remote.brands.sony.api
 
-import com.remote.brands.sony.models.PowerStatusResponse
-import com.remote.brands.sony.models.ServicesInfoResponse
+import com.remote.brands.sony.models.PowerStatusParam
+import com.remote.brands.sony.models.SonyServiceParam
+import com.remote.brands.sony.models.SonyVolumeParam
+import com.remote.brands.sony.models.requests.SonyRequest
+import com.remote.brands.sony.models.responses.PowerStatusResponse
+import com.remote.brands.sony.models.responses.ServicesInfoResponse
 import io.reactivex.rxjava3.core.Single
 import okhttp3.RequestBody
 import org.json.JSONObject
@@ -24,7 +28,7 @@ interface SonyApiServices {
      * }
      */
     @POST(SonyApiEndpoints.guide)
-    fun getSupportedApiInfo(@Body request: JSONObject): Single<ServicesInfoResponse>
+    fun getSupportedApiInfo(@Body request: SonyRequest<SonyServiceParam>): Single<ServicesInfoResponse>
 
     //---------------------------- appControl ------------------------------------
     @POST(SonyApiEndpoints.appControl)
@@ -44,7 +48,7 @@ interface SonyApiServices {
     fun setAudioMute(@Body request: JSONObject)
 
     @POST(SonyApiEndpoints.audio)
-    fun setAudioVolume(@Body request: JSONObject)
+    fun setAudioVolume(@Body request: SonyRequest<SonyVolumeParam>)
 
     //----------------------------- system --------------------------------
 
@@ -55,7 +59,7 @@ interface SonyApiServices {
     fun getPowerStatus(@Body request: JSONObject): Single<PowerStatusResponse>
 
     @POST(SonyApiEndpoints.system)
-    fun setPowerStatus(@Body request: JSONObject)
+    fun setPowerStatus(@Body request: SonyRequest<PowerStatusParam>)
 
     //-------------------- InfraRed Compatible Control over Internet Protocol ---------------------
     @POST(SonyApiEndpoints.SONY_IRCCCode)

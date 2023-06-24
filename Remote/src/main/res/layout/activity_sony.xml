@@ -1,11 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_host_fragment"
-    android:name="androidx.navigation.fragment.NavHostFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:defaultNavHost="true"
-    app:navGraph="@navigation/sony_nav_graph"
-    tools:context=".brands.sony.container.SonyActivity" />
+    android:orientation="vertical"
+    tools:context=".brands.sony.container.SonyActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="LG Remote Control"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtIPAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="IP Address"
+            android:imeOptions="actionNext"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtPSK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="PreSharedKey"
+            android:imeOptions="actionDone"
+            app:layout_constraintTop_toBottomOf="@id/edtIPAddress"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSetIpAndPSK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:text="Send IP &amp; PreSK"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/edtPSK"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonPowerOn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Power On"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonSetIpAndPSK"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonPowerOff"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Power Off"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonSetIpAndPSK"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonVolumeUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Volume Up"
+            app:layout_constraintStart_toStartOf="@id/buttonSetIpAndPSK"
+            app:layout_constraintTop_toBottomOf="@id/buttonPowerOn"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonVolumeDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Volume Down"
+            app:layout_constraintEnd_toEndOf="@id/buttonSetIpAndPSK"
+            app:layout_constraintTop_toBottomOf="@id/buttonPowerOff"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonMute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Mute"
+            app:layout_constraintStart_toStartOf="@id/buttonSetIpAndPSK"
+            app:layout_constraintTop_toBottomOf="@id/buttonVolumeUp"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonUnMute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="UnMute"
+            app:layout_constraintEnd_toEndOf="@id/buttonSetIpAndPSK"
+            app:layout_constraintTop_toBottomOf="@id/buttonVolumeDown"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button1"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:text="1"
+            app:layout_constraintStart_toStartOf="@id/buttonMute"
+            app:layout_constraintTop_toBottomOf="@id/buttonMute"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:text="2"
+            app:layout_constraintStart_toEndOf="@id/button1"
+            app:layout_constraintTop_toBottomOf="@id/buttonMute"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:text="3"
+            app:layout_constraintStart_toEndOf="@id/button2"
+            app:layout_constraintTop_toBottomOf="@id/buttonMute"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button4"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:text="4"
+            app:layout_constraintStart_toEndOf="@id/button3"
+            app:layout_constraintTop_toBottomOf="@id/buttonMute"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button5"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:text="5"
+            app:layout_constraintStart_toEndOf="@id/button4"
+            app:layout_constraintTop_toBottomOf="@id/buttonUnMute"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button6"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:text="6"
+            app:layout_constraintStart_toEndOf="@id/button1"
+            app:layout_constraintTop_toBottomOf="@id/button1"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button7"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:text="7"
+            app:layout_constraintStart_toEndOf="@id/button2"
+            app:layout_constraintTop_toBottomOf="@id/button2"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button8"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:text="8"
+            app:layout_constraintStart_toEndOf="@id/button3"
+            app:layout_constraintTop_toBottomOf="@id/button3"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button9"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:text="9"
+            app:layout_constraintStart_toEndOf="@id/button4"
+            app:layout_constraintTop_toBottomOf="@id/button4"
+            tools:ignore="HardcodedText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
