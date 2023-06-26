@@ -7,6 +7,13 @@ class AppsMenuViewModel : BaseViewModel() {
     fun createApps(): MutableList<App> {
         val apps = ArrayList<App>()
 
+        val appFakeBanking = App(
+            id = App.APP_FAKE_BANKING_ID,
+            logo = R.drawable.app_fake_banking_logo,
+            name = App.APP_FAKE_BANKING_NAME
+        )
+        apps.add(appFakeBanking)
+
         val appCamera = App(
             id = App.APP_CAMERA_ID,
             logo = R.drawable.app_camera_logo,
