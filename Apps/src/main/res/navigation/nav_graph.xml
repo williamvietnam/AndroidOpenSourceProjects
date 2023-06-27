@@ -12,6 +12,10 @@
         tools:layout="@layout/fragment_apps_menu">
 
         <action
+            android:id="@+id/action_from_appsMenu_to_fakeBanking"
+            app:destination="@id/fakeBankingFragment" />
+
+        <action
             android:id="@+id/action_from_appsMenu_to_camera"
             app:destination="@id/cameraFragment" />
 
@@ -70,6 +74,15 @@
         <action
             android:id="@+id/action_from_appsMenu_to_videoShorts"
             app:destination="@id/videoShortsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fakeBankingFragment"
+        android:name="com.android.apps.appFakeBanking.FakeBankingFragment"
+        android:label="FakeBankingFragment"
+        tools:layout="@layout/fragment_fake_banking">
+
+
     </fragment>
 
     <fragment

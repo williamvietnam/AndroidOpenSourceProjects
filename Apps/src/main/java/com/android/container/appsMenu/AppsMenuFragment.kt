@@ -32,6 +32,10 @@ class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel
 
     override fun onAppClicked(app: App) {
         when (app.id) {
+            App.APP_FAKE_BANKING_ID -> {
+                findNavController().navigate(R.id.action_from_appsMenu_to_fakeBanking)
+            }
+
             App.APP_CAMERA_ID -> {
                 findNavController().navigate(R.id.action_from_appsMenu_to_camera)
             }
@@ -90,6 +94,14 @@ class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel
 
             App.APP_SHORTS_ID -> {
                 findNavController().navigate(R.id.action_from_appsMenu_to_videoShorts)
+            }
+
+            App.APP_FAKE_CHAT_ID -> {
+
+            }
+
+            App.APP_GUESS_VOICE_ID -> {
+
             }
         }
     }
