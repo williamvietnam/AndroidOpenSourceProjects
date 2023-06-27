@@ -119,6 +119,16 @@ class AppsMenuViewModel : BaseViewModel() {
         )
         apps.add(appVideoShorts)
 
+        val appFakeChat = App(
+
+        )
+        apps.add(appFakeBanking)
+
+        val appGuessVoice = App(
+
+        )
+        apps.add(appGuessVoice)
+
         return apps
     }
 }

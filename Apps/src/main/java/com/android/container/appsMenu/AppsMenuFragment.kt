@@ -95,6 +95,14 @@ class AppsMenuFragment : BaseFragment<FragmentAppsMenuBinding, AppsMenuViewModel
             App.APP_SHORTS_ID -> {
                 findNavController().navigate(R.id.action_from_appsMenu_to_videoShorts)
             }
+
+            App.APP_FAKE_CHAT_ID -> {
+
+            }
+
+            App.APP_GUESS_VOICE_ID -> {
+
+            }
         }
     }
 }
