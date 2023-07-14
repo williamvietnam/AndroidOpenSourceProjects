@@ -120,12 +120,16 @@ class AppsMenuViewModel : BaseViewModel() {
         apps.add(appVideoShorts)
 
         val appFakeChat = App(
-
+            id = App.APP_SHORTS_ID,
+            logo = R.drawable.app_video_shorts_logo,
+            name = App.APP_SHORTS_NAME
         )
         apps.add(appFakeBanking)
 
         val appGuessVoice = App(
-
+            id = App.APP_SHORTS_ID,
+            logo = R.drawable.app_video_shorts_logo,
+            name = App.APP_SHORTS_NAME
         )
         apps.add(appGuessVoice)
 
