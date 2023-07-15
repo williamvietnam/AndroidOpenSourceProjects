@@ -145,8 +145,8 @@ class SoundFragment : BaseFragment<FragmentSoundBinding, SoundViewModel>(),
 
         this.binding.buttonShare.setOnClickListener {
             val sharingIntent = Intent(Intent.ACTION_SEND)
-            sharingIntent.type = "audio/*"
-            sharingIntent.putExtra(Intent.EXTRA_MIME_TYPES, "")
+            sharingIntent.type = "audio/mp3"
+            sharingIntent.putExtra(Intent.EXTRA_STREAM, "file:///android_asset/app_prank_sounds/mp3/${viewModel.sound.value?.category}/${viewModel.sound.value?.sound}.mp3")
             startActivity(Intent.createChooser(sharingIntent, "Audio share"))
         }
 
