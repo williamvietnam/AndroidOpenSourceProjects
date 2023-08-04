@@ -1,11 +1,13 @@
 package com.data.storages.commons.utils
 
-import com.data.storages.features.externalStorage.data.IExternalStorageHelper
-import com.data.storages.features.internalStorage.data.IInternalStorageHelper
-import com.data.storages.features.roomDatabase.data.IDatabaseStorageHelper
-import com.data.storages.features.servers.data.apis.IApiHelper
+import com.data.storages.storageModule.externalStorage.IExternalStorageHelper
+import com.data.storages.storageModule.internalStorage.IInternalStorageHelper
+import com.data.storages.storageModule.roomDatabase.IDatabaseStorageHelper
+import com.data.storages.storageModule.servers.apis.IApiHelper
 
-interface IStoragesHelper : IInternalStorageHelper, IExternalStorageHelper,
-    IDatabaseStorageHelper, IApiHelper {
+interface IStoragesHelper : IInternalStorageHelper,
+    IExternalStorageHelper,
+    IDatabaseStorageHelper,
+    IApiHelper {
 
 }
