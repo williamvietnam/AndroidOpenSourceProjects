@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    android:background="@drawable/background_item_home"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    tools:backgroundTint="#FFF9C4">
+
+    <ImageView
+        android:id="@+id/functionIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:padding="4dp"
+        android:src="@drawable/icon_cloud_firestore"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/functionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/titan_one_regular"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Cloud Firestore" />
+</LinearLayout>
