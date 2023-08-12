@@ -1,98 +1,96 @@
-## Android Development Courses
+### Table of Contents
 
-#### 0. Android Basic Knowledge
+1. Apps
+2. ARCore Google
+3. Data Storages
+4. Machine Learning
+5. Remote Control
+6. Tutorials
 
-- Android Project Structure
-- Views & ViewGroups
--
+### I. Apps
 
-#### 1. Activity & Fragment components
+1. **AIChat**
+    - Feature: Chat to chatbot GPT
+    - Technology: Use API of ChatGPT
+2. **Alarm**:
+    - Feature: Ring the notification when it's time set
+    - Technology: Broadcast + Service
+3. **Camera**:
+    - Feature: Take photos and videos
+    - Technology: Save to external storage in device's gallery
+4. **Charts**:
+    - Feature: Demo all chart types
+    - Technology: Use library
+5. **Prank Sounds**
+    - Feature: Play sounds to troll other people (live play or set timer to play)
+    - Technology: RecyclerView + MediaPlayer + CountDownTimer
+6. **Prank FakeCall**
+    - Feature: Create Fake Call with celebrity
+    - Tech: RecyclerView + MediaPlayer + VideoView + HBRecording
+7. **Prank FakeChat**
+8. **Prank Lie Detector**
+    - Feature: Fake Lie Detect
+    - Tech: LottieAnim + MediaPlayer + Vibrate
+9. **Prank FakeBanking**
+10. **Secret Photos**
+    - Feature: App collection with icon app isChanged to other icon
+    - Tech:
+11. **Step Counters**
+    - Feature: Step counters
+    - Tech: sensor
+12. **Video Shorts**
+    - Feature: show videos like tiktok app
+    - Tech: Viewpager2 + VideoView
+13. **Wallpaper**
+14. **Sticker for Whatsapp**
+15. **Weather**: Retrofit + Rx3
+16. **Paint**: Use Canvas
+17. **Image Filters**
+18. **Quiz**
 
-- Activity Lifecycle
-- Fragment Lifecycle
+### II. ArCore Google Demo
 
-#### 2. Android Networking Libraries
+1. Instant Placement
+2. Depth
+3. Lighting Estimation
+4. Augmented Faces
+5. Augmented Images
 
-- Retrofit library to call API
-- Fast Android Networking library to call API
-- Image Loading Libraries:
-    + _Glide_
-    + _Picasso_
-    + _Coil-kt_
+### III. Data Storages
 
-#### 3. Android Local Databases
+1. **Internal Storage**
+2. **External Storage**
+3. **Room Database**
+4. **Firebase**
+    - FireStoreDatabase
+    - RealtimeDatabase
+    - Firebase Storage
+5. **Server Storages** (API)
 
-- SharedPreferences
-- RoomDatabase/RealmDatabase/SQLiteDatabase
+### IV. Google MLKit Demo
 
-#### 4. Asynchronous Programming
+1. Natural Language Apis
+    - Smart Reply
+    - Translate
+2. Vision Apis
+    - Barcode Scanning
+    - Face Detection
+    - Face Mesh Detection
+    - Image Labeling
+    - Object Detection
+    - Pose Detection
+    - Selfie Segmentation
+    - Text Recognition
 
-- RxJava | RxAndroid
-- Coroutines
+### V. Remote Control
 
-#### 5. Services component
+- LG:
+- Sony: ResAPI
+- Samsung:
+- Panasonic
 
-#### 6. Broadcast Receiver & Content Provider components
+### VI. Tutorials
 
-- Broadcast Receiver component
-- Content Provider component
-
-#### 7. Android Architectures
-
-- Model-View-ViewModel | MVVM
-- Model-View-Presenter | MVP
-- Model-View-Controller | MVC
-
-#### 8. Dependency Injection
-
-- Dagger 2
-
---------------------------------------------------
-
-## Android Common Use Cases
-
-1. [x] Android Login/Register Form Use Case
-2. [x] Android Input Form Validation Use Case
-3. [x] Android Slide Image Auto Run Use Case
-
---------------------------------------------------
-
-## Java-Kotlin-C/C++
-
-### 1. JavaCore
-
-1. [x] DataType & Variables
-2. [x] Conditionals: if-else, switch-case,...
-3. [x] Loops: while, do...while, for,...
-4. [x] Functions
-5. [x] OOP, Interfaces, Classes
-6. [x] Java Collection:
-    + Interfaces: Set, List, Queue, Deque,...
-    + Classes: ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet,...
-7. [x] Java Streams API: InputStream, OutputStream,...
-8. [x] Generics
-9. [x] Serialization
-10. [x] Networking Sockets
-
-### 2. Kotlin
-
-1. [x] DataType & Variables
-2. [x] Conditionals: if-else, when,...
-3. [x] Loops: while, do...while, for,...
-4. [x] Functions
-
-### 3. C/C++
-1. [x] DataType & Variables
-2. [x] Conditionals: if-else, switch-case,...
-3. [x] Loops: while, do...while, for,...
-4. [x] Functions
-
---------------------------------------------------
-
-## Software Common Knowledge
-
-- Design Pattern
-- Google Services:
-    + Google Map
-    + Cloud Messaging and Authentication
-    + Machine Learning Kit
+1. Broadcast Receiver component
+2. Services component
+3. Content Provider component

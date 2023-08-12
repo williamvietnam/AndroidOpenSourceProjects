@@ -1,4 +1,4 @@
-package com.android.broadcastReceiver.custom
+package com.android.broadcastReceiverTutorials.custom
 
 import android.content.BroadcastReceiver
 import android.content.Context

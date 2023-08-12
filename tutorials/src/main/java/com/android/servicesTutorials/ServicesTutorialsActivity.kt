@@ -1,4 +1,4 @@
-package com.android.services
+package com.android.servicesTutorials
 
 import android.os.Bundle
 import android.util.Log

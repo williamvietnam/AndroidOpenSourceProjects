@@ -1,4 +1,4 @@
-package com.android.broadcastReceiver
+package com.android.broadcastReceiverTutorials
 
 import androidx.lifecycle.ViewModel
 
