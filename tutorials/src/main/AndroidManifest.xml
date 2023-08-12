@@ -24,7 +24,7 @@
                 android:value="" />
         </activity>
 
-        <receiver android:name=".broadcastReceiver.network.NetworkBroadcastReceiver"
+        <receiver android:name=".broadcastReceiverTutorials.network.NetworkBroadcastReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTTIVITY_CHANGE" />

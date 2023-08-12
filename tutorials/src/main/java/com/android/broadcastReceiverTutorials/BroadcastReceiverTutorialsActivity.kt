@@ -1,4 +1,4 @@
-package com.android.broadcastReceiver
+package com.android.broadcastReceiverTutorials
 
 import android.content.Intent
 import android.content.IntentFilter
@@ -7,8 +7,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.android.broadcastReceiver.custom.MyBroadcastReceiver
-import com.android.broadcastReceiver.network.NetworkBroadcastReceiver
+import com.android.broadcastReceiverTutorials.custom.MyBroadcastReceiver
+import com.android.broadcastReceiverTutorials.network.NetworkBroadcastReceiver
 import com.android.databinding.ActivityBroadcastReceiverTutorialsBinding
 
 
